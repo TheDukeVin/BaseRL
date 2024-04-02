@@ -1,0 +1,24 @@
+
+LSTM::Model structure = LSTM::Model(LSTM::Shape(boardx, boardy, 8));
+structure.addConv(LSTM::Shape(6, 6, 7), 3, 3);
+structure.addDense(100);
+structure.addOutput(numActions);
+trainer.train(20, 20, 100000);
+
+Evaluation score: 29.4052
+
+LSTM::Model structure = LSTM::Model(LSTM::Shape(boardx, boardy, 8));
+structure.addConv(LSTM::Shape(6, 6, 10), 3, 3);
+structure.addDense(150);
+structure.addOutput(numActions);
+trainer.train(20, 20, 100000);
+
+Evaluation score: 28.478
+
+LSTM::Model structure = LSTM::Model(LSTM::Shape(boardx, boardy, 8));
+structure.addConv(LSTM::Shape(6, 6, 7), 3, 3);
+structure.addDense(100);
+structure.addDense(50);
+structure.addOutput(numActions);
+
+Evaluation score: 28.991
