@@ -136,7 +136,38 @@ double Environment::makeAction(int action){
     return reward;
 }
 
-void Environment::getFeatures(double* features){
+int randomSym(){
+    assert(boardx == boardy);
+    return randomN(8);
+}
+
+int symAction(int action, int symID){
+    return (symDir[symID][0]*action + symDir[symID][1] + 4) % 4;
+}
+
+Pos transform(Pos p, int symID){
+    int x = sym[symID][0][0]*p.x + sym[symID][0][1]*p.y + sym[symID][0][2];
+    int y = sym[symID][1][0]*p.x + sym[symID][1][1]*p.y + sym[symID][1][2];
+    return Pos(x, y);
+}
+
+void Environment::getFeatures(double* features, int symID){
+    // for(int i=0; i<numFeatures; i++){
+    //     features[i] = 0;
+    // }
+
+    // for(int i=0; i<boardx; i++){
+    //     for(int j=0; j<boardy; j++){
+    //         if(grid[i][j] != -1){
+    //             features[grid[i][j]*boardSize + i*boardy + j] = 1;
+    //         }
+    //     }
+    // }
+
+    // features[4*boardSize + snake.head.index()] = 1;
+    // features[5*boardSize + snake.tail.index()] = 1;
+    // features[6*boardSize + apple.index()] = 1;
+    
     for(int i=0; i<numFeatures; i++){
         features[i] = 0;
     }
@@ -144,18 +175,13 @@ void Environment::getFeatures(double* features){
     for(int i=0; i<boardx; i++){
         for(int j=0; j<boardy; j++){
             if(grid[i][j] != -1){
-                features[grid[i][j]*boardSize + i*boardy + j] = 1;
+                int new_dir = symAction(grid[i][j], symID);
+                features[new_dir*boardSize + transform(Pos(i, j), symID).index()] = 1;
             }
         }
     }
 
-    features[4*boardSize + snake.head.index()] = 1;
-    features[5*boardSize + snake.tail.index()] = 1;
-    features[6*boardSize + apple.index()] = 1;
-
-    // for(int i=0; i<boardx; i++){
-    //     for(int j=0; j<boardy; j++){
-    //         features[7*boardSize + i*boardy + j] = pow(discountFactor, timeHorizon - timeIndex);
-    //     }
-    // }
+    features[4*boardSize + transform(snake.head, symID).index()] = 1;
+    features[5*boardSize + transform(snake.tail, symID).index()] = 1;
+    features[6*boardSize + transform(apple, symID).index()] = 1;
 }

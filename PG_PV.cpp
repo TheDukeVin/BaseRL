@@ -6,11 +6,7 @@ PG_PV::PG_PV(LSTM::PVUnit* structure_, string gameOutFile_){
     ofstream gameOut (gameOutFile_);
     gameOut.close();
 
-    structure = new LSTM::PVUnit(structure_, NULL);
-    structure->randomize(0.1);
-    structure->resetGradient();
-    net = new LSTM::PVUnit(structure, NULL);
-    net->copyParams(structure);
+    symNet = SymUnit(structure_);
 }
 
 void PG_PV::rollout(bool print){
@@ -20,12 +16,12 @@ void PG_PV::rollout(bool print){
         vector<int> validActions = env.validActions();
 
         PGInstance instance;
-        env.getFeatures(net->envInput->data);
-        net->forwardPass();
+        instance.symID = randomSym();
+        symNet.forwardPass(env, instance.symID);
 
         // Compute policy
         double policy[numActions];
-        computeSoftmaxPolicy(net->policyOutput->data, numActions, validActions, policy);
+        computeSoftmaxPolicy(symNet.policyOutput->data, numActions, validActions, policy);
         for(int j=0; j<numActions; j++){
             instance.policy[j] = policy[j];
         }
@@ -62,7 +58,7 @@ void PG_PV::rollout(bool print){
                 }
             }
             gameOut << '\n';
-            gameOut << "Value: " << net->valueOutput->data[0] * valueNorm << '\n';
+            gameOut << "Value: " << symNet.valueOutput->data[0] * valueNorm << '\n';
             gameOut << "Action: " << action << " Reward: " << trajectory[t].reward << "\n\n";
         }
         if(env.endState) break;
@@ -71,9 +67,8 @@ void PG_PV::rollout(bool print){
     // For Snake, we use the Value network to estimate the additional value if we continue the game
     double value = 0;
     if(env.validActions().size() != 0){
-        env.getFeatures(net->envInput->data);
-        net->forwardPass();
-        value = net->valueOutput->data[0] * valueNorm;
+        symNet.forwardPass(env, randomSym());
+        value = symNet.valueOutput->data[0] * valueNorm;
     }
 
     double total_reward = 0;
@@ -98,26 +93,29 @@ void PG_PV::rollout(bool print){
 }
 
 void PG_PV::accGrad(PGInstance instance){
-    instance.env.getFeatures(net->envInput->data);
-    net->forwardPass();
-    net->resetGradient();
+    symNet.forwardPass(instance.env, instance.symID);
     for(int i=0; i<numActions; i++){
-        net->policyOutput->gradient[i] = 0;
+        symNet.policyOutput->gradient[i] = 0;
     }
     vector<int> validActions = instance.env.validActions();
+    
+    // recalculate policy
+    double policy[numActions];
+    computeSoftmaxPolicy(symNet.policyOutput->data, numActions, validActions, policy);
+
     for(auto a : validActions){
-        net->policyOutput->gradient[a] = (instance.policy[a] - (a == instance.action)) * (instance.value / valueNorm - net->valueOutput->data[0]);
+        assert(abs(instance.policy[a] - policy[a]) < 1e-10);
+        symNet.policyOutput->gradient[a] = (instance.policy[a] - (a == instance.action)) * (instance.value / valueNorm - symNet.valueOutput->data[0]);
     }
     double entropy = 0;
     for(auto a : validActions){
         entropy += instance.policy[a] * log(instance.policy[a]);
     }
     for(auto a : validActions){
-        net->policyOutput->gradient[a] += instance.policy[a] * (log(instance.policy[a]) - entropy) * entropyConstant;
+        symNet.policyOutput->gradient[a] += instance.policy[a] * (log(instance.policy[a]) - entropy) * entropyConstant;
     }
-    net->valueOutput->gradient[0] = net->valueOutput->data[0] - instance.value / valueNorm;
-    net->backwardPass();
-    structure->accumulateGradient(net);
+    symNet.valueOutput->gradient[0] = symNet.valueOutput->data[0] - instance.value / valueNorm;
+    symNet.backwardPass();
 }
 
 void PG_PV::train(int batchSize, int numIter){
@@ -151,8 +149,7 @@ void PG_PV::train(int batchSize, int numIter){
                 evalSum += rolloutValue;
             }
         }
-        structure->updateParams(alpha, -1, regRate);
-        net->copyParams(structure);
+        symNet.update();
         if(it % evalPeriod == 0){
             if(it > 0){
                 fout << ',';

@@ -7,6 +7,7 @@
 
 int main(){
     unsigned start_time = time(0);
+    cout << "stop hitting me\n";
 
     // Collect gem environment
 
@@ -72,7 +73,7 @@ int main(){
     structure.valueBranch->addDense(50);
     structure.valueBranch->addOutput(1);
     PG_PV trainer(&structure, "game.out");
-    trainer.train(1, 1000000);
+    trainer.train(1, 100000);
 
     for(int i=0; i<5; i++){
         trainer.rollout(true);
