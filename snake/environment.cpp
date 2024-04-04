@@ -10,6 +10,9 @@ int Environment::getGridValue(Pos p){
 }
 
 void Environment::randomizeApple(){
+    if(snake.size == boardSize){
+        return;
+    }
     while(true){
         apple = Pos(randomN(boardx), randomN(boardy));
         if(getGridValue(apple) == -1){
@@ -36,6 +39,7 @@ Environment::Environment(){
     setGridValue(snake.tail, 0);
 
     randomizeApple();
+    applySym();
 }
 
 string Environment::toString(){
@@ -109,13 +113,11 @@ double Environment::makeAction(int action){
     setGridValue(snake.head, action);
     snake.head = newHead;
     setGridValue(newHead, 4);
+
+    
     if(newHead == apple){
         snake.size ++;
         reward = 1;
-        if(snake.size == boardSize){
-            endState = true;
-            return outcomeReward;
-        }
         randomizeApple();
     }
     else{
@@ -126,15 +128,49 @@ double Environment::makeAction(int action){
 
     if(validActions().size() == 0){
         endState = true;
-        return -outcomeReward;
+        if(snake.size == boardSize){
+            reward = outcomeReward;
+        }
+        else{
+            reward = -outcomeReward;
+        }
     }
 
     timeIndex ++;
     if(timeIndex == timeHorizon){
         endState = true;
     }
+
+    applySym();
+
     return reward;
 }
+
+void Environment::getFeatures(double* features){
+    for(int i=0; i<numFeatures; i++){
+        features[i] = 0;
+    }
+
+    for(int i=0; i<boardx; i++){
+        for(int j=0; j<boardy; j++){
+            if(grid[i][j] != -1){
+                features[grid[i][j]*boardSize + i*boardy + j] = 1;
+            }
+        }
+    }
+
+    features[4*boardSize + snake.head.index()] = 1;
+    features[5*boardSize + snake.tail.index()] = 1;
+    features[6*boardSize + apple.index()] = 1;
+
+    for(int i=0; i<boardx; i++){
+        for(int j=0; j<boardy; j++){
+            features[7*boardSize + i*boardy + j] = pow(discountFactor, timeHorizon - timeIndex);
+        }
+    }
+}
+
+
 
 int randomSym(){
     assert(boardx == boardy);
@@ -151,37 +187,29 @@ Pos transform(Pos p, int symID){
     return Pos(x, y);
 }
 
-void Environment::getFeatures(double* features, int symID){
-    // for(int i=0; i<numFeatures; i++){
-    //     features[i] = 0;
-    // }
-
-    // for(int i=0; i<boardx; i++){
-    //     for(int j=0; j<boardy; j++){
-    //         if(grid[i][j] != -1){
-    //             features[grid[i][j]*boardSize + i*boardy + j] = 1;
-    //         }
-    //     }
-    // }
-
-    // features[4*boardSize + snake.head.index()] = 1;
-    // features[5*boardSize + snake.tail.index()] = 1;
-    // features[6*boardSize + apple.index()] = 1;
-    
-    for(int i=0; i<numFeatures; i++){
-        features[i] = 0;
-    }
-
+void Environment::applySym(){
+    int symID = randomSym();
+    int newSnake[boardx][boardy];
     for(int i=0; i<boardx; i++){
         for(int j=0; j<boardy; j++){
-            if(grid[i][j] != -1){
-                int new_dir = symAction(grid[i][j], symID);
-                features[new_dir*boardSize + transform(Pos(i, j), symID).index()] = 1;
+            Pos newPos = transform(Pos(i, j), symID);
+            int new_dir;
+            if(0 <= grid[i][j] && grid[i][j] < 4){
+                new_dir = symAction(grid[i][j], symID);
             }
+            else{
+                new_dir = grid[i][j];
+            }
+            newSnake[newPos.x][newPos.y] = new_dir;
+        }
+    }
+    for(int i=0; i<boardx; i++){
+        for(int j=0; j<boardy; j++){
+            grid[i][j] = newSnake[i][j];
         }
     }
 
-    features[4*boardSize + transform(snake.head, symID).index()] = 1;
-    features[5*boardSize + transform(snake.tail, symID).index()] = 1;
-    features[6*boardSize + transform(apple, symID).index()] = 1;
+    snake.head = transform(snake.head, symID);
+    snake.tail = transform(snake.tail, symID);
+    apple = transform(apple, symID);
 }

@@ -15,7 +15,7 @@ rsync -r PG_test kevindu@login.rc.fas.harvard.edu:./MultiagentSnake/Dup --exclud
 #ifndef DQN_h
 #define DQN_h
 
-#define BufferSize 1000000
+#define BufferSize 100000
 
 class ReplayInstance{
 public:
@@ -49,7 +49,7 @@ class DQN{
 public:
     const static double constexpr epsilon = 0.01;
     const static double constexpr eta = 0;
-    const static double constexpr alpha = 0.001;
+    const static double constexpr alpha = 0.003;
     const static double constexpr regRate = 0.00001;
 
     LSTM::Model net;

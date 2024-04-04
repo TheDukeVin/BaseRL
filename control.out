@@ -1,8 +1,21 @@
-Iteration 0 Time: 0 -0.001 Loss: 0.001 Win: 0 valueNorm: 0.0752168
-Iteration 1000 Time: 24 2.721 Loss: 0.468 Win: 0 valueNorm: 2.41897
-Iteration 2000 Time: 49 7.055 Loss: 0.181 Win: 0 valueNorm: 2.91504
-Iteration 3000 Time: 74 8.983 Loss: 0.263 Win: 0 valueNorm: 3.28679
-Iteration 4000 Time: 99 9.583 Loss: 0.286 Win: 0 valueNorm: 3.53448
-Iteration 5000 Time: 124 10.314 Loss: 0.397 Win: 0 valueNorm: 3.92941
-Iteration 6000 Time: 147 10.55 Loss: 0.407 Win: 0 valueNorm: 4.13932
-Iteration 7000 Time: 171 10.86 Loss: 0.447 Win: 0 valueNorm: 4.30638
+Iteration 0 Time: 0 0 Loss: 0.001 Win: 0 valueNorm: 3.53724
+Iteration 1000 Time: 22 1.532 Loss: 0.581 Win: 0 valueNorm: 3.10421
+Iteration 2000 Time: 47 5.876 Loss: 0.316 Win: 0 valueNorm: 3.25375
+Iteration 3000 Time: 73 9.218 Loss: 0.277 Win: 0 valueNorm: 3.46987
+Iteration 4000 Time: 97 9.956 Loss: 0.337 Win: 0 valueNorm: 3.67883
+Iteration 5000 Time: 122 10.46 Loss: 0.365 Win: 0 valueNorm: 3.86924
+Iteration 6000 Time: 147 10.898 Loss: 0.355 Win: 0 valueNorm: 3.96505
+Iteration 7000 Time: 172 11.393 Loss: 0.367 Win: 0 valueNorm: 4.06325
+Iteration 8000 Time: 197 11.485 Loss: 0.344 Win: 0 valueNorm: 4.08
+Iteration 9000 Time: 221 11.815 Loss: 0.404 Win: 0 valueNorm: 4.30709
+Iteration 10000 Time: 245 12.36 Loss: 0.484 Win: 0 valueNorm: 4.54264
+Iteration 11000 Time: 268 12.839 Loss: 0.434 Win: 0 valueNorm: 4.59963
+Iteration 12000 Time: 292 13.363 Loss: 0.447 Win: 0 valueNorm: 4.66699
+Iteration 13000 Time: 316 14.013 Loss: 0.455 Win: 0 valueNorm: 4.77733
+Iteration 14000 Time: 340 14.39 Loss: 0.476 Win: 0 valueNorm: 4.9306
+Iteration 15000 Time: 363 14.805 Loss: 0.462 Win: 0 valueNorm: 4.98706
+Iteration 16000 Time: 386 15.19 Loss: 0.481 Win: 0 valueNorm: 5.08948
+Iteration 17000 Time: 410 16.055 Loss: 0.425 Win: 0 valueNorm: 4.99376
+Iteration 18000 Time: 434 16.402 Loss: 0.45 Win: 0 valueNorm: 5.10577
+Iteration 19000 Time: 457 17.007 Loss: 0.442 Win: 0.001 valueNorm: 5.17387 Win Time: 194
+Evaluation score: 15.2304

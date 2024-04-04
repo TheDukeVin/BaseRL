@@ -82,14 +82,14 @@ void DQN::rollout(int batchSize, bool print){
         actions[t] = action;
         rewards[t] = env.makeAction(actions[t]);
         total_reward += rewards[t];
-        // replay.push_back(ReplayInstance(trajectory[t], env, actions[t], rewards[t], -1));
+        replay.push_back(ReplayInstance(trajectory[t], env, actions[t], rewards[t], -1));
         buffer->enqueue(ReplayInstance(trajectory[t], env, actions[t], rewards[t], -1));
 
-        for(int j=0; j<batchSize; j++){
-            updateInstance(buffer->randomInstance());
-        }
-        structure.updateParams(alpha, -1, regRate);
-        net.copyParams(&structure);
+        // for(int j=0; j<batchSize; j++){
+        //     updateInstance(buffer->randomInstance());
+        // }
+        // structure.updateParams(alpha, -1, regRate);
+        // net.copyParams(&structure);
 
         if(print){
             ofstream gameOut (gameOutFile, ios::app);
@@ -182,13 +182,13 @@ void DQN::train(int batchSize, int numBatches, int numRollouts){
         if(it >= numRollouts/2){
             evalSum += rolloutValue;
         }
-        // for(int i=0; i<numBatches; i++){
-        //     for(int j=0; j<batchSize; j++){
-        //         updateInstance(buffer->randomInstance());
-        //     }
-        //     structure.updateParams(alpha, -1, regRate);
-        //     net.copyParams(&structure);
-        // }
+        for(int i=0; i<numBatches; i++){
+            for(int j=0; j<batchSize; j++){
+                updateInstance(buffer->randomInstance());
+            }
+            structure.updateParams(alpha, -1, regRate);
+            net.copyParams(&structure);
+        }
         if(it % evalPeriod == 0){
             if(it > 0){
                 fout << ',';

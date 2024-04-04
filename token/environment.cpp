@@ -42,6 +42,11 @@ double Environment::makeAction(int action){
     if(timeIndex == timeHorizon){
         endState = true;
     }
+
+    int symID = randomSym();
+    agent = transform(agent, symID);
+    token = transform(token, symID);
+
     return reward;
 }
 
@@ -50,4 +55,18 @@ void Environment::getFeatures(double* features){
     features[1] = agent.y;
     features[2] = token.x;
     features[3] = token.y;
+}
+
+int randomSym(){
+    return randomN(8);
+}
+
+int symAction(int action, int symID){
+    return (symDir[symID][0]*action + symDir[symID][1] + 4) % 4;
+}
+
+Pos transform(Pos p, int symID){
+    int x = sym[symID][0][0]*p.x + sym[symID][0][1]*p.y + sym[symID][0][2];
+    int y = sym[symID][1][0]*p.x + sym[symID][1][1]*p.y + sym[symID][1][2];
+    return Pos(x, y);
 }

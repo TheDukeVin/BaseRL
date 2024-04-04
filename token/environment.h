@@ -42,6 +42,33 @@ public:
     }
 };
 
+const int symDir[8][2] = {
+    { 1,0},
+    { 1,3},
+    { 1,2},
+    { 1,1},
+    {-1,1},
+    {-1,2},
+    {-1,3},
+    {-1,0}
+};
+
+const int m = size-1;
+const int sym[8][2][3] = {
+    {{ 1, 0, 0},{ 0, 1, 0}},
+    {{ 0,-1, m},{ 1, 0, 0}},
+    {{-1, 0, m},{ 0,-1, m}},
+    {{ 0, 1, 0},{-1, 0, m}},
+    {{ 0, 1, 0},{ 1, 0, 0}},
+    {{ 1, 0, 0},{ 0,-1, m}},
+    {{ 0,-1, m},{-1, 0, m}},
+    {{-1, 0, m},{ 0, 1, 0}}
+};
+
+int randomSym();
+Pos transform(Pos p, int symID);
+int symAction(int action, int symID); // transforms action in original environment into equivalent action in mirror environment.
+
 class Environment{
 public:
     int timeIndex;

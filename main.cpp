@@ -7,7 +7,8 @@
 
 int main(){
     unsigned start_time = time(0);
-    cout << "stop hitting me\n";
+
+    // PG algorithms
 
     // Collect gem environment
 
@@ -25,44 +26,18 @@ int main(){
     // PG trainer(structure, "game.out");
     // trainer.train(10, 300000, 0.001, -1);
 
-    // Snake environment
+    // Token environment
 
-    // LSTM::Model structure = LSTM::Model(LSTM::Shape(boardx, boardy, 7));
-    // // structure.addConv(LSTM::Shape(6, 6, 10), 3, 3);
-    // // structure.addPool(LSTM::Shape(3, 3, 10));
-    // // structure.addDense(40);
-    // structure.addConv(LSTM::Shape(6, 6, 10), 5, 5);
-    // structure.addConv(LSTM::Shape(6, 6, 10), 5, 5);
-    // structure.addPool(LSTM::Shape(3, 3, 10));
-    // structure.addDense(60);
-    // structure.addOutput(numActions);
-    // PG trainer(structure, "game.out");
-    // trainer.train(1, 1000000, 0.001, -1);
-
-
-
-
-
-
-    // For DQN
-
-
-    // TTT environment
-
-    // LSTM::Model structure = LSTM::Model(LSTM::Shape(numFeatures));
-    // structure.addDense(40);
-    // structure.addOutput(numActions);
-    // DQN trainer(structure, "game.out", &buffer);
-    // trainer.train(10, 1, 500000);
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(numFeatures));
+    // structure.commonBranch->addDense(6);
+    // structure.initPV();
+    // structure.policyBranch->addOutput(4);
+    // structure.valueBranch->addOutput(1);
+    // PG_PV trainer(&structure, "game.out");
+    // trainer.train(1, 50000);
 
     // Snake environment
-
-    // LSTM::Model structure = LSTM::Model(LSTM::Shape(boardx, boardy, 8));
-    // structure.addConv(LSTM::Shape(6, 6, 7), 3, 3);
-    // structure.addDense(100);
-    // structure.addOutput(numActions);
-    // DQN trainer(structure, "game.out", &buffer);
-    // trainer.train(32, 15, 100000);
 
     LSTM::PVUnit structure;
     structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
@@ -73,7 +48,23 @@ int main(){
     structure.valueBranch->addDense(50);
     structure.valueBranch->addOutput(1);
     PG_PV trainer(&structure, "game.out");
-    trainer.train(1, 100000);
+    trainer.train(1, 20000);
+
+    
+
+
+
+
+    // DQN algorithms
+
+    // Snake
+
+    // LSTM::Model structure = LSTM::Model(LSTM::Shape(boardx, boardy, 8));
+    // structure.addConv(LSTM::Shape(6, 6, 7), 3, 3);
+    // structure.addDense(100);
+    // structure.addOutput(numActions);
+    // DQN trainer(structure, "game.out", &buffer);
+    // trainer.train(32, 15, 100000);
 
     for(int i=0; i<5; i++){
         trainer.rollout(true);

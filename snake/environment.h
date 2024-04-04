@@ -12,7 +12,7 @@ const double outcomeReward = 5;
 const int timeHorizon = 200;
 const double discountFactor = 0.98;
 const int numActions = 4;
-const int numFeatures = boardSize*7;
+const int numFeatures = boardSize*8;
 
 const int dir[4][2] = {{0,1}, {1,0}, {0,-1}, {-1,0}};
 
@@ -83,8 +83,6 @@ const int sym[8][2][3] = {
     {{-1, 0, m},{ 0, 1, 0}}
 };
 
-
-// For Symmetry
 int randomSym();
 Pos transform(Pos p, int symID);
 int symAction(int action, int symID); // transforms action in original environment into equivalent action in mirror environment.
@@ -108,8 +106,9 @@ public:
     string toString();
     vector<int> validActions();
     double makeAction(int action); // returns reward
+    void getFeatures(double* features);
 
-    void getFeatures(double* features, int symID); // transforms to mirror environment
+    void applySym();
 };
 
 #endif
