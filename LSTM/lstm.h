@@ -13,6 +13,7 @@ rsync -r kevindu@login.rc.fas.harvard.edu:./MultiagentSnake/LSTM/net.out LSTM
 
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <vector>
 #include <string>
 #include <stdlib.h>
@@ -344,8 +345,10 @@ public:
     void accumulateGradient(PVUnit* unit);
     void updateParams(double scale, double momentum, double regRate);
 
-    void save(string fileOut);
-    void load(string fileIn);
+    // Saves the network in a single line.
+    string save();
+    // Retrieves network weights from a line.
+    void load(string store);
 
     ~PVUnit(){
         cout << "Deleting PVUnit\n";

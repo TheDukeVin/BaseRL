@@ -12,7 +12,7 @@ const double outcomeReward = 5;
 const int timeHorizon = 200;
 const double discountFactor = 0.98;
 const int numActions = 4;
-const int numFeatures = boardSize*8;
+const int numFeatures = boardSize*7;
 
 const int dir[4][2] = {{0,1}, {1,0}, {0,-1}, {-1,0}};
 

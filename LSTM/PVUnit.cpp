@@ -93,14 +93,25 @@ void PVUnit::updateParams(double scale, double momentum, double regRate){
     }
 }
 
-void PVUnit::save(string fileOut){
+string PVUnit::save(){
+    string s = "";
     for(int i=allBranches.size()-1; i>=0; i--){
-        allBranches[i]->save(fileOut);
+        for(int j=0; j<allBranches[i]->layers.size(); j++){
+            for(int k=0; k<allBranches[i]->layers[j]->params->size; k++){
+                s += to_string(allBranches[i]->layers[j]->params->params[k]) + ' ';
+            }
+        }
     }
+    return s;
 }
 
-void PVUnit::load(string fileIn){
+void PVUnit::load(string store){
+    stringstream sin(store);
     for(int i=allBranches.size()-1; i>=0; i--){
-        allBranches[i]->load(fileIn);
+        for(int j=0; j<allBranches[i]->layers.size(); j++){
+            for(int k=0; k<allBranches[i]->layers[j]->params->size; k++){
+                sin >> allBranches[i]->layers[j]->params->params[k];
+            }
+        }
     }
 }

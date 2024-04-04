@@ -163,11 +163,11 @@ void Environment::getFeatures(double* features){
     features[5*boardSize + snake.tail.index()] = 1;
     features[6*boardSize + apple.index()] = 1;
 
-    for(int i=0; i<boardx; i++){
-        for(int j=0; j<boardy; j++){
-            features[7*boardSize + i*boardy + j] = pow(discountFactor, timeHorizon - timeIndex);
-        }
-    }
+    // for(int i=0; i<boardx; i++){
+    //     for(int j=0; j<boardy; j++){
+    //         features[7*boardSize + i*boardy + j] = pow(discountFactor, timeHorizon - timeIndex);
+    //     }
+    // }
 }
 
 

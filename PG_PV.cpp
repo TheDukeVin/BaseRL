@@ -1,8 +1,9 @@
 
 #include "PG.h"
 
-PG_PV::PG_PV(LSTM::PVUnit* structure_, string gameOutFile_){
+PG_PV::PG_PV(LSTM::PVUnit* structure_, string gameOutFile_, string saveFile_){
     gameOutFile = gameOutFile_;
+    saveFile = saveFile_;
     ofstream gameOut (gameOutFile_);
     gameOut.close();
 
@@ -123,22 +124,19 @@ void PG_PV::accGrad(PGInstance instance){
 void PG_PV::train(int batchSize, int numIter){
     unsigned start_time = time(0);
 
-    ofstream fout("score.out");
-
     double sum = 0;
     double lossCount = 0;
     double winCount = 0;
     double winTime = 0;
 
     int evalPeriod = 1000;
+    int savePeriod = 10000;
     double evalSum = 0;
 
-    string controlLog = "control.out";
-    {
-        ofstream controlOut ("control.out");
-        controlOut.close();
-    }
-    for(int it=0; it<numIter; it++){
+    // Load data
+    int currIter = load();
+    
+    for(int it=currIter; it<numIter; it++){
         for(int i=0; i<batchSize; i++){
             rollout();
             sum += rolloutValue;
@@ -154,11 +152,15 @@ void PG_PV::train(int batchSize, int numIter){
         structure->updateParams(alpha, -1, regRate);
         net->copyParams(structure);
         if(it % evalPeriod == 0){
-            if(it > 0){
-                fout << ',';
-            }
             double avgScore = sum / batchSize / evalPeriod;
-            fout << avgScore;
+            {
+                ofstream scoreOut (scoreLog, ios::app);
+                if(it > 0){
+                    scoreOut << ',';
+                }
+                scoreOut << avgScore;
+            }
+            
             {
                 ofstream controlOut(controlLog, ios::app);
                 controlOut << "Iteration " << it << " Time: " << (time(0) - start_time) << ' ' << avgScore << " Loss: " << (lossCount / evalPeriod) << " Win: " << (winCount / evalPeriod) << " valueNorm: " << valueNorm;
@@ -173,11 +175,50 @@ void PG_PV::train(int batchSize, int numIter){
             winCount = 0;
             winTime = 0;
         }
+        if(it > 0 && it % savePeriod == 0){
+            save(it);
+        }
     }
-    fout << '\n';
+
+    {
+        ofstream scoreOut (scoreLog, ios::app);
+        scoreOut << '\n';
+    }
+
     {
         ofstream controlOut(controlLog, ios::app);
         controlOut << "Evaluation score: " << (evalSum / batchSize / (numIter/2)) << '\n';
         controlOut.close();
     }
+}
+
+void PG_PV::save(int iter){
+    ofstream fout (saveFile);
+    fout << iter << '\n';
+    fout << valueFirstMoment << ' ' << valueSecondMoment << ' ' << valueUpdateCount << '\n';
+    fout << structure->save() << '\n';
+}
+
+int PG_PV::load(){
+    ifstream fin (saveFile);
+    string firstLine;
+    assert(getline(fin, firstLine));
+    int currIter = stoi(firstLine);
+    if(currIter == 0){
+        ofstream controlOut (controlLog);
+        controlOut.close();
+        ofstream scoreOut (scoreLog);
+        scoreOut.close();
+    }
+    else{
+        string valueNormInfo;
+        getline(fin, valueNormInfo);
+        stringstream sin(valueNormInfo);
+        sin >> valueFirstMoment >> valueSecondMoment >> valueUpdateCount;
+        string networkSave;
+        getline(fin, networkSave);
+        structure->load(networkSave);
+        net->copyParams(structure);
+    }
+    return currIter;
 }

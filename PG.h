@@ -58,8 +58,11 @@ public:
     LSTM::PVUnit* net;
 
     string gameOutFile;
+    string saveFile;
+    string controlLog = "control.out";
+    string scoreLog = "score.out";
 
-    PG_PV(LSTM::PVUnit* structure_, string gameOutFile_);
+    PG_PV(LSTM::PVUnit* structure_, string gameOutFile_, string saveFile_);
 
     double rolloutValue;
     double finalValue;
@@ -67,6 +70,9 @@ public:
     void rollout(bool print=false);
     void accGrad(PGInstance instance);
     void train(int batchSize, int numIter);
+
+    void save(int iter);
+    int load();
 };
 
 #endif

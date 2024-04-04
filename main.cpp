@@ -47,8 +47,8 @@ int main(){
     structure.policyBranch->addOutput(numActions);
     structure.valueBranch->addDense(50);
     structure.valueBranch->addOutput(1);
-    PG_PV trainer(&structure, "game.out");
-    trainer.train(1, 20000);
+    PG_PV trainer(&structure, "game.out", "save.out");
+    trainer.train(1, 1000000);
 
     
 
