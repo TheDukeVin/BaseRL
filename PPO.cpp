@@ -35,6 +35,7 @@ PPO::PPO(LSTM::PVUnit* structure_, PPOStore* dataset_, string gameFile_, string 
 void PPO::rollout(bool print){
     Environment env;
     vector<PGInstance> trajectory;
+    double networkValues[timeHorizon+1];
     for(int t=0; t<timeHorizon; t++){
         vector<int> validActions = env.validActions();
 
@@ -57,6 +58,7 @@ void PPO::rollout(bool print){
         instance.reward = env.makeAction(action);
         trajectory.push_back(instance);
 
+        networkValues[t] = net->valueOutput->data[0] * valueNorm;
 
         if(print){
             ofstream gameOut (gameFile, ios::app);
@@ -81,22 +83,38 @@ void PPO::rollout(bool print){
         if(env.endState) break;
     }
 
+    int valueRange = trajectory.size();
+
     // For Snake, we use the Value network to estimate the additional value if we continue the game
     double value = 0;
     if(env.validActions().size() != 0){
+        assert(trajectory.size() == timeHorizon);
         env.getFeatures(net->envInput->data);
         net->forwardPass();
-        value = net->valueOutput->data[0] * valueNorm;
+        networkValues[trajectory.size()] = net->valueOutput->data[0] * valueNorm;
+        value = networkValues[trajectory.size()];
+        valueRange ++;
     }
 
+    double advantage = 0;
     double total_reward = 0;
     for(int t=trajectory.size()-1; t>=0; t--){
+        advantage *= discountFactor*GAEParam;
+        advantage += trajectory[t].reward - networkValues[t];
+        if(t+1 < valueRange){
+            advantage += discountFactor * networkValues[t+1];
+        }
+        trajectory[t].advantage = advantage;
+
         value *= discountFactor;
         value += trajectory[t].reward;
-        total_reward += trajectory[t].reward;
         trajectory[t].value = value;
 
+        // assert(abs(advantage - (value - networkValues[t])) < 1e-10);
+
         dataset->enqueue(trajectory[t]);
+
+        total_reward += trajectory[t].reward;
 
         // Update value moments
         valueUpdateCount ++;
@@ -122,7 +140,7 @@ void PPO::generateDataset(int numRollouts){
 
         sumScore += rolloutValue;
         lossCount += (finalValue < -2);
-        winCount += (finalValue > 2);
+        winCount += rolloutValue > boardSize-2.5;
         if(finalValue > 2){
             winTime += rolloutTime;
         }
@@ -142,7 +160,9 @@ void PPO::accGrad(PGInstance instance){
     computeSoftmaxPolicy(net->policyOutput->data, numActions, validActions, currPolicy);
 
     // Add PPO gradient
-    double advantage = instance.value / valueNorm - net->valueOutput->data[0];
+
+    // instance.advantage = instance.value / valueNorm - net->valueOutput->data[0];
+    double advantage = instance.advantage / valueNorm;
     double policyRatio = currPolicy[instance.action] / instance.policy[instance.action];
     if((advantage > 0 && policyRatio < 1 + clipRange) || (advantage < 0 && policyRatio > 1 - clipRange)){
         for(auto a : validActions){
@@ -187,6 +207,7 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter){
     int evalPeriod = 100;
 
     for(; iterationCount<=numIter; iterationCount++){
+        alpha = startingAlpha * pow(terminalAlpha/startingAlpha, (double) iterationCount/numIter);
         generateDataset(numRollouts);
         for(int j=0; j<numEpochs; j++){
             dataset->shuffleQueue();
@@ -199,7 +220,7 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter){
             ofstream controlOut(controlFile, ios::app);
             controlOut << "Iteration " << iterationCount << " Time: " << (time(0) - start_time) << " Score: " 
                     << (sumScore / numRollouts / evalPeriod) << " Loss: " << (lossCount / numRollouts / evalPeriod) << " Win: " << (winCount / numRollouts / evalPeriod) 
-                    << " valueNorm: " << valueNorm;
+                    << " valueNorm: " << valueNorm << " stepSize: " << alpha;
             if(winCount > 0.5){
                 controlOut << " Win Time: " << (winTime / winCount);
             }

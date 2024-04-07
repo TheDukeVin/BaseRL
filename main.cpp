@@ -76,14 +76,14 @@ int main(){
 
     LSTM::PVUnit structure;
     structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
-    structure.commonBranch->addConv(LSTM::Shape(6, 6, 7), 3, 3);
+    structure.commonBranch->addConv(LSTM::Shape(6, 6, 10), 3, 3);
     structure.initPV();
-    structure.policyBranch->addDense(100);
+    structure.policyBranch->addDense(150);
     structure.policyBranch->addOutput(numActions);
-    structure.valueBranch->addDense(50);
+    structure.valueBranch->addDense(75);
     structure.valueBranch->addOutput(1);
     PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
-    trainer.train(10, 200, 4, 10000);
+    trainer.train(10, 128, 4, 4000);
 
     for(int i=0; i<5; i++){
         trainer.rollout(true);

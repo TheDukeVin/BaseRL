@@ -1,22 +1,39 @@
-Training control Time: 1712374582
-Iteration 100 Time: 68 Score: 5.553 Loss: 0.618 Win: 0 valueNorm: 5
-Iteration 200 Time: 132 Score: 8.706 Loss: 0.697 Win: 0 valueNorm: 5
-Iteration 300 Time: 197 Score: 10.697 Loss: 0.744 Win: 0.001 valueNorm: 5 Win Time: 192
-Iteration 400 Time: 267 Score: 16.548 Loss: 0.539 Win: 0.049 valueNorm: 5 Win Time: 184.755
-Iteration 500 Time: 343 Score: 23.081 Loss: 0.283 Win: 0.152 valueNorm: 5 Win Time: 186.776
-Iteration 600 Time: 421 Score: 26.246 Loss: 0.186 Win: 0.255 valueNorm: 5 Win Time: 184.196
-Iteration 700 Time: 500 Score: 28.745 Loss: 0.141 Win: 0.357 valueNorm: 5 Win Time: 183.465
-Iteration 800 Time: 578 Score: 30.312 Loss: 0.154 Win: 0.487 valueNorm: 5 Win Time: 182.283
-Iteration 900 Time: 656 Score: 30.442 Loss: 0.121 Win: 0.457 valueNorm: 5 Win Time: 183.322
-Iteration 1000 Time: 733 Score: 30.859 Loss: 0.148 Win: 0.52 valueNorm: 5 Win Time: 180.24
-Iteration 1100 Time: 809 Score: 31.004 Loss: 0.157 Win: 0.533 valueNorm: 5 Win Time: 180.345
-Iteration 1200 Time: 885 Score: 31.785 Loss: 0.132 Win: 0.568 valueNorm: 5 Win Time: 180.063
-Iteration 1300 Time: 1575 Score: 32.778 Loss: 0.125 Win: 0.653 valueNorm: 5 Win Time: 177.075
-Iteration 1400 Time: 1649 Score: 32.341 Loss: 0.127 Win: 0.639 valueNorm: 5 Win Time: 178.604
-Iteration 1500 Time: 1725 Score: 32.966 Loss: 0.114 Win: 0.664 valueNorm: 5 Win Time: 177.146
-Iteration 1600 Time: 1799 Score: 33.218 Loss: 0.109 Win: 0.689 valueNorm: 5 Win Time: 177.038
-Iteration 1700 Time: 1875 Score: 33.486 Loss: 0.1 Win: 0.684 valueNorm: 5 Win Time: 177.376
-Iteration 1800 Time: 1951 Score: 33.43 Loss: 0.115 Win: 0.693 valueNorm: 5 Win Time: 177.276
-Iteration 1900 Time: 2027 Score: 34.092 Loss: 0.095 Win: 0.718 valueNorm: 5 Win Time: 176.01
-Iteration 2000 Time: 2101 Score: 34.157 Loss: 0.098 Win: 0.758 valueNorm: 5 Win Time: 175.351
-Evaluation score: 32.9257
+Training control Time: 1712524800
+Iteration 100 Time: 66 Score: 6.366 Loss: 0.644 Win: 0 valueNorm: 7 stepSize: 0.000583745
+Iteration 200 Time: 129 Score: 9.974 Loss: 0.748 Win: 0 valueNorm: 7 stepSize: 0.00056793
+Iteration 300 Time: 201 Score: 18.056 Loss: 0.419 Win: 0.048 valueNorm: 7 stepSize: 0.000552544 Win Time: 0
+Iteration 400 Time: 277 Score: 23.144 Loss: 0.287 Win: 0.169 valueNorm: 7 stepSize: 0.000537575 Win Time: 0
+Iteration 500 Time: 353 Score: 25.678 Loss: 0.204 Win: 0.304 valueNorm: 7 stepSize: 0.000523011 Win Time: 0
+Iteration 600 Time: 429 Score: 26.179 Loss: 0.2 Win: 0.356 valueNorm: 7 stepSize: 0.000508842 Win Time: 0
+Iteration 700 Time: 503 Score: 27.603 Loss: 0.199 Win: 0.466 valueNorm: 7 stepSize: 0.000495057 Win Time: 0
+Iteration 800 Time: 578 Score: 28.823 Loss: 0.15 Win: 0.559 valueNorm: 7 stepSize: 0.000481645 Win Time: 0
+Iteration 900 Time: 653 Score: 28.669 Loss: 0.182 Win: 0.543 valueNorm: 7 stepSize: 0.000468596 Win Time: 0
+Iteration 1000 Time: 728 Score: 29.295 Loss: 0.147 Win: 0.584 valueNorm: 7 stepSize: 0.000455901 Win Time: 0
+Iteration 1100 Time: 801 Score: 29.049 Loss: 0.172 Win: 0.607 valueNorm: 7 stepSize: 0.00044355 Win Time: 0
+Iteration 1200 Time: 874 Score: 28.84 Loss: 0.186 Win: 0.61 valueNorm: 7 stepSize: 0.000431534 Win Time: 0
+Iteration 1300 Time: 947 Score: 29.428 Loss: 0.162 Win: 0.645 valueNorm: 7 stepSize: 0.000419843 Win Time: 0
+Iteration 1400 Time: 1019 Score: 29.402 Loss: 0.169 Win: 0.64 valueNorm: 7 stepSize: 0.000408469 Win Time: 0
+Iteration 1500 Time: 1091 Score: 29.587 Loss: 0.162 Win: 0.667 valueNorm: 7 stepSize: 0.000397403 Win Time: 0
+Iteration 1600 Time: 1163 Score: 29.732 Loss: 0.162 Win: 0.685 valueNorm: 7 stepSize: 0.000386636 Win Time: 0
+Iteration 1700 Time: 1235 Score: 29.327 Loss: 0.182 Win: 0.645 valueNorm: 7 stepSize: 0.000376162 Win Time: 0
+Iteration 1800 Time: 1307 Score: 30.029 Loss: 0.137 Win: 0.701 valueNorm: 7 stepSize: 0.000365971 Win Time: 0
+Iteration 1900 Time: 1379 Score: 30.607 Loss: 0.128 Win: 0.75 valueNorm: 7 stepSize: 0.000356056 Win Time: 0
+Iteration 2000 Time: 1452 Score: 30.582 Loss: 0.126 Win: 0.73 valueNorm: 7 stepSize: 0.00034641 Win Time: 0
+Iteration 2100 Time: 1524 Score: 30.321 Loss: 0.144 Win: 0.721 valueNorm: 7 stepSize: 0.000337025 Win Time: 0
+Iteration 2200 Time: 1597 Score: 30.517 Loss: 0.129 Win: 0.72 valueNorm: 7 stepSize: 0.000327895 Win Time: 0
+Iteration 2300 Time: 1669 Score: 30.628 Loss: 0.134 Win: 0.739 valueNorm: 7 stepSize: 0.000319012 Win Time: 0
+Iteration 2400 Time: 1740 Score: 30.382 Loss: 0.144 Win: 0.752 valueNorm: 7 stepSize: 0.000310369 Win Time: 0
+Iteration 2500 Time: 1811 Score: 30.52 Loss: 0.136 Win: 0.757 valueNorm: 7 stepSize: 0.000301961 Win Time: 0
+Iteration 2600 Time: 1882 Score: 30.311 Loss: 0.153 Win: 0.742 valueNorm: 7 stepSize: 0.00029378 Win Time: 0
+Iteration 2700 Time: 1952 Score: 29.814 Loss: 0.17 Win: 0.725 valueNorm: 7 stepSize: 0.000285821 Win Time: 0
+Iteration 2800 Time: 2024 Score: 30.616 Loss: 0.134 Win: 0.756 valueNorm: 7 stepSize: 0.000278078 Win Time: 0
+Iteration 2900 Time: 2096 Score: 30.821 Loss: 0.131 Win: 0.781 valueNorm: 7 stepSize: 0.000270544 Win Time: 0
+Iteration 3000 Time: 2167 Score: 30.5 Loss: 0.152 Win: 0.743 valueNorm: 7 stepSize: 0.000263215 Win Time: 0
+Iteration 3100 Time: 2238 Score: 30.729 Loss: 0.137 Win: 0.767 valueNorm: 7 stepSize: 0.000256084 Win Time: 0
+Iteration 3200 Time: 2310 Score: 30.838 Loss: 0.126 Win: 0.758 valueNorm: 7 stepSize: 0.000249146 Win Time: 0
+Iteration 3300 Time: 2381 Score: 30.718 Loss: 0.131 Win: 0.768 valueNorm: 7 stepSize: 0.000242396 Win Time: 0
+Iteration 3400 Time: 2451 Score: 30.807 Loss: 0.132 Win: 0.798 valueNorm: 7 stepSize: 0.00023583 Win Time: 0
+Iteration 3500 Time: 2522 Score: 31.064 Loss: 0.11 Win: 0.796 valueNorm: 7 stepSize: 0.000229441 Win Time: 0
+Iteration 3600 Time: 2594 Score: 31.118 Loss: 0.119 Win: 0.794 valueNorm: 7 stepSize: 0.000223225 Win Time: 0
+Iteration 3700 Time: 2666 Score: 30.715 Loss: 0.137 Win: 0.763 valueNorm: 7 stepSize: 0.000217177 Win Time: 0
+Iteration 3800 Time: 2737 Score: 30.992 Loss: 0.122 Win: 0.791 valueNorm: 7 stepSize: 0.000211293 Win Time: 0

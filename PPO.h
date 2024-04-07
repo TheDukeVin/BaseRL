@@ -33,6 +33,7 @@ public:
     int action;
     double reward;
     double value;
+    double advantage;
     double policy[numActions];
 };
 
@@ -48,15 +49,19 @@ public:
 
 class PPO{
 public:
-    const static double constexpr alpha = 3e-04;
+    //Geometric annealing
+    const static double constexpr startingAlpha = 6e-04;
+    const static double constexpr terminalAlpha = 2e-04;
+    double alpha;
+
     const static double constexpr regRate = 0;
     const static double constexpr entropyConstant = 0.01;
     const static double constexpr clipRange = 0.1;
-    const static double constexpr GAEParam = -1;
+    const static double constexpr valueNormOverride = 5; // use if you have a good idea for the value norm.
+    const static double constexpr GAEParam = 0.95;
 
     const static double constexpr valueUpdateRate = 0.1 / BufferSize;
     const static double constexpr valueNormConstant = 2;
-    const static double constexpr valueNormOverride = 5; // use if you have a good idea for the value norm.
 
     LSTM::PVUnit* structure;
     LSTM::PVUnit* net;
