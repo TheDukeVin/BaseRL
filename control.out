@@ -1,23 +1,22 @@
-Iteration 0 Time: 0 0.003 Loss: 0 Win: 0 valueNorm: 1.23655
-Iteration 1000 Time: 20 0.495 Loss: 0.698 Win: 0 valueNorm: 3.26283
-Iteration 2000 Time: 42 1.41 Loss: 0.588 Win: 0 valueNorm: 3.21466
-Iteration 3000 Time: 66 3.113 Loss: 0.404 Win: 0 valueNorm: 3.11354
-Iteration 4000 Time: 92 6.089 Loss: 0.16 Win: 0 valueNorm: 2.89314
-Iteration 5000 Time: 118 8.083 Loss: 0.17 Win: 0 valueNorm: 2.94915
-Iteration 5000 Time: 0 0.009 Loss: 0 Win: 0 valueNorm: 2.94828
-Iteration 6000 Time: 26 9.607 Loss: 0.208 Win: 0 valueNorm: 3.1618
-Iteration 7000 Time: 51 11.71 Loss: 0.31 Win: 0 valueNorm: 3.59772
-Iteration 8000 Time: 76 12.918 Loss: 0.348 Win: 0 valueNorm: 3.89504
-Iteration 9000 Time: 102 14.138 Loss: 0.298 Win: 0.001 valueNorm: 4.02467 Win Time: 182
-Iteration 10000 Time: 127 15.23 Loss: 0.299 Win: 0 valueNorm: 4.08496
-Iteration 11000 Time: 153 16.428 Loss: 0.268 Win: 0.001 valueNorm: 4.16421 Win Time: 159
-Iteration 11000 Time: 0 0.022 Loss: 0 Win: 0 valueNorm: 4.16483
-Iteration 12000 Time: 26 18.117 Loss: 0.218 Win: 0.012 valueNorm: 4.38779 Win Time: 189.917
-Iteration 13000 Time: 51 19.341 Loss: 0.188 Win: 0.028 valueNorm: 4.56005 Win Time: 192.071
-Iteration 14000 Time: 78 22.663 Loss: 0.125 Win: 0.107 valueNorm: 4.89186 Win Time: 188.047
-Iteration 15000 Time: 104 24.415 Loss: 0.073 Win: 0.143 valueNorm: 4.54673 Win Time: 187.72
-Iteration 16000 Time: 131 25.692 Loss: 0.073 Win: 0.184 valueNorm: 4.28754 Win Time: 186.636
-Iteration 17000 Time: 157 26.868 Loss: 0.069 Win: 0.229 valueNorm: 4.10405 Win Time: 187.004
-Iteration 18000 Time: 183 28.04 Loss: 0.071 Win: 0.304 valueNorm: 4.02939 Win Time: 186.523
-Iteration 19000 Time: 209 28.031 Loss: 0.072 Win: 0.291 valueNorm: 3.90416 Win Time: 185.663
-Evaluation score: 22.2118
+Training control Time: 1712374582
+Iteration 100 Time: 68 Score: 5.553 Loss: 0.618 Win: 0 valueNorm: 5
+Iteration 200 Time: 132 Score: 8.706 Loss: 0.697 Win: 0 valueNorm: 5
+Iteration 300 Time: 197 Score: 10.697 Loss: 0.744 Win: 0.001 valueNorm: 5 Win Time: 192
+Iteration 400 Time: 267 Score: 16.548 Loss: 0.539 Win: 0.049 valueNorm: 5 Win Time: 184.755
+Iteration 500 Time: 343 Score: 23.081 Loss: 0.283 Win: 0.152 valueNorm: 5 Win Time: 186.776
+Iteration 600 Time: 421 Score: 26.246 Loss: 0.186 Win: 0.255 valueNorm: 5 Win Time: 184.196
+Iteration 700 Time: 500 Score: 28.745 Loss: 0.141 Win: 0.357 valueNorm: 5 Win Time: 183.465
+Iteration 800 Time: 578 Score: 30.312 Loss: 0.154 Win: 0.487 valueNorm: 5 Win Time: 182.283
+Iteration 900 Time: 656 Score: 30.442 Loss: 0.121 Win: 0.457 valueNorm: 5 Win Time: 183.322
+Iteration 1000 Time: 733 Score: 30.859 Loss: 0.148 Win: 0.52 valueNorm: 5 Win Time: 180.24
+Iteration 1100 Time: 809 Score: 31.004 Loss: 0.157 Win: 0.533 valueNorm: 5 Win Time: 180.345
+Iteration 1200 Time: 885 Score: 31.785 Loss: 0.132 Win: 0.568 valueNorm: 5 Win Time: 180.063
+Iteration 1300 Time: 1575 Score: 32.778 Loss: 0.125 Win: 0.653 valueNorm: 5 Win Time: 177.075
+Iteration 1400 Time: 1649 Score: 32.341 Loss: 0.127 Win: 0.639 valueNorm: 5 Win Time: 178.604
+Iteration 1500 Time: 1725 Score: 32.966 Loss: 0.114 Win: 0.664 valueNorm: 5 Win Time: 177.146
+Iteration 1600 Time: 1799 Score: 33.218 Loss: 0.109 Win: 0.689 valueNorm: 5 Win Time: 177.038
+Iteration 1700 Time: 1875 Score: 33.486 Loss: 0.1 Win: 0.684 valueNorm: 5 Win Time: 177.376
+Iteration 1800 Time: 1951 Score: 33.43 Loss: 0.115 Win: 0.693 valueNorm: 5 Win Time: 177.276
+Iteration 1900 Time: 2027 Score: 34.092 Loss: 0.095 Win: 0.718 valueNorm: 5 Win Time: 176.01
+Iteration 2000 Time: 2101 Score: 34.157 Loss: 0.098 Win: 0.758 valueNorm: 5 Win Time: 175.351
+Evaluation score: 32.9257

@@ -1,0 +1,298 @@
+
+const static double constexpr alpha = 3e-04;
+const static double constexpr regRate = 1e-05;
+const static double constexpr entropyConstant = 0.01;
+const static double constexpr clipRange = 0.2;
+trainer.train(20, 32, 2, 50000);
+
+Training control Time: 1712290450
+Iteration 100 Time: 182 Score: 7.5785 Loss: 0.435 Win: 0 valueNorm: 5
+Iteration 200 Time: 359 Score: 9.9425 Loss: 0.505 Win: 0 valueNorm: 5
+Iteration 300 Time: 533 Score: 10.6255 Loss: 0.5395 Win: 0 valueNorm: 5
+Iteration 400 Time: 708 Score: 11.8865 Loss: 0.5535 Win: 0 valueNorm: 5
+Iteration 500 Time: 883 Score: 13.4415 Loss: 0.573 Win: 0 valueNorm: 5
+Iteration 600 Time: 1061 Score: 15.3265 Loss: 0.542 Win: 0 valueNorm: 5
+Iteration 700 Time: 1241 Score: 17.056 Loss: 0.5445 Win: 0.002 valueNorm: 5 Win Time: 186.5
+Iteration 800 Time: 1427 Score: 20.928 Loss: 0.3415 Win: 0.082 valueNorm: 5 Win Time: 185.829
+Iteration 900 Time: 1618 Score: 24.4745 Loss: 0.1925 Win: 0.2055 valueNorm: 5 Win Time: 185.45
+Iteration 1000 Time: 1805 Score: 24.7015 Loss: 0.1985 Win: 0.2295 valueNorm: 5 Win Time: 185.495
+Iteration 1100 Time: 1993 Score: 25.5855 Loss: 0.189 Win: 0.2615 valueNorm: 5 Win Time: 184.461
+Iteration 1200 Time: 2184 Score: 26.4725 Loss: 0.156 Win: 0.2885 valueNorm: 5 Win Time: 184.276
+Iteration 1300 Time: 2375 Score: 26.7735 Loss: 0.153 Win: 0.3005 valueNorm: 5 Win Time: 183.834
+Iteration 1400 Time: 2565 Score: 26.591 Loss: 0.1665 Win: 0.303 valueNorm: 5 Win Time: 183.988
+Iteration 1500 Time: 2755 Score: 27.223 Loss: 0.153 Win: 0.3295 valueNorm: 5 Win Time: 183.619
+Iteration 1600 Time: 2946 Score: 27.6745 Loss: 0.1435 Win: 0.3475 valueNorm: 5 Win Time: 183.531
+Iteration 1700 Time: 3137 Score: 27.8345 Loss: 0.1325 Win: 0.3555 valueNorm: 5 Win Time: 183.425
+Iteration 1800 Time: 3328 Score: 27.9775 Loss: 0.1295 Win: 0.354 valueNorm: 5 Win Time: 183.846
+Iteration 1900 Time: 3520 Score: 29.0005 Loss: 0.1215 Win: 0.4055 valueNorm: 5 Win Time: 183.02
+Iteration 2000 Time: 3713 Score: 28.4705 Loss: 0.1255 Win: 0.3725 valueNorm: 5 Win Time: 182.835
+
+
+
+
+const static double constexpr alpha = 3e-04;
+const static double constexpr regRate = 1e-05;
+const static double constexpr entropyConstant = 0.01;
+const static double constexpr clipRange = 0.1;
+trainer.train(20, 32, 2, 2000);
+
+Training control Time: 1712353619
+Iteration 100 Time: 78 Score: 6.509 Loss: 0.5285 Win: 0 valueNorm: 5
+Iteration 200 Time: 155 Score: 9.346 Loss: 0.5885 Win: 0 valueNorm: 5
+Iteration 300 Time: 232 Score: 10.3805 Loss: 0.6095 Win: 0 valueNorm: 5
+Iteration 400 Time: 306 Score: 11.4335 Loss: 0.665 Win: 0 valueNorm: 5
+Iteration 500 Time: 382 Score: 13.427 Loss: 0.6225 Win: 0 valueNorm: 5
+Iteration 600 Time: 460 Score: 15.0275 Loss: 0.607 Win: 0.0005 valueNorm: 5 Win Time: 197
+Iteration 700 Time: 540 Score: 16.842 Loss: 0.5445 Win: 0.0065 valueNorm: 5 Win Time: 184.462
+Iteration 800 Time: 625 Score: 21.594 Loss: 0.3485 Win: 0.103 valueNorm: 5 Win Time: 185.621
+Iteration 900 Time: 710 Score: 23.985 Loss: 0.227 Win: 0.1965 valueNorm: 5 Win Time: 185.158
+Iteration 1000 Time: 797 Score: 24.6785 Loss: 0.199 Win: 0.214 valueNorm: 5 Win Time: 184.71
+Iteration 1100 Time: 881 Score: 24.934 Loss: 0.2115 Win: 0.2355 valueNorm: 5 Win Time: 183.777
+Iteration 1200 Time: 968 Score: 26.317 Loss: 0.164 Win: 0.275 valueNorm: 5 Win Time: 184.382
+Iteration 1300 Time: 1055 Score: 26.5565 Loss: 0.1575 Win: 0.2915 valueNorm: 5 Win Time: 183.494
+Iteration 1400 Time: 1142 Score: 26.142 Loss: 0.1635 Win: 0.2625 valueNorm: 5 Win Time: 184.259
+Iteration 1500 Time: 1228 Score: 26.8125 Loss: 0.166 Win: 0.313 valueNorm: 5 Win Time: 184.291
+Iteration 1600 Time: 1314 Score: 27.175 Loss: 0.164 Win: 0.334 valueNorm: 5 Win Time: 183.37
+Iteration 1700 Time: 1401 Score: 27.6765 Loss: 0.1465 Win: 0.344 valueNorm: 5 Win Time: 183.185
+Iteration 1800 Time: 1487 Score: 27.4865 Loss: 0.156 Win: 0.3335 valueNorm: 5 Win Time: 182.834
+Iteration 1900 Time: 1575 Score: 27.8175 Loss: 0.1545 Win: 0.3575 valueNorm: 5 Win Time: 182.587
+Iteration 2000 Time: 1663 Score: 28.1985 Loss: 0.1295 Win: 0.3585 valueNorm: 5 Win Time: 183.861
+
+
+
+
+
+const static double constexpr alpha = 6e-04;
+const static double constexpr regRate = 1e-05;
+const static double constexpr entropyConstant = 0.01;
+const static double constexpr clipRange = 0.1;
+trainer.train(20, 32, 2, 2000);
+
+Training control Time: 1712355753
+Iteration 100 Time: 76 Score: 6.949 Loss: 0.6485 Win: 0 valueNorm: 5
+Iteration 200 Time: 149 Score: 10.0775 Loss: 0.7075 Win: 0 valueNorm: 5
+Iteration 300 Time: 223 Score: 11.8695 Loss: 0.691 Win: 0 valueNorm: 5
+Iteration 400 Time: 301 Score: 15.0965 Loss: 0.586 Win: 0.001 valueNorm: 5 Win Time: 186.5
+Iteration 500 Time: 382 Score: 18.625 Loss: 0.4615 Win: 0.0335 valueNorm: 5 Win Time: 183.955
+Iteration 600 Time: 467 Score: 23.617 Loss: 0.233 Win: 0.166 valueNorm: 5 Win Time: 185.696
+Iteration 700 Time: 553 Score: 24.4105 Loss: 0.1915 Win: 0.193 valueNorm: 5 Win Time: 183.36
+Iteration 800 Time: 641 Score: 25.7725 Loss: 0.159 Win: 0.2435 valueNorm: 5 Win Time: 184.602
+Iteration 900 Time: 727 Score: 25.765 Loss: 0.164 Win: 0.257 valueNorm: 5 Win Time: 184.185
+Iteration 1000 Time: 812 Score: 26.322 Loss: 0.1765 Win: 0.295 valueNorm: 5 Win Time: 184.375
+Iteration 1100 Time: 898 Score: 26.337 Loss: 0.186 Win: 0.2915 valueNorm: 5 Win Time: 182.58
+Iteration 1200 Time: 984 Score: 26.758 Loss: 0.1675 Win: 0.313 valueNorm: 5 Win Time: 183.751
+Iteration 1300 Time: 1070 Score: 26.7645 Loss: 0.185 Win: 0.3155 valueNorm: 5 Win Time: 183.585
+Iteration 1400 Time: 1157 Score: 27.74 Loss: 0.164 Win: 0.363 valueNorm: 5 Win Time: 183.234
+Iteration 1500 Time: 1242 Score: 27.3525 Loss: 0.179 Win: 0.338 valueNorm: 5 Win Time: 183.179
+Iteration 1600 Time: 1329 Score: 28.3825 Loss: 0.163 Win: 0.391 valueNorm: 5 Win Time: 182.919
+Iteration 1700 Time: 1413 Score: 28.089 Loss: 0.192 Win: 0.411 valueNorm: 5 Win Time: 182.392
+Iteration 1800 Time: 1497 Score: 28.607 Loss: 0.181 Win: 0.439 valueNorm: 5 Win Time: 181.509
+Iteration 1900 Time: 1582 Score: 29.166 Loss: 0.171 Win: 0.4565 valueNorm: 5 Win Time: 181.619
+Iteration 2000 Time: 1667 Score: 28.5745 Loss: 0.185 Win: 0.429 valueNorm: 5 Win Time: 181.939
+Evaluation score: 27.7771
+
+
+
+
+
+
+
+const static double constexpr alpha = 6e-04;
+const static double constexpr regRate = 1e-05;
+const static double constexpr entropyConstant = 0.01;
+const static double constexpr clipRange = 0.1;
+trainer.train(20, 64, 2, 2000);
+
+Training control Time: 1712357490
+Iteration 100 Time: 77 Score: 6.8725 Loss: 0.6105 Win: 0 valueNorm: 5
+Iteration 200 Time: 148 Score: 9.4715 Loss: 0.731 Win: 0 valueNorm: 5
+Iteration 300 Time: 221 Score: 11.5395 Loss: 0.692 Win: 0 valueNorm: 5
+Iteration 400 Time: 295 Score: 13.6755 Loss: 0.662 Win: 0.0005 valueNorm: 5 Win Time: 186
+Iteration 500 Time: 374 Score: 17.903 Loss: 0.4845 Win: 0.0355 valueNorm: 5 Win Time: 184.62
+Iteration 600 Time: 456 Score: 22.2735 Loss: 0.2525 Win: 0.14 valueNorm: 5 Win Time: 185.125
+Iteration 700 Time: 539 Score: 24.009 Loss: 0.218 Win: 0.2045 valueNorm: 5 Win Time: 185.002
+Iteration 800 Time: 623 Score: 25.297 Loss: 0.1835 Win: 0.248 valueNorm: 5 Win Time: 185.929
+Iteration 900 Time: 708 Score: 26.0185 Loss: 0.1605 Win: 0.2575 valueNorm: 5 Win Time: 184.928
+Iteration 1000 Time: 792 Score: 25.623 Loss: 0.1885 Win: 0.2665 valueNorm: 5 Win Time: 183.889
+Iteration 1100 Time: 875 Score: 26.9065 Loss: 0.175 Win: 0.328 valueNorm: 5 Win Time: 183.566
+Iteration 1200 Time: 959 Score: 26.3215 Loss: 0.182 Win: 0.2955 valueNorm: 5 Win Time: 183.19
+Iteration 1300 Time: 1042 Score: 27.174 Loss: 0.171 Win: 0.344 valueNorm: 5 Win Time: 183.183
+Iteration 1400 Time: 1128 Score: 28.115 Loss: 0.1345 Win: 0.3585 valueNorm: 5 Win Time: 183.743
+Iteration 1500 Time: 1213 Score: 28.4515 Loss: 0.1365 Win: 0.3835 valueNorm: 5 Win Time: 183.11
+Iteration 1600 Time: 1297 Score: 28.2885 Loss: 0.153 Win: 0.381 valueNorm: 5 Win Time: 183.613
+Iteration 1700 Time: 1381 Score: 28.4135 Loss: 0.148 Win: 0.3855 valueNorm: 5 Win Time: 181.757
+Iteration 1800 Time: 1464 Score: 28.631 Loss: 0.153 Win: 0.4105 valueNorm: 5 Win Time: 182.245
+Iteration 1900 Time: 1550 Score: 28.9155 Loss: 0.126 Win: 0.3945 valueNorm: 5 Win Time: 182.474
+Iteration 2000 Time: 1634 Score: 28.963 Loss: 0.143 Win: 0.4195 valueNorm: 5 Win Time: 182.708
+Evaluation score: 28.018
+
+
+
+
+
+
+const static double constexpr alpha = 1e-03;
+const static double constexpr regRate = 1e-05;
+const static double constexpr entropyConstant = 0.01;
+const static double constexpr clipRange = 0.1;
+trainer.train(20, 128, 2, 2000);
+
+Training control Time: 1712359571
+Iteration 100 Time: 75 Score: 6.4385 Loss: 0.6385 Win: 0 valueNorm: 5
+Iteration 200 Time: 145 Score: 9.81 Loss: 0.724 Win: 0 valueNorm: 5
+Iteration 300 Time: 217 Score: 12.1695 Loss: 0.6885 Win: 0.0005 valueNorm: 5 Win Time: 195
+Iteration 400 Time: 291 Score: 14.4295 Loss: 0.6615 Win: 0.0015 valueNorm: 5 Win Time: 185.667
+Iteration 500 Time: 367 Score: 16.5555 Loss: 0.6085 Win: 0.0035 valueNorm: 5 Win Time: 192.571
+Iteration 600 Time: 448 Score: 20.431 Loss: 0.409 Win: 0.0575 valueNorm: 5 Win Time: 184.009
+Iteration 700 Time: 531 Score: 24.3095 Loss: 0.2195 Win: 0.1985 valueNorm: 5 Win Time: 185.909
+Iteration 800 Time: 613 Score: 24.7395 Loss: 0.203 Win: 0.223 valueNorm: 5 Win Time: 185.011
+Iteration 900 Time: 698 Score: 26.038 Loss: 0.1525 Win: 0.251 valueNorm: 5 Win Time: 184.813
+Iteration 1000 Time: 783 Score: 26.8775 Loss: 0.1365 Win: 0.2925 valueNorm: 5 Win Time: 184.344
+Iteration 1100 Time: 868 Score: 27.2005 Loss: 0.137 Win: 0.3165 valueNorm: 5 Win Time: 184.51
+Iteration 1200 Time: 953 Score: 28.0325 Loss: 0.129 Win: 0.3505 valueNorm: 5 Win Time: 184.26
+Iteration 1300 Time: 1037 Score: 27.794 Loss: 0.1445 Win: 0.357 valueNorm: 5 Win Time: 183.251
+Iteration 1400 Time: 1121 Score: 28.7485 Loss: 0.13 Win: 0.3945 valueNorm: 5 Win Time: 183.376
+Iteration 1500 Time: 1206 Score: 28.453 Loss: 0.1125 Win: 0.371 valueNorm: 5 Win Time: 183.686
+Iteration 1600 Time: 1291 Score: 28.0555 Loss: 0.124 Win: 0.35 valueNorm: 5 Win Time: 183.294
+Iteration 1700 Time: 1376 Score: 28.248 Loss: 0.1245 Win: 0.37 valueNorm: 5 Win Time: 183.246
+Iteration 1800 Time: 1461 Score: 28.549 Loss: 0.1205 Win: 0.3765 valueNorm: 5 Win Time: 184.178
+Iteration 1900 Time: 1547 Score: 29.199 Loss: 0.1065 Win: 0.407 valueNorm: 5 Win Time: 183.13
+Iteration 2000 Time: 1631 Score: 28.9095 Loss: 0.1225 Win: 0.403 valueNorm: 5 Win Time: 182.44
+Evaluation score: 28.319
+
+
+
+
+
+
+
+
+
+const static double constexpr alpha = 3e-04;
+const static double constexpr regRate = 0;
+const static double constexpr entropyConstant = 0.01;
+const static double constexpr clipRange = 0.1;
+trainer.train(10, 32, 2, 2000);
+
+Training control Time: 1712370731
+Iteration 100 Time: 41 Score: 4.771 Loss: 0.517 Win: 0 valueNorm: 5
+Iteration 200 Time: 80 Score: 9.092 Loss: 0.54 Win: 0 valueNorm: 5
+Iteration 300 Time: 120 Score: 10.285 Loss: 0.494 Win: 0 valueNorm: 5
+Iteration 400 Time: 159 Score: 10.812 Loss: 0.572 Win: 0 valueNorm: 5
+Iteration 500 Time: 200 Score: 11.945 Loss: 0.511 Win: 0 valueNorm: 5
+Iteration 600 Time: 241 Score: 12.357 Loss: 0.522 Win: 0 valueNorm: 5
+Iteration 700 Time: 283 Score: 14.176 Loss: 0.446 Win: 0 valueNorm: 5
+Iteration 800 Time: 326 Score: 16.095 Loss: 0.416 Win: 0 valueNorm: 5
+Iteration 900 Time: 369 Score: 18.464 Loss: 0.339 Win: 0.002 valueNorm: 5 Win Time: 188.5
+Iteration 1000 Time: 414 Score: 21.135 Loss: 0.212 Win: 0.048 valueNorm: 5 Win Time: 188.646
+Iteration 1100 Time: 458 Score: 24.313 Loss: 0.162 Win: 0.163 valueNorm: 5 Win Time: 187.393
+Iteration 1200 Time: 502 Score: 25.265 Loss: 0.164 Win: 0.206 valueNorm: 5 Win Time: 185.078
+Iteration 1300 Time: 547 Score: 26.716 Loss: 0.131 Win: 0.269 valueNorm: 5 Win Time: 185.71
+Iteration 1400 Time: 590 Score: 26.964 Loss: 0.181 Win: 0.319 valueNorm: 5 Win Time: 184.395
+Iteration 1500 Time: 633 Score: 28.363 Loss: 0.157 Win: 0.387 valueNorm: 5 Win Time: 184.258
+Iteration 1600 Time: 676 Score: 29.138 Loss: 0.132 Win: 0.418 valueNorm: 5 Win Time: 183.309
+Iteration 1700 Time: 720 Score: 30.086 Loss: 0.117 Win: 0.469 valueNorm: 5 Win Time: 182.48
+Iteration 1800 Time: 762 Score: 30.627 Loss: 0.134 Win: 0.538 valueNorm: 5 Win Time: 180.439
+Iteration 1900 Time: 805 Score: 31.486 Loss: 0.107 Win: 0.563 valueNorm: 5 Win Time: 181.583
+Iteration 2000 Time: 848 Score: 31.506 Loss: 0.119 Win: 0.575 valueNorm: 5 Win Time: 180.292
+Evaluation score: 28.4464
+
+Second run:
+Training control Time: 1712371623
+Iteration 100 Time: 40 Score: 4.984 Loss: 0.491 Win: 0 valueNorm: 5
+Iteration 200 Time: 80 Score: 9.317 Loss: 0.54 Win: 0 valueNorm: 5
+Iteration 300 Time: 119 Score: 10.186 Loss: 0.541 Win: 0 valueNorm: 5
+Iteration 400 Time: 158 Score: 10.739 Loss: 0.593 Win: 0 valueNorm: 5
+Iteration 500 Time: 197 Score: 11.161 Loss: 0.576 Win: 0 valueNorm: 5
+Iteration 600 Time: 238 Score: 12.607 Loss: 0.465 Win: 0 valueNorm: 5
+Iteration 700 Time: 279 Score: 13.564 Loss: 0.455 Win: 0 valueNorm: 5
+Iteration 800 Time: 321 Score: 15.67 Loss: 0.374 Win: 0.001 valueNorm: 5 Win Time: 188
+Iteration 900 Time: 363 Score: 17.437 Loss: 0.308 Win: 0.01 valueNorm: 5 Win Time: 181.9
+Iteration 1000 Time: 407 Score: 21.531 Loss: 0.21 Win: 0.085 valueNorm: 5 Win Time: 189.329
+Iteration 1100 Time: 449 Score: 22.251 Loss: 0.211 Win: 0.133 valueNorm: 5 Win Time: 188.248
+Iteration 1200 Time: 493 Score: 24.354 Loss: 0.168 Win: 0.182 valueNorm: 5 Win Time: 186.758
+Iteration 1300 Time: 537 Score: 24.999 Loss: 0.137 Win: 0.178 valueNorm: 5 Win Time: 188.573
+Iteration 1400 Time: 582 Score: 25.351 Loss: 0.154 Win: 0.209 valueNorm: 5 Win Time: 187.258
+Iteration 1500 Time: 626 Score: 26.043 Loss: 0.125 Win: 0.228 valueNorm: 5 Win Time: 185.75
+Iteration 1600 Time: 670 Score: 26.289 Loss: 0.136 Win: 0.255 valueNorm: 5 Win Time: 186.29
+Iteration 1700 Time: 713 Score: 26.72 Loss: 0.141 Win: 0.28 valueNorm: 5 Win Time: 185.643
+Iteration 1800 Time: 757 Score: 27.543 Loss: 0.13 Win: 0.314 valueNorm: 5 Win Time: 184.271
+Iteration 1900 Time: 801 Score: 27.058 Loss: 0.153 Win: 0.287 valueNorm: 5 Win Time: 184.85
+Iteration 2000 Time: 844 Score: 27.659 Loss: 0.147 Win: 0.336 valueNorm: 5 Win Time: 184.196
+Evaluation score: 25.8267
+
+
+
+
+
+
+
+
+
+
+const static double constexpr alpha = 3e-04;
+const static double constexpr regRate = 0;
+const static double constexpr entropyConstant = 0.01;
+const static double constexpr clipRange = 0.1;
+trainer.train(10, 64, 4, 2000);
+
+Training control Time: 1712372960
+Iteration 100 Time: 71 Score: 5.449 Loss: 0.589 Win: 0 valueNorm: 5
+Iteration 200 Time: 140 Score: 9.086 Loss: 0.613 Win: 0 valueNorm: 5
+Iteration 300 Time: 206 Score: 10.129 Loss: 0.715 Win: 0 valueNorm: 5
+Iteration 400 Time: 270 Score: 10.974 Loss: 0.7 Win: 0.001 valueNorm: 5 Win Time: 196
+Iteration 500 Time: 344 Score: 15.128 Loss: 0.422 Win: 0.011 valueNorm: 5 Win Time: 190.909
+Iteration 600 Time: 421 Score: 20.672 Loss: 0.284 Win: 0.088 valueNorm: 5 Win Time: 188.852
+Iteration 700 Time: 500 Score: 23.253 Loss: 0.236 Win: 0.142 valueNorm: 5 Win Time: 186.683
+Iteration 800 Time: 579 Score: 25.048 Loss: 0.212 Win: 0.208 valueNorm: 5 Win Time: 185.716
+Iteration 900 Time: 657 Score: 27.474 Loss: 0.183 Win: 0.313 valueNorm: 5 Win Time: 182.204
+Iteration 1000 Time: 737 Score: 28.723 Loss: 0.146 Win: 0.377 valueNorm: 5 Win Time: 184.546
+Iteration 1100 Time: 815 Score: 30.013 Loss: 0.13 Win: 0.451 valueNorm: 5 Win Time: 182.095
+Iteration 1200 Time: 893 Score: 29.77 Loss: 0.154 Win: 0.45 valueNorm: 5 Win Time: 181.969
+Iteration 1300 Time: 971 Score: 30.754 Loss: 0.135 Win: 0.51 valueNorm: 5 Win Time: 181.6
+Iteration 1400 Time: 1048 Score: 30.804 Loss: 0.143 Win: 0.522 valueNorm: 5 Win Time: 180.059
+Iteration 1500 Time: 1125 Score: 31.139 Loss: 0.143 Win: 0.546 valueNorm: 5 Win Time: 180.658
+Iteration 1600 Time: 1202 Score: 31.25 Loss: 0.133 Win: 0.547 valueNorm: 5 Win Time: 181.057
+Iteration 1700 Time: 1279 Score: 31.857 Loss: 0.124 Win: 0.587 valueNorm: 5 Win Time: 179.247
+Iteration 1800 Time: 1356 Score: 32.334 Loss: 0.12 Win: 0.623 valueNorm: 5 Win Time: 179.321
+Iteration 1900 Time: 1433 Score: 32.533 Loss: 0.116 Win: 0.633 valueNorm: 5 Win Time: 178.313
+Iteration 2000 Time: 1509 Score: 32.562 Loss: 0.128 Win: 0.638 valueNorm: 5 Win Time: 178.547
+Evaluation score: 31.3016
+
+
+
+
+
+
+
+
+
+
+const static double constexpr alpha = 6e-04;
+const static double constexpr regRate = 0;
+const static double constexpr entropyConstant = 0.01;
+const static double constexpr clipRange = 0.1;
+trainer.train(10, 128, 4, 2000);
+
+Training control Time: 1712374582
+Iteration 100 Time: 68 Score: 5.553 Loss: 0.618 Win: 0 valueNorm: 5
+Iteration 200 Time: 132 Score: 8.706 Loss: 0.697 Win: 0 valueNorm: 5
+Iteration 300 Time: 197 Score: 10.697 Loss: 0.744 Win: 0.001 valueNorm: 5 Win Time: 192
+Iteration 400 Time: 267 Score: 16.548 Loss: 0.539 Win: 0.049 valueNorm: 5 Win Time: 184.755
+Iteration 500 Time: 343 Score: 23.081 Loss: 0.283 Win: 0.152 valueNorm: 5 Win Time: 186.776
+Iteration 600 Time: 421 Score: 26.246 Loss: 0.186 Win: 0.255 valueNorm: 5 Win Time: 184.196
+Iteration 700 Time: 500 Score: 28.745 Loss: 0.141 Win: 0.357 valueNorm: 5 Win Time: 183.465
+Iteration 800 Time: 578 Score: 30.312 Loss: 0.154 Win: 0.487 valueNorm: 5 Win Time: 182.283
+Iteration 900 Time: 656 Score: 30.442 Loss: 0.121 Win: 0.457 valueNorm: 5 Win Time: 183.322
+Iteration 1000 Time: 733 Score: 30.859 Loss: 0.148 Win: 0.52 valueNorm: 5 Win Time: 180.24
+Iteration 1100 Time: 809 Score: 31.004 Loss: 0.157 Win: 0.533 valueNorm: 5 Win Time: 180.345
+Iteration 1200 Time: 885 Score: 31.785 Loss: 0.132 Win: 0.568 valueNorm: 5 Win Time: 180.063
+Iteration 1300 Time: 1575 Score: 32.778 Loss: 0.125 Win: 0.653 valueNorm: 5 Win Time: 177.075
+Iteration 1400 Time: 1649 Score: 32.341 Loss: 0.127 Win: 0.639 valueNorm: 5 Win Time: 178.604
+Iteration 1500 Time: 1725 Score: 32.966 Loss: 0.114 Win: 0.664 valueNorm: 5 Win Time: 177.146
+Iteration 1600 Time: 1799 Score: 33.218 Loss: 0.109 Win: 0.689 valueNorm: 5 Win Time: 177.038
+Iteration 1700 Time: 1875 Score: 33.486 Loss: 0.1 Win: 0.684 valueNorm: 5 Win Time: 177.376
+Iteration 1800 Time: 1951 Score: 33.43 Loss: 0.115 Win: 0.693 valueNorm: 5 Win Time: 177.276
+Iteration 1900 Time: 2027 Score: 34.092 Loss: 0.095 Win: 0.718 valueNorm: 5 Win Time: 176.01
+Iteration 2000 Time: 2101 Score: 34.157 Loss: 0.098 Win: 0.758 valueNorm: 5 Win Time: 175.351
+Evaluation score: 32.9257

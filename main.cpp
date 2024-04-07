@@ -1,9 +1,12 @@
 
 
-#include "PG.h"
+// #include "PG.h"
 // #include "DQN.h"
+#include "PPO.h"
 
 // ReplayBuffer buffer(100000);
+
+PPOStore dataset;
 
 int main(){
     unsigned start_time = time(0);
@@ -39,16 +42,16 @@ int main(){
 
     // Snake environment
 
-    LSTM::PVUnit structure;
-    structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
-    structure.commonBranch->addConv(LSTM::Shape(6, 6, 7), 3, 3);
-    structure.initPV();
-    structure.policyBranch->addDense(100);
-    structure.policyBranch->addOutput(numActions);
-    structure.valueBranch->addDense(50);
-    structure.valueBranch->addOutput(1);
-    PG_PV trainer(&structure, "game.out", "save.out");
-    trainer.train(1, 1000000);
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
+    // structure.commonBranch->addConv(LSTM::Shape(6, 6, 7), 3, 3);
+    // structure.initPV();
+    // structure.policyBranch->addDense(100);
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addDense(50);
+    // structure.valueBranch->addOutput(1);
+    // PG_PV trainer(&structure, "game.out", "save.out");
+    // trainer.train(1, 1000000);
 
     
 
@@ -65,6 +68,22 @@ int main(){
     // structure.addOutput(numActions);
     // DQN trainer(structure, "game.out", &buffer);
     // trainer.train(32, 15, 100000);
+
+
+
+
+    // PPO algorithms
+
+    LSTM::PVUnit structure;
+    structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
+    structure.commonBranch->addConv(LSTM::Shape(6, 6, 7), 3, 3);
+    structure.initPV();
+    structure.policyBranch->addDense(100);
+    structure.policyBranch->addOutput(numActions);
+    structure.valueBranch->addDense(50);
+    structure.valueBranch->addOutput(1);
+    PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
+    trainer.train(10, 200, 4, 10000);
 
     for(int i=0; i<5; i++){
         trainer.rollout(true);

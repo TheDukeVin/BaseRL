@@ -188,28 +188,28 @@ Pos transform(Pos p, int symID){
 }
 
 void Environment::applySym(){
-    int symID = randomSym();
-    int newSnake[boardx][boardy];
-    for(int i=0; i<boardx; i++){
-        for(int j=0; j<boardy; j++){
-            Pos newPos = transform(Pos(i, j), symID);
-            int new_dir;
-            if(0 <= grid[i][j] && grid[i][j] < 4){
-                new_dir = symAction(grid[i][j], symID);
-            }
-            else{
-                new_dir = grid[i][j];
-            }
-            newSnake[newPos.x][newPos.y] = new_dir;
-        }
-    }
-    for(int i=0; i<boardx; i++){
-        for(int j=0; j<boardy; j++){
-            grid[i][j] = newSnake[i][j];
-        }
-    }
+    // int symID = randomSym();
+    // int newSnake[boardx][boardy];
+    // for(int i=0; i<boardx; i++){
+    //     for(int j=0; j<boardy; j++){
+    //         Pos newPos = transform(Pos(i, j), symID);
+    //         int new_dir;
+    //         if(0 <= grid[i][j] && grid[i][j] < 4){
+    //             new_dir = symAction(grid[i][j], symID);
+    //         }
+    //         else{
+    //             new_dir = grid[i][j];
+    //         }
+    //         newSnake[newPos.x][newPos.y] = new_dir;
+    //     }
+    // }
+    // for(int i=0; i<boardx; i++){
+    //     for(int j=0; j<boardy; j++){
+    //         grid[i][j] = newSnake[i][j];
+    //     }
+    // }
 
-    snake.head = transform(snake.head, symID);
-    snake.tail = transform(snake.tail, symID);
-    apple = transform(apple, symID);
+    // snake.head = transform(snake.head, symID);
+    // snake.tail = transform(snake.tail, symID);
+    // apple = transform(apple, symID);
 }
