@@ -11,10 +11,8 @@ consec_avg <- function(lst, N){
     count = 0
     for(j in 1:N){
       num = as.numeric(lst[i*N + j])
-      if(num >= 0){
-        x = x + num
-        count = count + 1
-      }
+      x = x + num
+      count = count + 1
     }
     avgs[i+1] = x / count
   }

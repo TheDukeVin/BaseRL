@@ -74,16 +74,28 @@ int main(){
 
     // PPO algorithms
 
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
+    // structure.commonBranch->addConv(LSTM::Shape(6, 6, 7), 3, 3);
+    // structure.initPV();
+    // structure.policyBranch->addDense(100);
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addDense(50);
+    // structure.valueBranch->addOutput(1);
+    // PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
+    // trainer.train(10, 64, 1, 4000);
+
     LSTM::PVUnit structure;
     structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
-    structure.commonBranch->addConv(LSTM::Shape(6, 6, 10), 3, 3);
+    structure.commonBranch->addConv(LSTM::Shape(10, 10, 10), 3, 3);
+    structure.commonBranch->addPool(LSTM::Shape(5, 5, 10));
     structure.initPV();
     structure.policyBranch->addDense(150);
     structure.policyBranch->addOutput(numActions);
-    structure.valueBranch->addDense(75);
+    structure.valueBranch->addDense(100);
     structure.valueBranch->addOutput(1);
     PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
-    trainer.train(10, 128, 4, 4000);
+    trainer.train(2, 64, 1, 100);
 
     for(int i=0; i<5; i++){
         trainer.rollout(true);

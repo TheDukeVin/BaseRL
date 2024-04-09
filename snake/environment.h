@@ -4,13 +4,13 @@
 #ifndef environment_h
 #define environment_h
 
-const int boardx = 6;
-const int boardy = 6;
+const int boardx = 10;
+const int boardy = 10;
 const int boardSize = boardx*boardy;
 const double outcomeReward = 5;
 
-const int timeHorizon = 200;
-const double discountFactor = 0.98;
+const int timeHorizon = 1200;
+const double discountFactor = 0.99;
 const int numActions = 4;
 const int numFeatures = boardSize*7;
 
@@ -106,7 +106,7 @@ public:
     string toString();
     vector<int> validActions();
     double makeAction(int action); // returns reward
-    void getFeatures(double* features);
+    void getFeatures(double* features, int symID);
 
     void applySym();
 };

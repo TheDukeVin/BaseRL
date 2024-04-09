@@ -6,15 +6,19 @@ void PPOStore::empty(){
 }
 
 void PPOStore::enqueue(PGInstance instance){
-    assert(index < BufferSize);
-    queue[index] = instance;
-    index ++;
+    if(index < BufferSize){
+        queue[index] = instance;
+        index ++;
+    }
 }
 
 void PPOStore::shuffleQueue(){
     shuffle(queue, queue + index, default_random_engine{dev()});
 }
 
+int PPOStore::getSize(){
+    return index;
+}
 
 
 PPO::PPO(LSTM::PVUnit* structure_, PPOStore* dataset_, string gameFile_, string saveFile_, string controlFile_, string scoreFile_){
@@ -25,11 +29,7 @@ PPO::PPO(LSTM::PVUnit* structure_, PPOStore* dataset_, string gameFile_, string 
 
     dataset = dataset_;
 
-    structure = new LSTM::PVUnit(structure_, NULL);
-    structure->randomize(0.1);
-    structure->resetGradient();
-    net = new LSTM::PVUnit(structure, NULL);
-    net->copyParams(structure);
+    symNet = SymUnit(structure_);
 }
 
 void PPO::rollout(bool print){
@@ -39,12 +39,11 @@ void PPO::rollout(bool print){
     for(int t=0; t<timeHorizon; t++){
         vector<int> validActions = env.validActions();
 
-        env.getFeatures(net->envInput->data);
-        net->forwardPass();
+        symNet.forwardPass(env, randomSym());
 
         // Compute policy
         double policy[numActions];
-        computeSoftmaxPolicy(net->policyOutput->data, numActions, validActions, policy);
+        computeSoftmaxPolicy(symNet.policyOutput->data, numActions, validActions, policy);
 
         // Sample action
         int action = sampleDist(policy, numActions);
@@ -58,7 +57,7 @@ void PPO::rollout(bool print){
         instance.reward = env.makeAction(action);
         trajectory.push_back(instance);
 
-        networkValues[t] = net->valueOutput->data[0] * valueNorm;
+        networkValues[t] = symNet.valueOutput->data[0] * valueNorm;
 
         if(print){
             ofstream gameOut (gameFile, ios::app);
@@ -77,7 +76,7 @@ void PPO::rollout(bool print){
                 }
             }
             gameOut << '\n';
-            gameOut << "Value: " << net->valueOutput->data[0] * valueNorm << '\n';
+            gameOut << "Value: " << symNet.valueOutput->data[0] * valueNorm << '\n';
             gameOut << "Action: " << action << " Reward: " << trajectory[t].reward << "\n\n";
         }
         if(env.endState) break;
@@ -89,9 +88,8 @@ void PPO::rollout(bool print){
     double value = 0;
     if(env.validActions().size() != 0){
         assert(trajectory.size() == timeHorizon);
-        env.getFeatures(net->envInput->data);
-        net->forwardPass();
-        networkValues[trajectory.size()] = net->valueOutput->data[0] * valueNorm;
+        symNet.forwardPass(env, randomSym());
+        networkValues[trajectory.size()] = symNet.valueOutput->data[0] * valueNorm;
         value = networkValues[trajectory.size()];
         valueRange ++;
     }
@@ -133,9 +131,9 @@ void PPO::rollout(bool print){
     rolloutTime = trajectory.size();
 }
 
-void PPO::generateDataset(int numRollouts){
+void PPO::generateDataset(int numRollouts, int batchSize){
     dataset->empty();
-    for(int i=0; i<numRollouts; i++){
+    for(int i=0; i<numRollouts || dataset->getSize() < batchSize; i++){
         rollout();
 
         sumScore += rolloutValue;
@@ -148,25 +146,22 @@ void PPO::generateDataset(int numRollouts){
 }
 
 void PPO::accGrad(PGInstance instance){
-    instance.env.getFeatures(net->envInput->data);
-    net->forwardPass();
-    net->resetGradient();
+    symNet.forwardPass(instance.env, randomSym());
     for(int i=0; i<numActions; i++){
-        net->policyOutput->gradient[i] = 0;
+        symNet.policyOutput->gradient[i] = 0;
     }
 
     vector<int> validActions = instance.env.validActions();
     double currPolicy[numActions];
-    computeSoftmaxPolicy(net->policyOutput->data, numActions, validActions, currPolicy);
+    computeSoftmaxPolicy(symNet.policyOutput->data, numActions, validActions, currPolicy);
 
     // Add PPO gradient
 
-    // instance.advantage = instance.value / valueNorm - net->valueOutput->data[0];
     double advantage = instance.advantage / valueNorm;
     double policyRatio = currPolicy[instance.action] / instance.policy[instance.action];
     if((advantage > 0 && policyRatio < 1 + clipRange) || (advantage < 0 && policyRatio > 1 - clipRange)){
         for(auto a : validActions){
-            net->policyOutput->gradient[a] = (instance.policy[a] - (a == instance.action)) * advantage * policyRatio;
+            symNet.policyOutput->gradient[a] = (instance.policy[a] - (a == instance.action)) * advantage * policyRatio;
         }
     }
 
@@ -176,23 +171,20 @@ void PPO::accGrad(PGInstance instance){
         entropy += instance.policy[a] * log(instance.policy[a]);
     }
     for(auto a : validActions){
-        net->policyOutput->gradient[a] += instance.policy[a] * (log(instance.policy[a]) - entropy) * entropyConstant;
+        symNet.policyOutput->gradient[a] += instance.policy[a] * (log(instance.policy[a]) - entropy) * entropyConstant;
     }
 
     // Add Value gradient
-    net->valueOutput->gradient[0] = net->valueOutput->data[0] - instance.value / valueNorm;
+    symNet.valueOutput->gradient[0] = symNet.valueOutput->data[0] - instance.value / valueNorm;
 
-    net->backwardPass();
-    structure->accumulateGradient(net);
+    symNet.backwardPass();
 }
 
 void PPO::trainEpoch(int batchSize){
-    structure->resetGradient();
     for(int i=0; i<dataset->index; i++){
         accGrad(dataset->queue[i]);
         if(i % batchSize == 0 && i > 0){
-            structure->updateParams(alpha, -1, regRate);
-            net->copyParams(structure);
+            symNet.update(alpha, regRate);
         }
     }
 }
@@ -204,11 +196,16 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter){
     double evalSum = 0;
 
     int savePeriod = 100;
-    int evalPeriod = 100;
+    int evalPeriod = 10;
+
+    {
+        ofstream fout(scoreFile, ios::app);
+        fout << 0;
+    }
 
     for(; iterationCount<=numIter; iterationCount++){
         alpha = startingAlpha * pow(terminalAlpha/startingAlpha, (double) iterationCount/numIter);
-        generateDataset(numRollouts);
+        generateDataset(numRollouts, batchSize);
         for(int j=0; j<numEpochs; j++){
             dataset->shuffleQueue();
             trainEpoch(batchSize);
@@ -228,8 +225,17 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter){
             if(iterationCount > numIter/2){
                 evalSum += sumScore / numRollouts;
             }
+            {
+                ofstream fout(scoreFile, ios::app);
+                fout << ',' << (sumScore / numRollouts / evalPeriod);
+            }
             sumScore = lossCount = winCount = winTime = 0;
         }
+    }
+
+    {
+        ofstream fout(scoreFile, ios::app);
+        fout << '\n';
     }
 
     {
@@ -242,7 +248,7 @@ void PPO::save(){
     ofstream fout (saveFile);
     fout << iterationCount << '\n';
     fout << start_time << ' ' << valueFirstMoment << ' ' << valueSecondMoment << ' ' << valueUpdateCount << '\n';
-    fout << structure->save() << '\n';
+    fout << symNet.structure->save() << '\n';
 }
 
 void PPO::load(){
@@ -277,6 +283,6 @@ void PPO::load(){
     sin >> start_time >> valueFirstMoment >> valueSecondMoment >> valueUpdateCount;
     string networkSave;
     getline(fin, networkSave);
-    structure->load(networkSave);
-    net->copyParams(structure);
+    symNet.structure->load(networkSave);
+    symNet.net->copyParams(symNet.structure);
 }

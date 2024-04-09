@@ -1,8 +1,8 @@
 
 /*
-g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PPO.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
+g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PPO.cpp symunit.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
 
-g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PPO.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && sbatch PG.slurm
+g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PPO.cpp symunit.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && sbatch PG.slurm
 
 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all -fsanitize=float-divide-by-zero -fsanitize=float-cast-overflow -fno-sanitize=null -fno-sanitize=alignment
 
@@ -45,13 +45,33 @@ public:
     void empty();
     void enqueue(PGInstance instance);
     void shuffleQueue();
+    int getSize();
+};
+
+class SymUnit{
+private:
+
+    int symID;
+
+public:
+
+    LSTM::PVUnit* structure;
+    LSTM::PVUnit* net;
+    LSTM::Data* valueOutput;
+    LSTM::Data* policyOutput;
+
+    SymUnit(){}
+    SymUnit(LSTM::PVUnit* structure_);
+    void forwardPass(Environment env, int symID_);
+    void backwardPass();
+    void update(double alpha, double regRate);
 };
 
 class PPO{
 public:
     //Geometric annealing
-    const static double constexpr startingAlpha = 6e-04;
-    const static double constexpr terminalAlpha = 2e-04;
+    const static double constexpr startingAlpha = 1e-03;
+    const static double constexpr terminalAlpha = 1e-03;
     double alpha;
 
     const static double constexpr regRate = 0;
@@ -63,8 +83,10 @@ public:
     const static double constexpr valueUpdateRate = 0.1 / BufferSize;
     const static double constexpr valueNormConstant = 2;
 
-    LSTM::PVUnit* structure;
-    LSTM::PVUnit* net;
+    // LSTM::PVUnit* structure;
+    // LSTM::PVUnit* net;
+
+    SymUnit symNet;
 
     PPOStore* dataset;
 
@@ -95,7 +117,8 @@ public:
     double winTime = 0;
 
     // generates new rollouts. logs performance in controlFile.
-    void generateDataset(int numRollouts);
+    // ensures dataset size is greater than batchSize.
+    void generateDataset(int numRollouts, int batchSize);
 
     void accGrad(PGInstance instance);
     void trainEpoch(int batchSize);
