@@ -1,14 +1,12 @@
 
 /*
-g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PG.cpp PG_PV.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
-
-g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PG.cpp PG_PV.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && sbatch PG.slurm
+g++ -O2 -std=c++11 common.cpp token/environment.cpp main.cpp PG_LSTM.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
 
 rsync -r PG_test kevindu@login.rc.fas.harvard.edu:./MultiagentSnake --exclude .git/
 rsync -r PG_test kevindu@login.rc.fas.harvard.edu:./MultiagentSnake/Dup --exclude .git/
 */
 
-#include "snake/environment.h"
+#include "token/environment.h"
 #include "network_policy/policy.h"
 
 #ifndef PG_h
@@ -73,6 +71,36 @@ public:
 
     void save(int iter);
     int load();
+};
+
+class PG_LSTM{
+public:
+    const static double constexpr alpha = 0.001;
+    const static double constexpr regRate = 0;
+    const static double constexpr entropyConstant = 0.01;
+
+    double valueNorm = 1;
+
+    LSTM::PVUnit* structure;
+    LSTM::PVUnit* net[timeHorizon];
+
+    string gameFile;
+    string saveFile;
+    string controlFile;
+    string scoreFile;
+
+    PG_LSTM(LSTM::PVUnit* structure_, string gameFile_, string saveFile_, string controlFile_, string scoreFile_);
+
+    long iterationCount;
+    long start_time;
+
+    double rolloutValue;
+    void rollout(bool print=false);
+    void accGrad(PGInstance instance, int index);
+    void train(int batchSize, int numIter, int evalPeriod, int savePeriod);
+
+    void save();
+    void load();
 };
 
 #endif

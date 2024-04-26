@@ -36,7 +36,7 @@ public:
         return Pos(x + dir[d][0], y + dir[d][1]);
     }
 
-    int index(){
+    int index() const{
         return x*boardy + y;
     }
 
@@ -46,6 +46,13 @@ public:
 
     friend bool operator != (const Pos& p, const Pos& q){
         return (p.x != q.x) || (p.y != q.y);
+    }
+};
+
+class PosHash{
+public:
+    size_t operator()(const Pos& p) const {
+        return p.index();
     }
 };
 
@@ -108,7 +115,16 @@ public:
     double makeAction(int action); // returns reward
     void getFeatures(double* features, int symID);
 
-    void applySym();
+    double potential();
+};
+
+class SnakeDFS{
+public:
+    Environment env;
+    unordered_set<Pos, PosHash> visited;
+
+    SnakeDFS(Environment env_);
+    void DFS(Pos p);
 };
 
 #endif

@@ -1,15 +1,29 @@
 
 
-// #include "PG.h"
+#include "PG.h"
 // #include "DQN.h"
-#include "PPO.h"
+// #include "PPO.h"
 
 // ReplayBuffer buffer(100000);
 
-PPOStore dataset;
+// PPOStore dataset;
 
 int main(){
     unsigned start_time = time(0);
+
+    // Environment env;
+    // env.grid[6][0] = 3;
+    // env.grid[6][1] = 2;
+    // env.grid[6][2] = 2;
+    // env.grid[5][2] = 1;
+    // env.grid[4][2] = 1;
+    // env.grid[3][2] = 1;
+    // env.grid[3][1] = 0;
+    // env.grid[3][0] = 0;
+    // env.grid[2][0] = 1;
+    // env.snake.tail = Pos(2, 0);
+    // cout << env.toString() << '\n';
+    // cout << env.potential() << '\n';
 
     // PG algorithms
 
@@ -85,17 +99,50 @@ int main(){
     // PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
     // trainer.train(10, 64, 1, 4000);
 
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
+    // structure.commonBranch->addConv(LSTM::Shape(10, 10, 10), 3, 3);
+    // structure.commonBranch->addPool(LSTM::Shape(5, 5, 10));
+    // structure.initPV();
+    // structure.policyBranch->addDense(150);
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addDense(100);
+    // structure.valueBranch->addOutput(1);
+    // PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
+    // trainer.train(4, 256, 1, 5000, 100, 100);
+
+
+
+
+
+
+    // LSTM PG
+
+    // Repeat environment
+
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(numFeatures));
+    // structure.commonBranch->addLSTM(8);
+    // structure.initPV();
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addOutput(1);
+    // PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
+    // trainer.train(10, 100000, 10000, 10000);
+
+
+
+    // Token environment
+
     LSTM::PVUnit structure;
-    structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
-    structure.commonBranch->addConv(LSTM::Shape(10, 10, 10), 3, 3);
-    structure.commonBranch->addPool(LSTM::Shape(5, 5, 10));
+    structure.commonBranch = new LSTM::Model(LSTM::Shape(numFeatures));
+    structure.commonBranch->addLSTM(8);
     structure.initPV();
-    structure.policyBranch->addDense(150);
     structure.policyBranch->addOutput(numActions);
-    structure.valueBranch->addDense(100);
     structure.valueBranch->addOutput(1);
-    PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
-    trainer.train(2, 64, 1, 100);
+    PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
+    trainer.train(1, 50000, 1000, 1000);
+
+
 
     for(int i=0; i<5; i++){
         trainer.rollout(true);

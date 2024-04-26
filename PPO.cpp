@@ -76,7 +76,8 @@ void PPO::rollout(bool print){
                 }
             }
             gameOut << '\n';
-            gameOut << "Value: " << symNet.valueOutput->data[0] * valueNorm << '\n';
+            gameOut << "Network Value: " << symNet.valueOutput->data[0] * valueNorm << '\n';
+            gameOut << "Potential: " << trajectory[t].env.potential() << '\n';
             gameOut << "Action: " << action << " Reward: " << trajectory[t].reward << "\n\n";
         }
         if(env.endState) break;
@@ -84,11 +85,14 @@ void PPO::rollout(bool print){
 
     int valueRange = trajectory.size();
 
+    // end value is negative potential function, in accordance with reward shaping.
+    double value = -env.potential();
+
     // For Snake, we use the Value network to estimate the additional value if we continue the game
-    double value = 0;
     if(env.validActions().size() != 0){
         assert(trajectory.size() == timeHorizon);
         symNet.forwardPass(env, randomSym());
+
         networkValues[trajectory.size()] = symNet.valueOutput->data[0] * valueNorm;
         value = networkValues[trajectory.size()];
         valueRange ++;
@@ -126,22 +130,22 @@ void PPO::rollout(bool print){
             valueNorm = sqrt(valueSecondMoment/weight - pow(valueFirstMoment/weight, 2)) * valueNormConstant;
         }
     }
-    rolloutValue = total_reward;
-    finalValue = trajectory[trajectory.size()-1].reward;
     rolloutTime = trajectory.size();
+
+    sumScore += total_reward;
+    sumSize += env.snake.size;
+    lossCount += (env.validActions().size() == 0 && env.snake.size < boardSize);
+    if(env.snake.size == boardSize){
+        winCount ++;
+        winTime += rolloutTime;
+    }
+    gameCount ++;
 }
 
 void PPO::generateDataset(int numRollouts, int batchSize){
     dataset->empty();
     for(int i=0; i<numRollouts || dataset->getSize() < batchSize; i++){
         rollout();
-
-        sumScore += rolloutValue;
-        lossCount += (finalValue < -2);
-        winCount += rolloutValue > boardSize-2.5;
-        if(finalValue > 2){
-            winTime += rolloutTime;
-        }
     }
 }
 
@@ -189,14 +193,11 @@ void PPO::trainEpoch(int batchSize){
     }
 }
 
-void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter){
+void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod){
     assert(BufferSize >= numRollouts * (timeHorizon + 1));
     load();
 
     double evalSum = 0;
-
-    int savePeriod = 100;
-    int evalPeriod = 10;
 
     {
         ofstream fout(scoreFile, ios::app);
@@ -216,7 +217,7 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter){
         if(iterationCount > 0 && iterationCount % evalPeriod == 0){
             ofstream controlOut(controlFile, ios::app);
             controlOut << "Iteration " << iterationCount << " Time: " << (time(0) - start_time) << " Score: " 
-                    << (sumScore / numRollouts / evalPeriod) << " Loss: " << (lossCount / numRollouts / evalPeriod) << " Win: " << (winCount / numRollouts / evalPeriod) 
+                    << (sumScore / gameCount) << " Size: " << (sumSize / gameCount) << " Loss: " << (lossCount / gameCount) << " Win: " << (winCount / gameCount) 
                     << " valueNorm: " << valueNorm << " stepSize: " << alpha;
             if(winCount > 0.5){
                 controlOut << " Win Time: " << (winTime / winCount);
@@ -227,9 +228,9 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter){
             }
             {
                 ofstream fout(scoreFile, ios::app);
-                fout << ',' << (sumScore / numRollouts / evalPeriod);
+                fout << ',' << (sumScore / gameCount);
             }
-            sumScore = lossCount = winCount = winTime = 0;
+            gameCount = sumSize = sumScore = lossCount = winCount = winTime = 0;
         }
     }
 

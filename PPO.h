@@ -15,6 +15,8 @@ Generalized Advantage Estimation:
 https://arxiv.org/pdf/1506.02438.pdf
 PPO paper:
 https://arxiv.org/pdf/1707.06347.pdf
+Reward shaping:
+https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgHaradaRussell-shaping-ICML1999.pdf
 
 */
 
@@ -70,8 +72,8 @@ public:
 class PPO{
 public:
     //Geometric annealing
-    const static double constexpr startingAlpha = 1e-03;
-    const static double constexpr terminalAlpha = 1e-03;
+    const static double constexpr startingAlpha = 3e-04;
+    const static double constexpr terminalAlpha = 3e-04;
     double alpha;
 
     const static double constexpr regRate = 0;
@@ -111,7 +113,9 @@ public:
     void rollout(bool print=false);
 
     // Evaluation benchmarks
+    int gameCount = 0;
     double sumScore = 0;
+    double sumSize = 0;
     double lossCount = 0;
     double winCount = 0;
     double winTime = 0;
@@ -122,7 +126,7 @@ public:
 
     void accGrad(PGInstance instance);
     void trainEpoch(int batchSize);
-    void train(int numRollouts, int batchSize, int numEpochs, int numIter);
+    void train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod);
 
     void save();
     void load();

@@ -198,7 +198,6 @@ public:
 class Layer{
 protected:
     Data* addData(int size);
-    void resetGradient();
     
 public:
     Params* params;
@@ -216,6 +215,8 @@ public:
     void forwardPass(); // resets gradient of all data
     void backwardPass();
 
+    void resetGradient();
+    
     void copyAct(Layer* l);
 
     virtual void vf(){};

@@ -39,7 +39,6 @@ Environment::Environment(){
     setGridValue(snake.tail, 0);
 
     randomizeApple();
-    // applySym();
 }
 
 string Environment::toString(){
@@ -108,6 +107,7 @@ vector<int> Environment::validActions(){
 
 double Environment::makeAction(int action){
     double reward = 0;
+    double prevPotential = potential();
 
     Pos newHead = snake.head.shift(action);
     setGridValue(snake.head, action);
@@ -141,7 +141,9 @@ double Environment::makeAction(int action){
         endState = true;
     }
 
-    // applySym();
+    // reward shaping
+
+    reward += discountFactor * potential() - prevPotential;
 
     return reward;
 }
@@ -199,29 +201,36 @@ Pos transform(Pos p, int symID){
     return Pos(x, y);
 }
 
-void Environment::applySym(){
-    // int symID = randomSym();
-    // int newSnake[boardx][boardy];
-    // for(int i=0; i<boardx; i++){
-    //     for(int j=0; j<boardy; j++){
-    //         Pos newPos = transform(Pos(i, j), symID);
-    //         int new_dir;
-    //         if(0 <= grid[i][j] && grid[i][j] < 4){
-    //             new_dir = symAction(grid[i][j], symID);
-    //         }
-    //         else{
-    //             new_dir = grid[i][j];
-    //         }
-    //         newSnake[newPos.x][newPos.y] = new_dir;
-    //     }
-    // }
-    // for(int i=0; i<boardx; i++){
-    //     for(int j=0; j<boardy; j++){
-    //         grid[i][j] = newSnake[i][j];
-    //     }
-    // }
+SnakeDFS::SnakeDFS(Environment env_){
+    env = env_;
+}
 
-    // snake.head = transform(snake.head, symID);
-    // snake.tail = transform(snake.tail, symID);
-    // apple = transform(apple, symID);
+void SnakeDFS::DFS(Pos p){
+    visited.insert(p);
+    for(int i=0; i<4; i++){
+        Pos neigh = p.shift(i);
+        if(neigh.inBounds() && env.getGridValue(neigh) == -1 && visited.find(neigh) == visited.end()){
+            DFS(neigh);
+        }
+    }
+}
+
+double Environment::potential(){
+    double distToApple = abs(snake.head.x - apple.x) + abs(snake.head.y - apple.y);
+    SnakeDFS dfs(*this);
+    dfs.DFS(snake.head);
+    bool path = false;
+    for(int i=0; i<4; i++){
+        Pos neigh = snake.tail.shift(i);
+        if(dfs.visited.find(neigh) != dfs.visited.end()){
+            path = true;
+        }
+    }
+    if(validActions().size() == 0){
+        path = snake.size == boardSize;
+    }
+    return -(0.5/(boardx + boardy)) * distToApple + path*2;
+    // return -0.05 * distToApple;
+    // return path*2;
+    // return 0;
 }

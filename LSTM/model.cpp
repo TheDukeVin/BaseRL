@@ -152,7 +152,9 @@ void Model::backwardPass(){
 
 void Model::resetGradient(){
     for(int i=0; i<layers.size(); i++){
-        layers[i]->params->resetGradient();
+        // BUG
+        // layers[i]->params->resetGradient();
+        layers[i]->resetGradient();
     }
 }
 

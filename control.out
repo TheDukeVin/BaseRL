@@ -1,12 +1,52 @@
-Training control Time: 1712687807
-Iteration 10 Time: 4 Score: -0.95 Loss: 1.05 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 20 Time: 8 Score: -0.45 Loss: 0.9 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 30 Time: 11 Score: -0.05 Loss: 0.9 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 40 Time: 15 Score: 0.45 Loss: 0.9 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 50 Time: 21 Score: 3 Loss: 0.8 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 60 Time: 25 Score: 1.7 Loss: 0.8 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 70 Time: 30 Score: 3.8 Loss: 0.75 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 80 Time: 34 Score: 3 Loss: 0.8 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 90 Time: 39 Score: 4 Loss: 0.8 Win: 0 valueNorm: 5 stepSize: 0.001
-Iteration 100 Time: 42 Score: 4.6 Loss: 0.85 Win: 0 valueNorm: 5 stepSize: 0.001
-Evaluation score: 3.42
+Training control Time: 1714115201
+Iteration 0 Time: 0 0
+Iteration 1000 Time: 0 -0.116
+Iteration 2000 Time: 0 2.07
+Iteration 3000 Time: 0 4.514
+Iteration 4000 Time: 0 7.11
+Iteration 5000 Time: 1 9.132
+Iteration 6000 Time: 1 10.233
+Iteration 7000 Time: 1 11.082
+Iteration 8000 Time: 1 11.836
+Iteration 9000 Time: 2 12.343
+Iteration 10000 Time: 2 12.693
+Iteration 11000 Time: 2 13.214
+Iteration 12000 Time: 2 13.362
+Iteration 13000 Time: 3 13.61
+Iteration 14000 Time: 3 13.828
+Iteration 15000 Time: 3 13.681
+Iteration 16000 Time: 3 13.929
+Iteration 17000 Time: 4 13.828
+Iteration 18000 Time: 4 14.291
+Iteration 19000 Time: 4 14.208
+Iteration 20000 Time: 4 14.159
+Iteration 21000 Time: 5 14.417
+Iteration 22000 Time: 5 14.126
+Iteration 23000 Time: 5 14.337
+Iteration 24000 Time: 5 14.435
+Iteration 25000 Time: 6 14.265
+Iteration 26000 Time: 6 14.495
+Iteration 27000 Time: 6 14.425
+Iteration 28000 Time: 6 14.526
+Iteration 29000 Time: 7 14.622
+Iteration 30000 Time: 7 14.511
+Iteration 31000 Time: 7 14.565
+Iteration 32000 Time: 7 14.7
+Iteration 33000 Time: 8 14.572
+Iteration 34000 Time: 8 14.645
+Iteration 35000 Time: 8 14.583
+Iteration 36000 Time: 8 14.585
+Iteration 37000 Time: 9 14.609
+Iteration 38000 Time: 9 14.604
+Iteration 39000 Time: 9 14.667
+Iteration 40000 Time: 9 14.66
+Iteration 41000 Time: 10 14.706
+Iteration 42000 Time: 10 14.673
+Iteration 43000 Time: 10 14.787
+Iteration 44000 Time: 10 14.658
+Iteration 45000 Time: 11 14.822
+Iteration 46000 Time: 11 14.675
+Iteration 47000 Time: 11 14.826
+Iteration 48000 Time: 12 14.611
+Iteration 49000 Time: 12 14.862
+Evaluation score: 14.6473

@@ -43,9 +43,9 @@ double Environment::makeAction(int action){
         endState = true;
     }
 
-    int symID = randomSym();
-    agent = transform(agent, symID);
-    token = transform(token, symID);
+    // int symID = randomSym();
+    // agent = transform(agent, symID);
+    // token = transform(token, symID);
 
     return reward;
 }
