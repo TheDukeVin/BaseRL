@@ -113,7 +113,7 @@ public:
     string toString();
     vector<int> validActions();
     double makeAction(int action); // returns reward
-    void getFeatures(double* features, int symID);
+    void getFeatures(double* features, int symID=0);
 
     double potential();
 };

@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title> Visualizing snake </title>
+</head>
+
+
+<body>
+
+Upload game details file: <input type="file" name="inputfile"
+    id="inputfile">
+
+<br>
+
+<div class="panel">
+<canvas id="canvas" width="500" height="500" style="position:relative; top:50px; left:50px"></canvas>
+</div>
+
+<script>
+
+lines = []
+
+document.getElementById('inputfile')
+    .addEventListener('change', function() {
+        
+    var fr=new FileReader();
+    fr.onload=function(){
+        text = fr.result
+        lines = text.split("\n")
+    }
+        
+    fr.readAsText(this.files[0]);
+})
+
+
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+ 
+boardx = 10;
+boardy = 10;
+cellS = 40;
+windx = 500;
+windy = 500;
+marginx = (windx - boardx * cellS) / 2
+marginy = (windy - boardy * cellS) / 2
+border = 5
+textSize = 20
+tokenSize = 10
+
+framesPerMove = 20
+
+pi = Math.PI;
+
+cAgent = "#00f"
+cVision = "#00f2";
+
+space = "#fff"
+cLine = "#000"
+cShade = "#eee"
+cToken = "#f00"
+cText = "#000"
+
+function randint(max){
+    return Math.floor(Math.random()*max)
+}
+
+class Pos{
+    constructor(x, y){
+        this.x = x
+        this.y = y
+    }
+}
+
+paused = true
+
+tick = 0
+
+split_to_int = function(list){
+    spl = list.split(" ")
+    nums = []
+    for(i=0; i<spl.length; i++){
+        nums[i] = parseInt(spl[i])
+    }
+    return nums
+}
+
+
+
+function fillRect(color,sx,sy,l,w){
+    ctx.fillStyle = color;
+    ctx.fillRect(sx,sy,l,w);
+}
+
+function drawLine(color,p1x,p1y,p2x,p2y, width){
+    ctx.strokeStyle = color;
+    ctx.lineWidth = width;
+    ctx.beginPath();
+    ctx.moveTo(p1x,p1y);
+    ctx.lineTo(p2x,p2y);
+    ctx.stroke();
+}
+
+function fillCirc(color,x,y,r){
+    ctx.beginPath();
+    ctx.arc(x,y,r,0,2*pi);
+    ctx.fillStyle = color;
+    ctx.fill();
+}
+
+function fillText(text,color,size,x,y){
+    ctx.font = String(size)+"px Arial";
+    ctx.fillStyle = color;
+    ctx.textAlign = "center";
+    ctx.fillText(text,x,y);
+}
+
+document.addEventListener("keydown",keyHandler);
+document.addEventListener("click",clickHandler);
+
+keyMove = ["ArrowRight","ArrowDown","ArrowLeft","ArrowUp"]
+
+function keyHandler(event){
+    key = event.code
+    for(i=0; i<4; i++){
+        if(keyMove[i] == key){
+            event.preventDefault()
+        }
+    }
+    if(key == "Space"){
+        paused = !paused
+    }
+    /*
+    if(key == "ArrowRight"){
+        while(true){
+            currActionIndex++
+            currAction = actions[currActionIndex-1]
+            updateEnvironment(currActionIndex-1)
+            if(env.actionType == 0){
+                break
+            }
+        }
+    }
+    if(key == "ArrowLeft"){
+        endState = false
+        while(true){
+            currActionIndex--
+            currAction = actions[currActionIndex-1]
+            updateEnvironment(currActionIndex-1)
+            if(env.actionType == 0){
+                break
+            }
+        }
+    }
+    if(key == "ArrowDown"){
+        endState = false
+        currActionIndex = 2
+        currAction = actions[currActionIndex-1]
+        updateEnvironment(currActionIndex-1)
+    }
+    if(key == "ArrowUp"){
+        currActionIndex = actions.length - 15
+        while(true){
+            currActionIndex++
+            currAction = actions[currActionIndex-1]
+            updateEnvironment(currActionIndex-1)
+            if(env.actionType == 0){
+                break
+            }
+        }
+    }
+    */
+}
+
+function clickHandler(event){
+    rect = canvas.getBoundingClientRect();
+    x = event.clientX - rect.left;
+    y = event.clientY - rect.top;
+}
+
+function draw(){
+    currFrame = Math.floor(tick/framesPerMove)
+    if(currFrame >= lines.length){
+        return
+    }
+    code = split_to_int(lines[currFrame])
+    timeIndex = code[0]
+    agentPos = new Pos(code[1], code[2])
+    tokenPos = new Pos(code[3], code[4])
+
+    fillRect(space, 0, 0, windx, windy)
+    fillRect(cLine, marginx - border, marginy - border, boardx*cellS + 2*border, boardy*cellS + 2*border)
+    fillRect(space, marginx, marginy, boardx*cellS, boardy*cellS)
+    for(var i = 0; i < boardx; i++){
+        for(var j = 0; j < boardy; j++){
+            if((i + j) % 2 == 0){
+                fillRect(cShade, marginx + j * cellS, marginy + i * cellS, cellS, cellS)
+            }
+        }
+    }
+    fillCirc(cToken, marginx + tokenPos.y*cellS + cellS/2, marginy + tokenPos.x*cellS + cellS/2, tokenSize)
+    fillCirc(cAgent, marginx + agentPos.y*cellS + cellS/2, marginy + agentPos.x*cellS + cellS/2, tokenSize)
+    fillRect(cVision, marginx + (agentPos.y-1)*cellS, marginy + (agentPos.x-1)*cellS, cellS*3, cellS*3)
+    fillText("Time: " + timeIndex.toString(), cText, textSize, windx/2, marginy/2)
+}
+
+function update(){
+    draw()
+    if(!paused){
+        tick++
+    }
+}
+
+var ONE_FRAME_TIME = 1000 / 60 ;
+var mainloop = function() {
+    update()
+};
+setInterval( mainloop, ONE_FRAME_TIME );
+
+</script>
+
+</body>
+
+</html>

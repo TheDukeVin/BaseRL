@@ -1,2000 +1,5000 @@
-Time: 0 Agent: 5 5 Token: 0 3Policy: 1.18179e-05 1.97096e-07 0.0441254 0.955863 
-Value: 0.867127
+Time: 0 Agent: 5 5 Token: 8 2
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
 Action: 3 Reward: 0
 
-Time: 1 Agent: 4 5 Token: 0 3Policy: 1.73974e-06 1.03742e-07 0.160189 0.839809 
-Value: 1.22599
-Action: 3 Reward: 0
-
-Time: 2 Agent: 3 5 Token: 0 3Policy: 8.07128e-07 9.50806e-08 0.27929 0.720709 
-Value: 1.39225
-Action: 3 Reward: 0
-
-Time: 3 Agent: 2 5 Token: 0 3Policy: 6.36069e-07 2.7209e-07 0.586283 0.413716 
-Value: 1.5523
+Time: 1 Agent: 4 5 Token: 8 2
+Policy: 4.86187e-06 8.18475e-06 0.99945 0.000536637 
+Value: 3.39299
 Action: 2 Reward: 0
 
-Time: 4 Agent: 2 4 Token: 0 3Policy: 3.13403e-06 1.91628e-07 0.161624 0.838373 
-Value: 1.69678
+Time: 2 Agent: 4 4 Token: 8 2
+Policy: 1.58445e-05 0.00085914 0.998168 0.000957041 
+Value: 3.41938
+Action: 2 Reward: 0
+
+Time: 3 Agent: 4 3 Token: 8 2
+Policy: 2.39479e-05 0.000917618 0.995971 0.00308709 
+Value: 3.43522
+Action: 2 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 8 2
+Policy: 3.32412e-05 0.000554454 0.992397 0.00701527 
+Value: 3.43106
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 8 2
+Policy: 0.00160833 1.58372e-06 0.000623421 0.997767 
+Value: 3.42869
 Action: 3 Reward: 0
 
-Time: 5 Agent: 1 4 Token: 0 3Policy: 1.50929e-05 1.05728e-05 0.709365 0.29061 
-Value: 1.91487
+Time: 6 Agent: 3 1 Token: 8 2
+Policy: 0.0118901 5.38204e-06 0.000422617 0.987682 
+Value: 3.42282
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 8 2
+Policy: 0.116882 4.23351e-06 7.5437e-05 0.883039 
+Value: 3.46047
+Action: 0 Reward: 0
+
+Time: 8 Agent: 2 2 Token: 8 2
+Policy: 0.224825 1.16904e-05 0.000217315 0.774946 
+Value: 3.4344
+Action: 3 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 8 2
+Policy: 0.998369 5.13578e-05 8.52826e-07 0.00157833 
+Value: 3.44233
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 8 2
+Policy: 0.999373 0.000306703 9.00264e-07 0.000319886 
+Value: 3.41327
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 4 Token: 8 2
+Policy: 0.998168 0.000641367 5.85263e-06 0.00118451 
+Value: 3.45055
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 5 Token: 8 2
+Policy: 0.996072 0.00220024 3.89556e-05 0.00168865 
+Value: 3.45353
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 6 Token: 8 2
+Policy: 0.996252 0.00251738 2.0442e-05 0.00120979 
+Value: 3.45625
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 7 Token: 8 2
+Policy: 0.975081 0.0244024 0.000150932 0.000365612 
+Value: 3.44428
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 8 Token: 8 2
+Policy: 7.67246e-05 0.999107 0.000816424 3.49455e-08 
+Value: 3.45318
+Action: 1 Reward: 0
+
+Time: 16 Agent: 2 8 Token: 8 2
+Policy: 6.02959e-06 0.999955 3.87263e-05 3.80605e-10 
+Value: 3.4715
+Action: 1 Reward: 0
+
+Time: 17 Agent: 3 8 Token: 8 2
+Policy: 3.22052e-05 0.999828 0.000139551 9.86945e-09 
+Value: 3.46655
+Action: 1 Reward: 0
+
+Time: 18 Agent: 4 8 Token: 8 2
+Policy: 2.30311e-05 0.99973 0.000246572 1.37994e-08 
+Value: 3.46039
+Action: 1 Reward: 0
+
+Time: 19 Agent: 5 8 Token: 8 2
+Policy: 0.000269361 0.99877 0.000959976 2.47792e-07 
+Value: 3.45491
+Action: 1 Reward: 0
+
+Time: 20 Agent: 6 8 Token: 8 2
+Policy: 0.000246052 0.998569 0.00118506 3.58878e-07 
+Value: 3.43901
+Action: 1 Reward: 0
+
+Time: 21 Agent: 7 8 Token: 8 2
+Policy: 0.000606556 0.99471 0.00468184 1.45508e-06 
+Value: 3.43273
+Action: 1 Reward: 0
+
+Time: 22 Agent: 8 8 Token: 8 2
+Policy: 1.11377e-08 0.000370263 0.999625 5.21291e-06 
+Value: 3.47435
 Action: 2 Reward: 0
 
-Time: 6 Agent: 1 3 Token: 0 3Policy: 0.00752643 3.78146e-05 0.0164124 0.976023 
-Value: 2.03808
-Action: 3 Reward: 1
-
-Time: 7 Agent: 0 3 Token: 0 1Policy: 3.41432e-07 0.00101761 0.998834 0.000148027 
-Value: 1.86447
+Time: 23 Agent: 8 7 Token: 8 2
+Policy: 7.95935e-07 0.000539094 0.99944 2.04797e-05 
+Value: 3.46417
 Action: 2 Reward: 0
 
-Time: 8 Agent: 0 2 Token: 0 1Policy: 4.04705e-05 0.0218418 0.97755 0.00056765 
-Value: 2.11173
+Time: 24 Agent: 8 6 Token: 8 2
+Policy: 2.36302e-06 0.000219839 0.999556 0.000222279 
+Value: 3.44577
+Action: 2 Reward: 0
+
+Time: 25 Agent: 8 5 Token: 8 2
+Policy: 7.70493e-06 0.000175114 0.99916 0.000657272 
+Value: 3.45019
+Action: 2 Reward: 0
+
+Time: 26 Agent: 8 4 Token: 8 2
+Policy: 1.43607e-05 0.000655107 0.99918 0.000150944 
+Value: 3.43649
+Action: 2 Reward: 0
+
+Time: 27 Agent: 8 3 Token: 8 2
+Policy: 1.66728e-10 3.29618e-06 0.999995 1.45863e-06 
+Value: 3.78505
 Action: 2 Reward: 1
 
-Time: 9 Agent: 0 1 Token: 3 8Policy: 0.714126 0.28587 1.01769e-06 2.20991e-06 
-Value: 1.03484
-Action: 0 Reward: 0
-
-Time: 10 Agent: 0 2 Token: 3 8Policy: 0.0976401 0.90236 2.88564e-07 3.96699e-08 
-Value: 1.15323
-Action: 1 Reward: 0
-
-Time: 11 Agent: 1 2 Token: 3 8Policy: 0.914864 0.085135 8.35999e-08 4.48619e-07 
-Value: 1.26247
-Action: 0 Reward: 0
-
-Time: 12 Agent: 1 3 Token: 3 8Policy: 0.32285 0.67715 2.8508e-07 9.85648e-08 
-Value: 1.36408
-Action: 1 Reward: 0
-
-Time: 13 Agent: 2 3 Token: 3 8Policy: 0.997716 0.00228247 1.60529e-08 1.34652e-06 
-Value: 1.53187
-Action: 0 Reward: 0
-
-Time: 14 Agent: 2 4 Token: 3 8Policy: 0.935595 0.064404 2.09693e-07 9.87156e-07 
-Value: 1.63031
-Action: 0 Reward: 0
-
-Time: 15 Agent: 2 5 Token: 3 8Policy: 0.893182 0.106817 4.62741e-07 1.30453e-06 
-Value: 1.74704
-Action: 1 Reward: 0
-
-Time: 16 Agent: 3 5 Token: 3 8Policy: 0.999804 0.00016606 4.51177e-08 2.95342e-05 
-Value: 1.93304
-Action: 0 Reward: 0
-
-Time: 17 Agent: 3 6 Token: 3 8Policy: 0.998944 0.00089671 7.44134e-07 0.00015851 
-Value: 2.00915
-Action: 0 Reward: 0
-
-Time: 18 Agent: 3 7 Token: 3 8Policy: 0.990725 0.00529936 9.42919e-05 0.00388132 
-Value: 2.19533
-Action: 0 Reward: 1
-
-Time: 19 Agent: 3 8 Token: 0 8Policy: 0.000311752 4.28668e-08 0.000214025 0.999474 
-Value: 1.6135
+Time: 28 Agent: 8 2 Token: 2 6
+Policy: 0.81614 0.00204003 0.00365455 0.178165 
+Value: 2.74859
 Action: 3 Reward: 0
 
-Time: 20 Agent: 2 8 Token: 0 8Policy: 0.000187259 9.38818e-08 0.00120284 0.99861 
-Value: 1.74703
+Time: 29 Agent: 7 2 Token: 2 6
+Policy: 0.993522 0.00364443 8.2039e-05 0.00275106 
+Value: 2.67735
+Action: 0 Reward: 0
+
+Time: 30 Agent: 7 3 Token: 2 6
+Policy: 0.997817 0.000978956 1.88359e-05 0.0011855 
+Value: 2.62929
+Action: 0 Reward: 0
+
+Time: 31 Agent: 7 4 Token: 2 6
+Policy: 0.978116 0.000199751 6.29617e-05 0.0216217 
+Value: 2.58979
+Action: 0 Reward: 0
+
+Time: 32 Agent: 7 5 Token: 2 6
+Policy: 0.000641965 1.43855e-07 0.000608769 0.998749 
+Value: 2.57927
 Action: 3 Reward: 0
 
-Time: 21 Agent: 1 8 Token: 0 8Policy: 0.00363599 1.27719e-05 0.0155483 0.980803 
-Value: 2.01262
-Action: 3 Reward: 1
+Time: 33 Agent: 6 5 Token: 2 6
+Policy: 7.42028e-05 9.39069e-09 0.00107742 0.998848 
+Value: 2.56474
+Action: 3 Reward: 0
 
-Time: 22 Agent: 0 8 Token: 6 3Policy: 1.85723e-06 0.284003 0.715988 7.23648e-06 
-Value: 0.834716
+Time: 34 Agent: 5 5 Token: 2 6
+Policy: 4.97328e-05 1.0907e-07 0.0207687 0.979181 
+Value: 2.55836
+Action: 3 Reward: 0
+
+Time: 35 Agent: 4 5 Token: 2 6
+Policy: 3.04856e-05 3.89557e-05 0.940434 0.0594965 
+Value: 2.56253
 Action: 2 Reward: 0
 
-Time: 23 Agent: 0 7 Token: 6 3Policy: 7.24165e-06 0.887903 0.112089 9.12279e-07 
-Value: 0.999734
-Action: 1 Reward: 0
-
-Time: 24 Agent: 1 7 Token: 6 3Policy: 8.63181e-07 0.271112 0.728885 2.87757e-06 
-Value: 0.989383
+Time: 36 Agent: 4 4 Token: 2 6
+Policy: 5.12252e-05 8.8184e-05 0.9396 0.0602608 
+Value: 2.5382
 Action: 2 Reward: 0
 
-Time: 25 Agent: 1 6 Token: 6 3Policy: 4.56371e-06 0.973396 0.0265997 1.02853e-07 
-Value: 1.19474
-Action: 1 Reward: 0
-
-Time: 26 Agent: 2 6 Token: 6 3Policy: 1.37736e-06 0.603283 0.396715 7.4942e-07 
-Value: 1.25913
-Action: 1 Reward: 0
-
-Time: 27 Agent: 3 6 Token: 6 3Policy: 3.87579e-07 0.199381 0.800617 1.00838e-06 
-Value: 1.41633
+Time: 37 Agent: 4 3 Token: 2 6
+Policy: 1.96614e-05 0.000102586 0.982814 0.0170635 
+Value: 2.54124
 Action: 2 Reward: 0
 
-Time: 28 Agent: 3 5 Token: 6 3Policy: 2.8691e-06 0.950974 0.0490226 7.46175e-08 
-Value: 1.57289
-Action: 1 Reward: 0
-
-Time: 29 Agent: 4 5 Token: 6 3Policy: 6.4477e-07 0.206855 0.793143 1.04994e-06 
-Value: 1.74995
+Time: 38 Agent: 4 2 Token: 2 6
+Policy: 5.74463e-06 3.3429e-05 0.98934 0.0106211 
+Value: 2.53706
 Action: 2 Reward: 0
 
-Time: 30 Agent: 4 4 Token: 6 3Policy: 1.18548e-05 0.986513 0.0134747 6.58362e-08 
-Value: 1.85451
+Time: 39 Agent: 4 1 Token: 2 6
+Policy: 0.000305626 1.56281e-06 0.00109359 0.998599 
+Value: 2.55969
+Action: 3 Reward: 0
+
+Time: 40 Agent: 3 1 Token: 2 6
+Policy: 0.00429825 1.17815e-06 0.00011036 0.99559 
+Value: 2.53097
+Action: 3 Reward: 0
+
+Time: 41 Agent: 2 1 Token: 2 6
+Policy: 0.028867 9.69957e-07 4.67648e-05 0.971085 
+Value: 2.53484
+Action: 3 Reward: 0
+
+Time: 42 Agent: 1 1 Token: 2 6
+Policy: 0.999898 2.20854e-06 7.8452e-09 9.97976e-05 
+Value: 2.52733
+Action: 0 Reward: 0
+
+Time: 43 Agent: 1 2 Token: 2 6
+Policy: 0.999921 1.6656e-05 4.31968e-08 6.20701e-05 
+Value: 2.50841
+Action: 0 Reward: 0
+
+Time: 44 Agent: 1 3 Token: 2 6
+Policy: 0.999905 4.36536e-05 2.01707e-07 5.08788e-05 
+Value: 2.47638
+Action: 0 Reward: 0
+
+Time: 45 Agent: 1 4 Token: 2 6
+Policy: 0.999762 8.43912e-05 1.30129e-06 0.000152462 
+Value: 2.46535
+Action: 0 Reward: 0
+
+Time: 46 Agent: 1 5 Token: 2 6
+Policy: 0.99426 0.00572065 3.47305e-06 1.57549e-05 
+Value: 2.98577
+Action: 0 Reward: 0
+
+Time: 47 Agent: 1 6 Token: 2 6
+Policy: 0.000146645 0.999822 3.15808e-05 9.43513e-09 
+Value: 3.03759
+Action: 1 Reward: 1
+
+Time: 48 Agent: 2 6 Token: 6 8
+Policy: 0.778857 0.0660563 0.011606 0.14348 
+Value: 1.99696
+Action: 0 Reward: 0
+
+Time: 49 Agent: 2 7 Token: 6 8
+Policy: 0.731533 0.266428 0.000509125 0.00152947 
+Value: 2.00002
+Action: 0 Reward: 0
+
+Time: 50 Agent: 2 8 Token: 6 8
+Policy: 4.04557e-05 0.999661 0.000298291 1.12936e-07 
+Value: 1.99751
 Action: 1 Reward: 0
 
-Time: 31 Agent: 5 4 Token: 6 3Policy: 1.12782e-05 0.284528 0.715452 8.94643e-06 
-Value: 2.12039
+Time: 51 Agent: 3 8 Token: 6 8
+Policy: 6.22365e-05 0.999291 0.000646441 4.74574e-07 
+Value: 1.99418
 Action: 1 Reward: 0
 
-Time: 32 Agent: 6 4 Token: 6 3Policy: 1.21668e-05 0.00780439 0.99182 0.000363111 
-Value: 2.29764
+Time: 52 Agent: 4 8 Token: 6 8
+Policy: 4.95553e-05 0.99883 0.00112008 6.38827e-07 
+Value: 1.96729
+Action: 1 Reward: 0
+
+Time: 53 Agent: 5 8 Token: 6 8
+Policy: 0.00193233 0.991387 0.00667345 7.5569e-06 
+Value: 2.82334
+Action: 1 Reward: 1
+
+Time: 54 Agent: 6 8 Token: 8 9
+Policy: 0.000717043 0.989389 0.00985647 3.69991e-05 
+Value: 1.75327
+Action: 1 Reward: 0
+
+Time: 55 Agent: 7 8 Token: 8 9
+Policy: 0.885934 0.114065 2.7932e-07 9.67024e-07 
+Value: 2.69169
+Action: 0 Reward: 0
+
+Time: 56 Agent: 7 9 Token: 8 9
+Policy: . 0.986192 0.00629974 0.00750803 
+Value: 2.69084
+Action: 1 Reward: 1
+
+Time: 57 Agent: 8 9 Token: 4 0
+Policy: . 0.0301146 0.960099 0.00978629 
+Value: 1.61172
+Action: 2 Reward: 0
+
+Time: 58 Agent: 8 8 Token: 4 0
+Policy: 2.01578e-06 0.00138091 0.995667 0.00294982 
+Value: 1.68591
+Action: 2 Reward: 0
+
+Time: 59 Agent: 8 7 Token: 4 0
+Policy: 1.82074e-05 8.91508e-05 0.970759 0.029134 
+Value: 1.67506
+Action: 2 Reward: 0
+
+Time: 60 Agent: 8 6 Token: 4 0
+Policy: 2.70664e-05 5.91882e-05 0.919598 0.0803153 
+Value: 1.62825
+Action: 2 Reward: 0
+
+Time: 61 Agent: 8 5 Token: 4 0
+Policy: 5.42102e-05 4.93008e-05 0.867692 0.132204 
+Value: 1.60972
+Action: 2 Reward: 0
+
+Time: 62 Agent: 8 4 Token: 4 0
+Policy: 0.000258958 0.000220638 0.942131 0.0573896 
+Value: 1.59075
+Action: 2 Reward: 0
+
+Time: 63 Agent: 8 3 Token: 4 0
+Policy: 2.48053e-05 7.70667e-05 0.988397 0.0115013 
+Value: 1.58379
+Action: 2 Reward: 0
+
+Time: 64 Agent: 8 2 Token: 4 0
+Policy: 2.63874e-06 3.77413e-05 0.996876 0.00308341 
+Value: 1.58185
+Action: 2 Reward: 0
+
+Time: 65 Agent: 8 1 Token: 4 0
+Policy: 8.91643e-05 1.4367e-08 0.000152731 0.999758 
+Value: 1.53374
+Action: 3 Reward: 0
+
+Time: 66 Agent: 7 1 Token: 4 0
+Policy: 0.000568141 1.73771e-08 1.64981e-05 0.999415 
+Value: 1.5289
+Action: 3 Reward: 0
+
+Time: 67 Agent: 6 1 Token: 4 0
+Policy: 0.00204884 8.04628e-08 1.03817e-05 0.997941 
+Value: 1.53411
+Action: 3 Reward: 0
+
+Time: 68 Agent: 5 1 Token: 4 0
+Policy: 8.04088e-05 0.000307543 0.282933 0.716679 
+Value: 2.17476
+Action: 3 Reward: 0
+
+Time: 69 Agent: 4 1 Token: 4 0
+Policy: 6.73243e-08 0.00119976 0.998755 4.50238e-05 
+Value: 2.10079
 Action: 2 Reward: 1
 
-Time: 33 Agent: 6 3 Token: 1 0Policy: 6.59073e-07 5.15703e-08 0.180368 0.819631 
-Value: 1.04331
+Time: 70 Agent: 4 0 Token: 2 7
+Policy: 0.993117 0.00290859 . 0.00397457 
+Value: 1.08025
+Action: 0 Reward: 0
+
+Time: 71 Agent: 4 1 Token: 2 7
+Policy: 0.247554 0.00104139 0.0010052 0.750399 
+Value: 1.08119
+Action: 3 Reward: 0
+
+Time: 72 Agent: 3 1 Token: 2 7
+Policy: 0.173816 0.000627863 0.000350723 0.825206 
+Value: 1.09205
+Action: 3 Reward: 0
+
+Time: 73 Agent: 2 1 Token: 2 7
+Policy: 0.337661 0.000508812 0.000364872 0.661465 
+Value: 1.08061
+Action: 3 Reward: 0
+
+Time: 74 Agent: 1 1 Token: 2 7
+Policy: 0.999811 0.00016235 1.76283e-08 2.63515e-05 
+Value: 1.04965
+Action: 0 Reward: 0
+
+Time: 75 Agent: 1 2 Token: 2 7
+Policy: 0.999116 0.000828356 1.14861e-07 5.56096e-05 
+Value: 1.03732
+Action: 0 Reward: 0
+
+Time: 76 Agent: 1 3 Token: 2 7
+Policy: 0.997418 0.00248359 5.49471e-07 9.81924e-05 
+Value: 1.01819
+Action: 0 Reward: 0
+
+Time: 77 Agent: 1 4 Token: 2 7
+Policy: 0.987801 0.0118363 5.61121e-06 0.00035717 
+Value: 0.984185
+Action: 0 Reward: 0
+
+Time: 78 Agent: 1 5 Token: 2 7
+Policy: 0.922014 0.0772061 6.88142e-05 0.000710993 
+Value: 0.942117
+Action: 0 Reward: 0
+
+Time: 79 Agent: 1 6 Token: 2 7
+Policy: 0.39355 0.606328 9.31587e-05 2.91827e-05 
+Value: 1.69018
+Action: 1 Reward: 0
+
+Time: 80 Agent: 2 6 Token: 2 7
+Policy: 0.996261 0.00327139 1.40599e-05 0.000453286 
+Value: 1.75025
+Action: 0 Reward: 1
+
+Time: 81 Agent: 2 7 Token: 1 7
+Policy: 0.0056845 5.69065e-08 1.38607e-05 0.994302 
+Value: 1.62645
+Action: 3 Reward: 1
+
+Time: 82 Agent: 1 7 Token: 5 2
+Policy: 0.0203326 0.978678 0.000934668 5.45272e-05 
+Value: 0.568974
+Action: 1 Reward: 0
+
+Time: 83 Agent: 2 7 Token: 5 2
+Policy: 0.532544 0.46694 0.000243024 0.00027261 
+Value: 0.482393
+Action: 0 Reward: 0
+
+Time: 84 Agent: 2 8 Token: 5 2
+Policy: 7.4724e-05 0.999761 0.000164186 8.33807e-08 
+Value: 0.470295
+Action: 1 Reward: 0
+
+Time: 85 Agent: 3 8 Token: 5 2
+Policy: 0.000270006 0.998894 0.000834541 1.70512e-06 
+Value: 0.434678
+Action: 1 Reward: 0
+
+Time: 86 Agent: 4 8 Token: 5 2
+Policy: 0.000280774 0.994247 0.00546221 9.54175e-06 
+Value: 0.404172
+Action: 1 Reward: 0
+
+Time: 87 Agent: 5 8 Token: 5 2
+Policy: 0.0010556 0.953647 0.045119 0.000178265 
+Value: 0.350787
+Action: 1 Reward: 0
+
+Time: 88 Agent: 6 8 Token: 5 2
+Policy: 0.00115007 0.931554 0.0669892 0.000306303 
+Value: 0.335059
+Action: 1 Reward: 0
+
+Time: 89 Agent: 7 8 Token: 5 2
+Policy: 0.00104412 0.804486 0.193799 0.000670957 
+Value: 0.273981
+Action: 1 Reward: 0
+
+Time: 90 Agent: 8 8 Token: 5 2
+Policy: 2.82893e-06 0.0043183 0.992854 0.00282511 
+Value: 0.263163
 Action: 2 Reward: 0
 
-Time: 34 Agent: 6 2 Token: 1 0Policy: 1.22545e-06 5.98982e-08 0.128287 0.871711 
-Value: 1.12601
-Action: 3 Reward: 0
-
-Time: 35 Agent: 5 2 Token: 1 0Policy: 1.40193e-06 7.6825e-08 0.147128 0.85287 
-Value: 1.16412
-Action: 3 Reward: 0
-
-Time: 36 Agent: 4 2 Token: 1 0Policy: 1.31686e-06 9.81511e-08 0.198551 0.801447 
-Value: 1.25072
+Time: 91 Agent: 8 7 Token: 5 2
+Policy: 3.22149e-05 0.00132584 0.983642 0.0149996 
+Value: 0.240586
 Action: 2 Reward: 0
 
-Time: 37 Agent: 4 1 Token: 1 0Policy: 4.29194e-06 5.83198e-08 0.0371364 0.962859 
-Value: 1.40729
+Time: 92 Agent: 8 6 Token: 5 2
+Policy: 0.000342314 0.000792798 0.735514 0.263351 
+Value: 0.199038
+Action: 2 Reward: 0
+
+Time: 93 Agent: 8 5 Token: 5 2
+Policy: 0.000906981 0.000619512 0.418772 0.579702 
+Value: 0.147099
 Action: 3 Reward: 0
 
-Time: 38 Agent: 3 1 Token: 1 0Policy: 9.82783e-06 1.26942e-07 0.0376053 0.962385 
-Value: 1.54019
+Time: 94 Agent: 7 5 Token: 5 2
+Policy: 0.000884476 0.000124301 0.209533 0.789458 
+Value: 0.117575
+Action: 2 Reward: 0
+
+Time: 95 Agent: 7 4 Token: 5 2
+Policy: 0.00994514 0.00106282 0.17858 0.810412 
+Value: 0.0796663
 Action: 3 Reward: 0
 
-Time: 39 Agent: 2 1 Token: 1 0Policy: 4.15756e-05 4.85467e-06 0.293485 0.706469 
-Value: 1.71963
+Time: 96 Agent: 6 4 Token: 5 2
+Policy: 0.0155082 0.00126837 0.331677 0.651547 
+Value: 0.0424929
+Action: 2 Reward: 0
+
+Time: 97 Agent: 6 3 Token: 5 2
+Policy: 8.01823e-06 1.19151e-05 0.889796 0.110184 
+Value: 0.839068
+Action: 2 Reward: 0
+
+Time: 98 Agent: 6 2 Token: 5 2
+Policy: 0.00531716 5.54196e-06 0.00435735 0.99032 
+Value: 0.960622
+Action: 3 Reward: 1
+
+Time: 99 Agent: 5 2 Token: 8 5
+Policy: 0.361246 0.00480503 0.0300539 0.603896 
+Value: -0.0807196
+Action: 0 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 2 2
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
 Action: 3 Reward: 0
 
-Time: 40 Agent: 1 1 Token: 1 0Policy: 1.8209e-05 0.00145147 0.9944 0.0041301 
-Value: 1.92446
+Time: 1 Agent: 4 5 Token: 2 2
+Policy: 4.86187e-06 8.18475e-06 0.99945 0.000536637 
+Value: 3.39299
+Action: 2 Reward: 0
+
+Time: 2 Agent: 4 4 Token: 2 2
+Policy: 1.58445e-05 0.00085914 0.998168 0.000957041 
+Value: 3.41938
+Action: 2 Reward: 0
+
+Time: 3 Agent: 4 3 Token: 2 2
+Policy: 2.39479e-05 0.000917618 0.995971 0.00308709 
+Value: 3.43522
+Action: 2 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 2 2
+Policy: 3.32412e-05 0.000554454 0.992397 0.00701527 
+Value: 3.43106
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 2 2
+Policy: 0.00160833 1.58372e-06 0.000623421 0.997767 
+Value: 3.42869
+Action: 3 Reward: 0
+
+Time: 6 Agent: 3 1 Token: 2 2
+Policy: 0.0185421 2.596e-07 0.000102521 0.981355 
+Value: 4.21962
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 2 2
+Policy: 0.992558 0.0073085 4.18494e-05 9.20331e-05 
+Value: 4.23322
+Action: 0 Reward: 1
+
+Time: 8 Agent: 2 2 Token: 2 8
+Policy: 0.0222296 0.00361784 0.103645 0.870508 
+Value: 3.21078
+Action: 3 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 2 8
+Policy: 0.997886 0.00139522 9.52567e-06 0.000708941 
+Value: 3.25766
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 2 8
+Policy: 0.996556 0.00267733 7.90955e-06 0.000758962 
+Value: 3.26357
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 4 Token: 2 8
+Policy: 0.988657 0.00958704 3.92999e-05 0.00171689 
+Value: 3.2862
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 5 Token: 2 8
+Policy: 0.943179 0.0537605 0.000392864 0.00266764 
+Value: 3.28464
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 6 Token: 2 8
+Policy: 0.942216 0.0547512 0.000318036 0.0027149 
+Value: 3.27201
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 7 Token: 2 8
+Policy: 0.916726 0.083204 4.55013e-05 2.47438e-05 
+Value: 4.00592
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 8 Token: 2 8
+Policy: 2.25461e-05 0.999489 0.000488814 4.14055e-09 
+Value: 3.99386
+Action: 1 Reward: 1
+
+Time: 16 Agent: 2 8 Token: 9 8
+Policy: 5.20929e-05 0.99819 0.00175741 3.26199e-07 
+Value: 3.02682
+Action: 1 Reward: 0
+
+Time: 17 Agent: 3 8 Token: 9 8
+Policy: 0.000161791 0.996379 0.00345734 1.38307e-06 
+Value: 3.00102
+Action: 1 Reward: 0
+
+Time: 18 Agent: 4 8 Token: 9 8
+Policy: 0.000103602 0.994884 0.00501134 1.42665e-06 
+Value: 3.00193
+Action: 1 Reward: 0
+
+Time: 19 Agent: 5 8 Token: 9 8
+Policy: 0.000815875 0.968224 0.0309196 4.02031e-05 
+Value: 3.00121
+Action: 1 Reward: 0
+
+Time: 20 Agent: 6 8 Token: 9 8
+Policy: 0.00106887 0.963022 0.0358482 6.05864e-05 
+Value: 2.99174
+Action: 1 Reward: 0
+
+Time: 21 Agent: 7 8 Token: 9 8
+Policy: 0.00109318 0.884061 0.114713 0.0001331 
+Value: 3.01802
+Action: 1 Reward: 0
+
+Time: 22 Agent: 8 8 Token: 9 8
+Policy: 0.000699259 0.998704 0.00059612 3.61961e-07 
+Value: 3.79937
+Action: 1 Reward: 1
+
+Time: 23 Agent: 9 8 Token: 9 6
+Policy: 5.52618e-05 . 0.820985 0.17896 
+Value: 2.71182
+Action: 2 Reward: 0
+
+Time: 24 Agent: 9 7 Token: 9 6
+Policy: 3.943e-06 . 0.999966 3.00363e-05 
+Value: 3.67655
 Action: 2 Reward: 1
 
-Time: 41 Agent: 1 0 Token: 7 9Policy: 0.0480098 0.951989 8.17634e-07 1.59616e-07 
-Value: 0.523552
-Action: 1 Reward: 0
+Time: 25 Agent: 9 6 Token: 6 7
+Policy: 0.0151961 . 0.0527649 0.932039 
+Value: 2.64057
+Action: 3 Reward: 0
 
-Time: 42 Agent: 2 0 Token: 7 9Policy: 0.135487 0.864513 9.19374e-08 5.11394e-08 
-Value: 0.530737
-Action: 1 Reward: 0
+Time: 26 Agent: 8 6 Token: 6 7
+Policy: 0.00129636 4.10865e-05 0.135738 0.862925 
+Value: 2.72607
+Action: 3 Reward: 0
 
-Time: 43 Agent: 3 0 Token: 7 9Policy: 0.802196 0.197804 3.31803e-08 2.63216e-07 
-Value: 0.565397
-Action: 0 Reward: 0
+Time: 27 Agent: 7 6 Token: 6 7
+Policy: 0.0286289 1.63708e-06 0.00195144 0.969418 
+Value: 3.42969
+Action: 3 Reward: 0
 
-Time: 44 Agent: 3 1 Token: 7 9Policy: 0.287433 0.712567 5.36697e-08 5.61434e-08 
-Value: 0.640861
-Action: 0 Reward: 0
+Time: 28 Agent: 6 6 Token: 6 7
+Policy: 0.999739 3.53487e-05 2.53789e-07 0.000225438 
+Value: 3.45841
+Action: 0 Reward: 1
 
-Time: 45 Agent: 3 2 Token: 7 9Policy: 0.185424 0.814576 5.40914e-08 3.21349e-08 
-Value: 0.701513
-Action: 1 Reward: 0
+Time: 29 Agent: 6 7 Token: 1 1
+Policy: 0.000624679 0.00215895 0.844172 0.153045 
+Value: 2.50711
+Action: 3 Reward: 0
 
-Time: 46 Agent: 4 2 Token: 7 9Policy: 0.906506 0.0934935 2.01942e-08 2.40012e-07 
-Value: 0.754124
-Action: 0 Reward: 0
-
-Time: 47 Agent: 4 3 Token: 7 9Policy: 0.334663 0.665337 6.05237e-08 5.3275e-08 
-Value: 0.83371
-Action: 1 Reward: 0
-
-Time: 48 Agent: 5 3 Token: 7 9Policy: 0.994591 0.0054086 3.92881e-09 3.95114e-07 
-Value: 0.920546
-Action: 0 Reward: 0
-
-Time: 49 Agent: 5 4 Token: 7 9Policy: 0.692719 0.30728 6.14526e-08 1.34237e-07 
-Value: 1.0159
-Action: 1 Reward: 0
-
-Time: 50 Agent: 6 4 Token: 7 9Policy: 0.999474 0.000525496 2.01265e-09 9.47485e-07 
-Value: 1.16764
-Action: 0 Reward: 0
-
-Time: 51 Agent: 6 5 Token: 7 9Policy: 0.986914 0.0130857 2.18414e-08 6.21919e-07 
-Value: 1.27427
-Action: 0 Reward: 0
-
-Time: 52 Agent: 6 6 Token: 7 9Policy: 0.959875 0.0401247 7.65995e-08 7.48926e-07 
-Value: 1.39319
-Action: 0 Reward: 0
-
-Time: 53 Agent: 6 7 Token: 7 9Policy: 0.730407 0.269591 7.00082e-07 9.50302e-07 
-Value: 1.56322
-Action: 0 Reward: 0
-
-Time: 54 Agent: 6 8 Token: 7 9Policy: 0.19718 0.802802 1.59092e-05 2.08431e-06 
-Value: 1.75305
-Action: 0 Reward: 0
-
-Time: 55 Agent: 6 9 Token: 7 9Policy: 0.00273992 0.9893 0.00795003 1.02141e-05 
-Value: 1.88742
-Action: 1 Reward: 1
-
-Time: 56 Agent: 7 9 Token: 6 8Policy: 7.76328e-05 6.57835e-05 0.834056 0.165801 
-Value: 1.95356
+Time: 30 Agent: 5 7 Token: 1 1
+Policy: 0.0076466 0.00552346 0.774064 0.212766 
+Value: 2.52309
 Action: 2 Reward: 0
 
-Time: 57 Agent: 7 8 Token: 6 8Policy: 0.000511819 2.01619e-06 0.0147919 0.984694 
-Value: 1.81622
+Time: 31 Agent: 5 6 Token: 1 1
+Policy: 0.000352727 0.000167081 0.8007 0.19878 
+Value: 2.50084
+Action: 3 Reward: 0
+
+Time: 32 Agent: 4 6 Token: 1 1
+Policy: 4.4863e-05 0.000272812 0.989325 0.0103574 
+Value: 2.58755
+Action: 2 Reward: 0
+
+Time: 33 Agent: 4 5 Token: 1 1
+Policy: 4.34148e-05 0.000170835 0.986326 0.0134593 
+Value: 2.53806
+Action: 2 Reward: 0
+
+Time: 34 Agent: 4 4 Token: 1 1
+Policy: 5.70624e-05 0.000243532 0.984611 0.0150885 
+Value: 2.54653
+Action: 2 Reward: 0
+
+Time: 35 Agent: 4 3 Token: 1 1
+Policy: 2.13e-05 0.000229892 0.993126 0.00662316 
+Value: 2.54498
+Action: 2 Reward: 0
+
+Time: 36 Agent: 4 2 Token: 1 1
+Policy: 6.75368e-06 4.72762e-05 0.992319 0.00762676 
+Value: 2.56434
+Action: 2 Reward: 0
+
+Time: 37 Agent: 4 1 Token: 1 1
+Policy: 0.00114997 6.37119e-06 0.00232078 0.996523 
+Value: 2.54147
+Action: 3 Reward: 0
+
+Time: 38 Agent: 3 1 Token: 1 1
+Policy: 0.0195376 7.54375e-06 0.000261833 0.980193 
+Value: 2.53441
+Action: 3 Reward: 0
+
+Time: 39 Agent: 2 1 Token: 1 1
+Policy: 0.00069319 6.23917e-08 0.000107568 0.999199 
+Value: 3.34592
 Action: 3 Reward: 1
 
-Time: 58 Agent: 6 8 Token: 8 7Policy: 9.23306e-06 0.690768 0.30922 2.86665e-06 
-Value: 1.58371
+Time: 40 Agent: 1 1 Token: 7 0
+Policy: 0.994317 0.00566348 6.71506e-07 1.85202e-05 
+Value: 2.22864
+Action: 0 Reward: 0
+
+Time: 41 Agent: 1 2 Token: 7 0
+Policy: 0.997729 0.00223622 4.77014e-07 3.45549e-05 
+Value: 2.25431
+Action: 0 Reward: 0
+
+Time: 42 Agent: 1 3 Token: 7 0
+Policy: 0.996253 0.00354404 2.92895e-06 0.000200459 
+Value: 2.2666
+Action: 0 Reward: 0
+
+Time: 43 Agent: 1 4 Token: 7 0
+Policy: 0.983634 0.0155732 3.50023e-05 0.000757394 
+Value: 2.24002
+Action: 0 Reward: 0
+
+Time: 44 Agent: 1 5 Token: 7 0
+Policy: 0.869291 0.1286 0.000482781 0.00162608 
+Value: 2.21716
+Action: 0 Reward: 0
+
+Time: 45 Agent: 1 6 Token: 7 0
+Policy: 0.843467 0.153875 0.000419123 0.00223906 
+Value: 2.19131
+Action: 0 Reward: 0
+
+Time: 46 Agent: 1 7 Token: 7 0
+Policy: 0.585486 0.413644 0.000415506 0.000454696 
+Value: 2.17598
+Action: 0 Reward: 0
+
+Time: 47 Agent: 1 8 Token: 7 0
+Policy: 3.90896e-05 0.999761 0.000199416 3.54298e-08 
+Value: 2.1634
 Action: 1 Reward: 0
 
-Time: 59 Agent: 7 8 Token: 8 7Policy: 6.3168e-06 0.194775 0.805208 1.1538e-05 
-Value: 1.82076
+Time: 48 Agent: 2 8 Token: 7 0
+Policy: 6.66468e-06 0.999955 3.80117e-05 2.75501e-09 
+Value: 2.20736
+Action: 1 Reward: 0
+
+Time: 49 Agent: 3 8 Token: 7 0
+Policy: 3.59713e-05 0.999838 0.000125752 5.33572e-08 
+Value: 2.21381
+Action: 1 Reward: 0
+
+Time: 50 Agent: 4 8 Token: 7 0
+Policy: 2.96415e-05 0.99973 0.000240701 7.47388e-08 
+Value: 2.19045
+Action: 1 Reward: 0
+
+Time: 51 Agent: 5 8 Token: 7 0
+Policy: 0.000262607 0.99823 0.00150553 1.50381e-06 
+Value: 2.19791
+Action: 1 Reward: 0
+
+Time: 52 Agent: 6 8 Token: 7 0
+Policy: 0.000558819 0.997768 0.00166874 4.22466e-06 
+Value: 2.17421
+Action: 1 Reward: 0
+
+Time: 53 Agent: 7 8 Token: 7 0
+Policy: 0.000742149 0.993577 0.00567306 8.2601e-06 
+Value: 2.16088
+Action: 1 Reward: 0
+
+Time: 54 Agent: 8 8 Token: 7 0
+Policy: 2.2814e-08 0.000334552 0.999617 4.8059e-05 
+Value: 2.16799
 Action: 2 Reward: 0
 
-Time: 60 Agent: 7 7 Token: 8 7Policy: 0.00172905 0.985259 0.0129974 1.42033e-05 
-Value: 1.77206
+Time: 55 Agent: 8 7 Token: 7 0
+Policy: 1.58916e-06 0.00036785 0.999432 0.000198105 
+Value: 2.18456
+Action: 2 Reward: 0
+
+Time: 56 Agent: 8 6 Token: 7 0
+Policy: 3.20726e-06 0.000154024 0.998793 0.00104966 
+Value: 2.19466
+Action: 2 Reward: 0
+
+Time: 57 Agent: 8 5 Token: 7 0
+Policy: 3.50231e-06 0.000112015 0.998862 0.0010228 
+Value: 2.18137
+Action: 2 Reward: 0
+
+Time: 58 Agent: 8 4 Token: 7 0
+Policy: 5.22215e-06 0.000372911 0.999417 0.000205215 
+Value: 2.15222
+Action: 2 Reward: 0
+
+Time: 59 Agent: 8 3 Token: 7 0
+Policy: 2.71799e-07 2.72277e-05 0.999765 0.000207893 
+Value: 2.11666
+Action: 2 Reward: 0
+
+Time: 60 Agent: 8 2 Token: 7 0
+Policy: 3.44504e-08 6.36596e-06 0.999846 0.000147557 
+Value: 2.11328
+Action: 2 Reward: 0
+
+Time: 61 Agent: 8 1 Token: 7 0
+Policy: 6.49003e-12 4.78711e-09 0.999919 8.05937e-05 
+Value: 2.42085
+Action: 2 Reward: 0
+
+Time: 62 Agent: 8 0 Token: 7 0
+Policy: 2.10354e-06 8.16994e-05 . 0.999916 
+Value: 2.39779
+Action: 3 Reward: 1
+
+Time: 63 Agent: 7 0 Token: 7 9
+Policy: 0.987776 0.000557289 . 0.0116667 
+Value: 1.37859
+Action: 0 Reward: 0
+
+Time: 64 Agent: 7 1 Token: 7 9
+Policy: 0.999766 2.59869e-05 5.09199e-08 0.000207675 
+Value: 1.30095
+Action: 0 Reward: 0
+
+Time: 65 Agent: 7 2 Token: 7 9
+Policy: 0.999761 0.000174185 1.02147e-07 6.4761e-05 
+Value: 1.35865
+Action: 0 Reward: 0
+
+Time: 66 Agent: 7 3 Token: 7 9
+Policy: 0.999578 0.00025506 7.33203e-07 0.000166039 
+Value: 1.32601
+Action: 0 Reward: 0
+
+Time: 67 Agent: 7 4 Token: 7 9
+Policy: 0.99167 0.000122988 1.38786e-05 0.00819354 
+Value: 1.36447
+Action: 0 Reward: 0
+
+Time: 68 Agent: 7 5 Token: 7 9
+Policy: 0.00028258 9.74264e-08 0.000528971 0.999188 
+Value: 1.3078
+Action: 3 Reward: 0
+
+Time: 69 Agent: 6 5 Token: 7 9
+Policy: 9.8336e-05 1.83349e-08 0.00155316 0.998348 
+Value: 1.29425
+Action: 3 Reward: 0
+
+Time: 70 Agent: 5 5 Token: 7 9
+Policy: 0.000121299 1.15701e-06 0.0807727 0.919105 
+Value: 1.2554
+Action: 2 Reward: 0
+
+Time: 71 Agent: 5 4 Token: 7 9
+Policy: 0.000835435 2.25213e-05 0.183551 0.815591 
+Value: 1.24909
+Action: 3 Reward: 0
+
+Time: 72 Agent: 4 4 Token: 7 9
+Policy: 5.26499e-05 0.000104956 0.963854 0.0359881 
+Value: 1.21673
+Action: 2 Reward: 0
+
+Time: 73 Agent: 4 3 Token: 7 9
+Policy: 4.27583e-05 0.00018613 0.981501 0.0182699 
+Value: 1.22593
+Action: 2 Reward: 0
+
+Time: 74 Agent: 4 2 Token: 7 9
+Policy: 2.00965e-05 0.000152716 0.99277 0.0070572 
+Value: 1.18183
+Action: 2 Reward: 0
+
+Time: 75 Agent: 4 1 Token: 7 9
+Policy: 0.00058186 3.32329e-06 0.0013057 0.998109 
+Value: 1.18145
+Action: 3 Reward: 0
+
+Time: 76 Agent: 3 1 Token: 7 9
+Policy: 0.0105264 5.35611e-06 0.000232146 0.989236 
+Value: 1.16295
+Action: 3 Reward: 0
+
+Time: 77 Agent: 2 1 Token: 7 9
+Policy: 0.082077 1.00919e-05 0.000150546 0.917762 
+Value: 1.13567
+Action: 3 Reward: 0
+
+Time: 78 Agent: 1 1 Token: 7 9
+Policy: 0.999931 8.61324e-06 1.15817e-08 6.0498e-05 
+Value: 1.11134
+Action: 0 Reward: 0
+
+Time: 79 Agent: 1 2 Token: 7 9
+Policy: 0.999929 3.95328e-05 2.51969e-08 3.10738e-05 
+Value: 1.09859
+Action: 0 Reward: 0
+
+Time: 80 Agent: 1 3 Token: 7 9
+Policy: 0.99985 0.000114068 1.19401e-07 3.57481e-05 
+Value: 1.07157
+Action: 0 Reward: 0
+
+Time: 81 Agent: 1 4 Token: 7 9
+Policy: 0.999536 0.000329909 9.81545e-07 0.00013273 
+Value: 1.05401
+Action: 0 Reward: 0
+
+Time: 82 Agent: 1 5 Token: 7 9
+Policy: 0.998457 0.00123303 7.18168e-06 0.000302459 
+Value: 1.0324
+Action: 0 Reward: 0
+
+Time: 83 Agent: 1 6 Token: 7 9
+Policy: 0.997389 0.00219006 7.49432e-06 0.000413852 
+Value: 1.00888
+Action: 0 Reward: 0
+
+Time: 84 Agent: 1 7 Token: 7 9
+Policy: 0.977469 0.0222696 7.23645e-05 0.000189464 
+Value: 0.996475
+Action: 0 Reward: 0
+
+Time: 85 Agent: 1 8 Token: 7 9
+Policy: 0.000179027 0.999443 0.000377676 4.08378e-08 
+Value: 1.00525
+Action: 1 Reward: 0
+
+Time: 86 Agent: 2 8 Token: 7 9
+Policy: 8.09697e-06 0.999968 2.35788e-05 5.50633e-10 
+Value: 0.970939
+Action: 1 Reward: 0
+
+Time: 87 Agent: 3 8 Token: 7 9
+Policy: 7.06514e-05 0.999823 0.000106465 4.74251e-08 
+Value: 0.869403
+Action: 1 Reward: 0
+
+Time: 88 Agent: 4 8 Token: 7 9
+Policy: 6.6611e-05 0.999688 0.000245202 1.06915e-07 
+Value: 0.841889
+Action: 1 Reward: 0
+
+Time: 89 Agent: 5 8 Token: 7 9
+Policy: 0.000335427 0.998053 0.00161046 1.38068e-06 
+Value: 0.772675
+Action: 1 Reward: 0
+
+Time: 90 Agent: 6 8 Token: 7 9
+Policy: 0.520671 0.47925 5.42279e-05 2.45185e-05 
+Value: 1.25057
+Action: 0 Reward: 0
+
+Time: 91 Agent: 6 9 Token: 7 9
+Policy: . 0.999794 0.000191683 1.4553e-05 
+Value: 1.24514
 Action: 1 Reward: 1
 
-Time: 61 Agent: 8 7 Token: 2 3Policy: 6.78209e-07 3.98779e-08 0.122146 0.877853 
-Value: 0.665332
-Action: 3 Reward: 0
-
-Time: 62 Agent: 7 7 Token: 2 3Policy: 2.95587e-07 3.03071e-08 0.215008 0.784991 
-Value: 0.718142
-Action: 3 Reward: 0
-
-Time: 63 Agent: 6 7 Token: 2 3Policy: 1.90833e-07 2.53089e-08 0.267607 0.732393 
-Value: 0.77323
-Action: 3 Reward: 0
-
-Time: 64 Agent: 5 7 Token: 2 3Policy: 1.64431e-07 3.68308e-08 0.386481 0.613519 
-Value: 0.86013
-Action: 3 Reward: 0
-
-Time: 65 Agent: 4 7 Token: 2 3Policy: 7.61793e-08 1.91877e-07 0.858038 0.141962 
-Value: 0.984898
+Time: 92 Agent: 7 9 Token: 4 5
+Policy: . 0.083846 0.890529 0.025625 
+Value: 0.174978
 Action: 2 Reward: 0
 
-Time: 66 Agent: 4 6 Token: 2 3Policy: 2.02499e-07 1.05438e-07 0.63378 0.36622 
-Value: 1.18613
+Time: 93 Agent: 7 8 Token: 4 5
+Policy: 0.00967778 0.641177 0.331553 0.0175921 
+Value: 0.0931043
+Action: 1 Reward: 0
+
+Time: 94 Agent: 8 8 Token: 4 5
+Policy: 2.12236e-05 0.00571126 0.98485 0.00941712 
+Value: 0.0841448
 Action: 2 Reward: 0
 
-Time: 67 Agent: 4 5 Token: 2 3Policy: 3.98126e-07 1.01858e-07 0.478932 0.521067 
-Value: 1.33479
+Time: 95 Agent: 8 7 Token: 4 5
+Policy: 4.54229e-05 0.00125903 0.972831 0.0258641 
+Value: 0.0829738
 Action: 2 Reward: 0
 
-Time: 68 Agent: 4 4 Token: 2 3Policy: 1.95965e-06 7.34078e-08 0.108214 0.891784 
-Value: 1.44827
+Time: 96 Agent: 8 6 Token: 4 5
+Policy: 0.000398624 0.000670165 0.630663 0.368269 
+Value: 0.0497434
 Action: 3 Reward: 0
 
-Time: 69 Agent: 3 4 Token: 2 3Policy: 8.34159e-06 2.25478e-06 0.537985 0.462005 
-Value: 1.72069
+Time: 97 Agent: 7 6 Token: 4 5
+Policy: 0.000538109 0.000354717 0.533257 0.465851 
+Value: 0.0159787
+Action: 2 Reward: 0
+
+Time: 98 Agent: 7 5 Token: 4 5
+Policy: 0.000551974 6.72034e-05 0.178908 0.820473 
+Value: -0.00883979
 Action: 3 Reward: 0
 
-Time: 70 Agent: 2 4 Token: 2 3Policy: 1.93328e-06 0.0004041 0.998192 0.00140159 
-Value: 1.93209
+Time: 99 Agent: 6 5 Token: 4 5
+Policy: 0.000537092 2.00544e-05 0.141945 0.857498 
+Value: -0.0300614
+Action: 3 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 3 8
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
+Action: 2 Reward: 0
+
+Time: 1 Agent: 5 4 Token: 3 8
+Policy: 0.000879749 7.47872e-05 0.982134 0.0169114 
+Value: 3.40595
+Action: 2 Reward: 0
+
+Time: 2 Agent: 5 3 Token: 3 8
+Policy: 0.00157483 0.00171496 0.921133 0.0755768 
+Value: 3.44182
+Action: 2 Reward: 0
+
+Time: 3 Agent: 5 2 Token: 3 8
+Policy: 0.00180098 2.84071e-05 0.0659368 0.932234 
+Value: 3.43393
+Action: 3 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 3 8
+Policy: 0.000279791 0.0010887 0.966156 0.0324756 
+Value: 3.45648
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 3 8
+Policy: 0.00323969 5.02949e-06 0.000635469 0.99612 
+Value: 3.42502
+Action: 3 Reward: 0
+
+Time: 6 Agent: 3 1 Token: 3 8
+Policy: 0.0127256 5.02109e-06 0.000270832 0.986999 
+Value: 3.45128
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 3 8
+Policy: 0.118346 4.69309e-06 6.49692e-05 0.881584 
+Value: 3.46128
+Action: 3 Reward: 0
+
+Time: 8 Agent: 1 1 Token: 3 8
+Policy: 0.999895 8.94973e-06 1.63895e-08 9.56384e-05 
+Value: 3.43529
+Action: 0 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 3 8
+Policy: 0.999654 9.47314e-05 2.42411e-07 0.000250824 
+Value: 3.42183
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 3 8
+Policy: 0.999332 0.000253645 7.74179e-07 0.000414061 
+Value: 3.44273
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 4 Token: 3 8
+Policy: 0.998149 0.000538991 4.75923e-06 0.00130763 
+Value: 3.45097
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 5 Token: 3 8
+Policy: 0.996018 0.00209043 3.35687e-05 0.00185752 
+Value: 3.4494
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 6 Token: 3 8
+Policy: 0.996272 0.00257014 1.66778e-05 0.0011411 
+Value: 3.46365
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 7 Token: 3 8
+Policy: 0.972357 0.027228 0.000115592 0.000299675 
+Value: 3.44871
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 8 Token: 3 8
+Policy: 7.84029e-05 0.999276 0.000645743 3.24547e-08 
+Value: 3.46398
+Action: 1 Reward: 0
+
+Time: 16 Agent: 2 8 Token: 3 8
+Policy: 0.00020137 0.999798 5.85204e-07 2.39408e-11 
+Value: 3.97231
+Action: 1 Reward: 1
+
+Time: 17 Agent: 3 8 Token: 8 3
+Policy: 4.0332e-05 0.993351 0.00660786 9.66555e-07 
+Value: 2.99552
+Action: 1 Reward: 0
+
+Time: 18 Agent: 4 8 Token: 8 3
+Policy: 0.000119538 0.992765 0.00711282 2.4715e-06 
+Value: 3.00212
+Action: 1 Reward: 0
+
+Time: 19 Agent: 5 8 Token: 8 3
+Policy: 0.000943619 0.967187 0.0318221 4.68097e-05 
+Value: 2.98027
+Action: 1 Reward: 0
+
+Time: 20 Agent: 6 8 Token: 8 3
+Policy: 0.00109015 0.958843 0.0399969 7.00424e-05 
+Value: 2.98376
+Action: 1 Reward: 0
+
+Time: 21 Agent: 7 8 Token: 8 3
+Policy: 0.00105878 0.877345 0.121454 0.000142177 
+Value: 3.00889
+Action: 1 Reward: 0
+
+Time: 22 Agent: 8 8 Token: 8 3
+Policy: 1.72524e-08 2.54988e-05 0.999538 0.000436403 
+Value: 3.02216
+Action: 2 Reward: 0
+
+Time: 23 Agent: 8 7 Token: 8 3
+Policy: 3.57108e-07 5.09995e-05 0.999566 0.000382602 
+Value: 3.01785
+Action: 2 Reward: 0
+
+Time: 24 Agent: 8 6 Token: 8 3
+Policy: 1.04102e-06 2.61948e-05 0.996455 0.00351759 
+Value: 3.00607
+Action: 2 Reward: 0
+
+Time: 25 Agent: 8 5 Token: 8 3
+Policy: 1.82159e-06 3.0818e-05 0.996346 0.00362112 
+Value: 3.01
+Action: 2 Reward: 0
+
+Time: 26 Agent: 8 4 Token: 8 3
+Policy: 4.10115e-09 1.13232e-05 0.999971 1.76694e-05 
+Value: 3.77607
 Action: 2 Reward: 1
 
-Time: 71 Agent: 2 3 Token: 6 3Policy: 0.000164685 0.999707 0.000128775 2.87268e-08 
-Value: 1.20133
+Time: 27 Agent: 8 3 Token: 3 0
+Policy: 0.661248 0.00534337 0.0229873 0.310421 
+Value: 2.72232
+Action: 0 Reward: 0
+
+Time: 28 Agent: 8 4 Token: 3 0
+Policy: 0.884674 0.00154518 0.00239609 0.111385 
+Value: 2.66196
+Action: 0 Reward: 0
+
+Time: 29 Agent: 8 5 Token: 3 0
+Policy: 0.0260015 2.13423e-05 0.00516371 0.968813 
+Value: 2.67448
+Action: 3 Reward: 0
+
+Time: 30 Agent: 7 5 Token: 3 0
+Policy: 0.000529651 2.42926e-07 0.00274723 0.996723 
+Value: 2.6795
+Action: 3 Reward: 0
+
+Time: 31 Agent: 6 5 Token: 3 0
+Policy: 0.000167798 7.71353e-08 0.00558359 0.994249 
+Value: 2.65494
+Action: 3 Reward: 0
+
+Time: 32 Agent: 5 5 Token: 3 0
+Policy: 6.43875e-05 3.93019e-07 0.0677341 0.932201 
+Value: 2.62401
+Action: 3 Reward: 0
+
+Time: 33 Agent: 4 5 Token: 3 0
+Policy: 1.46308e-05 3.77343e-05 0.981622 0.018326 
+Value: 2.64061
+Action: 2 Reward: 0
+
+Time: 34 Agent: 4 4 Token: 3 0
+Policy: 2.85708e-05 8.45068e-05 0.977199 0.022688 
+Value: 2.59809
+Action: 2 Reward: 0
+
+Time: 35 Agent: 4 3 Token: 3 0
+Policy: 1.59225e-05 0.000109561 0.989992 0.00988266 
+Value: 2.58505
+Action: 2 Reward: 0
+
+Time: 36 Agent: 4 2 Token: 3 0
+Policy: 4.96595e-06 3.41386e-05 0.992616 0.00734469 
+Value: 2.5886
+Action: 2 Reward: 0
+
+Time: 37 Agent: 4 1 Token: 3 0
+Policy: 2.04797e-08 1.64653e-06 0.997295 0.00270305 
+Value: 3.22343
+Action: 2 Reward: 0
+
+Time: 38 Agent: 4 0 Token: 3 0
+Policy: 3.52887e-05 9.74644e-05 . 0.999867 
+Value: 3.32231
+Action: 3 Reward: 1
+
+Time: 39 Agent: 3 0 Token: 3 6
+Policy: 0.256135 0.000838697 . 0.743027 
+Value: 2.33059
+Action: 3 Reward: 0
+
+Time: 40 Agent: 2 0 Token: 3 6
+Policy: 0.996779 0.000472525 . 0.00274895 
+Value: 2.31956
+Action: 0 Reward: 0
+
+Time: 41 Agent: 2 1 Token: 3 6
+Policy: 0.751792 0.000674291 0.000217742 0.247316 
+Value: 2.29109
+Action: 0 Reward: 0
+
+Time: 42 Agent: 2 2 Token: 3 6
+Policy: 0.280057 0.000141644 0.000509344 0.719292 
+Value: 2.27636
+Action: 3 Reward: 0
+
+Time: 43 Agent: 1 2 Token: 3 6
+Policy: 0.998795 0.00058868 1.91576e-06 0.00061393 
+Value: 2.26087
+Action: 0 Reward: 0
+
+Time: 44 Agent: 1 3 Token: 3 6
+Policy: 0.998232 0.00157526 1.77137e-06 0.000190642 
+Value: 2.23782
+Action: 0 Reward: 0
+
+Time: 45 Agent: 1 4 Token: 3 6
+Policy: 0.993537 0.00578794 1.48274e-05 0.000660465 
+Value: 2.22301
+Action: 0 Reward: 0
+
+Time: 46 Agent: 1 5 Token: 3 6
+Policy: 0.944369 0.053156 0.00028399 0.00219117 
+Value: 2.21535
+Action: 0 Reward: 0
+
+Time: 47 Agent: 1 6 Token: 3 6
+Policy: 0.926102 0.0707944 0.00020845 0.00289526 
+Value: 2.20693
+Action: 0 Reward: 0
+
+Time: 48 Agent: 1 7 Token: 3 6
+Policy: 0.721678 0.277593 0.000247656 0.000481979 
+Value: 2.20535
+Action: 0 Reward: 0
+
+Time: 49 Agent: 1 8 Token: 3 6
+Policy: 3.5806e-05 0.999789 0.000175269 2.95947e-08 
+Value: 2.20817
 Action: 1 Reward: 0
 
-Time: 72 Agent: 3 3 Token: 6 3Policy: 0.000222868 0.999746 3.10057e-05 5.35652e-09 
-Value: 1.3935
+Time: 50 Agent: 2 8 Token: 3 6
+Policy: 5.43198e-06 0.999969 2.52423e-05 1.50509e-09 
+Value: 2.23099
 Action: 1 Reward: 0
 
-Time: 73 Agent: 4 3 Token: 6 3Policy: 0.000462345 0.999398 0.00014009 4.21338e-08 
-Value: 1.62009
+Time: 51 Agent: 3 8 Token: 3 6
+Policy: 2.89423e-05 0.999875 9.57261e-05 3.13942e-08 
+Value: 2.22398
 Action: 1 Reward: 0
 
-Time: 74 Agent: 5 3 Token: 6 3Policy: 0.0025875 0.993524 0.00388298 5.29219e-06 
-Value: 1.86916
-Action: 1 Reward: 1
+Time: 52 Agent: 4 8 Token: 3 6
+Policy: 2.68278e-05 0.999779 0.000194584 5.30109e-08 
+Value: 2.20074
+Action: 1 Reward: 0
 
-Time: 75 Agent: 6 3 Token: 6 9Policy: 0.999899 7.80714e-05 1.07217e-08 2.30842e-05 
-Value: 1.03336
+Time: 53 Agent: 5 8 Token: 3 6
+Policy: 0.000242356 0.998538 0.00121878 1.08007e-06 
+Value: 2.20598
+Action: 1 Reward: 0
+
+Time: 54 Agent: 6 8 Token: 3 6
+Policy: 0.000507659 0.998157 0.00133239 3.0112e-06 
+Value: 2.17928
+Action: 1 Reward: 0
+
+Time: 55 Agent: 7 8 Token: 3 6
+Policy: 0.000705528 0.994695 0.00459372 6.09991e-06 
+Value: 2.16247
+Action: 1 Reward: 0
+
+Time: 56 Agent: 8 8 Token: 3 6
+Policy: 2.09719e-08 0.000385776 0.999579 3.55411e-05 
+Value: 2.16912
+Action: 2 Reward: 0
+
+Time: 57 Agent: 8 7 Token: 3 6
+Policy: 1.55774e-06 0.000401413 0.999434 0.000163276 
+Value: 2.18403
+Action: 2 Reward: 0
+
+Time: 58 Agent: 8 6 Token: 3 6
+Policy: 3.22822e-06 0.000169537 0.998946 0.000881592 
+Value: 2.19011
+Action: 2 Reward: 0
+
+Time: 59 Agent: 8 5 Token: 3 6
+Policy: 3.59865e-06 0.000119977 0.998978 0.000897962 
+Value: 2.17256
+Action: 2 Reward: 0
+
+Time: 60 Agent: 8 4 Token: 3 6
+Policy: 5.20146e-06 0.000389578 0.999426 0.000178976 
+Value: 2.14019
+Action: 2 Reward: 0
+
+Time: 61 Agent: 8 3 Token: 3 6
+Policy: 2.77025e-07 2.85583e-05 0.999781 0.000190299 
+Value: 2.10124
+Action: 2 Reward: 0
+
+Time: 62 Agent: 8 2 Token: 3 6
+Policy: 3.35495e-08 6.27102e-06 0.999856 0.000138112 
+Value: 2.09448
+Action: 2 Reward: 0
+
+Time: 63 Agent: 8 1 Token: 3 6
+Policy: 2.83531e-06 1.60321e-08 0.0038477 0.996149 
+Value: 2.05271
+Action: 3 Reward: 0
+
+Time: 64 Agent: 7 1 Token: 3 6
+Policy: 3.30668e-06 1.00972e-09 9.92225e-05 0.999897 
+Value: 2.03337
+Action: 3 Reward: 0
+
+Time: 65 Agent: 6 1 Token: 3 6
+Policy: 0.000829572 3.85658e-08 2.41606e-05 0.999146 
+Value: 2.01193
+Action: 3 Reward: 0
+
+Time: 66 Agent: 5 1 Token: 3 6
+Policy: 0.99994 5.39648e-05 6.35836e-09 6.27954e-06 
+Value: 1.98353
 Action: 0 Reward: 0
 
-Time: 76 Agent: 6 4 Token: 6 9Policy: 0.999948 4.23639e-05 2.4457e-09 9.64167e-06 
-Value: 1.12166
+Time: 67 Agent: 5 2 Token: 3 6
+Policy: 0.999916 8.2003e-05 2.40801e-09 2.35393e-06 
+Value: 1.96811
 Action: 0 Reward: 0
 
-Time: 77 Agent: 6 5 Token: 6 9Policy: 0.999941 4.84871e-05 3.13032e-09 1.07417e-05 
-Value: 1.23731
+Time: 68 Agent: 5 3 Token: 3 6
+Policy: 0.99998 1.82828e-05 4.18722e-10 1.22731e-06 
+Value: 1.93747
 Action: 0 Reward: 0
 
-Time: 78 Agent: 6 6 Token: 6 9Policy: 0.999883 9.74098e-05 1.07077e-08 1.96734e-05 
-Value: 1.3769
+Time: 69 Agent: 5 4 Token: 3 6
+Policy: 0.999954 8.87101e-06 7.13785e-09 3.74997e-05 
+Value: 1.86943
 Action: 0 Reward: 0
 
-Time: 79 Agent: 6 7 Token: 6 9Policy: 0.999419 0.000439674 2.84058e-07 0.000141087 
-Value: 1.56343
-Action: 0 Reward: 0
+Time: 70 Agent: 5 5 Token: 3 6
+Policy: 0.0402179 3.39002e-07 4.20567e-05 0.95974 
+Value: 1.81809
+Action: 3 Reward: 0
 
-Time: 80 Agent: 6 8 Token: 6 9Policy: 0.977813 0.00678285 0.000367286 0.0150368 
-Value: 1.77509
+Time: 71 Agent: 4 5 Token: 3 6
+Policy: 0.24075 8.65389e-06 0.000115661 0.759126 
+Value: 1.9924
+Action: 3 Reward: 0
+
+Time: 72 Agent: 3 5 Token: 3 6
+Policy: 0.999172 0.000812663 4.75479e-07 1.52954e-05 
+Value: 2.02549
 Action: 0 Reward: 1
 
-Time: 81 Agent: 6 9 Token: 1 0Policy: 2.8717e-06 1.02269e-06 0.385853 0.614143 
-Value: 0.566799
+Time: 73 Agent: 3 6 Token: 2 6
+Policy: 0.0098709 2.88831e-06 0.000430401 0.989696 
+Value: 1.90167
+Action: 3 Reward: 1
+
+Time: 74 Agent: 2 6 Token: 7 5
+Policy: 0.68532 0.217131 0.0199325 0.0776174 
+Value: 0.942212
+Action: 0 Reward: 0
+
+Time: 75 Agent: 2 7 Token: 7 5
+Policy: 0.590519 0.408012 0.000686768 0.000781733 
+Value: 0.951442
+Action: 1 Reward: 0
+
+Time: 76 Agent: 3 7 Token: 7 5
+Policy: 0.815334 0.184055 0.00012639 0.000484151 
+Value: 0.9381
+Action: 0 Reward: 0
+
+Time: 77 Agent: 3 8 Token: 7 5
+Policy: 0.0010254 0.996684 0.00227941 1.16035e-05 
+Value: 0.959794
+Action: 1 Reward: 0
+
+Time: 78 Agent: 4 8 Token: 7 5
+Policy: 0.000242447 0.996182 0.00357082 4.50128e-06 
+Value: 0.89536
+Action: 1 Reward: 0
+
+Time: 79 Agent: 5 8 Token: 7 5
+Policy: 0.00144947 0.9618 0.0365853 0.000164927 
+Value: 0.862456
+Action: 1 Reward: 0
+
+Time: 80 Agent: 6 8 Token: 7 5
+Policy: 0.00228451 0.945768 0.0515727 0.000374936 
+Value: 0.827573
+Action: 1 Reward: 0
+
+Time: 81 Agent: 7 8 Token: 7 5
+Policy: 0.0015653 0.831666 0.16615 0.000619199 
+Value: 0.776898
+Action: 2 Reward: 0
+
+Time: 82 Agent: 7 7 Token: 7 5
+Policy: 0.00411851 0.949387 0.0461945 0.0003002 
+Value: 0.676296
+Action: 1 Reward: 0
+
+Time: 83 Agent: 8 7 Token: 7 5
+Policy: 4.57369e-05 0.00176378 0.980851 0.0173397 
+Value: 0.697205
+Action: 2 Reward: 0
+
+Time: 84 Agent: 8 6 Token: 7 5
+Policy: 3.5933e-07 0.000113661 0.995288 0.00459825 
+Value: 1.58604
+Action: 2 Reward: 0
+
+Time: 85 Agent: 8 5 Token: 7 5
+Policy: 0.000940177 2.31291e-05 0.0132394 0.985797 
+Value: 1.50467
+Action: 3 Reward: 1
+
+Time: 86 Agent: 7 5 Token: 9 6
+Policy: 0.066216 0.000395441 0.0600934 0.873295 
+Value: 0.434446
 Action: 3 Reward: 0
 
-Time: 82 Agent: 5 9 Token: 1 0Policy: 4.27524e-07 1.00143e-06 0.791733 0.208265 
-Value: 0.464479
+Time: 87 Agent: 6 5 Token: 9 6
+Policy: 0.00373315 2.49195e-05 0.0349934 0.961249 
+Value: 0.405423
 Action: 3 Reward: 0
 
-Time: 83 Agent: 4 9 Token: 1 0Policy: 9.64937e-09 4.49467e-06 0.997419 0.00257644 
-Value: 0.470915
-Action: 2 Reward: 0
-
-Time: 84 Agent: 4 8 Token: 1 0Policy: 6.58655e-08 7.39673e-07 0.942753 0.0572464 
-Value: 0.481823
-Action: 2 Reward: 0
-
-Time: 85 Agent: 4 7 Token: 1 0Policy: 8.6617e-08 3.67271e-07 0.867408 0.132592 
-Value: 0.444692
-Action: 2 Reward: 0
-
-Time: 86 Agent: 4 6 Token: 1 0Policy: 1.6095e-07 1.31162e-07 0.612373 0.387627 
-Value: 0.452435
+Time: 88 Agent: 5 5 Token: 9 6
+Policy: 0.00152682 9.44231e-05 0.238731 0.759648 
+Value: 0.3594
 Action: 3 Reward: 0
 
-Time: 87 Agent: 3 6 Token: 1 0Policy: 7.61253e-09 1.74704e-06 0.995471 0.00452755 
-Value: 0.483714
+Time: 89 Agent: 4 5 Token: 9 6
+Policy: 0.000179722 0.000483134 0.973592 0.0257449 
+Value: 0.372645
 Action: 2 Reward: 0
 
-Time: 88 Agent: 3 5 Token: 1 0Policy: 9.41992e-08 4.47777e-07 0.897966 0.102033 
-Value: 0.576398
+Time: 90 Agent: 4 4 Token: 9 6
+Policy: 0.000562811 0.00111837 0.962236 0.0360827 
+Value: 0.336919
 Action: 2 Reward: 0
 
-Time: 89 Agent: 3 4 Token: 1 0Policy: 1.30732e-07 3.27585e-07 0.832456 0.167544 
-Value: 0.637412
-Action: 2 Reward: 0
-
-Time: 90 Agent: 3 3 Token: 1 0Policy: 2.95422e-07 1.75882e-07 0.603139 0.39686 
-Value: 0.788696
-Action: 2 Reward: 0
-
-Time: 91 Agent: 3 2 Token: 1 0Policy: 6.21608e-07 1.32055e-07 0.378926 0.621074 
-Value: 0.951189
-Action: 2 Reward: 0
-
-Time: 92 Agent: 3 1 Token: 1 0Policy: 2.81498e-06 7.31804e-08 0.0643781 0.935619 
-Value: 1.10272
+Time: 91 Agent: 4 3 Token: 9 6
+Policy: 0.00101611 0.00286468 0.946887 0.049232 
+Value: 0.283938
 Action: 3 Reward: 0
 
-Time: 93 Agent: 2 1 Token: 1 0Policy: 1.54304e-05 2.90448e-06 0.355946 0.644036 
-Value: 1.2819
+Time: 92 Agent: 3 3 Token: 9 6
+Policy: 0.000200449 0.00138756 0.974016 0.0243957 
+Value: 0.256765
+Action: 2 Reward: 0
+
+Time: 93 Agent: 3 2 Token: 9 6
+Policy: 0.000483849 0.00106789 0.899394 0.0990541 
+Value: 0.210556
+Action: 2 Reward: 0
+
+Time: 94 Agent: 3 1 Token: 9 6
+Policy: 0.0101473 0.000352353 0.00941774 0.980083 
+Value: 0.196728
 Action: 3 Reward: 0
 
-Time: 94 Agent: 1 1 Token: 1 0Policy: 5.1926e-06 0.000604761 0.995812 0.00357793 
-Value: 1.46187
+Time: 95 Agent: 2 1 Token: 9 6
+Policy: 0.227529 0.00121268 0.00284138 0.768416 
+Value: 0.16037
+Action: 0 Reward: 0
+
+Time: 96 Agent: 2 2 Token: 9 6
+Policy: 0.293018 0.000986756 0.0017691 0.704226 
+Value: 0.097704
+Action: 0 Reward: 0
+
+Time: 97 Agent: 2 3 Token: 9 6
+Policy: 0.42037 0.0013414 0.0020642 0.576225 
+Value: 0.0718418
+Action: 3 Reward: 0
+
+Time: 98 Agent: 1 3 Token: 9 6
+Policy: 0.988368 0.0103446 2.81163e-05 0.00125897 
+Value: 0.0730544
+Action: 0 Reward: 0
+
+Time: 99 Agent: 1 4 Token: 9 6
+Policy: 0.947265 0.0506764 0.000102459 0.00195641 
+Value: 0.0426133
+Action: 0 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 2 3
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
+Action: 3 Reward: 0
+
+Time: 1 Agent: 4 5 Token: 2 3
+Policy: 4.86187e-06 8.18475e-06 0.99945 0.000536637 
+Value: 3.39299
+Action: 2 Reward: 0
+
+Time: 2 Agent: 4 4 Token: 2 3
+Policy: 1.58445e-05 0.00085914 0.998168 0.000957041 
+Value: 3.41938
+Action: 2 Reward: 0
+
+Time: 3 Agent: 4 3 Token: 2 3
+Policy: 2.39479e-05 0.000917618 0.995971 0.00308709 
+Value: 3.43522
+Action: 2 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 2 3
+Policy: 3.32412e-05 0.000554454 0.992397 0.00701527 
+Value: 3.43106
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 2 3
+Policy: 0.00160833 1.58372e-06 0.000623421 0.997767 
+Value: 3.42869
+Action: 3 Reward: 0
+
+Time: 6 Agent: 3 1 Token: 2 3
+Policy: 0.0118901 5.38204e-06 0.000422617 0.987682 
+Value: 3.42282
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 2 3
+Policy: 0.116882 4.23351e-06 7.5437e-05 0.883039 
+Value: 3.46047
+Action: 3 Reward: 0
+
+Time: 8 Agent: 1 1 Token: 2 3
+Policy: 0.999895 7.40919e-06 1.69788e-08 9.75144e-05 
+Value: 3.44359
+Action: 0 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 2 3
+Policy: 0.996438 0.00353599 5.21698e-06 2.0954e-05 
+Value: 4.13934
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 2 3
+Policy: 0.00100153 0.998694 0.000304221 3.28883e-07 
+Value: 4.0663
+Action: 1 Reward: 1
+
+Time: 11 Agent: 2 3 Token: 1 4
+Policy: 0.0810888 0.00073625 0.0900443 0.828131 
+Value: 3.91456
+Action: 3 Reward: 0
+
+Time: 12 Agent: 1 3 Token: 1 4
+Policy: 0.990013 0.00985073 6.73892e-05 6.89545e-05 
+Value: 3.91515
+Action: 0 Reward: 1
+
+Time: 13 Agent: 1 4 Token: 0 2
+Policy: 0.914944 0.0782404 0.00170166 0.00511395 
+Value: 3.06368
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 5 Token: 0 2
+Policy: 0.814115 0.179309 0.0030993 0.00347758 
+Value: 3.08221
+Action: 1 Reward: 0
+
+Time: 15 Agent: 2 5 Token: 0 2
+Policy: 0.936659 0.0301343 0.00410004 0.0291063 
+Value: 3.05812
+Action: 0 Reward: 0
+
+Time: 16 Agent: 2 6 Token: 0 2
+Policy: 0.913199 0.0473543 0.00768523 0.0317616 
+Value: 3.05467
+Action: 0 Reward: 0
+
+Time: 17 Agent: 2 7 Token: 0 2
+Policy: 0.839401 0.157859 0.0012279 0.00151256 
+Value: 3.05155
+Action: 0 Reward: 0
+
+Time: 18 Agent: 2 8 Token: 0 2
+Policy: 4.84779e-05 0.998954 0.000997843 8.96438e-08 
+Value: 3.06163
+Action: 1 Reward: 0
+
+Time: 19 Agent: 3 8 Token: 0 2
+Policy: 0.000134477 0.997447 0.00241763 6.5477e-07 
+Value: 3.03344
+Action: 1 Reward: 0
+
+Time: 20 Agent: 4 8 Token: 0 2
+Policy: 0.000109511 0.996133 0.00375621 8.80235e-07 
+Value: 3.03498
+Action: 1 Reward: 0
+
+Time: 21 Agent: 5 8 Token: 0 2
+Policy: 0.000737752 0.975407 0.023832 2.27877e-05 
+Value: 3.03438
+Action: 1 Reward: 0
+
+Time: 22 Agent: 6 8 Token: 0 2
+Policy: 0.00112285 0.972495 0.0263416 4.0415e-05 
+Value: 3.02308
+Action: 1 Reward: 0
+
+Time: 23 Agent: 7 8 Token: 0 2
+Policy: 0.00113408 0.90984 0.0889371 8.8506e-05 
+Value: 3.04103
+Action: 1 Reward: 0
+
+Time: 24 Agent: 8 8 Token: 0 2
+Policy: 1.66553e-08 3.80786e-05 0.999725 0.000237322 
+Value: 3.05776
+Action: 2 Reward: 0
+
+Time: 25 Agent: 8 7 Token: 0 2
+Policy: 4.619e-07 7.86882e-05 0.999644 0.000276828 
+Value: 3.05444
+Action: 2 Reward: 0
+
+Time: 26 Agent: 8 6 Token: 0 2
+Policy: 1.23945e-06 3.83387e-05 0.997578 0.00238277 
+Value: 3.04444
+Action: 2 Reward: 0
+
+Time: 27 Agent: 8 5 Token: 0 2
+Policy: 2.25458e-06 4.41686e-05 0.997422 0.00253174 
+Value: 3.05086
+Action: 2 Reward: 0
+
+Time: 28 Agent: 8 4 Token: 0 2
+Policy: 4.41537e-06 0.000186676 0.999278 0.000531382 
+Value: 3.03387
+Action: 2 Reward: 0
+
+Time: 29 Agent: 8 3 Token: 0 2
+Policy: 2.34824e-07 1.60016e-05 0.999656 0.000327933 
+Value: 3.03037
+Action: 2 Reward: 0
+
+Time: 30 Agent: 8 2 Token: 0 2
+Policy: 3.67917e-08 3.60748e-06 0.999642 0.000354121 
+Value: 3.03496
+Action: 2 Reward: 0
+
+Time: 31 Agent: 8 1 Token: 0 2
+Policy: 8.69816e-07 4.1689e-09 0.002889 0.99711 
+Value: 3.04741
+Action: 3 Reward: 0
+
+Time: 32 Agent: 7 1 Token: 0 2
+Policy: 1.67465e-06 4.79244e-10 7.31834e-05 0.999925 
+Value: 3.02129
+Action: 3 Reward: 0
+
+Time: 33 Agent: 6 1 Token: 0 2
+Policy: 0.000124672 3.48712e-09 8.32971e-06 0.999867 
+Value: 3.00409
+Action: 3 Reward: 0
+
+Time: 34 Agent: 5 1 Token: 0 2
+Policy: 0.999802 5.609e-05 7.16103e-08 0.000141784 
+Value: 2.97839
+Action: 0 Reward: 0
+
+Time: 35 Agent: 5 2 Token: 0 2
+Policy: 0.999835 0.000100576 4.19158e-08 6.48514e-05 
+Value: 2.98504
+Action: 0 Reward: 0
+
+Time: 36 Agent: 5 3 Token: 0 2
+Policy: 0.999943 2.88513e-05 7.25876e-09 2.85828e-05 
+Value: 2.94231
+Action: 0 Reward: 0
+
+Time: 37 Agent: 5 4 Token: 0 2
+Policy: 0.999707 5.37638e-06 1.7359e-08 0.000287713 
+Value: 2.91324
+Action: 0 Reward: 0
+
+Time: 38 Agent: 5 5 Token: 0 2
+Policy: 0.00143312 1.09766e-08 1.86032e-05 0.998548 
+Value: 2.89552
+Action: 3 Reward: 0
+
+Time: 39 Agent: 4 5 Token: 0 2
+Policy: 4.55914e-05 4.06026e-08 0.00320212 0.996752 
+Value: 2.89313
+Action: 3 Reward: 0
+
+Time: 40 Agent: 3 5 Token: 0 2
+Policy: 3.35391e-06 2.46539e-08 0.0630245 0.936972 
+Value: 2.8675
+Action: 3 Reward: 0
+
+Time: 41 Agent: 2 5 Token: 0 2
+Policy: 4.62629e-06 2.93734e-06 0.958064 0.0419285 
+Value: 2.85646
+Action: 2 Reward: 0
+
+Time: 42 Agent: 2 4 Token: 0 2
+Policy: 4.82934e-08 1.49036e-07 0.989275 0.0107246 
+Value: 2.87228
+Action: 2 Reward: 0
+
+Time: 43 Agent: 2 3 Token: 0 2
+Policy: 1.93374e-08 1.11581e-07 0.983974 0.0160259 
+Value: 2.86636
+Action: 2 Reward: 0
+
+Time: 44 Agent: 2 2 Token: 0 2
+Policy: 2.55466e-08 8.3688e-08 0.969381 0.0306193 
+Value: 2.81162
+Action: 2 Reward: 0
+
+Time: 45 Agent: 2 1 Token: 0 2
+Policy: 3.74279e-05 1.1197e-07 0.000763552 0.999199 
+Value: 2.72654
+Action: 3 Reward: 0
+
+Time: 46 Agent: 1 1 Token: 0 2
+Policy: 0.0029235 1.29998e-07 4.1437e-05 0.997035 
+Value: 2.97812
+Action: 3 Reward: 0
+
+Time: 47 Agent: 0 1 Token: 0 2
+Policy: 0.999913 1.27293e-06 8.54418e-05 . 
+Value: 3.05184
+Action: 0 Reward: 1
+
+Time: 48 Agent: 0 2 Token: 8 5
+Policy: 0.000893152 0.999021 8.60544e-05 . 
+Value: 2.07549
+Action: 1 Reward: 0
+
+Time: 49 Agent: 1 2 Token: 8 5
+Policy: 0.989142 0.0107522 5.70896e-06 0.000100356 
+Value: 2.07906
+Action: 0 Reward: 0
+
+Time: 50 Agent: 1 3 Token: 8 5
+Policy: 0.992439 0.00735074 6.75046e-06 0.000203874 
+Value: 2.0275
+Action: 0 Reward: 0
+
+Time: 51 Agent: 1 4 Token: 8 5
+Policy: 0.972203 0.0270138 5.97317e-05 0.000723713 
+Value: 2.00459
+Action: 0 Reward: 0
+
+Time: 52 Agent: 1 5 Token: 8 5
+Policy: 0.762307 0.235056 0.000967146 0.00167012 
+Value: 1.99524
+Action: 1 Reward: 0
+
+Time: 53 Agent: 2 5 Token: 8 5
+Policy: 0.931365 0.0526561 0.00180012 0.0141788 
+Value: 1.93818
+Action: 0 Reward: 0
+
+Time: 54 Agent: 2 6 Token: 8 5
+Policy: 0.905886 0.0790053 0.00171446 0.0133947 
+Value: 1.91837
+Action: 0 Reward: 0
+
+Time: 55 Agent: 2 7 Token: 8 5
+Policy: 0.745463 0.253726 0.000224716 0.000585788 
+Value: 1.94697
+Action: 0 Reward: 0
+
+Time: 56 Agent: 2 8 Token: 8 5
+Policy: 2.54556e-05 0.999848 0.000126725 2.58994e-08 
+Value: 1.94649
+Action: 1 Reward: 0
+
+Time: 57 Agent: 3 8 Token: 8 5
+Policy: 3.6586e-05 0.999753 0.000210048 8.72169e-08 
+Value: 1.97055
+Action: 1 Reward: 0
+
+Time: 58 Agent: 4 8 Token: 8 5
+Policy: 2.7486e-05 0.999596 0.000376337 1.13653e-07 
+Value: 1.94523
+Action: 1 Reward: 0
+
+Time: 59 Agent: 5 8 Token: 8 5
+Policy: 0.000258605 0.99726 0.00247908 2.65659e-06 
+Value: 1.93841
+Action: 1 Reward: 0
+
+Time: 60 Agent: 6 8 Token: 8 5
+Policy: 0.000482005 0.996409 0.00310191 7.24924e-06 
+Value: 1.89628
+Action: 1 Reward: 0
+
+Time: 61 Agent: 7 8 Token: 8 5
+Policy: 0.000563181 0.991252 0.0081736 1.07622e-05 
+Value: 1.87432
+Action: 2 Reward: 0
+
+Time: 62 Agent: 7 7 Token: 8 5
+Policy: 0.000783928 0.998521 0.000694148 6.75699e-07 
+Value: 1.80286
+Action: 1 Reward: 0
+
+Time: 63 Agent: 8 7 Token: 8 5
+Policy: 7.61063e-06 0.00117799 0.997789 0.00102517 
+Value: 1.81697
+Action: 2 Reward: 0
+
+Time: 64 Agent: 8 6 Token: 8 5
+Policy: 1.75397e-09 0.000142083 0.999854 4.11969e-06 
+Value: 2.40093
 Action: 2 Reward: 1
 
-Time: 95 Agent: 1 0 Token: 6 2Policy: 0.0223811 0.977616 2.36617e-06 1.69927e-07 
-Value: 0.633453
-Action: 1 Reward: 0
-
-Time: 96 Agent: 2 0 Token: 6 2Policy: 0.0366889 0.963311 1.15594e-07 9.75398e-09 
-Value: 0.715097
-Action: 1 Reward: 0
-
-Time: 97 Agent: 3 0 Token: 6 2Policy: 0.0364026 0.963597 7.25353e-08 4.93666e-09 
-Value: 0.89131
-Action: 1 Reward: 0
-
-Time: 98 Agent: 4 0 Token: 6 2Policy: 0.0579351 0.942065 1.06172e-07 8.67323e-09 
-Value: 1.08184
-Action: 1 Reward: 0
-
-Time: 99 Agent: 5 0 Token: 6 2Policy: 0.457413 0.542586 4.47955e-07 2.63633e-07 
-Value: 1.29924
-Action: 1 Reward: 0
-
-Time: 0 Agent: 5 5 Token: 3 2Policy: 4.26622e-06 1.40236e-06 0.596991 0.403003 
-Value: 1.11547
+Time: 65 Agent: 8 5 Token: 6 5
+Policy: 0.0359353 0.000287603 0.0358647 0.927912 
+Value: 1.34172
 Action: 3 Reward: 0
 
-Time: 1 Agent: 4 5 Token: 3 2Policy: 3.6851e-08 1.82291e-06 0.993492 0.00650659 
-Value: 1.57661
-Action: 2 Reward: 0
-
-Time: 2 Agent: 4 4 Token: 3 2Policy: 3.21387e-07 9.11475e-07 0.935428 0.0645711 
-Value: 1.8833
-Action: 2 Reward: 0
-
-Time: 3 Agent: 4 3 Token: 3 2Policy: 9.49329e-06 3.67688e-06 0.66469 0.335297 
-Value: 2.05411
-Action: 2 Reward: 0
-
-Time: 4 Agent: 4 2 Token: 3 2Policy: 0.00320656 7.47205e-06 0.00979994 0.986986 
-Value: 2.1666
+Time: 66 Agent: 7 5 Token: 6 5
+Policy: 0.00345315 5.46407e-06 0.00168518 0.994856 
+Value: 2.33499
 Action: 3 Reward: 1
 
-Time: 5 Agent: 3 2 Token: 6 5Policy: 0.0582076 0.94179 2.15196e-06 2.13165e-07 
-Value: 1.40501
-Action: 1 Reward: 0
+Time: 67 Agent: 6 5 Token: 1 4
+Policy: 0.04687 5.71323e-05 0.00716645 0.945906 
+Value: 1.2045
+Action: 3 Reward: 0
 
-Time: 6 Agent: 4 2 Token: 6 5Policy: 0.179802 0.820198 4.81686e-07 9.45125e-08 
-Value: 1.54879
-Action: 1 Reward: 0
+Time: 68 Agent: 5 5 Token: 1 4
+Policy: 0.00030072 2.53558e-06 0.064108 0.935589 
+Value: 1.29683
+Action: 3 Reward: 0
 
-Time: 7 Agent: 5 2 Token: 6 5Policy: 0.965453 0.0345453 1.76116e-07 1.47081e-06 
-Value: 1.78604
+Time: 69 Agent: 4 5 Token: 1 4
+Policy: 5.06342e-05 0.000220305 0.985532 0.0141975 
+Value: 1.17659
+Action: 2 Reward: 0
+
+Time: 70 Agent: 4 4 Token: 1 4
+Policy: 7.42517e-05 0.000311301 0.987906 0.0117087 
+Value: 1.2212
+Action: 2 Reward: 0
+
+Time: 71 Agent: 4 3 Token: 1 4
+Policy: 1.9624e-05 0.000251498 0.994915 0.00481354 
+Value: 1.22263
+Action: 2 Reward: 0
+
+Time: 72 Agent: 4 2 Token: 1 4
+Policy: 5.68793e-06 7.38282e-05 0.996738 0.00318211 
+Value: 1.22393
+Action: 2 Reward: 0
+
+Time: 73 Agent: 4 1 Token: 1 4
+Policy: 0.00177099 1.49831e-05 0.00392265 0.994291 
+Value: 1.17808
+Action: 3 Reward: 0
+
+Time: 74 Agent: 3 1 Token: 1 4
+Policy: 0.0333738 1.60946e-05 0.000428633 0.966181 
+Value: 1.19857
+Action: 3 Reward: 0
+
+Time: 75 Agent: 2 1 Token: 1 4
+Policy: 0.159788 1.61242e-05 0.000192494 0.840004 
+Value: 1.15791
 Action: 0 Reward: 0
 
-Time: 8 Agent: 5 3 Token: 6 5Policy: 0.60687 0.393127 1.77146e-06 1.23245e-06 
-Value: 1.93834
-Action: 1 Reward: 0
-
-Time: 9 Agent: 6 3 Token: 6 5Policy: 0.999459 0.000459763 2.83205e-07 8.09516e-05 
-Value: 2.16558
+Time: 76 Agent: 2 2 Token: 1 4
+Policy: 0.305128 1.6165e-05 0.000248935 0.694607 
+Value: 1.11669
 Action: 0 Reward: 0
 
-Time: 10 Agent: 6 4 Token: 6 5Policy: 0.988887 0.00685534 0.000113686 0.00414395 
-Value: 2.25565
+Time: 77 Agent: 2 3 Token: 1 4
+Policy: 0.0330003 5.97982e-06 0.000557876 0.966436 
+Value: 1.79766
+Action: 3 Reward: 0
+
+Time: 78 Agent: 1 3 Token: 1 4
+Policy: 0.993645 0.00624941 2.01876e-05 8.5773e-05 
+Value: 1.77711
 Action: 0 Reward: 1
 
-Time: 11 Agent: 6 5 Token: 0 8Policy: 0.000860435 5.30831e-09 6.00965e-06 0.999134 
-Value: 1.00327
-Action: 3 Reward: 0
-
-Time: 12 Agent: 5 5 Token: 0 8Policy: 0.00211472 7.33529e-09 3.85114e-06 0.997881 
-Value: 0.990042
-Action: 3 Reward: 0
-
-Time: 13 Agent: 4 5 Token: 0 8Policy: 0.0184781 4.83208e-08 3.48197e-06 0.981518 
-Value: 1.04792
-Action: 3 Reward: 0
-
-Time: 14 Agent: 3 5 Token: 0 8Policy: 0.284619 6.04244e-07 2.71943e-06 0.715378 
-Value: 1.12492
+Time: 79 Agent: 1 4 Token: 6 5
+Policy: 0.904692 0.0946111 0.000138627 0.000558037 
+Value: 0.772177
 Action: 0 Reward: 0
 
-Time: 15 Agent: 3 6 Token: 0 8Policy: 0.0275998 1.04594e-07 5.59661e-06 0.972394 
-Value: 1.30531
-Action: 3 Reward: 0
-
-Time: 16 Agent: 2 6 Token: 0 8Policy: 0.389456 1.7491e-06 6.16026e-06 0.610536 
-Value: 1.4316
+Time: 80 Agent: 1 5 Token: 6 5
+Policy: 0.694237 0.3048 0.000386803 0.000576512 
+Value: 0.713234
 Action: 0 Reward: 0
 
-Time: 17 Agent: 2 7 Token: 0 8Policy: 0.0188452 2.73384e-07 2.64739e-05 0.981128 
-Value: 1.61456
-Action: 3 Reward: 0
-
-Time: 18 Agent: 1 7 Token: 0 8Policy: 0.585333 2.44712e-05 6.87885e-05 0.414574 
-Value: 1.87903
+Time: 81 Agent: 1 6 Token: 6 5
+Policy: 0.549745 0.44844 0.000684736 0.00113059 
+Value: 0.706343
 Action: 0 Reward: 0
 
-Time: 19 Agent: 1 8 Token: 0 8Policy: 0.0111434 3.61991e-05 0.0103848 0.978436 
-Value: 1.94488
-Action: 3 Reward: 1
-
-Time: 20 Agent: 0 8 Token: 6 6Policy: 6.66772e-06 0.997979 0.00201395 1.49674e-08 
-Value: 1.27408
+Time: 82 Agent: 1 7 Token: 6 5
+Policy: 0.211231 0.787572 0.00096748 0.000229877 
+Value: 0.663954
 Action: 1 Reward: 0
 
-Time: 21 Agent: 1 8 Token: 6 6Policy: 4.46356e-06 0.998508 0.0014875 5.01667e-09 
-Value: 1.37058
+Time: 83 Agent: 2 7 Token: 6 5
+Policy: 0.355234 0.643646 0.000717593 0.000402317 
+Value: 0.651475
 Action: 1 Reward: 0
 
-Time: 22 Agent: 2 8 Token: 6 6Policy: 3.14612e-06 0.990298 0.00969834 1.96203e-08 
-Value: 1.50049
+Time: 84 Agent: 3 7 Token: 6 5
+Policy: 0.74856 0.250834 0.00015897 0.000447018 
+Value: 0.630793
+Action: 0 Reward: 0
+
+Time: 85 Agent: 3 8 Token: 6 5
+Policy: 0.0010632 0.995916 0.00300642 1.45348e-05 
+Value: 0.619228
 Action: 1 Reward: 0
 
-Time: 23 Agent: 3 8 Token: 6 6Policy: 2.22261e-06 0.851475 0.148522 2.10581e-07 
-Value: 1.66319
+Time: 86 Agent: 4 8 Token: 6 5
+Policy: 0.000246534 0.994449 0.00529815 6.31756e-06 
+Value: 0.544729
 Action: 1 Reward: 0
 
-Time: 24 Agent: 4 8 Token: 6 6Policy: 7.9929e-07 0.252815 0.747183 1.03192e-06 
-Value: 1.84732
+Time: 87 Agent: 5 8 Token: 6 5
+Policy: 0.000733686 0.956614 0.0425532 9.93483e-05 
+Value: 0.513187
 Action: 1 Reward: 0
 
-Time: 25 Agent: 5 8 Token: 6 6Policy: 1.07589e-07 0.0139424 0.986055 2.33505e-06 
-Value: 2.0853
+Time: 88 Agent: 6 8 Token: 6 5
+Policy: 0.0010736 0.937263 0.0614412 0.000222112 
+Value: 0.501817
+Action: 1 Reward: 0
+
+Time: 89 Agent: 7 8 Token: 6 5
+Policy: 0.000845762 0.844187 0.154629 0.000339138 
+Value: 0.455351
 Action: 2 Reward: 0
 
-Time: 26 Agent: 5 7 Token: 6 6Policy: 1.47526e-05 0.386675 0.613302 8.18004e-06 
-Value: 2.11495
+Time: 90 Agent: 7 7 Token: 6 5
+Policy: 0.00284653 0.965872 0.0311097 0.000171395 
+Value: 0.39696
 Action: 1 Reward: 0
 
-Time: 27 Agent: 6 7 Token: 6 6Policy: 4.30425e-06 0.00441714 0.995364 0.000214625 
-Value: 2.32803
+Time: 91 Agent: 8 7 Token: 6 5
+Policy: 4.72086e-05 0.00230433 0.980002 0.0176463 
+Value: 0.383578
+Action: 2 Reward: 0
+
+Time: 92 Agent: 8 6 Token: 6 5
+Policy: 0.000315747 0.00110755 0.845283 0.153293 
+Value: 0.345935
+Action: 3 Reward: 0
+
+Time: 93 Agent: 7 6 Token: 6 5
+Policy: 6.56034e-06 2.67718e-05 0.954508 0.0454588 
+Value: 1.08488
+Action: 2 Reward: 0
+
+Time: 94 Agent: 7 5 Token: 6 5
+Policy: 0.000305417 7.30669e-06 0.0173087 0.982379 
+Value: 1.26985
+Action: 3 Reward: 1
+
+Time: 95 Agent: 6 5 Token: 4 9
+Policy: 0.119089 0.000621759 0.055125 0.825165 
+Value: 0.0619533
+Action: 3 Reward: 0
+
+Time: 96 Agent: 5 5 Token: 4 9
+Policy: 0.00273401 0.000299682 0.208327 0.788639 
+Value: 0.151716
+Action: 3 Reward: 0
+
+Time: 97 Agent: 4 5 Token: 4 9
+Policy: 0.000424813 0.00119833 0.956892 0.0414846 
+Value: 0.101939
+Action: 2 Reward: 0
+
+Time: 98 Agent: 4 4 Token: 4 9
+Policy: 0.00183247 0.00289563 0.929667 0.0656048 
+Value: 0.0750062
+Action: 2 Reward: 0
+
+Time: 99 Agent: 4 3 Token: 4 9
+Policy: 0.00247145 0.00563186 0.913427 0.0784694 
+Value: 0.023906
+Action: 2 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 9 2
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
+Action: 3 Reward: 0
+
+Time: 1 Agent: 4 5 Token: 9 2
+Policy: 4.86187e-06 8.18475e-06 0.99945 0.000536637 
+Value: 3.39299
+Action: 2 Reward: 0
+
+Time: 2 Agent: 4 4 Token: 9 2
+Policy: 1.58445e-05 0.00085914 0.998168 0.000957041 
+Value: 3.41938
+Action: 2 Reward: 0
+
+Time: 3 Agent: 4 3 Token: 9 2
+Policy: 2.39479e-05 0.000917618 0.995971 0.00308709 
+Value: 3.43522
+Action: 2 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 9 2
+Policy: 3.32412e-05 0.000554454 0.992397 0.00701527 
+Value: 3.43106
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 9 2
+Policy: 0.00160833 1.58372e-06 0.000623421 0.997767 
+Value: 3.42869
+Action: 3 Reward: 0
+
+Time: 6 Agent: 3 1 Token: 9 2
+Policy: 0.0118901 5.38204e-06 0.000422617 0.987682 
+Value: 3.42282
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 9 2
+Policy: 0.116882 4.23351e-06 7.5437e-05 0.883039 
+Value: 3.46047
+Action: 3 Reward: 0
+
+Time: 8 Agent: 1 1 Token: 9 2
+Policy: 0.999895 7.40919e-06 1.69788e-08 9.75144e-05 
+Value: 3.44359
+Action: 0 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 9 2
+Policy: 0.999686 8.0827e-05 2.24146e-07 0.000232777 
+Value: 3.42628
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 9 2
+Policy: 0.999392 0.000208674 7.33125e-07 0.000398896 
+Value: 3.45342
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 4 Token: 9 2
+Policy: 0.998334 0.000416092 4.43573e-06 0.0012452 
+Value: 3.4648
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 5 Token: 9 2
+Policy: 0.996729 0.00146397 2.98591e-05 0.00177751 
+Value: 3.46384
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 6 Token: 9 2
+Policy: 0.997192 0.00171291 1.33694e-05 0.001082 
+Value: 3.47396
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 7 Token: 9 2
+Policy: 0.980663 0.0189214 0.000108908 0.000307159 
+Value: 3.46194
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 8 Token: 9 2
+Policy: 8.52762e-05 0.999112 0.000803024 3.52344e-08 
+Value: 3.46443
+Action: 1 Reward: 0
+
+Time: 16 Agent: 2 8 Token: 9 2
+Policy: 6.09827e-06 0.999959 3.51403e-05 3.36043e-10 
+Value: 3.48517
+Action: 1 Reward: 0
+
+Time: 17 Agent: 3 8 Token: 9 2
+Policy: 3.13534e-05 0.999843 0.000125741 8.37438e-09 
+Value: 3.48283
+Action: 1 Reward: 0
+
+Time: 18 Agent: 4 8 Token: 9 2
+Policy: 2.2254e-05 0.999754 0.000223761 1.17427e-08 
+Value: 3.47809
+Action: 1 Reward: 0
+
+Time: 19 Agent: 5 8 Token: 9 2
+Policy: 0.00025921 0.9989 0.000840263 2.00857e-07 
+Value: 3.47337
+Action: 1 Reward: 0
+
+Time: 20 Agent: 6 8 Token: 9 2
+Policy: 0.00023584 0.998742 0.00102219 2.88301e-07 
+Value: 3.45993
+Action: 1 Reward: 0
+
+Time: 21 Agent: 7 8 Token: 9 2
+Policy: 0.000592242 0.995332 0.00407437 1.17039e-06 
+Value: 3.45465
+Action: 1 Reward: 0
+
+Time: 22 Agent: 8 8 Token: 9 2
+Policy: 1.18731e-08 0.000430024 0.999566 4.42336e-06 
+Value: 3.49737
+Action: 2 Reward: 0
+
+Time: 23 Agent: 8 7 Token: 9 2
+Policy: 8.87193e-07 0.000624882 0.999356 1.81334e-05 
+Value: 3.49167
+Action: 2 Reward: 0
+
+Time: 24 Agent: 8 6 Token: 9 2
+Policy: 2.70346e-06 0.000268802 0.999543 0.000185181 
+Value: 3.47847
+Action: 2 Reward: 0
+
+Time: 25 Agent: 8 5 Token: 9 2
+Policy: 9.32797e-06 0.000211073 0.999198 0.000581289 
+Value: 3.49131
+Action: 2 Reward: 0
+
+Time: 26 Agent: 8 4 Token: 9 2
+Policy: 1.73567e-05 0.0007907 0.999058 0.00013362 
+Value: 3.48017
+Action: 2 Reward: 0
+
+Time: 27 Agent: 8 3 Token: 9 2
+Policy: 6.94481e-06 0.104043 0.895949 1.78236e-06 
+Value: 3.68441
+Action: 2 Reward: 0
+
+Time: 28 Agent: 8 2 Token: 9 2
+Policy: 0.00165821 0.997466 0.000874555 1.65594e-06 
+Value: 3.58988
+Action: 1 Reward: 1
+
+Time: 29 Agent: 9 2 Token: 5 1
+Policy: 0.43257 . 0.00052807 0.566902 
+Value: 2.63101
+Action: 3 Reward: 0
+
+Time: 30 Agent: 8 2 Token: 5 1
+Policy: 0.996834 0.000728839 2.97431e-05 0.00240699 
+Value: 2.63414
+Action: 0 Reward: 0
+
+Time: 31 Agent: 8 3 Token: 5 1
+Policy: 0.99749 0.00124404 2.23764e-05 0.00124366 
+Value: 2.61394
+Action: 0 Reward: 0
+
+Time: 32 Agent: 8 4 Token: 5 1
+Policy: 0.985223 0.000484583 0.0001021 0.0141905 
+Value: 2.56735
+Action: 0 Reward: 0
+
+Time: 33 Agent: 8 5 Token: 5 1
+Policy: 0.0179491 4.49793e-06 0.000951047 0.981095 
+Value: 2.57145
+Action: 3 Reward: 0
+
+Time: 34 Agent: 7 5 Token: 5 1
+Policy: 0.000131755 2.41426e-08 0.000671488 0.999197 
+Value: 2.58116
+Action: 3 Reward: 0
+
+Time: 35 Agent: 6 5 Token: 5 1
+Policy: 6.43027e-05 1.19258e-08 0.00184631 0.998089 
+Value: 2.55631
+Action: 3 Reward: 0
+
+Time: 36 Agent: 5 5 Token: 5 1
+Policy: 3.71906e-05 1.11961e-07 0.0282902 0.971673 
+Value: 2.55362
+Action: 3 Reward: 0
+
+Time: 37 Agent: 4 5 Token: 5 1
+Policy: 2.59121e-05 3.11267e-05 0.943464 0.0564792 
+Value: 2.55451
+Action: 2 Reward: 0
+
+Time: 38 Agent: 4 4 Token: 5 1
+Policy: 4.60624e-05 7.13444e-05 0.940659 0.0592235 
+Value: 2.52553
+Action: 2 Reward: 0
+
+Time: 39 Agent: 4 3 Token: 5 1
+Policy: 2.04477e-05 9.21714e-05 0.982001 0.017886 
+Value: 2.51859
+Action: 2 Reward: 0
+
+Time: 40 Agent: 4 2 Token: 5 1
+Policy: 1.69507e-09 0.000221833 0.999778 9.6285e-08 
+Value: 3.23465
+Action: 2 Reward: 0
+
+Time: 41 Agent: 4 1 Token: 5 1
+Policy: 0.0016211 0.99835 2.84783e-05 3.8011e-08 
+Value: 3.18898
+Action: 1 Reward: 1
+
+Time: 42 Agent: 5 1 Token: 1 5
+Policy: 0.00101876 4.83742e-06 0.00499859 0.993978 
+Value: 2.14351
+Action: 3 Reward: 0
+
+Time: 43 Agent: 4 1 Token: 1 5
+Policy: 0.0426881 0.000192076 0.00110292 0.956017 
+Value: 2.19344
+Action: 3 Reward: 0
+
+Time: 44 Agent: 3 1 Token: 1 5
+Policy: 0.0878978 0.000152596 0.000279258 0.91167 
+Value: 2.13846
+Action: 3 Reward: 0
+
+Time: 45 Agent: 2 1 Token: 1 5
+Policy: 0.188642 7.42767e-05 0.000140965 0.811143 
+Value: 2.15115
+Action: 3 Reward: 0
+
+Time: 46 Agent: 1 1 Token: 1 5
+Policy: 0.999888 6.0102e-05 1.89482e-08 5.22879e-05 
+Value: 2.1187
+Action: 0 Reward: 0
+
+Time: 47 Agent: 1 2 Token: 1 5
+Policy: 0.999497 0.00037483 2.60753e-07 0.000128052 
+Value: 2.11887
+Action: 0 Reward: 0
+
+Time: 48 Agent: 1 3 Token: 1 5
+Policy: 0.998802 0.00100594 1.07174e-06 0.000191305 
+Value: 2.08819
+Action: 0 Reward: 0
+
+Time: 49 Agent: 1 4 Token: 1 5
+Policy: 0.999769 0.000188474 3.1361e-07 4.17235e-05 
+Value: 3.00177
+Action: 0 Reward: 1
+
+Time: 50 Agent: 1 5 Token: 5 6
+Policy: 0.581417 0.417457 0.000479686 0.000646248 
+Value: 1.88378
+Action: 0 Reward: 0
+
+Time: 51 Agent: 1 6 Token: 5 6
+Policy: 0.749079 0.248107 0.000508386 0.00230538 
+Value: 1.90934
+Action: 0 Reward: 0
+
+Time: 52 Agent: 1 7 Token: 5 6
+Policy: 0.451494 0.546361 0.00111025 0.00103557 
+Value: 1.89517
+Action: 1 Reward: 0
+
+Time: 53 Agent: 2 7 Token: 5 6
+Policy: 0.737732 0.261083 0.00029734 0.000886812 
+Value: 1.89138
+Action: 0 Reward: 0
+
+Time: 54 Agent: 2 8 Token: 5 6
+Policy: 2.99679e-05 0.999728 0.000241563 6.219e-08 
+Value: 1.88952
+Action: 1 Reward: 0
+
+Time: 55 Agent: 3 8 Token: 5 6
+Policy: 4.91609e-05 0.999449 0.000501258 2.84174e-07 
+Value: 1.90075
+Action: 1 Reward: 0
+
+Time: 56 Agent: 4 8 Token: 5 6
+Policy: 4.10268e-05 0.999017 0.000941319 4.22996e-07 
+Value: 1.87515
+Action: 1 Reward: 0
+
+Time: 57 Agent: 5 8 Token: 5 6
+Policy: 0.000371496 0.993365 0.00625313 1.05084e-05 
+Value: 1.87644
+Action: 1 Reward: 0
+
+Time: 58 Agent: 6 8 Token: 5 6
+Policy: 0.000742489 0.990932 0.00829552 3.00642e-05 
+Value: 1.8461
+Action: 1 Reward: 0
+
+Time: 59 Agent: 7 8 Token: 5 6
+Policy: 0.000722699 0.979186 0.0200541 3.71722e-05 
+Value: 1.83643
+Action: 1 Reward: 0
+
+Time: 60 Agent: 8 8 Token: 5 6
+Policy: 2.78492e-08 0.000154155 0.999611 0.000235175 
+Value: 1.82629
+Action: 2 Reward: 0
+
+Time: 61 Agent: 8 7 Token: 5 6
+Policy: 8.56847e-07 0.000125569 0.999366 0.00050762 
+Value: 1.82064
+Action: 2 Reward: 0
+
+Time: 62 Agent: 8 6 Token: 5 6
+Policy: 2.16448e-06 7.23051e-05 0.997086 0.00283972 
+Value: 1.81348
+Action: 2 Reward: 0
+
+Time: 63 Agent: 8 5 Token: 5 6
+Policy: 1.24921e-06 4.16945e-05 0.998195 0.00176159 
+Value: 1.78179
+Action: 2 Reward: 0
+
+Time: 64 Agent: 8 4 Token: 5 6
+Policy: 2.31194e-06 0.000133794 0.999506 0.000357847 
+Value: 1.76049
+Action: 2 Reward: 0
+
+Time: 65 Agent: 8 3 Token: 5 6
+Policy: 1.10955e-07 1.62194e-05 0.999804 0.000179953 
+Value: 1.73953
+Action: 2 Reward: 0
+
+Time: 66 Agent: 8 2 Token: 5 6
+Policy: 1.26506e-08 4.09934e-06 0.999877 0.000119013 
+Value: 1.73584
+Action: 2 Reward: 0
+
+Time: 67 Agent: 8 1 Token: 5 6
+Policy: 2.83189e-06 1.29485e-08 0.00186374 0.998133 
+Value: 1.71982
+Action: 3 Reward: 0
+
+Time: 68 Agent: 7 1 Token: 5 6
+Policy: 2.48083e-06 4.75707e-10 3.8274e-05 0.999959 
+Value: 1.71834
+Action: 3 Reward: 0
+
+Time: 69 Agent: 6 1 Token: 5 6
+Policy: 0.000429605 2.12254e-08 1.27047e-05 0.999558 
+Value: 1.7039
+Action: 3 Reward: 0
+
+Time: 70 Agent: 5 1 Token: 5 6
+Policy: 0.999902 8.13011e-05 1.22724e-08 1.62556e-05 
+Value: 1.65103
+Action: 0 Reward: 0
+
+Time: 71 Agent: 5 2 Token: 5 6
+Policy: 0.999887 0.000103604 5.79542e-09 9.30694e-06 
+Value: 1.6536
+Action: 0 Reward: 0
+
+Time: 72 Agent: 5 3 Token: 5 6
+Policy: 0.999966 2.91372e-05 1.47019e-09 4.7789e-06 
+Value: 1.62841
+Action: 0 Reward: 0
+
+Time: 73 Agent: 5 4 Token: 5 6
+Policy: 0.999839 1.17817e-05 2.33831e-08 0.000149292 
+Value: 1.57019
+Action: 0 Reward: 0
+
+Time: 74 Agent: 5 5 Token: 5 6
+Policy: 0.99998 1.51777e-05 6.14826e-09 4.37666e-06 
+Value: 1.92375
+Action: 0 Reward: 1
+
+Time: 75 Agent: 5 6 Token: 1 8
+Policy: 0.0143097 0.00339987 0.156951 0.82534 
+Value: 0.965447
+Action: 2 Reward: 0
+
+Time: 76 Agent: 5 5 Token: 1 8
+Policy: 0.00140383 7.43311e-05 0.155176 0.843346 
+Value: 0.891916
+Action: 3 Reward: 0
+
+Time: 77 Agent: 4 5 Token: 1 8
+Policy: 0.000293601 0.000983522 0.970994 0.0277286 
+Value: 0.868167
+Action: 2 Reward: 0
+
+Time: 78 Agent: 4 4 Token: 1 8
+Policy: 0.000261081 0.00093127 0.979088 0.0197193 
+Value: 0.887378
+Action: 2 Reward: 0
+
+Time: 79 Agent: 4 3 Token: 1 8
+Policy: 0.000182871 0.00115117 0.982243 0.016423 
+Value: 0.862285
+Action: 2 Reward: 0
+
+Time: 80 Agent: 4 2 Token: 1 8
+Policy: 4.04698e-05 0.000283554 0.990771 0.00890467 
+Value: 0.864902
+Action: 2 Reward: 0
+
+Time: 81 Agent: 4 1 Token: 1 8
+Policy: 0.00320304 3.91942e-05 0.00483136 0.991926 
+Value: 0.80986
+Action: 3 Reward: 0
+
+Time: 82 Agent: 3 1 Token: 1 8
+Policy: 0.0428006 5.5369e-05 0.000995527 0.956149 
+Value: 0.825364
+Action: 3 Reward: 0
+
+Time: 83 Agent: 2 1 Token: 1 8
+Policy: 0.191075 5.89049e-05 0.000444754 0.808421 
+Value: 0.781415
+Action: 0 Reward: 0
+
+Time: 84 Agent: 2 2 Token: 1 8
+Policy: 0.305493 5.39747e-05 0.000468844 0.693984 
+Value: 0.729373
+Action: 3 Reward: 0
+
+Time: 85 Agent: 1 2 Token: 1 8
+Policy: 0.999271 0.000397755 1.1509e-06 0.000329981 
+Value: 0.683214
+Action: 0 Reward: 0
+
+Time: 86 Agent: 1 3 Token: 1 8
+Policy: 0.999305 0.000592202 7.0093e-07 0.000102095 
+Value: 0.680906
+Action: 0 Reward: 0
+
+Time: 87 Agent: 1 4 Token: 1 8
+Policy: 0.996501 0.00312114 9.00719e-06 0.00036925 
+Value: 0.654622
+Action: 0 Reward: 0
+
+Time: 88 Agent: 1 5 Token: 1 8
+Policy: 0.985474 0.013732 7.74556e-05 0.000716162 
+Value: 0.623331
+Action: 0 Reward: 0
+
+Time: 89 Agent: 1 6 Token: 1 8
+Policy: 0.970922 0.0280899 0.000101106 0.000886962 
+Value: 0.599018
+Action: 0 Reward: 0
+
+Time: 90 Agent: 1 7 Token: 1 8
+Policy: 0.982817 0.0170585 5.23551e-06 0.000119436 
+Value: 1.30201
+Action: 0 Reward: 1
+
+Time: 91 Agent: 1 8 Token: 0 4
+Policy: 0.000190697 0.999457 0.000351905 3.05463e-07 
+Value: 0.214398
+Action: 1 Reward: 0
+
+Time: 92 Agent: 2 8 Token: 0 4
+Policy: 2.65265e-05 0.999885 8.86282e-05 1.80263e-08 
+Value: 0.283452
+Action: 1 Reward: 0
+
+Time: 93 Agent: 3 8 Token: 0 4
+Policy: 0.000398652 0.998531 0.00106668 3.39471e-06 
+Value: 0.204715
+Action: 1 Reward: 0
+
+Time: 94 Agent: 4 8 Token: 0 4
+Policy: 0.000343533 0.994357 0.00528676 1.2591e-05 
+Value: 0.20007
+Action: 1 Reward: 0
+
+Time: 95 Agent: 5 8 Token: 0 4
+Policy: 0.00110235 0.960548 0.0381798 0.000169764 
+Value: 0.135106
+Action: 1 Reward: 0
+
+Time: 96 Agent: 6 8 Token: 0 4
+Policy: 0.00103034 0.924483 0.0741588 0.000327814 
+Value: 0.141727
+Action: 1 Reward: 0
+
+Time: 97 Agent: 7 8 Token: 0 4
+Policy: 0.00103176 0.800654 0.197532 0.000782468 
+Value: 0.0724006
+Action: 1 Reward: 0
+
+Time: 98 Agent: 8 8 Token: 0 4
+Policy: 4.39581e-06 0.00643474 0.990101 0.00346009 
+Value: 0.0628778
+Action: 2 Reward: 0
+
+Time: 99 Agent: 8 7 Token: 0 4
+Policy: 4.49139e-05 0.00191548 0.977919 0.0201202 
+Value: 0.0320267
+Action: 2 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 3 9
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
+Action: 3 Reward: 0
+
+Time: 1 Agent: 4 5 Token: 3 9
+Policy: 4.86187e-06 8.18475e-06 0.99945 0.000536637 
+Value: 3.39299
+Action: 2 Reward: 0
+
+Time: 2 Agent: 4 4 Token: 3 9
+Policy: 1.58445e-05 0.00085914 0.998168 0.000957041 
+Value: 3.41938
+Action: 2 Reward: 0
+
+Time: 3 Agent: 4 3 Token: 3 9
+Policy: 2.39479e-05 0.000917618 0.995971 0.00308709 
+Value: 3.43522
+Action: 2 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 3 9
+Policy: 3.32412e-05 0.000554454 0.992397 0.00701527 
+Value: 3.43106
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 3 9
+Policy: 0.00160833 1.58372e-06 0.000623421 0.997767 
+Value: 3.42869
+Action: 3 Reward: 0
+
+Time: 6 Agent: 3 1 Token: 3 9
+Policy: 0.0118901 5.38204e-06 0.000422617 0.987682 
+Value: 3.42282
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 3 9
+Policy: 0.116882 4.23351e-06 7.5437e-05 0.883039 
+Value: 3.46047
+Action: 3 Reward: 0
+
+Time: 8 Agent: 1 1 Token: 3 9
+Policy: 0.999895 7.40919e-06 1.69788e-08 9.75144e-05 
+Value: 3.44359
+Action: 0 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 3 9
+Policy: 0.999686 8.0827e-05 2.24146e-07 0.000232777 
+Value: 3.42628
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 3 9
+Policy: 0.999392 0.000208674 7.33125e-07 0.000398896 
+Value: 3.45342
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 4 Token: 3 9
+Policy: 0.998334 0.000416092 4.43573e-06 0.0012452 
+Value: 3.4648
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 5 Token: 3 9
+Policy: 0.996729 0.00146397 2.98591e-05 0.00177751 
+Value: 3.46384
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 6 Token: 3 9
+Policy: 0.997192 0.00171291 1.33694e-05 0.001082 
+Value: 3.47396
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 7 Token: 3 9
+Policy: 0.980663 0.0189214 0.000108908 0.000307159 
+Value: 3.46194
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 8 Token: 3 9
+Policy: 8.52762e-05 0.999112 0.000803024 3.52344e-08 
+Value: 3.46443
+Action: 1 Reward: 0
+
+Time: 16 Agent: 2 8 Token: 3 9
+Policy: 0.996789 0.00321087 3.78485e-09 2.77698e-09 
+Value: 3.96993
+Action: 0 Reward: 0
+
+Time: 17 Agent: 2 9 Token: 3 9
+Policy: . 0.999998 1.61371e-06 4.77438e-10 
+Value: 3.95214
+Action: 1 Reward: 1
+
+Time: 18 Agent: 3 9 Token: 3 7
+Policy: . 0.121668 0.877907 0.000425164 
+Value: 2.95025
+Action: 2 Reward: 0
+
+Time: 19 Agent: 3 8 Token: 3 7
+Policy: 4.71138e-07 9.93595e-05 0.998957 0.000943161 
+Value: 3.94582
 Action: 2 Reward: 1
 
-Time: 28 Agent: 6 6 Token: 5 6Policy: 0.00470164 1.4389e-05 0.0134476 0.981836 
-Value: 2.09754
-Action: 3 Reward: 1
+Time: 20 Agent: 3 7 Token: 6 1
+Policy: 0.580393 0.352861 0.0463424 0.0204037 
+Value: 2.9542
+Action: 2 Reward: 0
 
-Time: 29 Agent: 5 6 Token: 4 7Policy: 0.230362 2.48349e-05 0.000357505 0.769255 
-Value: 2.01312
+Time: 21 Agent: 3 6 Token: 6 1
+Policy: 0.957305 0.0210867 0.00349809 0.0181102 
+Value: 2.93542
+Action: 0 Reward: 0
+
+Time: 22 Agent: 3 7 Token: 6 1
+Policy: 0.956462 0.0419487 0.00026568 0.00132349 
+Value: 2.92404
+Action: 0 Reward: 0
+
+Time: 23 Agent: 3 8 Token: 6 1
+Policy: 0.0024173 0.989024 0.00852917 2.98878e-05 
+Value: 2.95944
+Action: 1 Reward: 0
+
+Time: 24 Agent: 4 8 Token: 6 1
+Policy: 0.00022022 0.99272 0.00705633 3.78421e-06 
+Value: 2.94064
+Action: 1 Reward: 0
+
+Time: 25 Agent: 5 8 Token: 6 1
+Policy: 0.000822439 0.973243 0.0259003 3.43668e-05 
+Value: 2.94874
+Action: 1 Reward: 0
+
+Time: 26 Agent: 6 8 Token: 6 1
+Policy: 0.0011444 0.97001 0.0287883 5.68508e-05 
+Value: 2.95466
+Action: 1 Reward: 0
+
+Time: 27 Agent: 7 8 Token: 6 1
+Policy: 0.0010847 0.906127 0.0926731 0.000115459 
+Value: 2.97075
+Action: 1 Reward: 0
+
+Time: 28 Agent: 8 8 Token: 6 1
+Policy: 1.82848e-08 3.22697e-05 0.999581 0.000387124 
+Value: 2.98377
+Action: 2 Reward: 0
+
+Time: 29 Agent: 8 7 Token: 6 1
+Policy: 4.54147e-07 6.76822e-05 0.999539 0.000392852 
+Value: 2.97341
+Action: 2 Reward: 0
+
+Time: 30 Agent: 8 6 Token: 6 1
+Policy: 1.26721e-06 3.40049e-05 0.996519 0.00344586 
+Value: 2.9596
+Action: 2 Reward: 0
+
+Time: 31 Agent: 8 5 Token: 6 1
+Policy: 2.26426e-06 4.03652e-05 0.996343 0.00361394 
+Value: 2.96012
+Action: 2 Reward: 0
+
+Time: 32 Agent: 8 4 Token: 6 1
+Policy: 4.85481e-06 0.000179236 0.999045 0.000770688 
+Value: 2.94298
+Action: 2 Reward: 0
+
+Time: 33 Agent: 8 3 Token: 6 1
+Policy: 2.5458e-07 1.65097e-05 0.999571 0.000412703 
+Value: 2.94329
+Action: 2 Reward: 0
+
+Time: 34 Agent: 8 2 Token: 6 1
+Policy: 3.62197e-08 3.71957e-06 0.999597 0.00039952 
+Value: 2.9512
+Action: 2 Reward: 0
+
+Time: 35 Agent: 8 1 Token: 6 1
+Policy: 1.07698e-06 4.51801e-09 0.00213494 0.997864 
+Value: 2.97085
 Action: 3 Reward: 0
 
-Time: 30 Agent: 4 6 Token: 4 7Policy: 0.986177 0.0013498 9.58001e-05 0.0123769 
-Value: 2.14626
-Action: 0 Reward: 1
+Time: 36 Agent: 7 1 Token: 6 1
+Policy: 7.76413e-08 7.03384e-10 0.0158149 0.984185 
+Value: 3.54488
+Action: 3 Reward: 1
 
-Time: 31 Agent: 4 7 Token: 4 2Policy: 1.78977e-08 0.00015166 0.999798 5.01384e-05 
-Value: 1.45296
-Action: 2 Reward: 0
+Time: 37 Agent: 6 1 Token: 0 1
+Policy: 0.0881922 2.31536e-05 0.00100734 0.910777 
+Value: 2.49453
+Action: 3 Reward: 0
 
-Time: 32 Agent: 4 6 Token: 4 2Policy: 2.9963e-09 3.20937e-05 0.999931 3.69615e-05 
-Value: 1.59492
-Action: 2 Reward: 0
+Time: 38 Agent: 5 1 Token: 0 1
+Policy: 0.0396006 1.16808e-05 0.00050274 0.959885 
+Value: 2.47005
+Action: 3 Reward: 0
 
-Time: 33 Agent: 4 5 Token: 4 2Policy: 4.47324e-09 3.44718e-05 0.999926 3.90585e-05 
-Value: 1.84601
-Action: 2 Reward: 0
+Time: 39 Agent: 4 1 Token: 0 1
+Policy: 0.142836 0.000661906 0.00168637 0.854816 
+Value: 2.44028
+Action: 3 Reward: 0
 
-Time: 34 Agent: 4 4 Token: 4 2Policy: 2.83674e-08 8.87533e-05 0.999832 7.94353e-05 
-Value: 2.03965
-Action: 2 Reward: 0
+Time: 40 Agent: 3 1 Token: 0 1
+Policy: 0.17239 0.00023079 0.00034266 0.827036 
+Value: 2.46065
+Action: 3 Reward: 0
 
-Time: 35 Agent: 4 3 Token: 4 2Policy: 1.01339e-05 0.00203882 0.996825 0.00112625 
-Value: 2.17269
+Time: 41 Agent: 2 1 Token: 0 1
+Policy: 0.266057 0.000145222 0.000342122 0.733456 
+Value: 2.45664
+Action: 0 Reward: 0
+
+Time: 42 Agent: 2 2 Token: 0 1
+Policy: 0.246648 0.000150486 0.000652976 0.752549 
+Value: 2.42108
+Action: 3 Reward: 0
+
+Time: 43 Agent: 1 2 Token: 0 1
+Policy: 3.64965e-05 6.15676e-06 0.0551774 0.94478 
+Value: 3.31828
+Action: 3 Reward: 0
+
+Time: 44 Agent: 0 2 Token: 0 1
+Policy: 1.70629e-06 0.000714533 0.999284 . 
+Value: 3.35759
 Action: 2 Reward: 1
 
-Time: 36 Agent: 4 2 Token: 5 7Policy: 0.99886 0.0011039 1.67903e-07 3.56494e-05 
-Value: 1.27179
+Time: 45 Agent: 0 1 Token: 7 8
+Policy: 0.204447 0.795147 0.000405718 . 
+Value: 2.19561
 Action: 0 Reward: 0
 
-Time: 37 Agent: 4 3 Token: 5 7Policy: 0.963963 0.0360358 1.52196e-07 1.49892e-06 
-Value: 1.44866
+Time: 46 Agent: 0 2 Token: 7 8
+Policy: 0.594945 0.404976 7.91805e-05 . 
+Value: 2.16026
 Action: 0 Reward: 0
 
-Time: 38 Agent: 4 4 Token: 5 7Policy: 0.928441 0.0715573 2.40254e-07 1.171e-06 
-Value: 1.60328
+Time: 47 Agent: 0 3 Token: 7 8
+Policy: 0.921662 0.0781002 0.000238246 . 
+Value: 2.16822
 Action: 0 Reward: 0
 
-Time: 39 Agent: 4 5 Token: 5 7Policy: 0.645985 0.354012 1.43672e-06 1.19157e-06 
-Value: 1.78647
+Time: 48 Agent: 0 4 Token: 7 8
+Policy: 0.923503 0.0761387 0.000358129 . 
+Value: 2.14781
 Action: 0 Reward: 0
 
-Time: 40 Agent: 4 6 Token: 5 7Policy: 0.202095 0.797887 1.61042e-05 1.94468e-06 
-Value: 1.97249
+Time: 49 Agent: 0 5 Token: 7 8
+Policy: 0.467608 0.526953 0.00543881 . 
+Value: 2.10394
 Action: 1 Reward: 0
 
-Time: 41 Agent: 5 6 Token: 5 7Policy: 0.988865 0.00918263 9.19649e-05 0.00186054 
-Value: 2.20049
-Action: 0 Reward: 1
+Time: 50 Agent: 1 5 Token: 7 8
+Policy: 0.745102 0.25211 0.00082733 0.00196017 
+Value: 2.05919
+Action: 0 Reward: 0
 
-Time: 42 Agent: 5 7 Token: 4 6Policy: 0.000186182 6.61645e-05 0.581385 0.418362 
-Value: 1.96677
-Action: 2 Reward: 0
+Time: 51 Agent: 1 6 Token: 7 8
+Policy: 0.785194 0.210787 0.000585643 0.00343292 
+Value: 2.05401
+Action: 0 Reward: 0
 
-Time: 43 Agent: 5 6 Token: 4 6Policy: 0.00147934 3.46544e-06 0.0100185 0.988499 
-Value: 2.02525
-Action: 3 Reward: 1
+Time: 52 Agent: 1 7 Token: 7 8
+Policy: 0.531359 0.467473 0.000527977 0.000640317 
+Value: 2.05101
+Action: 0 Reward: 0
 
-Time: 44 Agent: 4 6 Token: 5 2Policy: 1.33451e-08 0.00073627 0.999256 7.33057e-06 
-Value: 1.5576
-Action: 2 Reward: 0
-
-Time: 45 Agent: 4 5 Token: 5 2Policy: 1.12012e-08 0.00165117 0.998346 2.79156e-06 
-Value: 1.62794
-Action: 2 Reward: 0
-
-Time: 46 Agent: 4 4 Token: 5 2Policy: 9.85528e-08 0.0117649 0.988232 2.95219e-06 
-Value: 1.80761
-Action: 2 Reward: 0
-
-Time: 47 Agent: 4 3 Token: 5 2Policy: 2.74265e-05 0.583516 0.41645 6.78355e-06 
-Value: 1.92547
-Action: 2 Reward: 0
-
-Time: 48 Agent: 4 2 Token: 5 2Policy: 0.00238588 0.995416 0.00219565 2.42537e-06 
-Value: 2.02476
-Action: 1 Reward: 1
-
-Time: 49 Agent: 5 2 Token: 9 2Policy: 0.000173734 0.999807 1.87971e-05 3.23643e-09 
-Value: 1.44869
+Time: 53 Agent: 1 8 Token: 7 8
+Policy: 2.68722e-05 0.999729 0.000243674 3.91848e-08 
+Value: 2.05529
 Action: 1 Reward: 0
 
-Time: 50 Agent: 6 2 Token: 9 2Policy: 0.000193049 0.999781 2.568e-05 4.19379e-09 
-Value: 1.5286
+Time: 54 Agent: 2 8 Token: 7 8
+Policy: 4.99558e-06 0.999941 5.36219e-05 3.39778e-09 
+Value: 2.07854
 Action: 1 Reward: 0
 
-Time: 51 Agent: 7 2 Token: 9 2Policy: 0.000444396 0.999426 0.000129501 4.27046e-08 
-Value: 1.70557
+Time: 55 Agent: 3 8 Token: 7 8
+Policy: 3.46257e-05 0.999723 0.000242639 1.00917e-07 
+Value: 2.067
 Action: 1 Reward: 0
 
-Time: 52 Agent: 8 2 Token: 9 2Policy: 0.0032205 0.992774 0.0039983 7.42067e-06 
-Value: 1.94788
-Action: 1 Reward: 1
-
-Time: 53 Agent: 9 2 Token: 5 8Policy: 0.950566 2.36251e-06 2.43676e-07 0.0494315 
-Value: 0.565526
-Action: 0 Reward: 0
-
-Time: 54 Agent: 9 3 Token: 5 8Policy: 0.880113 1.10397e-06 3.06373e-07 0.119886 
-Value: 0.842905
-Action: 0 Reward: 0
-
-Time: 55 Agent: 9 4 Token: 5 8Policy: 0.262177 4.30503e-07 2.00879e-06 0.737821 
-Value: 0.949537
-Action: 3 Reward: 0
-
-Time: 56 Agent: 8 4 Token: 5 8Policy: 0.775659 1.15524e-06 7.1192e-07 0.224339 
-Value: 1.01492
-Action: 0 Reward: 0
-
-Time: 57 Agent: 8 5 Token: 5 8Policy: 0.132798 3.16716e-07 3.54304e-06 0.867198 
-Value: 1.13723
-Action: 0 Reward: 0
-
-Time: 58 Agent: 8 6 Token: 5 8Policy: 0.00613968 2.80427e-08 6.55903e-06 0.993854 
-Value: 1.31025
-Action: 3 Reward: 0
-
-Time: 59 Agent: 7 6 Token: 5 8Policy: 0.0995922 5.67618e-07 1.19838e-05 0.900395 
-Value: 1.4549
-Action: 3 Reward: 0
-
-Time: 60 Agent: 6 6 Token: 5 8Policy: 0.907328 9.01491e-06 3.99036e-06 0.0926587 
-Value: 1.63135
-Action: 0 Reward: 0
-
-Time: 61 Agent: 6 7 Token: 5 8Policy: 0.115428 4.9785e-06 0.000123126 0.884444 
-Value: 1.79412
-Action: 3 Reward: 0
-
-Time: 62 Agent: 5 7 Token: 5 8Policy: 0.983467 0.000707476 6.69175e-05 0.0157585 
-Value: 1.98624
-Action: 0 Reward: 1
-
-Time: 63 Agent: 5 8 Token: 6 1Policy: 3.20356e-08 0.00144923 0.998539 1.13853e-05 
-Value: 1.18285
-Action: 2 Reward: 0
-
-Time: 64 Agent: 5 7 Token: 6 1Policy: 4.9054e-09 0.000525939 0.999469 4.87234e-06 
-Value: 1.1195
-Action: 2 Reward: 0
-
-Time: 65 Agent: 5 6 Token: 6 1Policy: 4.09457e-09 0.000614047 0.999383 3.436e-06 
-Value: 1.15018
-Action: 2 Reward: 0
-
-Time: 66 Agent: 5 5 Token: 6 1Policy: 4.87303e-09 0.000899887 0.999097 2.66076e-06 
-Value: 1.24877
-Action: 2 Reward: 0
-
-Time: 67 Agent: 5 4 Token: 6 1Policy: 9.12632e-09 0.00182636 0.998171 2.29511e-06 
-Value: 1.40262
-Action: 2 Reward: 0
-
-Time: 68 Agent: 5 3 Token: 6 1Policy: 7.1204e-08 0.0103489 0.989648 2.89864e-06 
-Value: 1.57643
-Action: 2 Reward: 0
-
-Time: 69 Agent: 5 2 Token: 6 1Policy: 2.00342e-05 0.498076 0.501895 8.57294e-06 
-Value: 1.70959
-Action: 2 Reward: 0
-
-Time: 70 Agent: 5 1 Token: 6 1Policy: 0.00229978 0.995685 0.00201298 2.62078e-06 
-Value: 1.81265
-Action: 1 Reward: 1
-
-Time: 71 Agent: 6 1 Token: 5 9Policy: 0.999686 1.46091e-05 2.46475e-08 0.000299178 
-Value: 0.908968
-Action: 0 Reward: 0
-
-Time: 72 Agent: 6 2 Token: 5 9Policy: 0.999734 3.59396e-06 4.31511e-09 0.000262485 
-Value: 0.952566
-Action: 0 Reward: 0
-
-Time: 73 Agent: 6 3 Token: 5 9Policy: 0.999711 2.55028e-06 3.28564e-09 0.000286746 
-Value: 1.00733
-Action: 0 Reward: 0
-
-Time: 74 Agent: 6 4 Token: 5 9Policy: 0.99965 2.41291e-06 3.64404e-09 0.000347903 
-Value: 1.04308
-Action: 0 Reward: 0
-
-Time: 75 Agent: 6 5 Token: 5 9Policy: 0.999478 2.6424e-06 5.77011e-09 0.000519378 
-Value: 1.10391
-Action: 0 Reward: 0
-
-Time: 76 Agent: 6 6 Token: 5 9Policy: 0.998196 3.60842e-06 2.53475e-08 0.00179994 
-Value: 1.21109
-Action: 0 Reward: 0
-
-Time: 77 Agent: 6 7 Token: 5 9Policy: 0.925039 7.66338e-06 2.04655e-06 0.0749512 
-Value: 1.40363
-Action: 0 Reward: 0
-
-Time: 78 Agent: 6 8 Token: 5 9Policy: 0.0907893 3.6945e-06 0.000116555 0.90909 
-Value: 1.6482
-Action: 3 Reward: 0
-
-Time: 79 Agent: 5 8 Token: 5 9Policy: 0.965643 0.000862458 0.000156929 0.0333376 
-Value: 1.81432
-Action: 0 Reward: 1
-
-Time: 80 Agent: 5 9 Token: 0 8Policy: 1.60827e-05 1.37322e-08 0.00120865 0.998775 
-Value: 0.913771
-Action: 3 Reward: 0
-
-Time: 81 Agent: 4 9 Token: 0 8Policy: 1.86525e-06 1.14315e-08 0.0114374 0.988561 
-Value: 0.932465
-Action: 3 Reward: 0
-
-Time: 82 Agent: 3 9 Token: 0 8Policy: 1.28842e-06 1.87989e-08 0.0318989 0.9681 
-Value: 1.02822
-Action: 3 Reward: 0
-
-Time: 83 Agent: 2 9 Token: 0 8Policy: 2.15461e-06 8.93312e-08 0.108508 0.89149 
-Value: 1.20799
-Action: 3 Reward: 0
-
-Time: 84 Agent: 1 9 Token: 0 8Policy: 3.19109e-06 4.14337e-06 0.825992 0.174001 
-Value: 1.50979
-Action: 2 Reward: 0
-
-Time: 85 Agent: 1 8 Token: 0 8Policy: 0.000202378 3.20306e-06 0.0456784 0.954116 
-Value: 1.57174
-Action: 3 Reward: 1
-
-Time: 86 Agent: 0 8 Token: 7 8Policy: 2.43183e-05 0.992384 0.00759177 3.85147e-07 
-Value: 0.773747
+Time: 56 Agent: 4 8 Token: 7 8
+Policy: 3.48115e-05 0.999475 0.000489731 1.76176e-07 
+Value: 2.04088
 Action: 1 Reward: 0
 
-Time: 87 Agent: 1 8 Token: 7 8Policy: 4.8214e-05 0.999895 5.63539e-05 3.61467e-09 
-Value: 0.866425
+Time: 57 Agent: 5 8 Token: 7 8
+Policy: 0.000306372 0.996619 0.00307075 3.7813e-06 
+Value: 2.04571
 Action: 1 Reward: 0
 
-Time: 88 Agent: 2 8 Token: 7 8Policy: 5.31275e-05 0.999927 2.0067e-05 1.12835e-09 
-Value: 1.01934
+Time: 58 Agent: 6 8 Token: 7 8
+Policy: 0.0181552 0.974896 0.00691163 3.66553e-05 
+Value: 2.74672
+Action: 0 Reward: 0
+
+Time: 59 Agent: 6 9 Token: 7 8
+Policy: . 0.347148 0.649236 0.00361597 
+Value: 2.63666
 Action: 1 Reward: 0
 
-Time: 89 Agent: 3 8 Token: 7 8Policy: 7.12903e-05 0.999912 1.65129e-05 1.03503e-09 
-Value: 1.18362
-Action: 1 Reward: 0
-
-Time: 90 Agent: 4 8 Token: 7 8Policy: 0.000114774 0.999854 3.16551e-05 2.73817e-09 
-Value: 1.34985
-Action: 1 Reward: 0
-
-Time: 91 Agent: 5 8 Token: 7 8Policy: 0.000242151 0.999379 0.000379265 6.19189e-08 
-Value: 1.54214
-Action: 1 Reward: 0
-
-Time: 92 Agent: 6 8 Token: 7 8Policy: 0.00126114 0.977653 0.0210703 1.54576e-05 
-Value: 1.75109
-Action: 1 Reward: 1
-
-Time: 93 Agent: 7 8 Token: 3 9Policy: 0.000165359 3.43342e-09 1.9495e-05 0.999815 
-Value: 0.923984
-Action: 3 Reward: 0
-
-Time: 94 Agent: 6 8 Token: 3 9Policy: 0.000158542 2.56977e-09 1.85398e-05 0.999823 
-Value: 1.09131
-Action: 3 Reward: 0
-
-Time: 95 Agent: 5 8 Token: 3 9Policy: 0.000586923 1.3137e-08 4.0312e-05 0.999373 
-Value: 1.31616
-Action: 3 Reward: 0
-
-Time: 96 Agent: 4 8 Token: 3 9Policy: 0.0240341 1.39803e-06 0.000219731 0.975745 
-Value: 1.60846
-Action: 3 Reward: 0
-
-Time: 97 Agent: 3 8 Token: 3 9Policy: 0.957799 0.00238394 0.000422702 0.0393946 
-Value: 1.67048
-Action: 0 Reward: 1
-
-Time: 98 Agent: 3 9 Token: 1 9Policy: 0.000391002 1.6699e-07 0.000802932 0.998806 
-Value: 1.28238
-Action: 3 Reward: 0
-
-Time: 99 Agent: 2 9 Token: 1 9Policy: 0.000689059 2.03671e-06 0.0119608 0.987348 
-Value: 1.56659
-Action: 3 Reward: 1
-
-Time: 0 Agent: 5 5 Token: 4 2Policy: 4.31574e-07 1.34202e-05 0.993387 0.00659961 
-Value: 1.41748
-Action: 2 Reward: 0
-
-Time: 1 Agent: 5 4 Token: 4 2Policy: 5.0528e-07 1.29639e-06 0.927437 0.0725608 
-Value: 1.75155
-Action: 3 Reward: 0
-
-Time: 2 Agent: 4 4 Token: 4 2Policy: 1.63083e-08 3.819e-05 0.999857 0.000104501 
-Value: 2.14267
-Action: 2 Reward: 0
-
-Time: 3 Agent: 4 3 Token: 4 2Policy: 1.67126e-05 0.00152828 0.996327 0.00212768 
-Value: 2.28904
+Time: 60 Agent: 7 9 Token: 7 8
+Policy: . 0.0028113 0.979871 0.0173181 
+Value: 2.69133
 Action: 2 Reward: 1
 
-Time: 4 Agent: 4 2 Token: 1 5Policy: 0.272714 3.6262e-06 1.97001e-05 0.727262 
-Value: 1.31026
+Time: 61 Agent: 7 8 Token: 0 9
+Policy: 0.00602249 0.157395 0.793702 0.0428802 
+Value: 1.58806
+Action: 2 Reward: 0
+
+Time: 62 Agent: 7 7 Token: 0 9
+Policy: 0.0244002 0.108536 0.766626 0.100437 
+Value: 1.5278
+Action: 2 Reward: 0
+
+Time: 63 Agent: 7 6 Token: 0 9
+Policy: 0.000945739 8.15417e-05 0.198711 0.800262 
+Value: 1.56331
 Action: 3 Reward: 0
 
-Time: 5 Agent: 3 2 Token: 1 5Policy: 0.772504 2.04316e-06 1.51247e-06 0.227493 
-Value: 1.35684
+Time: 64 Agent: 6 6 Token: 0 9
+Policy: 1.38155e-05 4.99871e-06 0.817888 0.182093 
+Value: 1.4805
+Action: 2 Reward: 0
+
+Time: 65 Agent: 6 5 Token: 0 9
+Policy: 0.000150226 7.67985e-07 0.063037 0.936812 
+Value: 1.47585
+Action: 3 Reward: 0
+
+Time: 66 Agent: 5 5 Token: 0 9
+Policy: 6.35089e-05 1.7608e-06 0.357659 0.642275 
+Value: 1.43702
+Action: 3 Reward: 0
+
+Time: 67 Agent: 4 5 Token: 0 9
+Policy: 3.85796e-06 3.29998e-05 0.996847 0.00311607 
+Value: 1.43119
+Action: 2 Reward: 0
+
+Time: 68 Agent: 4 4 Token: 0 9
+Policy: 1.60015e-05 0.000105796 0.99385 0.00602862 
+Value: 1.4002
+Action: 2 Reward: 0
+
+Time: 69 Agent: 4 3 Token: 0 9
+Policy: 7.38345e-06 0.00011097 0.996584 0.00329801 
+Value: 1.40963
+Action: 2 Reward: 0
+
+Time: 70 Agent: 4 2 Token: 0 9
+Policy: 2.41113e-06 5.46974e-05 0.998245 0.00169784 
+Value: 1.38079
+Action: 2 Reward: 0
+
+Time: 71 Agent: 4 1 Token: 0 9
+Policy: 0.00125897 8.93185e-06 0.00286489 0.995867 
+Value: 1.35018
+Action: 3 Reward: 0
+
+Time: 72 Agent: 3 1 Token: 0 9
+Policy: 0.026113 9.48225e-06 0.000277747 0.9736 
+Value: 1.36916
+Action: 3 Reward: 0
+
+Time: 73 Agent: 2 1 Token: 0 9
+Policy: 0.134943 9.38487e-06 0.000121375 0.864926 
+Value: 1.32393
+Action: 3 Reward: 0
+
+Time: 74 Agent: 1 1 Token: 0 9
+Policy: 0.999947 5.91456e-06 9.98254e-09 4.72415e-05 
+Value: 1.29349
 Action: 0 Reward: 0
 
-Time: 6 Agent: 3 3 Token: 1 5Policy: 0.37871 1.2441e-06 4.86674e-06 0.621284 
-Value: 1.58981
+Time: 75 Agent: 1 2 Token: 0 9
+Policy: 0.999933 3.83804e-05 2.67677e-08 2.85108e-05 
+Value: 1.27794
 Action: 0 Reward: 0
 
-Time: 7 Agent: 3 4 Token: 1 5Policy: 0.0327126 2.74543e-07 1.67831e-05 0.96727 
-Value: 1.80018
-Action: 3 Reward: 0
-
-Time: 8 Agent: 2 4 Token: 1 5Policy: 0.599032 1.16211e-05 3.12004e-05 0.400925 
-Value: 2.04104
+Time: 76 Agent: 1 3 Token: 0 9
+Policy: 0.999837 0.000123613 1.54521e-07 3.94758e-05 
+Value: 1.26406
 Action: 0 Reward: 0
 
-Time: 9 Agent: 2 5 Token: 1 5Policy: 0.01743 1.0531e-05 0.00205354 0.980506 
-Value: 2.11598
-Action: 3 Reward: 1
-
-Time: 10 Agent: 1 5 Token: 0 0Policy: 2.84593e-08 0.000152934 0.999652 0.000194964 
-Value: 1.04467
-Action: 2 Reward: 0
-
-Time: 11 Agent: 1 4 Token: 0 0Policy: 7.58557e-09 1.71277e-05 0.999656 0.000327209 
-Value: 1.21567
-Action: 2 Reward: 0
-
-Time: 12 Agent: 1 3 Token: 0 0Policy: 1.9873e-08 7.46548e-06 0.998616 0.00137657 
-Value: 1.42709
-Action: 2 Reward: 0
-
-Time: 13 Agent: 1 2 Token: 0 0Policy: 1.82221e-07 6.72723e-06 0.990139 0.00985415 
-Value: 1.63834
-Action: 2 Reward: 0
-
-Time: 14 Agent: 1 1 Token: 0 0Policy: 2.83631e-05 2.81263e-05 0.760202 0.239742 
-Value: 1.80089
-Action: 2 Reward: 0
-
-Time: 15 Agent: 1 0 Token: 0 0Policy: 0.0115872 3.18385e-05 0.00769672 0.980684 
-Value: 1.90894
-Action: 3 Reward: 1
-
-Time: 16 Agent: 0 0 Token: 9 2Policy: 0.0166213 0.983376 2.20138e-06 1.24111e-07 
-Value: 0.852514
-Action: 1 Reward: 0
-
-Time: 17 Agent: 1 0 Token: 9 2Policy: 0.0188056 0.981194 6.16796e-07 3.41931e-08 
-Value: 0.984048
-Action: 1 Reward: 0
-
-Time: 18 Agent: 2 0 Token: 9 2Policy: 0.0171621 0.982838 3.08596e-07 1.56669e-08 
-Value: 1.04063
-Action: 1 Reward: 0
-
-Time: 19 Agent: 3 0 Token: 9 2Policy: 0.0170398 0.98296 2.08239e-07 9.83643e-09 
-Value: 1.10576
-Action: 1 Reward: 0
-
-Time: 20 Agent: 4 0 Token: 9 2Policy: 0.0176962 0.982304 1.64588e-07 7.22091e-09 
-Value: 1.18773
-Action: 1 Reward: 0
-
-Time: 21 Agent: 5 0 Token: 9 2Policy: 0.0193832 0.980617 1.50773e-07 6.18508e-09 
-Value: 1.2914
-Action: 1 Reward: 0
-
-Time: 22 Agent: 6 0 Token: 9 2Policy: 0.024978 0.975022 1.74903e-07 7.42207e-09 
-Value: 1.4237
-Action: 1 Reward: 0
-
-Time: 23 Agent: 7 0 Token: 9 2Policy: 0.064527 0.935473 3.55394e-07 2.75453e-08 
-Value: 1.60305
-Action: 1 Reward: 0
-
-Time: 24 Agent: 8 0 Token: 9 2Policy: 0.830148 0.16985 8.33927e-07 1.74641e-06 
-Value: 1.86573
-Action: 1 Reward: 0
-
-Time: 25 Agent: 9 0 Token: 9 2Policy: 0.999507 0.000408464 2.2754e-07 8.38735e-05 
-Value: 2.10998
+Time: 77 Agent: 1 4 Token: 0 9
+Policy: 0.99944 0.000398273 1.62843e-06 0.000160089 
+Value: 1.25625
 Action: 0 Reward: 0
 
-Time: 26 Agent: 9 1 Token: 9 2Policy: 0.992499 0.00241182 4.91766e-05 0.00504 
-Value: 2.19472
-Action: 0 Reward: 1
-
-Time: 27 Agent: 9 2 Token: 0 9Policy: 0.0405635 6.82889e-08 1.72882e-06 0.959435 
-Value: 0.362089
-Action: 3 Reward: 0
-
-Time: 28 Agent: 8 2 Token: 0 9Policy: 0.0717086 7.22026e-08 1.1417e-06 0.92829 
-Value: 0.436882
+Time: 78 Agent: 1 5 Token: 0 9
+Policy: 0.997764 0.00177437 1.79329e-05 0.00044323 
+Value: 1.26005
 Action: 0 Reward: 0
 
-Time: 29 Agent: 8 3 Token: 0 9Policy: 0.0240497 2.65026e-08 1.21586e-06 0.975949 
-Value: 0.478199
-Action: 3 Reward: 0
-
-Time: 30 Agent: 7 3 Token: 0 9Policy: 0.0500666 5.10324e-08 1.17302e-06 0.949932 
-Value: 0.513081
-Action: 3 Reward: 0
-
-Time: 31 Agent: 6 3 Token: 0 9Policy: 0.254667 2.16608e-07 8.84779e-07 0.745332 
-Value: 0.555842
-Action: 3 Reward: 0
-
-Time: 32 Agent: 5 3 Token: 0 9Policy: 0.734676 5.18853e-07 3.11327e-07 0.265323 
-Value: 0.622792
-Action: 3 Reward: 0
-
-Time: 33 Agent: 4 3 Token: 0 9Policy: 0.93704 5.96059e-07 7.98083e-08 0.0629593 
-Value: 0.722234
-Action: 0 Reward: 0
-
-Time: 34 Agent: 4 4 Token: 0 9Policy: 0.914701 6.71249e-07 1.19387e-07 0.0852987 
-Value: 0.76321
-Action: 0 Reward: 0
-
-Time: 35 Agent: 4 5 Token: 0 9Policy: 0.580357 6.2903e-07 7.63796e-07 0.419642 
-Value: 0.84024
-Action: 3 Reward: 0
-
-Time: 36 Agent: 3 5 Token: 0 9Policy: 0.868268 9.84908e-07 3.02663e-07 0.131731 
-Value: 0.915897
-Action: 0 Reward: 0
-
-Time: 37 Agent: 3 6 Token: 0 9Policy: 0.403621 7.39274e-07 1.91811e-06 0.596376 
-Value: 1.03951
-Action: 3 Reward: 0
-
-Time: 38 Agent: 2 6 Token: 0 9Policy: 0.897042 1.90152e-06 5.41202e-07 0.102956 
-Value: 1.15493
-Action: 0 Reward: 0
-
-Time: 39 Agent: 2 7 Token: 0 9Policy: 0.333473 1.49253e-06 6.08835e-06 0.666519 
-Value: 1.32418
-Action: 0 Reward: 0
-
-Time: 40 Agent: 2 8 Token: 0 9Policy: 0.0129244 2.05879e-07 2.86146e-05 0.987047 
-Value: 1.52093
-Action: 3 Reward: 0
-
-Time: 41 Agent: 1 8 Token: 0 9Policy: 0.459893 2.28018e-05 0.000105955 0.539978 
-Value: 1.78288
-Action: 3 Reward: 0
-
-Time: 42 Agent: 0 8 Token: 0 9Policy: 0.98728 0.00558975 0.000163567 0.00696635 
-Value: 1.9576
-Action: 0 Reward: 1
-
-Time: 43 Agent: 0 9 Token: 4 5Policy: 3.78647e-07 0.0394678 0.960521 1.06744e-05 
-Value: 1.11729
-Action: 2 Reward: 0
-
-Time: 44 Agent: 0 8 Token: 4 5Policy: 4.57293e-06 0.741191 0.258804 1.2761e-06 
-Value: 1.31751
-Action: 2 Reward: 0
-
-Time: 45 Agent: 0 7 Token: 4 5Policy: 6.97239e-06 0.983171 0.0168216 7.50795e-08 
-Value: 1.4384
-Action: 1 Reward: 0
-
-Time: 46 Agent: 1 7 Token: 4 5Policy: 3.3786e-06 0.773517 0.226479 5.48166e-07 
-Value: 1.58084
-Action: 1 Reward: 0
-
-Time: 47 Agent: 2 7 Token: 4 5Policy: 1.12537e-06 0.236065 0.763932 1.53918e-06 
-Value: 1.76508
-Action: 2 Reward: 0
-
-Time: 48 Agent: 2 6 Token: 4 5Policy: 1.56969e-05 0.979393 0.0205916 1.32968e-07 
-Value: 1.82097
-Action: 1 Reward: 0
-
-Time: 49 Agent: 3 6 Token: 4 5Policy: 1.10171e-05 0.241149 0.758829 1.02557e-05 
-Value: 2.11299
-Action: 2 Reward: 0
-
-Time: 50 Agent: 3 5 Token: 4 5Policy: 0.00253204 0.994705 0.00276014 2.99986e-06 
-Value: 2.09523
-Action: 1 Reward: 1
-
-Time: 51 Agent: 4 5 Token: 1 5Policy: 0.000249085 4.03129e-08 0.000267399 0.999483 
-Value: 1.64504
-Action: 3 Reward: 0
-
-Time: 52 Agent: 3 5 Token: 1 5Policy: 0.00028962 5.98589e-08 0.00045906 0.999251 
-Value: 1.71217
-Action: 3 Reward: 0
-
-Time: 53 Agent: 2 5 Token: 1 5Policy: 0.00482156 4.9202e-06 0.00425483 0.990919 
-Value: 1.95952
-Action: 3 Reward: 1
-
-Time: 54 Agent: 1 5 Token: 6 4Policy: 1.19208e-05 0.999276 0.000711678 9.24157e-09 
-Value: 1.18548
-Action: 1 Reward: 0
-
-Time: 55 Agent: 2 5 Token: 6 4Policy: 8.39342e-06 0.999461 0.000530679 2.79169e-09 
-Value: 1.38453
-Action: 1 Reward: 0
-
-Time: 56 Agent: 3 5 Token: 6 4Policy: 8.11431e-06 0.996598 0.00339385 1.43507e-08 
-Value: 1.55737
-Action: 1 Reward: 0
-
-Time: 57 Agent: 4 5 Token: 6 4Policy: 1.13707e-05 0.936839 0.0631496 3.42461e-07 
-Value: 1.74037
-Action: 1 Reward: 0
-
-Time: 58 Agent: 5 5 Token: 6 4Policy: 1.33889e-05 0.319766 0.68021 1.01603e-05 
-Value: 1.95468
-Action: 1 Reward: 0
-
-Time: 59 Agent: 6 5 Token: 6 4Policy: 8.29343e-06 0.00642463 0.993233 0.000334076 
-Value: 2.11873
-Action: 2 Reward: 1
-
-Time: 60 Agent: 6 4 Token: 7 8Policy: 0.997499 0.00247005 2.52845e-07 3.11943e-05 
-Value: 1.2261
-Action: 0 Reward: 0
-
-Time: 61 Agent: 6 5 Token: 7 8Policy: 0.825284 0.174714 4.70106e-07 1.1727e-06 
-Value: 1.38651
-Action: 0 Reward: 0
-
-Time: 62 Agent: 6 6 Token: 7 8Policy: 0.783881 0.216117 9.25857e-07 1.6302e-06 
-Value: 1.56348
-Action: 0 Reward: 0
-
-Time: 63 Agent: 6 7 Token: 7 8Policy: 0.187707 0.81227 2.03455e-05 2.62567e-06 
-Value: 1.77306
-Action: 1 Reward: 0
-
-Time: 64 Agent: 7 7 Token: 7 8Policy: 0.988613 0.0069503 0.000150102 0.00428691 
-Value: 2.0152
-Action: 0 Reward: 1
-
-Time: 65 Agent: 7 8 Token: 3 9Policy: 0.000315948 4.93699e-09 1.57206e-05 0.999668 
-Value: 1.19062
-Action: 3 Reward: 0
-
-Time: 66 Agent: 6 8 Token: 3 9Policy: 0.000235901 3.88761e-09 2.08654e-05 0.999743 
-Value: 1.32146
-Action: 3 Reward: 0
-
-Time: 67 Agent: 5 8 Token: 3 9Policy: 0.00116405 2.70574e-08 4.64809e-05 0.998789 
-Value: 1.52514
-Action: 3 Reward: 0
-
-Time: 68 Agent: 4 8 Token: 3 9Policy: 0.0861127 4.59357e-06 0.000211179 0.913672 
-Value: 1.79521
-Action: 3 Reward: 0
-
-Time: 69 Agent: 3 8 Token: 3 9Policy: 0.978683 0.00197541 0.000194709 0.0191474 
-Value: 1.89493
-Action: 0 Reward: 1
-
-Time: 70 Agent: 3 9 Token: 3 4Policy: 1.92605e-08 0.000218122 0.99974 4.16284e-05 
-Value: 1.30968
-Action: 2 Reward: 0
-
-Time: 71 Agent: 3 8 Token: 3 4Policy: 4.196e-09 4.91571e-05 0.999915 3.55602e-05 
-Value: 1.48303
-Action: 2 Reward: 0
-
-Time: 72 Agent: 3 7 Token: 3 4Policy: 5.83065e-09 5.10513e-05 0.99991 3.84666e-05 
-Value: 1.70495
-Action: 2 Reward: 0
-
-Time: 73 Agent: 3 6 Token: 3 4Policy: 2.54666e-08 9.91794e-05 0.999828 7.30469e-05 
-Value: 1.8773
-Action: 2 Reward: 0
-
-Time: 74 Agent: 3 5 Token: 3 4Policy: 3.14676e-06 0.00101431 0.998148 0.000834828 
-Value: 1.98329
-Action: 2 Reward: 1
-
-Time: 75 Agent: 3 4 Token: 2 8Policy: 0.983688 2.14361e-05 1.83356e-06 0.0162882 
-Value: 1.18954
-Action: 0 Reward: 0
-
-Time: 76 Agent: 3 5 Token: 2 8Policy: 0.991898 6.02984e-06 1.88554e-07 0.00809624 
-Value: 1.19238
-Action: 0 Reward: 0
-
-Time: 77 Agent: 3 6 Token: 2 8Policy: 0.912597 7.70647e-06 2.50503e-06 0.0873931 
-Value: 1.41503
-Action: 0 Reward: 0
-
-Time: 78 Agent: 3 7 Token: 2 8Policy: 0.17375 6.07933e-06 8.97397e-05 0.826155 
-Value: 1.65124
-Action: 3 Reward: 0
-
-Time: 79 Agent: 2 7 Token: 2 8Policy: 0.985585 0.00101068 7.22681e-05 0.0133316 
-Value: 1.87021
-Action: 0 Reward: 1
-
-Time: 80 Agent: 2 8 Token: 7 5Policy: 4.74226e-06 0.962258 0.0377368 2.60175e-07 
-Value: 0.844525
-Action: 2 Reward: 0
-
-Time: 81 Agent: 2 7 Token: 7 5Policy: 5.11817e-06 0.998238 0.00175676 7.82709e-09 
-Value: 1.04194
-Action: 1 Reward: 0
-
-Time: 82 Agent: 3 7 Token: 7 5Policy: 3.16442e-06 0.97562 0.024377 6.27173e-08 
-Value: 1.15572
-Action: 1 Reward: 0
-
-Time: 83 Agent: 4 7 Token: 7 5Policy: 2.14322e-06 0.756475 0.243523 4.84002e-07 
-Value: 1.27954
-Action: 2 Reward: 0
-
-Time: 84 Agent: 4 6 Token: 7 5Policy: 8.62727e-06 0.996908 0.00308357 1.73383e-08 
-Value: 1.3323
-Action: 1 Reward: 0
-
-Time: 85 Agent: 5 6 Token: 7 5Policy: 9.65712e-06 0.864992 0.134997 8.46797e-07 
-Value: 1.53426
-Action: 1 Reward: 0
-
-Time: 86 Agent: 6 6 Token: 7 5Policy: 9.60051e-06 0.255273 0.744705 1.24376e-05 
-Value: 1.74023
-Action: 2 Reward: 0
-
-Time: 87 Agent: 6 5 Token: 7 5Policy: 0.00214929 0.991449 0.00639305 8.73914e-06 
-Value: 1.73175
-Action: 1 Reward: 1
-
-Time: 88 Agent: 7 5 Token: 5 7Policy: 0.137553 2.48856e-06 3.83255e-05 0.862406 
-Value: 1.37063
-Action: 3 Reward: 0
-
-Time: 89 Agent: 6 5 Token: 5 7Policy: 0.84103 9.99052e-06 6.72793e-06 0.158953 
-Value: 1.42261
-Action: 0 Reward: 0
-
-Time: 90 Agent: 6 6 Token: 5 7Policy: 0.0911215 3.67669e-06 0.000110187 0.908765 
-Value: 1.62674
-Action: 3 Reward: 0
-
-Time: 91 Agent: 5 6 Token: 5 7Policy: 0.979919 0.000703074 7.07918e-05 0.0193069 
-Value: 1.80092
-Action: 0 Reward: 1
-
-Time: 92 Agent: 5 7 Token: 1 0Policy: 2.47137e-06 2.44718e-06 0.586043 0.413952 
-Value: 0.526977
-Action: 2 Reward: 0
-
-Time: 93 Agent: 5 6 Token: 1 0Policy: 6.59055e-07 7.99875e-08 0.222172 0.777827 
-Value: 0.448005
-Action: 2 Reward: 0
-
-Time: 94 Agent: 5 5 Token: 1 0Policy: 4.31562e-07 5.13436e-08 0.224128 0.775872 
-Value: 0.447779
-Action: 2 Reward: 0
-
-Time: 95 Agent: 5 4 Token: 1 0Policy: 3.71127e-07 4.01682e-08 0.215258 0.784742 
-Value: 0.513083
-Action: 3 Reward: 0
-
-Time: 96 Agent: 4 4 Token: 1 0Policy: 3.40334e-07 6.82511e-08 0.32924 0.67076 
-Value: 0.543053
-Action: 3 Reward: 0
-
-Time: 97 Agent: 3 4 Token: 1 0Policy: 1.36438e-07 4.83374e-07 0.865753 0.134247 
-Value: 0.598369
-Action: 2 Reward: 0
-
-Time: 98 Agent: 3 3 Token: 1 0Policy: 3.57e-07 1.85968e-07 0.574338 0.425661 
-Value: 0.770923
-Action: 2 Reward: 0
-
-Time: 99 Agent: 3 2 Token: 1 0Policy: 6.66057e-07 1.406e-07 0.375672 0.624327 
-Value: 0.929311
-Action: 3 Reward: 0
-
-Time: 0 Agent: 5 5 Token: 8 1Policy: 1.13024e-07 0.0386602 0.961336 3.17911e-06 
-Value: 0.800185
-Action: 2 Reward: 0
-
-Time: 1 Agent: 5 4 Token: 8 1Policy: 3.56427e-07 0.225763 0.774236 8.88027e-07 
-Value: 1.27007
-Action: 2 Reward: 0
-
-Time: 2 Agent: 5 3 Token: 8 1Policy: 1.97023e-06 0.946384 0.0536142 6.21886e-08 
-Value: 1.48291
-Action: 1 Reward: 0
-
-Time: 3 Agent: 6 3 Token: 8 1Policy: 4.52735e-07 0.203638 0.796361 8.45858e-07 
-Value: 1.65474
-Action: 2 Reward: 0
-
-Time: 4 Agent: 6 2 Token: 8 1Policy: 8.94242e-06 0.987371 0.0126197 5.27506e-08 
-Value: 1.7958
-Action: 1 Reward: 0
-
-Time: 5 Agent: 7 2 Token: 8 1Policy: 1.04053e-05 0.308482 0.691499 8.61997e-06 
-Value: 2.03958
-Action: 2 Reward: 0
-
-Time: 6 Agent: 7 1 Token: 8 1Policy: 0.00292301 0.995501 0.00157349 2.30546e-06 
-Value: 2.13001
-Action: 1 Reward: 1
-
-Time: 7 Agent: 8 1 Token: 4 0Policy: 3.6286e-05 4.24318e-08 0.00197493 0.997989 
-Value: 1.46217
-Action: 3 Reward: 0
-
-Time: 8 Agent: 7 1 Token: 4 0Policy: 2.18124e-05 4.96474e-08 0.00611051 0.993868 
-Value: 1.66384
-Action: 3 Reward: 0
-
-Time: 9 Agent: 6 1 Token: 4 0Policy: 2.14028e-05 1.46751e-07 0.0242413 0.975737 
-Value: 1.78033
-Action: 3 Reward: 0
-
-Time: 10 Agent: 5 1 Token: 4 0Policy: 6.41722e-05 3.54149e-06 0.225942 0.773991 
-Value: 1.98376
-Action: 3 Reward: 0
-
-Time: 11 Agent: 4 1 Token: 4 0Policy: 2.58773e-05 0.00107551 0.993668 0.00523037 
-Value: 2.18242
-Action: 2 Reward: 1
-
-Time: 12 Agent: 4 0 Token: 7 5Policy: 0.213975 0.786022 2.11493e-06 7.798e-07 
-Value: 1.13271
-Action: 1 Reward: 0
-
-Time: 13 Agent: 5 0 Token: 7 5Policy: 0.862884 0.137116 1.22412e-07 5.48537e-07 
-Value: 1.25727
-Action: 0 Reward: 0
-
-Time: 14 Agent: 5 1 Token: 7 5Policy: 0.394223 0.605777 1.98976e-07 1.19058e-07 
-Value: 1.37044
-Action: 1 Reward: 0
-
-Time: 15 Agent: 6 1 Token: 7 5Policy: 0.997045 0.00295396 1.51604e-08 1.27798e-06 
-Value: 1.56891
-Action: 0 Reward: 0
-
-Time: 16 Agent: 6 2 Token: 7 5Policy: 0.915592 0.0844065 2.28629e-07 9.97815e-07 
-Value: 1.70754
-Action: 0 Reward: 0
-
-Time: 17 Agent: 6 3 Token: 7 5Policy: 0.773717 0.22628 1.05353e-06 1.56161e-06 
-Value: 1.86463
-Action: 0 Reward: 0
-
-Time: 18 Agent: 6 4 Token: 7 5Policy: 0.257081 0.742902 1.49964e-05 2.58112e-06 
-Value: 2.03855
-Action: 1 Reward: 0
-
-Time: 19 Agent: 7 4 Token: 7 5Policy: 0.993485 0.00468623 4.77202e-05 0.00178131 
-Value: 2.29082
-Action: 0 Reward: 1
-
-Time: 20 Agent: 7 5 Token: 1 7Policy: 0.000437167 3.72008e-09 7.90851e-06 0.999555 
-Value: 1.15346
-Action: 3 Reward: 0
-
-Time: 21 Agent: 6 5 Token: 1 7Policy: 0.000393882 2.21663e-09 5.61417e-06 0.999601 
-Value: 1.17685
-Action: 3 Reward: 0
-
-Time: 22 Agent: 5 5 Token: 1 7Policy: 0.00104774 5.14482e-09 5.63937e-06 0.998947 
-Value: 1.25408
-Action: 3 Reward: 0
-
-Time: 23 Agent: 4 5 Token: 1 7Policy: 0.0130008 5.60129e-08 6.41501e-06 0.986993 
-Value: 1.34074
-Action: 3 Reward: 0
-
-Time: 24 Agent: 3 5 Token: 1 7Policy: 0.327043 1.37121e-06 6.57805e-06 0.672949 
-Value: 1.47398
-Action: 3 Reward: 0
-
-Time: 25 Agent: 2 5 Token: 1 7Policy: 0.950285 6.28061e-06 1.36995e-06 0.0497073 
-Value: 1.69911
-Action: 0 Reward: 0
-
-Time: 26 Agent: 2 6 Token: 1 7Policy: 0.392916 1.2761e-05 6.40831e-05 0.607007 
-Value: 1.89041
-Action: 3 Reward: 0
-
-Time: 27 Agent: 1 6 Token: 1 7Policy: 0.99208 0.000967187 3.83918e-05 0.00691428 
-Value: 2.1627
-Action: 0 Reward: 1
-
-Time: 28 Agent: 1 7 Token: 2 7Policy: 0.00661053 0.983714 0.00964935 2.64729e-05 
-Value: 2.13655
-Action: 1 Reward: 1
-
-Time: 29 Agent: 2 7 Token: 4 8Policy: 0.011679 0.988313 7.82307e-06 7.37086e-08 
-Value: 1.84402
-Action: 1 Reward: 0
-
-Time: 30 Agent: 3 7 Token: 4 8Policy: 0.0896043 0.910361 3.35393e-05 1.38627e-06 
-Value: 2.10082
-Action: 1 Reward: 0
-
-Time: 31 Agent: 4 7 Token: 4 8Policy: 0.98154 0.0162085 0.000176612 0.00207483 
-Value: 2.24165
-Action: 0 Reward: 1
-
-Time: 32 Agent: 4 8 Token: 3 4Policy: 2.96215e-08 3.3593e-05 0.999398 0.00056868 
-Value: 1.36254
-Action: 2 Reward: 0
-
-Time: 33 Agent: 4 7 Token: 3 4Policy: 1.85662e-07 9.70074e-07 0.959242 0.0407564 
-Value: 1.72044
-Action: 2 Reward: 0
-
-Time: 34 Agent: 4 6 Token: 3 4Policy: 1.43365e-07 1.35764e-06 0.976325 0.0236733 
-Value: 1.8713
-Action: 2 Reward: 0
-
-Time: 35 Agent: 4 5 Token: 3 4Policy: 7.4657e-06 2.5146e-06 0.635625 0.364365 
-Value: 1.98841
-Action: 3 Reward: 0
-
-Time: 36 Agent: 3 5 Token: 3 4Policy: 2.19547e-06 0.000426203 0.998402 0.00116969 
-Value: 2.22531
-Action: 2 Reward: 1
-
-Time: 37 Agent: 3 4 Token: 8 7Policy: 0.0184374 0.98156 2.39665e-06 1.26079e-07 
-Value: 1.1006
-Action: 1 Reward: 0
-
-Time: 38 Agent: 4 4 Token: 8 7Policy: 0.0445706 0.955429 1.82008e-07 1.8019e-08 
-Value: 1.11249
-Action: 1 Reward: 0
-
-Time: 39 Agent: 5 4 Token: 8 7Policy: 0.0718093 0.928191 1.3549e-07 1.6984e-08 
-Value: 1.22702
-Action: 1 Reward: 0
-
-Time: 40 Agent: 6 4 Token: 8 7Policy: 0.322178 0.677822 2.22372e-07 9.98975e-08 
-Value: 1.36897
-Action: 0 Reward: 0
-
-Time: 41 Agent: 6 5 Token: 8 7Policy: 0.1077 0.8923 3.24009e-07 3.94503e-08 
-Value: 1.50885
-Action: 1 Reward: 0
-
-Time: 42 Agent: 7 5 Token: 8 7Policy: 0.872583 0.127415 6.39607e-07 1.70921e-06 
-Value: 1.74637
-Action: 0 Reward: 0
-
-Time: 43 Agent: 7 6 Token: 8 7Policy: 0.199108 0.800871 1.83258e-05 2.46347e-06 
-Value: 1.91213
-Action: 1 Reward: 0
-
-Time: 44 Agent: 8 6 Token: 8 7Policy: 0.991553 0.00470252 9.39783e-05 0.00365008 
-Value: 2.15072
-Action: 0 Reward: 1
-
-Time: 45 Agent: 8 7 Token: 9 1Policy: 4.22065e-08 0.00309188 0.996902 5.87179e-06 
-Value: 1.3101
-Action: 2 Reward: 0
-
-Time: 46 Agent: 8 6 Token: 9 1Policy: 5.83255e-09 0.00117018 0.998827 2.51372e-06 
-Value: 1.23595
-Action: 2 Reward: 0
-
-Time: 47 Agent: 8 5 Token: 9 1Policy: 4.96323e-09 0.00128938 0.998709 1.94732e-06 
-Value: 1.31614
-Action: 2 Reward: 0
-
-Time: 48 Agent: 8 4 Token: 9 1Policy: 8.22645e-09 0.00223683 0.997761 1.80721e-06 
-Value: 1.46309
-Action: 2 Reward: 0
-
-Time: 49 Agent: 8 3 Token: 9 1Policy: 5.74651e-08 0.0105331 0.989464 2.51605e-06 
-Value: 1.6379
-Action: 2 Reward: 0
-
-Time: 50 Agent: 8 2 Token: 9 1Policy: 1.63067e-05 0.452051 0.547923 9.26478e-06 
-Value: 1.77377
-Action: 2 Reward: 0
-
-Time: 51 Agent: 8 1 Token: 9 1Policy: 0.00262297 0.99478 0.00259243 4.14274e-06 
-Value: 1.87833
-Action: 1 Reward: 1
-
-Time: 52 Agent: 9 1 Token: 5 7Policy: 0.950544 2.60292e-06 2.72378e-07 0.0494532 
-Value: 0.6074
-Action: 0 Reward: 0
-
-Time: 53 Agent: 9 2 Token: 5 7Policy: 0.883135 1.07617e-06 2.98776e-07 0.116863 
-Value: 0.895069
-Action: 0 Reward: 0
-
-Time: 54 Agent: 9 3 Token: 5 7Policy: 0.321826 4.98477e-07 1.80927e-06 0.678171 
-Value: 1.00052
-Action: 3 Reward: 0
-
-Time: 55 Agent: 8 3 Token: 5 7Policy: 0.792907 1.12352e-06 6.38082e-07 0.207091 
-Value: 1.06491
-Action: 0 Reward: 0
-
-Time: 56 Agent: 8 4 Token: 5 7Policy: 0.17919 3.96818e-07 3.22146e-06 0.820806 
-Value: 1.18658
-Action: 0 Reward: 0
-
-Time: 57 Agent: 8 5 Token: 5 7Policy: 0.009243 3.88529e-08 6.18561e-06 0.990751 
-Value: 1.3577
-Action: 3 Reward: 0
-
-Time: 58 Agent: 7 5 Token: 5 7Policy: 0.149778 7.64131e-07 1.02454e-05 0.850211 
-Value: 1.49362
-Action: 3 Reward: 0
-
-Time: 59 Agent: 6 5 Token: 5 7Policy: 0.924541 8.05844e-06 2.83773e-06 0.0754481 
-Value: 1.67231
-Action: 0 Reward: 0
-
-Time: 60 Agent: 6 6 Token: 5 7Policy: 0.150463 5.36682e-06 9.76679e-05 0.849434 
-Value: 1.84105
-Action: 3 Reward: 0
-
-Time: 61 Agent: 5 6 Token: 5 7Policy: 0.987975 0.000548016 3.85348e-05 0.011438 
-Value: 2.04502
-Action: 0 Reward: 1
-
-Time: 62 Agent: 5 7 Token: 8 8Policy: 0.00583152 0.994166 2.07363e-06 1.57088e-08 
-Value: 1.4536
-Action: 1 Reward: 0
-
-Time: 63 Agent: 6 7 Token: 8 8Policy: 0.0125713 0.987426 2.45092e-06 2.88048e-08 
-Value: 1.60388
-Action: 1 Reward: 0
-
-Time: 64 Agent: 7 7 Token: 8 8Policy: 0.141766 0.8582 3.16863e-05 2.76516e-06 
-Value: 1.84143
-Action: 1 Reward: 0
-
-Time: 65 Agent: 8 7 Token: 8 8Policy: 0.986712 0.00691594 0.000211769 0.00616061 
-Value: 2.04191
-Action: 0 Reward: 1
-
-Time: 66 Agent: 8 8 Token: 0 5Policy: 3.79661e-06 6.01381e-08 0.0328374 0.967159 
-Value: 0.736029
-Action: 3 Reward: 0
-
-Time: 67 Agent: 7 8 Token: 0 5Policy: 6.51351e-07 4.396e-08 0.1455 0.854499 
-Value: 0.708203
-Action: 3 Reward: 0
-
-Time: 68 Agent: 6 8 Token: 0 5Policy: 2.60553e-07 2.56937e-08 0.202993 0.797007 
-Value: 0.75153
-Action: 3 Reward: 0
-
-Time: 69 Agent: 5 8 Token: 0 5Policy: 1.72779e-07 2.02303e-08 0.236015 0.763985 
-Value: 0.824054
-Action: 3 Reward: 0
-
-Time: 70 Agent: 4 8 Token: 0 5Policy: 1.58201e-07 2.22054e-08 0.27688 0.723119 
-Value: 0.916162
-Action: 3 Reward: 0
-
-Time: 71 Agent: 3 8 Token: 0 5Policy: 1.85654e-07 4.21547e-08 0.391174 0.608826 
-Value: 1.03138
-Action: 3 Reward: 0
-
-Time: 72 Agent: 2 8 Token: 0 5Policy: 1.44022e-07 2.73555e-07 0.830676 0.169324 
-Value: 1.18362
-Action: 3 Reward: 0
-
-Time: 73 Agent: 1 8 Token: 0 5Policy: 8.2358e-09 4.77559e-06 0.999055 0.000940102 
-Value: 1.42183
-Action: 2 Reward: 0
-
-Time: 74 Agent: 1 7 Token: 0 5Policy: 1.53092e-07 3.25848e-06 0.986457 0.0135394 
-Value: 1.62057
-Action: 2 Reward: 0
-
-Time: 75 Agent: 1 6 Token: 0 5Policy: 3.9713e-06 9.0057e-06 0.885243 0.114744 
-Value: 1.70551
-Action: 3 Reward: 0
-
-Time: 76 Agent: 0 6 Token: 0 5Policy: 1.15958e-06 0.000806571 0.998669 0.000523405 
-Value: 1.89701
-Action: 2 Reward: 1
-
-Time: 77 Agent: 0 5 Token: 5 9Policy: 0.0316109 0.968386 2.84405e-06 2.87323e-07 
-Value: 0.757079
-Action: 1 Reward: 0
-
-Time: 78 Agent: 1 5 Token: 5 9Policy: 0.0720008 0.927999 1.2811e-07 2.27624e-08 
-Value: 0.833755
-Action: 1 Reward: 0
-
-Time: 79 Agent: 2 5 Token: 5 9Policy: 0.11357 0.88643 8.38945e-08 1.79052e-08 
-Value: 0.962357
-Action: 1 Reward: 0
-
-Time: 80 Agent: 3 5 Token: 5 9Policy: 0.521246 0.478754 1.05961e-07 1.04633e-07 
-Value: 1.08696
-Action: 1 Reward: 0
-
-Time: 81 Agent: 4 5 Token: 5 9Policy: 0.995406 0.00459313 1.23922e-08 7.66813e-07 
-Value: 1.26039
-Action: 0 Reward: 0
-
-Time: 82 Agent: 4 6 Token: 5 9Policy: 0.861156 0.138843 1.81141e-07 5.35822e-07 
-Value: 1.3745
-Action: 0 Reward: 0
-
-Time: 83 Agent: 4 7 Token: 5 9Policy: 0.701695 0.298303 7.48034e-07 8.61621e-07 
-Value: 1.52712
-Action: 1 Reward: 0
-
-Time: 84 Agent: 5 7 Token: 5 9Policy: 0.999384 0.000558967 2.01636e-07 5.72871e-05 
-Value: 1.73117
-Action: 0 Reward: 0
-
-Time: 85 Agent: 5 8 Token: 5 9Policy: 0.975817 0.0155165 0.000420917 0.00824524 
-Value: 1.84757
-Action: 0 Reward: 1
-
-Time: 86 Agent: 5 9 Token: 2 5Policy: 2.11882e-06 3.0265e-07 0.25734 0.742658 
-Value: 0.864843
-Action: 3 Reward: 0
-
-Time: 87 Agent: 4 9 Token: 2 5Policy: 2.23255e-07 3.36509e-07 0.791522 0.208477 
-Value: 1.02738
-Action: 2 Reward: 0
-
-Time: 88 Agent: 4 8 Token: 2 5Policy: 2.81599e-07 1.43596e-07 0.625798 0.374201 
-Value: 1.19189
-Action: 2 Reward: 0
-
-Time: 89 Agent: 4 7 Token: 2 5Policy: 4.6189e-07 1.1213e-07 0.464471 0.535529 
-Value: 1.30478
-Action: 3 Reward: 0
-
-Time: 90 Agent: 3 7 Token: 2 5Policy: 1.1329e-07 1.56764e-06 0.979874 0.0201247 
-Value: 1.57106
-Action: 2 Reward: 0
-
-Time: 91 Agent: 3 6 Token: 2 5Policy: 5.97798e-06 2.391e-06 0.632133 0.367858 
-Value: 1.66181
-Action: 2 Reward: 0
-
-Time: 92 Agent: 3 5 Token: 2 5Policy: 0.000311669 1.51466e-06 0.0162529 0.983434 
-Value: 1.74812
-Action: 3 Reward: 1
-
-Time: 93 Agent: 2 5 Token: 5 4Policy: 1.47528e-05 0.985615 0.01437 1.93849e-07 
-Value: 1.23559
-Action: 1 Reward: 0
-
-Time: 94 Agent: 3 5 Token: 5 4Policy: 1.5783e-05 0.945874 0.0541097 4.57381e-07 
-Value: 1.48794
-Action: 1 Reward: 0
-
-Time: 95 Agent: 4 5 Token: 5 4Policy: 1.15033e-05 0.255338 0.744637 1.34791e-05 
-Value: 1.72641
-Action: 2 Reward: 0
-
-Time: 96 Agent: 4 4 Token: 5 4Policy: 0.00247913 0.993832 0.00368362 5.23945e-06 
-Value: 1.73151
-Action: 1 Reward: 1
-
-Time: 97 Agent: 5 4 Token: 2 9Policy: 0.966012 2.54383e-06 1.7966e-07 0.0339853 
-Value: 0.402511
-Action: 0 Reward: 0
-
-Time: 98 Agent: 5 5 Token: 2 9Policy: 0.812724 1.07693e-06 4.43271e-07 0.187274 
-Value: 0.616565
-Action: 0 Reward: 0
-
-Time: 99 Agent: 5 6 Token: 2 9Policy: 0.110513 2.17884e-07 2.57773e-06 0.889484 
-Value: 0.773397
-Action: 3 Reward: 0
-
-Time: 0 Agent: 5 5 Token: 3 0Policy: 6.28199e-07 8.76171e-06 0.970651 0.0293395 
-Value: 0.906344
-Action: 2 Reward: 0
-
-Time: 1 Agent: 5 4 Token: 3 0Policy: 3.4928e-07 2.52675e-07 0.713356 0.286643 
-Value: 1.14317
-Action: 2 Reward: 0
-
-Time: 2 Agent: 5 3 Token: 3 0Policy: 3.60805e-07 1.78292e-07 0.654688 0.345312 
-Value: 1.36036
-Action: 2 Reward: 0
-
-Time: 3 Agent: 5 2 Token: 3 0Policy: 7.48706e-07 1.73904e-07 0.500546 0.499453 
-Value: 1.57492
-Action: 3 Reward: 0
-
-Time: 4 Agent: 4 2 Token: 3 0Policy: 2.69264e-07 1.58229e-06 0.958724 0.0412742 
-Value: 1.76417
-Action: 2 Reward: 0
-
-Time: 5 Agent: 4 1 Token: 3 0Policy: 1.82668e-05 3.77113e-06 0.503111 0.496866 
-Value: 1.96409
-Action: 2 Reward: 0
-
-Time: 6 Agent: 4 0 Token: 3 0Policy: 0.00405303 6.10724e-06 0.00590936 0.990031 
-Value: 2.09688
-Action: 3 Reward: 1
-
-Time: 7 Agent: 3 0 Token: 5 0Policy: 0.00254162 0.996907 0.000550816 8.71434e-07 
-Value: 1.91045
-Action: 1 Reward: 0
-
-Time: 8 Agent: 4 0 Token: 5 0Policy: 0.00382555 0.994912 0.00126025 2.07967e-06 
-Value: 2.15445
-Action: 1 Reward: 1
-
-Time: 9 Agent: 5 0 Token: 9 5Policy: 0.0374713 0.962528 2.83967e-07 2.15934e-08 
-Value: 1.16196
-Action: 1 Reward: 0
-
-Time: 10 Agent: 6 0 Token: 9 5Policy: 0.173266 0.826733 1.5515e-07 5.45721e-08 
-Value: 1.1424
-Action: 1 Reward: 0
-
-Time: 11 Agent: 7 0 Token: 9 5Policy: 0.967988 0.0320116 2.70735e-08 5.14161e-07 
-Value: 1.239
-Action: 0 Reward: 0
-
-Time: 12 Agent: 7 1 Token: 9 5Policy: 0.522045 0.477954 1.50702e-07 1.5655e-07 
-Value: 1.3349
-Action: 1 Reward: 0
-
-Time: 13 Agent: 8 1 Token: 9 5Policy: 0.998611 0.0013876 7.86794e-09 1.41744e-06 
-Value: 1.5152
-Action: 0 Reward: 0
-
-Time: 14 Agent: 8 2 Token: 9 5Policy: 0.956778 0.043221 1.25317e-07 1.11359e-06 
-Value: 1.65406
-Action: 0 Reward: 0
-
-Time: 15 Agent: 8 3 Token: 9 5Policy: 0.853726 0.146272 7.24277e-07 1.87688e-06 
-Value: 1.81196
-Action: 0 Reward: 0
-
-Time: 16 Agent: 8 4 Token: 9 5Policy: 0.315708 0.684272 1.66582e-05 4.06406e-06 
-Value: 1.98894
-Action: 0 Reward: 0
-
-Time: 17 Agent: 8 5 Token: 9 5Policy: 0.00879749 0.988216 0.00297425 1.27017e-05 
-Value: 2.09434
-Action: 1 Reward: 1
-
-Time: 18 Agent: 9 5 Token: 6 6Policy: 0.000735046 2.32081e-08 4.85699e-05 0.999216 
-Value: 1.69272
-Action: 3 Reward: 0
-
-Time: 19 Agent: 8 5 Token: 6 6Policy: 0.00540886 1.20729e-07 5.10686e-05 0.99454 
-Value: 1.8609
-Action: 3 Reward: 0
-
-Time: 20 Agent: 7 5 Token: 6 6Policy: 0.314941 1.20573e-05 0.000120092 0.684927 
-Value: 2.08944
-Action: 3 Reward: 0
-
-Time: 21 Agent: 6 5 Token: 6 6Policy: 0.988733 0.000625114 3.96065e-05 0.0106028 
-Value: 2.1992
-Action: 0 Reward: 1
-
-Time: 22 Agent: 6 6 Token: 1 0Policy: 6.26463e-06 2.89555e-07 0.104853 0.895141 
-Value: 0.798004
-Action: 3 Reward: 0
-
-Time: 23 Agent: 5 6 Token: 1 0Policy: 1.4791e-06 2.24825e-07 0.305199 0.6948 
-Value: 0.790081
-Action: 3 Reward: 0
-
-Time: 24 Agent: 4 6 Token: 1 0Policy: 4.11825e-07 6.16022e-07 0.770969 0.22903 
-Value: 0.810942
-Action: 2 Reward: 0
-
-Time: 25 Agent: 4 5 Token: 1 0Policy: 3.98777e-07 1.66246e-07 0.536183 0.463816 
-Value: 0.884672
-Action: 2 Reward: 0
-
-Time: 26 Agent: 4 4 Token: 1 0Policy: 4.18311e-07 1.09573e-07 0.444187 0.555812 
-Value: 0.991271
-Action: 3 Reward: 0
-
-Time: 27 Agent: 3 4 Token: 1 0Policy: 1.31746e-07 5.60336e-07 0.905768 0.0942311 
-Value: 1.04553
-Action: 3 Reward: 0
-
-Time: 28 Agent: 2 4 Token: 1 0Policy: 5.3113e-09 3.80981e-06 0.999048 0.000948062 
-Value: 1.18599
-Action: 2 Reward: 0
-
-Time: 29 Agent: 2 3 Token: 1 0Policy: 4.26576e-08 1.74859e-06 0.991019 0.00897894 
-Value: 1.44192
-Action: 2 Reward: 0
-
-Time: 30 Agent: 2 2 Token: 1 0Policy: 1.97643e-07 2.37796e-06 0.975051 0.0249464 
-Value: 1.62563
-Action: 2 Reward: 0
-
-Time: 31 Agent: 2 1 Token: 1 0Policy: 1.83457e-05 7.59431e-06 0.609899 0.390076 
-Value: 1.79372
-Action: 3 Reward: 0
-
-Time: 32 Agent: 1 1 Token: 1 0Policy: 1.60885e-05 0.00191854 0.995361 0.00270483 
-Value: 1.96085
-Action: 2 Reward: 1
-
-Time: 33 Agent: 1 0 Token: 9 1Policy: 0.00129011 0.998697 1.28442e-05 4.15021e-08 
-Value: 0.974214
-Action: 1 Reward: 0
-
-Time: 34 Agent: 2 0 Token: 9 1Policy: 0.00192078 0.998077 2.58339e-06 1.02674e-08 
-Value: 1.0183
-Action: 1 Reward: 0
-
-Time: 35 Agent: 3 0 Token: 9 1Policy: 0.00249281 0.997506 1.12029e-06 5.83358e-09 
-Value: 1.10718
-Action: 1 Reward: 0
-
-Time: 36 Agent: 4 0 Token: 9 1Policy: 0.00325106 0.996748 6.79617e-07 4.30234e-09 
-Value: 1.21459
-Action: 1 Reward: 0
-
-Time: 37 Agent: 5 0 Token: 9 1Policy: 0.00438978 0.99561 5.23696e-07 3.96019e-09 
-Value: 1.33903
-Action: 1 Reward: 0
-
-Time: 38 Agent: 6 0 Token: 9 1Policy: 0.00649259 0.993507 5.58179e-07 5.24211e-09 
-Value: 1.48535
-Action: 1 Reward: 0
-
-Time: 39 Agent: 7 0 Token: 9 1Policy: 0.0139473 0.986052 1.17528e-06 1.8207e-08 
-Value: 1.66912
-Action: 1 Reward: 0
-
-Time: 40 Agent: 8 0 Token: 9 1Policy: 0.163755 0.83623 1.32065e-05 1.57314e-06 
-Value: 1.92447
-Action: 0 Reward: 0
-
-Time: 41 Agent: 8 1 Token: 9 1Policy: 0.0163505 0.982455 0.00118341 1.15513e-05 
-Value: 1.96328
-Action: 1 Reward: 1
-
-Time: 42 Agent: 9 1 Token: 6 4Policy: 0.432058 3.11947e-06 8.01169e-06 0.567931 
-Value: 1.33837
-Action: 3 Reward: 0
-
-Time: 43 Agent: 8 1 Token: 6 4Policy: 0.807514 2.17332e-06 1.38237e-06 0.192483 
-Value: 1.36931
-Action: 0 Reward: 0
-
-Time: 44 Agent: 8 2 Token: 6 4Policy: 0.179753 7.30716e-07 7.3456e-06 0.820239 
-Value: 1.54702
-Action: 3 Reward: 0
-
-Time: 45 Agent: 7 2 Token: 6 4Policy: 0.934839 6.05753e-06 1.84724e-06 0.0651528 
-Value: 1.76505
-Action: 0 Reward: 0
-
-Time: 46 Agent: 7 3 Token: 6 4Policy: 0.232501 5.08553e-06 5.33771e-05 0.767441 
-Value: 1.91806
-Action: 3 Reward: 0
-
-Time: 47 Agent: 6 3 Token: 6 4Policy: 0.992563 0.000260138 1.15006e-05 0.0071651 
-Value: 2.12129
-Action: 0 Reward: 1
-
-Time: 48 Agent: 6 4 Token: 5 9Policy: 0.999169 6.94056e-06 2.86868e-08 0.000823777 
-Value: 1.26981
-Action: 0 Reward: 0
-
-Time: 49 Agent: 6 5 Token: 5 9Policy: 0.998989 4.02252e-06 1.93166e-08 0.00100666 
-Value: 1.30191
-Action: 0 Reward: 0
-
-Time: 50 Agent: 6 6 Token: 5 9Policy: 0.996717 4.6305e-06 6.42963e-08 0.00327796 
-Value: 1.39838
-Action: 0 Reward: 0
-
-Time: 51 Agent: 6 7 Token: 5 9Policy: 0.922907 8.7531e-06 2.6554e-06 0.0770819 
-Value: 1.58704
-Action: 0 Reward: 0
-
-Time: 52 Agent: 6 8 Token: 5 9Policy: 0.119516 5.13664e-06 0.000129527 0.880349 
-Value: 1.82279
-Action: 3 Reward: 0
-
-Time: 53 Agent: 5 8 Token: 5 9Policy: 0.97786 0.000783947 0.000102639 0.0212534 
-Value: 2.00737
-Action: 0 Reward: 1
-
-Time: 54 Agent: 5 9 Token: 5 3Policy: 1.45173e-08 0.000150202 0.99981 3.95036e-05 
-Value: 1.35785
-Action: 2 Reward: 0
-
-Time: 55 Agent: 5 8 Token: 5 3Policy: 2.54315e-09 3.43557e-05 0.999931 3.41659e-05 
-Value: 1.33771
-Action: 2 Reward: 0
-
-Time: 56 Agent: 5 7 Token: 5 3Policy: 2.69929e-09 3.1312e-05 0.999937 3.20511e-05 
-Value: 1.53831
-Action: 2 Reward: 0
-
-Time: 57 Agent: 5 6 Token: 5 3Policy: 5.33871e-09 4.37253e-05 0.999918 3.82469e-05 
-Value: 1.73679
-Action: 2 Reward: 0
-
-Time: 58 Agent: 5 5 Token: 5 3Policy: 2.88535e-08 9.15933e-05 0.999826 8.25409e-05 
-Value: 1.91789
-Action: 2 Reward: 0
-
-Time: 59 Agent: 5 4 Token: 5 3Policy: 4.75497e-06 0.00104885 0.997825 0.0011217 
-Value: 2.03746
-Action: 2 Reward: 1
-
-Time: 60 Agent: 5 3 Token: 1 3Policy: 3.22929e-05 3.71598e-09 0.00014061 0.999827 
-Value: 1.27
-Action: 3 Reward: 0
-
-Time: 61 Agent: 4 3 Token: 1 3Policy: 6.23737e-05 4.44595e-09 9.91458e-05 0.999838 
-Value: 1.40991
-Action: 3 Reward: 0
-
-Time: 62 Agent: 3 3 Token: 1 3Policy: 0.000250327 2.81346e-08 0.00022478 0.999525 
-Value: 1.60153
-Action: 3 Reward: 0
-
-Time: 63 Agent: 2 3 Token: 1 3Policy: 0.00655401 3.17488e-06 0.00183194 0.991611 
-Value: 1.8616
-Action: 3 Reward: 1
-
-Time: 64 Agent: 1 3 Token: 0 4Policy: 0.491306 3.49088e-05 0.000113679 0.508546 
-Value: 1.74129
-Action: 3 Reward: 0
-
-Time: 65 Agent: 0 3 Token: 0 4Policy: 0.991361 0.00299057 6.07746e-05 0.0055879 
-Value: 1.90225
-Action: 0 Reward: 1
-
-Time: 66 Agent: 0 4 Token: 3 5Policy: 0.0196607 0.980336 3.25879e-06 7.92103e-08 
-Value: 1.421
-Action: 1 Reward: 0
-
-Time: 67 Agent: 1 4 Token: 3 5Policy: 0.0223056 0.977692 2.45795e-06 4.25621e-08 
-Value: 1.66784
-Action: 1 Reward: 0
-
-Time: 68 Agent: 2 4 Token: 3 5Policy: 0.10677 0.893213 1.57056e-05 8.82274e-07 
-Value: 1.9583
-Action: 1 Reward: 0
-
-Time: 69 Agent: 3 4 Token: 3 5Policy: 0.976422 0.0224889 0.000100779 0.000988787 
-Value: 2.14523
-Action: 0 Reward: 1
-
-Time: 70 Agent: 3 5 Token: 0 5Policy: 0.000605537 4.6454e-08 0.000106871 0.999288 
-Value: 1.53485
-Action: 3 Reward: 0
-
-Time: 71 Agent: 2 5 Token: 0 5Policy: 0.000472967 8.38943e-08 0.000342725 0.999184 
-Value: 1.54327
-Action: 3 Reward: 0
-
-Time: 72 Agent: 1 5 Token: 0 5Policy: 0.00559733 7.81405e-06 0.00474887 0.989646 
-Value: 1.74901
-Action: 3 Reward: 1
-
-Time: 73 Agent: 0 5 Token: 8 0Policy: 1.30915e-05 0.966069 0.0339172 8.21629e-07 
-Value: 0.279423
-Action: 1 Reward: 0
-
-Time: 74 Agent: 1 5 Token: 8 0Policy: 1.8982e-06 0.252491 0.747499 8.66933e-06 
-Value: 0.478509
-Action: 2 Reward: 0
-
-Time: 75 Agent: 1 4 Token: 8 0Policy: 9.52098e-06 0.964718 0.035272 4.37329e-07 
-Value: 0.493012
-Action: 1 Reward: 0
-
-Time: 76 Agent: 2 4 Token: 8 0Policy: 2.18722e-06 0.568291 0.431704 2.56674e-06 
-Value: 0.514293
-Action: 1 Reward: 0
-
-Time: 77 Agent: 3 4 Token: 8 0Policy: 7.75905e-07 0.269173 0.730823 2.85114e-06 
-Value: 0.577459
-Action: 2 Reward: 0
-
-Time: 78 Agent: 3 3 Token: 8 0Policy: 3.91904e-06 0.950548 0.0494478 2.09297e-07 
-Value: 0.658626
-Action: 1 Reward: 0
-
-Time: 79 Agent: 4 3 Token: 8 0Policy: 6.86125e-07 0.354451 0.645547 1.32468e-06 
-Value: 0.746965
-Action: 2 Reward: 0
-
-Time: 80 Agent: 4 2 Token: 8 0Policy: 3.53752e-06 0.986814 0.0131825 3.71314e-08 
-Value: 0.864828
-Action: 1 Reward: 0
-
-Time: 81 Agent: 5 2 Token: 8 0Policy: 1.21343e-06 0.576708 0.42329 7.18554e-07 
-Value: 0.964253
-Action: 1 Reward: 0
-
-Time: 82 Agent: 6 2 Token: 8 0Policy: 5.75406e-07 0.20899 0.791008 1.48462e-06 
-Value: 1.07011
-Action: 1 Reward: 0
-
-Time: 83 Agent: 7 2 Token: 8 0Policy: 1.22154e-07 0.0194692 0.980527 3.26034e-06 
-Value: 1.21794
-Action: 2 Reward: 0
-
-Time: 84 Agent: 7 1 Token: 8 0Policy: 1.03837e-05 0.315703 0.684273 1.36691e-05 
-Value: 1.37121
-Action: 2 Reward: 0
-
-Time: 85 Agent: 7 0 Token: 8 0Policy: 0.00235551 0.994918 0.00272185 5.04518e-06 
-Value: 1.49032
-Action: 1 Reward: 1
-
-Time: 86 Agent: 8 0 Token: 6 8Policy: 0.998028 4.34413e-06 3.07718e-08 0.00196746 
-Value: 0.56406
-Action: 0 Reward: 0
-
-Time: 87 Agent: 8 1 Token: 6 8Policy: 0.998707 1.07068e-06 4.1504e-09 0.00129184 
-Value: 0.637598
-Action: 0 Reward: 0
-
-Time: 88 Agent: 8 2 Token: 6 8Policy: 0.998808 8.58074e-07 2.93062e-09 0.00119124 
-Value: 0.672523
-Action: 0 Reward: 0
-
-Time: 89 Agent: 8 3 Token: 6 8Policy: 0.998406 8.73892e-07 3.76907e-09 0.00159301 
-Value: 0.696759
-Action: 0 Reward: 0
-
-Time: 90 Agent: 8 4 Token: 6 8Policy: 0.994367 1.0724e-06 1.50045e-08 0.00563181 
-Value: 0.753998
-Action: 0 Reward: 0
-
-Time: 91 Agent: 8 5 Token: 6 8Policy: 0.797727 1.52697e-06 7.91119e-07 0.202271 
-Value: 0.883822
-Action: 3 Reward: 0
-
-Time: 92 Agent: 7 5 Token: 6 8Policy: 0.990399 3.74605e-06 1.38657e-07 0.00959742 
-Value: 1.07941
-Action: 0 Reward: 0
-
-Time: 93 Agent: 7 6 Token: 6 8Policy: 0.711015 7.15036e-06 8.49575e-06 0.28897 
+Time: 79 Agent: 1 6 Token: 0 9
+Policy: 0.997157 0.002196 1.12065e-05 0.000635988 
 Value: 1.24361
 Action: 0 Reward: 0
 
-Time: 94 Agent: 7 7 Token: 6 8Policy: 0.0721914 2.89987e-06 0.000115375 0.92769 
-Value: 1.49894
+Time: 80 Agent: 1 7 Token: 0 9
+Policy: 0.986967 0.0127495 5.30061e-05 0.000230084 
+Value: 1.24543
+Action: 0 Reward: 0
+
+Time: 81 Agent: 1 8 Token: 0 9
+Policy: 0.997619 0.000189789 1.41608e-06 0.00218961 
+Value: 1.52718
+Action: 0 Reward: 0
+
+Time: 82 Agent: 1 9 Token: 0 9
+Policy: . 1.94254e-05 0.000340131 0.99964 
+Value: 1.75345
+Action: 3 Reward: 1
+
+Time: 83 Agent: 0 9 Token: 1 3
+Policy: . 0.510363 0.489637 . 
+Value: 0.569122
+Action: 1 Reward: 0
+
+Time: 84 Agent: 1 9 Token: 1 3
+Policy: . 0.867075 0.132077 0.0008481 
+Value: 0.56359
+Action: 2 Reward: 0
+
+Time: 85 Agent: 1 8 Token: 1 3
+Policy: 3.83499e-05 0.997855 0.00210575 4.74028e-07 
+Value: 0.499676
+Action: 1 Reward: 0
+
+Time: 86 Agent: 2 8 Token: 1 3
+Policy: 6.51255e-06 0.999482 0.000511682 2.71442e-08 
+Value: 0.547501
+Action: 1 Reward: 0
+
+Time: 87 Agent: 3 8 Token: 1 3
+Policy: 0.000152541 0.995793 0.00405076 3.99915e-06 
+Value: 0.489122
+Action: 1 Reward: 0
+
+Time: 88 Agent: 4 8 Token: 1 3
+Policy: 0.000152739 0.987673 0.0121633 1.04695e-05 
+Value: 0.450101
+Action: 1 Reward: 0
+
+Time: 89 Agent: 5 8 Token: 1 3
+Policy: 0.000529143 0.919781 0.0795335 0.000155893 
+Value: 0.429943
+Action: 1 Reward: 0
+
+Time: 90 Agent: 6 8 Token: 1 3
+Policy: 0.000696572 0.89401 0.105016 0.000277394 
+Value: 0.416093
+Action: 1 Reward: 0
+
+Time: 91 Agent: 7 8 Token: 1 3
+Policy: 0.000612078 0.769232 0.229729 0.000426441 
+Value: 0.38017
+Action: 1 Reward: 0
+
+Time: 92 Agent: 8 8 Token: 1 3
+Policy: 8.32987e-07 0.00203295 0.99641 0.00155636 
+Value: 0.35322
+Action: 2 Reward: 0
+
+Time: 93 Agent: 8 7 Token: 1 3
+Policy: 1.79479e-05 0.000962856 0.989852 0.00916713 
+Value: 0.339663
+Action: 2 Reward: 0
+
+Time: 94 Agent: 8 6 Token: 1 3
+Policy: 0.000234971 0.000842489 0.842383 0.156539 
+Value: 0.304079
+Action: 2 Reward: 0
+
+Time: 95 Agent: 8 5 Token: 1 3
+Policy: 0.000615795 0.000874951 0.640776 0.357734 
+Value: 0.262943
+Action: 2 Reward: 0
+
+Time: 96 Agent: 8 4 Token: 1 3
+Policy: 0.0123814 0.00178722 0.192908 0.792924 
+Value: 0.220878
 Action: 3 Reward: 0
 
-Time: 95 Agent: 6 7 Token: 6 8Policy: 0.947746 0.0010084 0.000226258 0.0510189 
-Value: 1.58779
+Time: 97 Agent: 7 4 Token: 1 3
+Policy: 0.0160052 0.00319844 0.301904 0.678893 
+Value: 0.163746
+Action: 2 Reward: 0
+
+Time: 98 Agent: 7 3 Token: 1 3
+Policy: 0.0113126 0.00361927 0.549275 0.435793 
+Value: 0.141012
+Action: 2 Reward: 0
+
+Time: 99 Agent: 7 2 Token: 1 3
+Policy: 0.00487905 0.00123254 0.704635 0.289253 
+Value: 0.0960798
+Action: 2 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 4 3
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
+Action: 3 Reward: 0
+
+Time: 1 Agent: 4 5 Token: 4 3
+Policy: 4.86187e-06 8.18475e-06 0.99945 0.000536637 
+Value: 3.39299
+Action: 2 Reward: 0
+
+Time: 2 Agent: 4 4 Token: 4 3
+Policy: 4.20528e-09 9.97053e-05 0.999814 8.67379e-05 
+Value: 4.42414
+Action: 2 Reward: 1
+
+Time: 3 Agent: 4 3 Token: 0 9
+Policy: 0.0096641 0.0205104 0.825567 0.144258 
+Value: 3.33769
+Action: 2 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 0 9
+Policy: 0.000917947 0.00256415 0.912179 0.0843387 
+Value: 3.39656
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 0 9
+Policy: 0.00481546 5.52563e-06 0.000553853 0.994625 
+Value: 3.41038
+Action: 3 Reward: 0
+
+Time: 6 Agent: 3 1 Token: 0 9
+Policy: 0.0163895 1.08631e-05 0.000218551 0.983381 
+Value: 3.38014
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 0 9
+Policy: 0.125137 1.2454e-05 7.04576e-05 0.87478 
+Value: 3.41851
+Action: 3 Reward: 0
+
+Time: 8 Agent: 1 1 Token: 0 9
+Policy: 0.999889 2.54942e-05 1.9939e-08 8.57765e-05 
+Value: 3.38982
+Action: 0 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 0 9
+Policy: 0.999459 0.000217994 3.92282e-07 0.000323032 
+Value: 3.38975
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 0 9
+Policy: 0.998903 0.000634319 1.06849e-06 0.000462005 
+Value: 3.39408
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 4 Token: 0 9
+Policy: 0.996649 0.00181836 7.33798e-06 0.00152577 
+Value: 3.3846
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 5 Token: 0 9
+Policy: 0.986932 0.0109678 6.51543e-05 0.00203534 
+Value: 3.37795
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 6 Token: 0 9
+Policy: 0.98222 0.0164591 5.1588e-05 0.00126974 
+Value: 3.39808
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 7 Token: 0 9
+Policy: 0.884136 0.115438 0.000170833 0.000254234 
+Value: 3.36288
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 8 Token: 0 9
+Policy: 0.986088 0.000145841 3.53417e-05 0.0137307 
+Value: 3.85109
+Action: 0 Reward: 0
+
+Time: 16 Agent: 1 9 Token: 0 9
+Policy: . 8.64895e-06 0.000473505 0.999518 
+Value: 3.92398
+Action: 3 Reward: 1
+
+Time: 17 Agent: 0 9 Token: 4 2
+Policy: . 0.279452 0.720548 . 
+Value: 2.97161
+Action: 1 Reward: 0
+
+Time: 18 Agent: 1 9 Token: 4 2
+Policy: . 0.849703 0.150178 0.000118658 
+Value: 2.94991
+Action: 1 Reward: 0
+
+Time: 19 Agent: 2 9 Token: 4 2
+Policy: . 0.304147 0.695344 0.000508982 
+Value: 2.93362
+Action: 2 Reward: 0
+
+Time: 20 Agent: 2 8 Token: 4 2
+Policy: 1.05324e-05 0.998407 0.00158221 7.2807e-08 
+Value: 2.98057
+Action: 1 Reward: 0
+
+Time: 21 Agent: 3 8 Token: 4 2
+Policy: 9.38998e-05 0.997392 0.00251354 6.65144e-07 
+Value: 2.98175
+Action: 1 Reward: 0
+
+Time: 22 Agent: 4 8 Token: 4 2
+Policy: 9.58136e-05 0.995786 0.00411705 1.06073e-06 
+Value: 2.9785
+Action: 1 Reward: 0
+
+Time: 23 Agent: 5 8 Token: 4 2
+Policy: 0.00075036 0.973056 0.0261642 2.99243e-05 
+Value: 2.97177
+Action: 1 Reward: 0
+
+Time: 24 Agent: 6 8 Token: 4 2
+Policy: 0.00117052 0.970879 0.0278985 5.18069e-05 
+Value: 2.96007
+Action: 1 Reward: 0
+
+Time: 25 Agent: 7 8 Token: 4 2
+Policy: 0.00117582 0.905026 0.0936837 0.000114149 
+Value: 2.97711
+Action: 1 Reward: 0
+
+Time: 26 Agent: 8 8 Token: 4 2
+Policy: 1.7647e-08 3.41975e-05 0.999631 0.000335042 
+Value: 2.98775
+Action: 2 Reward: 0
+
+Time: 27 Agent: 8 7 Token: 4 2
+Policy: 5.03421e-07 7.63474e-05 0.999553 0.000370286 
+Value: 2.98626
+Action: 2 Reward: 0
+
+Time: 28 Agent: 8 6 Token: 4 2
+Policy: 1.31294e-06 3.83094e-05 0.997105 0.0028556 
+Value: 2.98011
+Action: 2 Reward: 0
+
+Time: 29 Agent: 8 5 Token: 4 2
+Policy: 2.29487e-06 4.60714e-05 0.997182 0.00276935 
+Value: 2.99198
+Action: 2 Reward: 0
+
+Time: 30 Agent: 8 4 Token: 4 2
+Policy: 4.59534e-06 0.000207483 0.999226 0.000562104 
+Value: 2.97117
+Action: 2 Reward: 0
+
+Time: 31 Agent: 8 3 Token: 4 2
+Policy: 2.21364e-07 1.50328e-05 0.999611 0.000373716 
+Value: 2.96535
+Action: 2 Reward: 0
+
+Time: 32 Agent: 8 2 Token: 4 2
+Policy: 3.72131e-08 3.57025e-06 0.999603 0.000393451 
+Value: 2.98313
+Action: 2 Reward: 0
+
+Time: 33 Agent: 8 1 Token: 4 2
+Policy: 9.32177e-07 4.57206e-09 0.0026742 0.997325 
+Value: 3.00538
+Action: 3 Reward: 0
+
+Time: 34 Agent: 7 1 Token: 4 2
+Policy: 1.75816e-06 5.19512e-10 7.38094e-05 0.999924 
+Value: 3.00178
+Action: 3 Reward: 0
+
+Time: 35 Agent: 6 1 Token: 4 2
+Policy: 0.000134923 3.83281e-09 8.78369e-06 0.999856 
+Value: 2.9939
+Action: 3 Reward: 0
+
+Time: 36 Agent: 5 1 Token: 4 2
+Policy: 0.00119114 5.90372e-09 4.60938e-06 0.998804 
+Value: 3.44398
+Action: 3 Reward: 0
+
+Time: 37 Agent: 4 1 Token: 4 2
+Policy: 0.973262 0.0267272 3.78998e-06 7.37031e-06 
+Value: 3.49061
 Action: 0 Reward: 1
 
-Time: 96 Agent: 6 8 Token: 0 5Policy: 1.91371e-06 3.37996e-08 0.0313643 0.968634 
-Value: 0.437931
-Action: 3 Reward: 0
-
-Time: 97 Agent: 5 8 Token: 0 5Policy: 3.70471e-07 2.31431e-08 0.12046 0.87954 
-Value: 0.478058
-Action: 3 Reward: 0
-
-Time: 98 Agent: 4 8 Token: 0 5Policy: 2.55189e-07 2.3425e-08 0.173503 0.826497 
-Value: 0.536406
-Action: 3 Reward: 0
-
-Time: 99 Agent: 3 8 Token: 0 5Policy: 3.0331e-07 4.84672e-08 0.274993 0.725007 
-Value: 0.636698
+Time: 38 Agent: 4 2 Token: 7 8
+Policy: 0.00105677 0.0043065 0.670137 0.324499 
+Value: 2.4065
 Action: 2 Reward: 0
+
+Time: 39 Agent: 4 1 Token: 7 8
+Policy: 0.0238581 0.000133717 0.00183331 0.974175 
+Value: 2.4351
+Action: 3 Reward: 0
+
+Time: 40 Agent: 3 1 Token: 7 8
+Policy: 0.0820255 0.000148325 0.0003603 0.917466 
+Value: 2.41718
+Action: 3 Reward: 0
+
+Time: 41 Agent: 2 1 Token: 7 8
+Policy: 0.170757 6.86013e-05 0.000187687 0.828987 
+Value: 2.42173
+Action: 3 Reward: 0
+
+Time: 42 Agent: 1 1 Token: 7 8
+Policy: 0.999895 5.92894e-05 2.23485e-08 4.61389e-05 
+Value: 2.3956
+Action: 0 Reward: 0
+
+Time: 43 Agent: 1 2 Token: 7 8
+Policy: 0.999493 0.00038233 3.37238e-07 0.000123941 
+Value: 2.39177
+Action: 0 Reward: 0
+
+Time: 44 Agent: 1 3 Token: 7 8
+Policy: 0.998816 0.000991944 1.27775e-06 0.0001912 
+Value: 2.35333
+Action: 0 Reward: 0
+
+Time: 45 Agent: 1 4 Token: 7 8
+Policy: 0.995842 0.00353227 1.09663e-05 0.000614721 
+Value: 2.32392
+Action: 0 Reward: 0
+
+Time: 46 Agent: 1 5 Token: 7 8
+Policy: 0.967091 0.0308387 0.0001871 0.00188273 
+Value: 2.3068
+Action: 0 Reward: 0
+
+Time: 47 Agent: 1 6 Token: 7 8
+Policy: 0.951476 0.0459059 0.000148833 0.00246956 
+Value: 2.29858
+Action: 0 Reward: 0
+
+Time: 48 Agent: 1 7 Token: 7 8
+Policy: 0.781343 0.218087 0.000184114 0.000385784 
+Value: 2.30264
+Action: 1 Reward: 0
+
+Time: 49 Agent: 2 7 Token: 7 8
+Policy: 0.892887 0.106883 3.43616e-05 0.000194847 
+Value: 2.28488
+Action: 0 Reward: 0
+
+Time: 50 Agent: 2 8 Token: 7 8
+Policy: 3.18338e-05 0.999894 7.37716e-05 1.55832e-08 
+Value: 2.28536
+Action: 1 Reward: 0
+
+Time: 51 Agent: 3 8 Token: 7 8
+Policy: 3.81324e-05 0.999873 8.84796e-05 3.07217e-08 
+Value: 2.30039
+Action: 1 Reward: 0
+
+Time: 52 Agent: 4 8 Token: 7 8
+Policy: 2.46849e-05 0.999837 0.000138648 3.26802e-08 
+Value: 2.29022
+Action: 1 Reward: 0
+
+Time: 53 Agent: 5 8 Token: 7 8
+Policy: 0.000229111 0.998934 0.000836107 6.50564e-07 
+Value: 2.29644
+Action: 1 Reward: 0
+
+Time: 54 Agent: 6 8 Token: 7 8
+Policy: 0.0300559 0.957064 0.0127776 0.000102422 
+Value: 2.82295
+Action: 1 Reward: 1
+
+Time: 55 Agent: 7 8 Token: 1 3
+Policy: 0.00277673 0.959412 0.0374406 0.000370259 
+Value: 1.83951
+Action: 1 Reward: 0
+
+Time: 56 Agent: 8 8 Token: 1 3
+Policy: 2.36481e-06 0.000502208 0.993325 0.00617056 
+Value: 1.83114
+Action: 2 Reward: 0
+
+Time: 57 Agent: 8 7 Token: 1 3
+Policy: 5.78114e-06 0.000142602 0.994382 0.00547011 
+Value: 1.85162
+Action: 2 Reward: 0
+
+Time: 58 Agent: 8 6 Token: 1 3
+Policy: 1.91306e-05 6.86766e-05 0.956813 0.0430991 
+Value: 1.85103
+Action: 2 Reward: 0
+
+Time: 59 Agent: 8 5 Token: 1 3
+Policy: 2.6975e-05 5.72114e-05 0.948232 0.0516842 
+Value: 1.8219
+Action: 2 Reward: 0
+
+Time: 60 Agent: 8 4 Token: 1 3
+Policy: 0.000101891 0.000223724 0.980433 0.0192413 
+Value: 1.81083
+Action: 2 Reward: 0
+
+Time: 61 Agent: 8 3 Token: 1 3
+Policy: 8.84893e-06 5.85015e-05 0.994737 0.00519595 
+Value: 1.80452
+Action: 2 Reward: 0
+
+Time: 62 Agent: 8 2 Token: 1 3
+Policy: 1.08039e-06 2.7359e-05 0.99821 0.00176153 
+Value: 1.79735
+Action: 2 Reward: 0
+
+Time: 63 Agent: 8 1 Token: 1 3
+Policy: 6.00734e-05 1.24357e-08 0.000179357 0.999761 
+Value: 1.74802
+Action: 3 Reward: 0
+
+Time: 64 Agent: 7 1 Token: 1 3
+Policy: 0.000310373 1.04331e-08 1.67762e-05 0.999673 
+Value: 1.73171
+Action: 3 Reward: 0
+
+Time: 65 Agent: 6 1 Token: 1 3
+Policy: 0.00146229 5.23742e-08 9.02982e-06 0.998529 
+Value: 1.72198
+Action: 3 Reward: 0
+
+Time: 66 Agent: 5 1 Token: 1 3
+Policy: 0.999609 0.000145573 1.31118e-07 0.000245195 
+Value: 1.669
+Action: 0 Reward: 0
+
+Time: 67 Agent: 5 2 Token: 1 3
+Policy: 0.999357 0.000308949 2.09071e-07 0.000333597 
+Value: 1.64617
+Action: 0 Reward: 0
+
+Time: 68 Agent: 5 3 Token: 1 3
+Policy: 0.999763 0.000136764 4.25135e-08 0.000100258 
+Value: 1.61901
+Action: 0 Reward: 0
+
+Time: 69 Agent: 5 4 Token: 1 3
+Policy: 0.998658 2.63851e-05 1.88139e-07 0.00131583 
+Value: 1.60287
+Action: 0 Reward: 0
+
+Time: 70 Agent: 5 5 Token: 1 3
+Policy: 0.000968569 3.28669e-08 4.7639e-05 0.998984 
+Value: 1.62148
+Action: 3 Reward: 0
+
+Time: 71 Agent: 4 5 Token: 1 3
+Policy: 7.29476e-05 1.60956e-07 0.00709184 0.992835 
+Value: 1.62684
+Action: 3 Reward: 0
+
+Time: 72 Agent: 3 5 Token: 1 3
+Policy: 1.38346e-05 1.91202e-07 0.114056 0.88593 
+Value: 1.60387
+Action: 3 Reward: 0
+
+Time: 73 Agent: 2 5 Token: 1 3
+Policy: 9.15071e-06 1.05144e-05 0.984092 0.0158881 
+Value: 1.57938
+Action: 2 Reward: 0
+
+Time: 74 Agent: 2 4 Token: 1 3
+Policy: 2.22006e-07 2.20427e-06 0.982764 0.0172332 
+Value: 2.01117
+Action: 2 Reward: 0
+
+Time: 75 Agent: 2 3 Token: 1 3
+Policy: 0.00162428 5.39122e-07 0.00263901 0.995736 
+Value: 2.00593
+Action: 3 Reward: 1
+
+Time: 76 Agent: 1 3 Token: 8 0
+Policy: 0.890046 0.108927 0.00023264 0.000794517 
+Value: 0.953355
+Action: 0 Reward: 0
+
+Time: 77 Agent: 1 4 Token: 8 0
+Policy: 0.970157 0.029608 7.22383e-06 0.000227495 
+Value: 0.939463
+Action: 0 Reward: 0
+
+Time: 78 Agent: 1 5 Token: 8 0
+Policy: 0.699151 0.299613 0.000407938 0.000828735 
+Value: 0.951423
+Action: 0 Reward: 0
+
+Time: 79 Agent: 1 6 Token: 8 0
+Policy: 0.552484 0.445729 0.000675588 0.00111112 
+Value: 0.928682
+Action: 1 Reward: 0
+
+Time: 80 Agent: 2 6 Token: 8 0
+Policy: 0.668408 0.323728 0.00260924 0.00525466 
+Value: 0.903124
+Action: 1 Reward: 0
+
+Time: 81 Agent: 3 6 Token: 8 0
+Policy: 0.866159 0.127041 0.00142761 0.00537326 
+Value: 0.875069
+Action: 0 Reward: 0
+
+Time: 82 Agent: 3 7 Token: 8 0
+Policy: 0.893818 0.105562 7.40446e-05 0.000546095 
+Value: 0.881614
+Action: 0 Reward: 0
+
+Time: 83 Agent: 3 8 Token: 8 0
+Policy: 0.00111872 0.99681 0.00206118 1.0517e-05 
+Value: 0.854188
+Action: 1 Reward: 0
+
+Time: 84 Agent: 4 8 Token: 8 0
+Policy: 0.000181084 0.996787 0.00302946 2.94123e-06 
+Value: 0.765
+Action: 1 Reward: 0
+
+Time: 85 Agent: 5 8 Token: 8 0
+Policy: 0.000680062 0.976161 0.0231106 4.8574e-05 
+Value: 0.740886
+Action: 1 Reward: 0
+
+Time: 86 Agent: 6 8 Token: 8 0
+Policy: 0.00111388 0.96185 0.0369028 0.000132988 
+Value: 0.716659
+Action: 1 Reward: 0
+
+Time: 87 Agent: 7 8 Token: 8 0
+Policy: 0.000869179 0.893257 0.105666 0.000207895 
+Value: 0.674098
+Action: 1 Reward: 0
+
+Time: 88 Agent: 8 8 Token: 8 0
+Policy: 1.14396e-06 0.00294475 0.995993 0.00106088 
+Value: 0.622653
+Action: 2 Reward: 0
+
+Time: 89 Agent: 8 7 Token: 8 0
+Policy: 1.35656e-05 0.000940145 0.994465 0.00458112 
+Value: 0.600603
+Action: 2 Reward: 0
+
+Time: 90 Agent: 8 6 Token: 8 0
+Policy: 0.000117304 0.000898179 0.937289 0.0616953 
+Value: 0.558392
+Action: 2 Reward: 0
+
+Time: 91 Agent: 8 5 Token: 8 0
+Policy: 0.000222118 0.000941757 0.881357 0.117479 
+Value: 0.521832
+Action: 2 Reward: 0
+
+Time: 92 Agent: 8 4 Token: 8 0
+Policy: 0.00501127 0.00377507 0.644635 0.346579 
+Value: 0.473599
+Action: 3 Reward: 0
+
+Time: 93 Agent: 7 4 Token: 8 0
+Policy: 0.00421448 0.00349773 0.699275 0.293013 
+Value: 0.399166
+Action: 2 Reward: 0
+
+Time: 94 Agent: 7 3 Token: 8 0
+Policy: 0.00188951 0.00228564 0.86521 0.130615 
+Value: 0.368968
+Action: 3 Reward: 0
+
+Time: 95 Agent: 6 3 Token: 8 0
+Policy: 0.00306846 0.0014973 0.759261 0.236173 
+Value: 0.294933
+Action: 2 Reward: 0
+
+Time: 96 Agent: 6 2 Token: 8 0
+Policy: 0.00227552 0.000367062 0.515337 0.48202 
+Value: 0.256466
+Action: 2 Reward: 0
+
+Time: 97 Agent: 6 1 Token: 8 0
+Policy: 0.00147705 1.33374e-05 0.00815869 0.990351 
+Value: 0.201479
+Action: 3 Reward: 0
+
+Time: 98 Agent: 5 1 Token: 8 0
+Policy: 0.0409348 0.000308307 0.00541061 0.953346 
+Value: 0.175105
+Action: 3 Reward: 0
+
+Time: 99 Agent: 4 1 Token: 8 0
+Policy: 0.238121 0.0029184 0.00218081 0.75678 
+Value: 0.141142
+Action: 3 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 5 6
+Policy: 0.999929 2.44664e-05 1.69231e-07 4.65468e-05 
+Value: 4.32527
+Action: 0 Reward: 1
+
+Time: 1 Agent: 5 6 Token: 9 8
+Policy: 0.000199069 4.46532e-05 0.969889 0.0298673 
+Value: 3.29145
+Action: 2 Reward: 0
+
+Time: 2 Agent: 5 5 Token: 9 8
+Policy: 8.17104e-05 0.000189223 0.975784 0.0239448 
+Value: 3.3114
+Action: 2 Reward: 0
+
+Time: 3 Agent: 5 4 Token: 9 8
+Policy: 0.00145965 0.000106624 0.601108 0.397326 
+Value: 3.38932
+Action: 2 Reward: 0
+
+Time: 4 Agent: 5 3 Token: 9 8
+Policy: 0.00119945 3.96634e-05 0.176503 0.822258 
+Value: 3.3238
+Action: 2 Reward: 0
+
+Time: 5 Agent: 5 2 Token: 9 8
+Policy: 0.000616421 4.05989e-06 0.168263 0.831116 
+Value: 3.33573
+Action: 3 Reward: 0
+
+Time: 6 Agent: 4 2 Token: 9 8
+Policy: 3.8349e-05 5.80463e-05 0.968719 0.031185 
+Value: 3.33031
+Action: 2 Reward: 0
+
+Time: 7 Agent: 4 1 Token: 9 8
+Policy: 0.000793118 1.62085e-06 0.00171922 0.997486 
+Value: 3.33211
+Action: 3 Reward: 0
+
+Time: 8 Agent: 3 1 Token: 9 8
+Policy: 0.0116887 1.14091e-05 0.00072204 0.987578 
+Value: 3.31271
+Action: 3 Reward: 0
+
+Time: 9 Agent: 2 1 Token: 9 8
+Policy: 0.102787 1.16967e-05 0.000142193 0.897059 
+Value: 3.36371
+Action: 3 Reward: 0
+
+Time: 10 Agent: 1 1 Token: 9 8
+Policy: 0.9999 1.7933e-05 2.18922e-08 8.23026e-05 
+Value: 3.3649
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 2 Token: 9 8
+Policy: 0.999584 0.000170213 3.51251e-07 0.000245564 
+Value: 3.3664
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 3 Token: 9 8
+Policy: 0.9991 0.000511153 1.12873e-06 0.000387872 
+Value: 3.38315
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 4 Token: 9 8
+Policy: 0.997447 0.00133128 7.52077e-06 0.00121405 
+Value: 3.38452
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 5 Token: 9 8
+Policy: 0.991468 0.00673887 6.51081e-05 0.00172789 
+Value: 3.38213
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 6 Token: 9 8
+Policy: 0.98953 0.00921329 4.49383e-05 0.00121178 
+Value: 3.39667
+Action: 0 Reward: 0
+
+Time: 16 Agent: 1 7 Token: 9 8
+Policy: 0.928845 0.0706922 0.000182613 0.000279942 
+Value: 3.37749
+Action: 0 Reward: 0
+
+Time: 17 Agent: 1 8 Token: 9 8
+Policy: 5.30651e-05 0.999499 0.000448173 2.10039e-08 
+Value: 3.3922
+Action: 1 Reward: 0
+
+Time: 18 Agent: 2 8 Token: 9 8
+Policy: 5.42429e-06 0.999953 4.1434e-05 4.69894e-10 
+Value: 3.41278
+Action: 1 Reward: 0
+
+Time: 19 Agent: 3 8 Token: 9 8
+Policy: 3.31518e-05 0.999789 0.000178273 1.45219e-08 
+Value: 3.40546
+Action: 1 Reward: 0
+
+Time: 20 Agent: 4 8 Token: 9 8
+Policy: 2.62117e-05 0.999658 0.000315938 2.10568e-08 
+Value: 3.4019
+Action: 1 Reward: 0
+
+Time: 21 Agent: 5 8 Token: 9 8
+Policy: 0.000288387 0.998396 0.00131488 3.89349e-07 
+Value: 3.39703
+Action: 1 Reward: 0
+
+Time: 22 Agent: 6 8 Token: 9 8
+Policy: 0.000290682 0.998139 0.00156948 5.90125e-07 
+Value: 3.37922
+Action: 1 Reward: 0
+
+Time: 23 Agent: 7 8 Token: 9 8
+Policy: 0.000662159 0.993309 0.00602635 2.23962e-06 
+Value: 3.37558
+Action: 1 Reward: 0
+
+Time: 24 Agent: 8 8 Token: 9 8
+Policy: 0.00038847 0.998906 0.000705597 2.31923e-07 
+Value: 3.79031
+Action: 1 Reward: 1
+
+Time: 25 Agent: 9 8 Token: 9 9
+Policy: 0.998632 . 0.000407808 0.000959829 
+Value: 3.59298
+Action: 0 Reward: 1
+
+Time: 26 Agent: 9 9 Token: 9 4
+Policy: . . 0.354644 0.645356 
+Value: 2.67721
+Action: 2 Reward: 0
+
+Time: 27 Agent: 9 8 Token: 9 4
+Policy: 3.7638e-05 . 0.105369 0.894593 
+Value: 2.58855
+Action: 2 Reward: 0
+
+Time: 28 Agent: 9 7 Token: 9 4
+Policy: 3.84127e-05 . 0.0410375 0.958924 
+Value: 2.64988
+Action: 3 Reward: 0
+
+Time: 29 Agent: 8 7 Token: 9 4
+Policy: 0.000330705 0.000194484 0.75368 0.245795 
+Value: 2.55236
+Action: 2 Reward: 0
+
+Time: 30 Agent: 8 6 Token: 9 4
+Policy: 0.000139385 1.38428e-05 0.344514 0.655333 
+Value: 2.5828
+Action: 3 Reward: 0
+
+Time: 31 Agent: 7 6 Token: 9 4
+Policy: 0.000310591 1.88435e-05 0.314346 0.685324 
+Value: 2.56208
+Action: 3 Reward: 0
+
+Time: 32 Agent: 6 6 Token: 9 4
+Policy: 1.87729e-05 5.86422e-06 0.806022 0.193953 
+Value: 2.55256
+Action: 2 Reward: 0
+
+Time: 33 Agent: 6 5 Token: 9 4
+Policy: 0.000157285 1.19773e-06 0.0723661 0.927475 
+Value: 2.5414
+Action: 3 Reward: 0
+
+Time: 34 Agent: 5 5 Token: 9 4
+Policy: 8.86943e-05 2.75062e-06 0.319893 0.680016 
+Value: 2.53791
+Action: 3 Reward: 0
+
+Time: 35 Agent: 4 5 Token: 9 4
+Policy: 5.05123e-06 4.13578e-05 0.995943 0.0040103 
+Value: 2.52853
+Action: 2 Reward: 0
+
+Time: 36 Agent: 4 4 Token: 9 4
+Policy: 1.41817e-05 9.57166e-05 0.992542 0.0073483 
+Value: 2.49523
+Action: 2 Reward: 0
+
+Time: 37 Agent: 4 3 Token: 9 4
+Policy: 1.0342e-05 0.000119592 0.994737 0.00513292 
+Value: 2.48222
+Action: 2 Reward: 0
+
+Time: 38 Agent: 4 2 Token: 9 4
+Policy: 2.96695e-06 3.29623e-05 0.996161 0.00380344 
+Value: 2.48183
+Action: 2 Reward: 0
+
+Time: 39 Agent: 4 1 Token: 9 4
+Policy: 0.000692799 3.50051e-06 0.00238686 0.996917 
+Value: 2.47008
+Action: 3 Reward: 0
+
+Time: 40 Agent: 3 1 Token: 9 4
+Policy: 0.0123985 4.0273e-06 0.000260633 0.987337 
+Value: 2.45797
+Action: 3 Reward: 0
+
+Time: 41 Agent: 2 1 Token: 9 4
+Policy: 0.0610501 2.32756e-06 7.81769e-05 0.938869 
+Value: 2.42914
+Action: 3 Reward: 0
+
+Time: 42 Agent: 1 1 Token: 9 4
+Policy: 0.999901 4.14124e-06 1.45162e-08 9.44004e-05 
+Value: 2.4009
+Action: 0 Reward: 0
+
+Time: 43 Agent: 1 2 Token: 9 4
+Policy: 0.9999 3.37268e-05 7.06879e-08 6.59456e-05 
+Value: 2.38621
+Action: 0 Reward: 0
+
+Time: 44 Agent: 1 3 Token: 9 4
+Policy: 0.999824 9.84336e-05 3.83323e-07 7.73144e-05 
+Value: 2.34978
+Action: 0 Reward: 0
+
+Time: 45 Agent: 1 4 Token: 9 4
+Policy: 0.9995 0.000243174 3.04244e-06 0.000253622 
+Value: 2.3324
+Action: 0 Reward: 0
+
+Time: 46 Agent: 1 5 Token: 9 4
+Policy: 0.998334 0.000952601 2.39849e-05 0.000689605 
+Value: 2.34151
+Action: 0 Reward: 0
+
+Time: 47 Agent: 1 6 Token: 9 4
+Policy: 0.997764 0.00129016 1.19938e-05 0.000933412 
+Value: 2.3405
+Action: 0 Reward: 0
+
+Time: 48 Agent: 1 7 Token: 9 4
+Policy: 0.990964 0.00861521 5.01911e-05 0.000370626 
+Value: 2.36763
+Action: 0 Reward: 0
+
+Time: 49 Agent: 1 8 Token: 9 4
+Policy: 0.000232663 0.998975 0.000791895 1.3547e-07 
+Value: 2.3594
+Action: 1 Reward: 0
+
+Time: 50 Agent: 2 8 Token: 9 4
+Policy: 1.09554e-05 0.999975 1.40758e-05 5.4865e-10 
+Value: 2.39758
+Action: 1 Reward: 0
+
+Time: 51 Agent: 3 8 Token: 9 4
+Policy: 2.66466e-05 0.999952 2.17276e-05 4.04017e-09 
+Value: 2.40544
+Action: 1 Reward: 0
+
+Time: 52 Agent: 4 8 Token: 9 4
+Policy: 1.78838e-05 0.99994 4.18382e-05 6.25949e-09 
+Value: 2.37685
+Action: 1 Reward: 0
+
+Time: 53 Agent: 5 8 Token: 9 4
+Policy: 0.000162158 0.999609 0.000229041 1.07619e-07 
+Value: 2.37596
+Action: 1 Reward: 0
+
+Time: 54 Agent: 6 8 Token: 9 4
+Policy: 0.000298299 0.999492 0.00020986 2.56598e-07 
+Value: 2.35091
+Action: 1 Reward: 0
+
+Time: 55 Agent: 7 8 Token: 9 4
+Policy: 0.000540149 0.998548 0.000911041 7.12241e-07 
+Value: 2.3206
+Action: 1 Reward: 0
+
+Time: 56 Agent: 8 8 Token: 9 4
+Policy: 2.41757e-08 0.0014691 0.998524 6.61751e-06 
+Value: 2.33194
+Action: 2 Reward: 0
+
+Time: 57 Agent: 8 7 Token: 9 4
+Policy: 2.58228e-06 0.0010935 0.998844 5.99164e-05 
+Value: 2.35492
+Action: 2 Reward: 0
+
+Time: 58 Agent: 8 6 Token: 9 4
+Policy: 6.23517e-06 0.000503766 0.999158 0.000332185 
+Value: 2.35577
+Action: 2 Reward: 0
+
+Time: 59 Agent: 8 5 Token: 9 4
+Policy: 7.22216e-05 0.351954 0.647961 1.21759e-05 
+Value: 2.54082
+Action: 2 Reward: 0
+
+Time: 60 Agent: 8 4 Token: 9 4
+Policy: 0.000342187 0.999579 7.92328e-05 1.93703e-08 
+Value: 2.55205
+Action: 1 Reward: 1
+
+Time: 61 Agent: 9 4 Token: 0 2
+Policy: 0.327498 . 0.00511103 0.667391 
+Value: 1.4868
+Action: 0 Reward: 0
+
+Time: 62 Agent: 9 5 Token: 0 2
+Policy: 0.000237491 . 0.00197432 0.997788 
+Value: 1.46833
+Action: 3 Reward: 0
+
+Time: 63 Agent: 8 5 Token: 0 2
+Policy: 0.00516444 4.47192e-06 0.0042349 0.990596 
+Value: 1.49281
+Action: 3 Reward: 0
+
+Time: 64 Agent: 7 5 Token: 0 2
+Policy: 0.000341171 2.05086e-07 0.0035867 0.996072 
+Value: 1.45129
+Action: 3 Reward: 0
+
+Time: 65 Agent: 6 5 Token: 0 2
+Policy: 0.00012543 6.1214e-08 0.00767526 0.992199 
+Value: 1.45674
+Action: 3 Reward: 0
+
+Time: 66 Agent: 5 5 Token: 0 2
+Policy: 9.3036e-05 7.27815e-07 0.128381 0.871525 
+Value: 1.43146
+Action: 3 Reward: 0
+
+Time: 67 Agent: 4 5 Token: 0 2
+Policy: 8.22326e-06 3.45845e-05 0.99213 0.00782691 
+Value: 1.42496
+Action: 2 Reward: 0
+
+Time: 68 Agent: 4 4 Token: 0 2
+Policy: 2.52944e-05 0.000111168 0.988908 0.0109559 
+Value: 1.4061
+Action: 2 Reward: 0
+
+Time: 69 Agent: 4 3 Token: 0 2
+Policy: 1.24252e-05 0.000126428 0.994655 0.00520651 
+Value: 1.40014
+Action: 2 Reward: 0
+
+Time: 70 Agent: 4 2 Token: 0 2
+Policy: 4.12763e-06 6.14149e-05 0.997413 0.0025216 
+Value: 1.37379
+Action: 2 Reward: 0
+
+Time: 71 Agent: 4 1 Token: 0 2
+Policy: 0.000951352 6.03117e-06 0.00262646 0.996416 
+Value: 1.35465
+Action: 3 Reward: 0
+
+Time: 72 Agent: 3 1 Token: 0 2
+Policy: 0.0190106 6.83483e-06 0.00029449 0.980688 
+Value: 1.36234
+Action: 3 Reward: 0
+
+Time: 73 Agent: 2 1 Token: 0 2
+Policy: 0.112691 7.91885e-06 0.00013661 0.887164 
+Value: 1.32356
+Action: 3 Reward: 0
+
+Time: 74 Agent: 1 1 Token: 0 2
+Policy: 0.0208794 9.08512e-07 3.26362e-05 0.979087 
+Value: 1.86586
+Action: 3 Reward: 0
+
+Time: 75 Agent: 0 1 Token: 0 2
+Policy: 0.999808 8.93043e-06 0.000183259 . 
+Value: 1.9038
+Action: 0 Reward: 1
+
+Time: 76 Agent: 0 2 Token: 5 8
+Policy: 0.000322771 0.99957 0.000107217 . 
+Value: 0.875171
+Action: 1 Reward: 0
+
+Time: 77 Agent: 1 2 Token: 5 8
+Policy: 0.958999 0.0409105 1.09734e-05 7.94124e-05 
+Value: 0.872868
+Action: 0 Reward: 0
+
+Time: 78 Agent: 1 3 Token: 5 8
+Policy: 0.981465 0.0183994 6.51767e-06 0.00012937 
+Value: 0.85034
+Action: 0 Reward: 0
+
+Time: 79 Agent: 1 4 Token: 5 8
+Policy: 0.910949 0.088555 6.23762e-05 0.000433615 
+Value: 0.8226
+Action: 0 Reward: 0
+
+Time: 80 Agent: 1 5 Token: 5 8
+Policy: 0.590358 0.408585 0.000494615 0.000562761 
+Value: 0.76947
+Action: 1 Reward: 0
+
+Time: 81 Agent: 2 5 Token: 5 8
+Policy: 0.796458 0.199912 0.000886843 0.0027437 
+Value: 0.723026
+Action: 1 Reward: 0
+
+Time: 82 Agent: 3 5 Token: 5 8
+Policy: 0.716718 0.115285 0.0424712 0.125526 
+Value: 0.663959
+Action: 0 Reward: 0
+
+Time: 83 Agent: 3 6 Token: 5 8
+Policy: 0.834478 0.144175 0.00592526 0.0154223 
+Value: 0.638877
+Action: 0 Reward: 0
+
+Time: 84 Agent: 3 7 Token: 5 8
+Policy: 0.876185 0.122805 0.000139192 0.000871008 
+Value: 0.634403
+Action: 0 Reward: 0
+
+Time: 85 Agent: 3 8 Token: 5 8
+Policy: 0.00121729 0.995951 0.00281559 1.56675e-05 
+Value: 0.619675
+Action: 1 Reward: 0
+
+Time: 86 Agent: 4 8 Token: 5 8
+Policy: 3.68585e-05 0.999752 0.000210968 1.30666e-08 
+Value: 1.66217
+Action: 1 Reward: 1
+
+Time: 87 Agent: 5 8 Token: 9 1
+Policy: 0.00645391 0.953618 0.0390422 0.000886256 
+Value: 0.436514
+Action: 1 Reward: 0
+
+Time: 88 Agent: 6 8 Token: 9 1
+Policy: 0.00794089 0.920722 0.0696445 0.00169245 
+Value: 0.321366
+Action: 1 Reward: 0
+
+Time: 89 Agent: 7 8 Token: 9 1
+Policy: 0.0015092 0.790615 0.206761 0.00111488 
+Value: 0.271987
+Action: 1 Reward: 0
+
+Time: 90 Agent: 8 8 Token: 9 1
+Policy: 3.25658e-06 0.00356635 0.99282 0.00361047 
+Value: 0.286799
+Action: 2 Reward: 0
+
+Time: 91 Agent: 8 7 Token: 9 1
+Policy: 3.0174e-05 0.00108936 0.983208 0.0156724 
+Value: 0.253735
+Action: 2 Reward: 0
+
+Time: 92 Agent: 8 6 Token: 9 1
+Policy: 0.000316301 0.000679938 0.723758 0.275245 
+Value: 0.215037
+Action: 3 Reward: 0
+
+Time: 93 Agent: 7 6 Token: 9 1
+Policy: 0.000481371 0.000372322 0.614996 0.384151 
+Value: 0.170721
+Action: 2 Reward: 0
+
+Time: 94 Agent: 7 5 Token: 9 1
+Policy: 0.000614863 7.55332e-05 0.208265 0.791045 
+Value: 0.132076
+Action: 3 Reward: 0
+
+Time: 95 Agent: 6 5 Token: 9 1
+Policy: 0.000610579 2.38147e-05 0.16159 0.837776 
+Value: 0.0891893
+Action: 3 Reward: 0
+
+Time: 96 Agent: 5 5 Token: 9 1
+Policy: 0.000313182 3.29442e-05 0.404827 0.594826 
+Value: 0.0874225
+Action: 2 Reward: 0
+
+Time: 97 Agent: 5 4 Token: 9 1
+Policy: 0.00287506 0.000318449 0.499602 0.497205 
+Value: 0.068867
+Action: 2 Reward: 0
+
+Time: 98 Agent: 5 3 Token: 9 1
+Policy: 0.0024331 0.000669096 0.647327 0.34957 
+Value: 0.0613172
+Action: 3 Reward: 0
+
+Time: 99 Agent: 4 3 Token: 9 1
+Policy: 0.000683029 0.00228721 0.955979 0.0410508 
+Value: 0.0150943
+Action: 2 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 5 3
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
+Action: 2 Reward: 0
+
+Time: 1 Agent: 5 4 Token: 5 3
+Policy: 3.91599e-08 0.000107935 0.999816 7.58638e-05 
+Value: 4.2504
+Action: 2 Reward: 1
+
+Time: 2 Agent: 5 3 Token: 9 3
+Policy: 0.0411975 0.00234701 0.383375 0.573081 
+Value: 3.47706
+Action: 2 Reward: 0
+
+Time: 3 Agent: 5 2 Token: 9 3
+Policy: 0.00497731 9.26414e-05 0.0888738 0.906056 
+Value: 3.40917
+Action: 3 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 9 3
+Policy: 0.000283107 0.00141514 0.969767 0.0285345 
+Value: 3.44161
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 9 3
+Policy: 0.00383323 6.78399e-06 0.000695635 0.995464 
+Value: 3.41111
+Action: 3 Reward: 0
+
+Time: 6 Agent: 3 1 Token: 9 3
+Policy: 0.0137782 8.76234e-06 0.000255267 0.985958 
+Value: 3.40794
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 9 3
+Policy: 0.120536 8.91379e-06 6.89974e-05 0.879386 
+Value: 3.43626
+Action: 3 Reward: 0
+
+Time: 8 Agent: 1 1 Token: 9 3
+Policy: 0.999892 1.81248e-05 1.87812e-08 8.94038e-05 
+Value: 3.40746
+Action: 0 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 9 3
+Policy: 0.999539 0.000163805 3.28415e-07 0.000297024 
+Value: 3.40246
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 9 3
+Policy: 0.999089 0.000468184 9.42563e-07 0.000442002 
+Value: 3.41082
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 4 Token: 9 3
+Policy: 0.997343 0.00121503 6.23739e-06 0.00143553 
+Value: 3.40674
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 5 Token: 9 3
+Policy: 0.991597 0.00640082 5.17028e-05 0.00195033 
+Value: 3.40107
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 6 Token: 9 3
+Policy: 0.989556 0.00921203 3.57283e-05 0.00119649 
+Value: 3.42025
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 7 Token: 9 3
+Policy: 0.92271 0.0768793 0.000151626 0.000258754 
+Value: 3.39155
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 8 Token: 9 3
+Policy: 5.27211e-05 0.999566 0.000380836 1.93178e-08 
+Value: 3.40634
+Action: 1 Reward: 0
+
+Time: 16 Agent: 2 8 Token: 9 3
+Policy: 5.54848e-06 0.999954 4.01587e-05 4.78981e-10 
+Value: 3.43938
+Action: 1 Reward: 0
+
+Time: 17 Agent: 3 8 Token: 9 3
+Policy: 3.27824e-05 0.999801 0.000166317 1.31453e-08 
+Value: 3.43551
+Action: 1 Reward: 0
+
+Time: 18 Agent: 4 8 Token: 9 3
+Policy: 2.48146e-05 0.999685 0.000290466 1.77965e-08 
+Value: 3.43397
+Action: 1 Reward: 0
+
+Time: 19 Agent: 5 8 Token: 9 3
+Policy: 0.000280109 0.998558 0.00116142 3.18376e-07 
+Value: 3.43113
+Action: 1 Reward: 0
+
+Time: 20 Agent: 6 8 Token: 9 3
+Policy: 0.000267681 0.998312 0.00141987 4.69428e-07 
+Value: 3.41571
+Action: 1 Reward: 0
+
+Time: 21 Agent: 7 8 Token: 9 3
+Policy: 0.000636005 0.99386 0.00550264 1.82908e-06 
+Value: 3.41347
+Action: 1 Reward: 0
+
+Time: 22 Agent: 8 8 Token: 9 3
+Policy: 1.05343e-08 0.000303262 0.99969 6.29781e-06 
+Value: 3.45327
+Action: 2 Reward: 0
+
+Time: 23 Agent: 8 7 Token: 9 3
+Policy: 7.39526e-07 0.000471051 0.999506 2.26869e-05 
+Value: 3.44578
+Action: 2 Reward: 0
+
+Time: 24 Agent: 8 6 Token: 9 3
+Policy: 2.21636e-06 0.000192367 0.999564 0.000241057 
+Value: 3.43372
+Action: 2 Reward: 0
+
+Time: 25 Agent: 8 5 Token: 9 3
+Policy: 7.07139e-06 0.000167428 0.999222 0.000603845 
+Value: 3.45166
+Action: 2 Reward: 0
+
+Time: 26 Agent: 8 4 Token: 9 3
+Policy: 0.000216785 0.912944 0.0868381 1.304e-06 
+Value: 3.71016
+Action: 1 Reward: 0
+
+Time: 27 Agent: 9 4 Token: 9 3
+Policy: 4.39023e-05 . 0.999681 0.000275316 
+Value: 3.66788
+Action: 2 Reward: 1
+
+Time: 28 Agent: 9 3 Token: 8 0
+Policy: 0.0204956 . 0.000509768 0.978995 
+Value: 2.69961
+Action: 3 Reward: 0
+
+Time: 29 Agent: 8 3 Token: 8 0
+Policy: 0.986019 0.000159503 3.02055e-05 0.0137914 
+Value: 2.68203
+Action: 0 Reward: 0
+
+Time: 30 Agent: 8 4 Token: 8 0
+Policy: 0.976222 0.00027634 0.000131015 0.0233704 
+Value: 2.6273
+Action: 0 Reward: 0
+
+Time: 31 Agent: 8 5 Token: 8 0
+Policy: 0.0329456 5.54419e-06 0.000953889 0.966095 
+Value: 2.63301
+Action: 3 Reward: 0
+
+Time: 32 Agent: 7 5 Token: 8 0
+Policy: 0.000325747 4.42788e-08 0.000752187 0.998922 
+Value: 2.65102
+Action: 3 Reward: 0
+
+Time: 33 Agent: 6 5 Token: 8 0
+Policy: 0.000112035 2.26976e-08 0.0024128 0.997475 
+Value: 2.62031
+Action: 3 Reward: 0
+
+Time: 34 Agent: 5 5 Token: 8 0
+Policy: 4.79332e-05 1.69835e-07 0.0362833 0.963669 
+Value: 2.59264
+Action: 3 Reward: 0
+
+Time: 35 Agent: 4 5 Token: 8 0
+Policy: 2.68845e-05 3.5263e-05 0.95455 0.0453882 
+Value: 2.60328
+Action: 2 Reward: 0
+
+Time: 36 Agent: 4 4 Token: 8 0
+Policy: 4.48202e-05 7.59266e-05 0.952115 0.0477641 
+Value: 2.56312
+Action: 2 Reward: 0
+
+Time: 37 Agent: 4 3 Token: 8 0
+Policy: 2.01669e-05 9.84435e-05 0.984577 0.0153048 
+Value: 2.5543
+Action: 2 Reward: 0
+
+Time: 38 Agent: 4 2 Token: 8 0
+Policy: 5.99369e-06 3.16568e-05 0.989617 0.0103455 
+Value: 2.55281
+Action: 2 Reward: 0
+
+Time: 39 Agent: 4 1 Token: 8 0
+Policy: 0.000352809 1.58156e-06 0.00121773 0.998428 
+Value: 2.57057
+Action: 3 Reward: 0
+
+Time: 40 Agent: 3 1 Token: 8 0
+Policy: 0.00536578 1.44573e-06 0.000132308 0.9945 
+Value: 2.54242
+Action: 3 Reward: 0
+
+Time: 41 Agent: 2 1 Token: 8 0
+Policy: 0.0339855 1.11806e-06 5.09614e-05 0.965962 
+Value: 2.53406
+Action: 3 Reward: 0
+
+Time: 42 Agent: 1 1 Token: 8 0
+Policy: 0.999894 2.63018e-06 9.74038e-09 0.000103184 
+Value: 2.51928
+Action: 0 Reward: 0
+
+Time: 43 Agent: 1 2 Token: 8 0
+Policy: 0.999914 2.08595e-05 5.2212e-08 6.52911e-05 
+Value: 2.50192
+Action: 0 Reward: 0
+
+Time: 44 Agent: 1 3 Token: 8 0
+Policy: 0.999884 5.69292e-05 2.53798e-07 5.91878e-05 
+Value: 2.46978
+Action: 0 Reward: 0
+
+Time: 45 Agent: 1 4 Token: 8 0
+Policy: 0.999704 0.000116395 1.69669e-06 0.000178331 
+Value: 2.45555
+Action: 0 Reward: 0
+
+Time: 46 Agent: 1 5 Token: 8 0
+Policy: 0.999093 0.000392981 1.25429e-05 0.000501322 
+Value: 2.45928
+Action: 0 Reward: 0
+
+Time: 47 Agent: 1 6 Token: 8 0
+Policy: 0.998662 0.000554653 6.91814e-06 0.000776717 
+Value: 2.44697
+Action: 0 Reward: 0
+
+Time: 48 Agent: 1 7 Token: 8 0
+Policy: 0.995735 0.00390229 3.12991e-05 0.000331372 
+Value: 2.46334
+Action: 0 Reward: 0
+
+Time: 49 Agent: 1 8 Token: 8 0
+Policy: 0.000478348 0.998359 0.00116202 2.81818e-07 
+Value: 2.44227
+Action: 1 Reward: 0
+
+Time: 50 Agent: 2 8 Token: 8 0
+Policy: 1.76909e-05 0.999966 1.64955e-05 7.79817e-10 
+Value: 2.44331
+Action: 1 Reward: 0
+
+Time: 51 Agent: 3 8 Token: 8 0
+Policy: 2.87179e-05 0.999949 2.21823e-05 3.94233e-09 
+Value: 2.43129
+Action: 1 Reward: 0
+
+Time: 52 Agent: 4 8 Token: 8 0
+Policy: 1.76336e-05 0.999944 3.78648e-05 5.49676e-09 
+Value: 2.40322
+Action: 1 Reward: 0
+
+Time: 53 Agent: 5 8 Token: 8 0
+Policy: 0.000161937 0.999621 0.00021697 1.02205e-07 
+Value: 2.39973
+Action: 1 Reward: 0
+
+Time: 54 Agent: 6 8 Token: 8 0
+Policy: 0.000302393 0.999498 0.000199713 2.50957e-07 
+Value: 2.37466
+Action: 1 Reward: 0
+
+Time: 55 Agent: 7 8 Token: 8 0
+Policy: 0.000546546 0.998554 0.000898696 7.21696e-07 
+Value: 2.34448
+Action: 1 Reward: 0
+
+Time: 56 Agent: 8 8 Token: 8 0
+Policy: 2.50291e-08 0.00148137 0.998512 6.95386e-06 
+Value: 2.35558
+Action: 2 Reward: 0
+
+Time: 57 Agent: 8 7 Token: 8 0
+Policy: 2.7444e-06 0.00113583 0.998798 6.37228e-05 
+Value: 2.37778
+Action: 2 Reward: 0
+
+Time: 58 Agent: 8 6 Token: 8 0
+Policy: 6.51033e-06 0.000508872 0.999132 0.000352927 
+Value: 2.38015
+Action: 2 Reward: 0
+
+Time: 59 Agent: 8 5 Token: 8 0
+Policy: 1.08221e-05 0.000309491 0.998975 0.000704226 
+Value: 2.34055
+Action: 2 Reward: 0
+
+Time: 60 Agent: 8 4 Token: 8 0
+Policy: 1.70225e-05 0.00100038 0.998831 0.00015113 
+Value: 2.32168
+Action: 2 Reward: 0
+
+Time: 61 Agent: 8 3 Token: 8 0
+Policy: 1.42085e-06 0.000102845 0.999705 0.00019031 
+Value: 2.29326
+Action: 2 Reward: 0
+
+Time: 62 Agent: 8 2 Token: 8 0
+Policy: 1.00015e-07 1.36623e-05 0.999849 0.00013684 
+Value: 2.26351
+Action: 2 Reward: 0
+
+Time: 63 Agent: 8 1 Token: 8 0
+Policy: 5.53764e-10 1.86208e-05 0.99996 2.17742e-05 
+Value: 2.44254
+Action: 2 Reward: 1
+
+Time: 64 Agent: 8 0 Token: 9 1
+Policy: 0.00365902 0.99634 . 6.55538e-07 
+Value: 2.27464
+Action: 1 Reward: 0
+
+Time: 65 Agent: 9 0 Token: 9 1
+Policy: 0.991155 . . 0.00884483 
+Value: 2.32596
+Action: 0 Reward: 1
+
+Time: 66 Agent: 9 1 Token: 7 8
+Policy: 0.0648548 . 0.000807746 0.934337 
+Value: 1.25444
+Action: 3 Reward: 0
+
+Time: 67 Agent: 8 1 Token: 7 8
+Policy: 0.999236 3.04906e-05 5.9189e-08 0.00073394 
+Value: 1.29488
+Action: 0 Reward: 0
+
+Time: 68 Agent: 8 2 Token: 7 8
+Policy: 0.99982 6.71468e-05 6.32963e-08 0.000112518 
+Value: 1.3033
+Action: 0 Reward: 0
+
+Time: 69 Agent: 8 3 Token: 7 8
+Policy: 0.999545 0.000213261 4.24845e-07 0.000241362 
+Value: 1.26382
+Action: 0 Reward: 0
+
+Time: 70 Agent: 8 4 Token: 7 8
+Policy: 0.986599 0.000174836 2.42294e-05 0.0132023 
+Value: 1.30302
+Action: 0 Reward: 0
+
+Time: 71 Agent: 8 5 Token: 7 8
+Policy: 0.00264539 2.91183e-06 0.00177532 0.995576 
+Value: 1.28927
+Action: 3 Reward: 0
+
+Time: 72 Agent: 7 5 Token: 7 8
+Policy: 4.4391e-05 4.50622e-08 0.00205631 0.997899 
+Value: 1.25726
+Action: 3 Reward: 0
+
+Time: 73 Agent: 6 5 Token: 7 8
+Policy: 8.18722e-05 8.81879e-08 0.00730098 0.992617 
+Value: 1.20693
+Action: 3 Reward: 0
+
+Time: 74 Agent: 5 5 Token: 7 8
+Policy: 6.62754e-05 1.02974e-06 0.116571 0.883362 
+Value: 1.19285
+Action: 3 Reward: 0
+
+Time: 75 Agent: 4 5 Token: 7 8
+Policy: 1.71171e-05 4.15208e-05 0.974823 0.0251188 
+Value: 1.17211
+Action: 2 Reward: 0
+
+Time: 76 Agent: 4 4 Token: 7 8
+Policy: 4.52089e-05 0.000118741 0.969725 0.0301108 
+Value: 1.1508
+Action: 2 Reward: 0
+
+Time: 77 Agent: 4 3 Token: 7 8
+Policy: 3.86974e-05 0.000187763 0.984598 0.0151752 
+Value: 1.13454
+Action: 2 Reward: 0
+
+Time: 78 Agent: 4 2 Token: 7 8
+Policy: 1.74891e-05 0.000150674 0.994023 0.00580854 
+Value: 1.09232
+Action: 2 Reward: 0
+
+Time: 79 Agent: 4 1 Token: 7 8
+Policy: 0.000606868 3.64419e-06 0.00156194 0.997828 
+Value: 1.08248
+Action: 3 Reward: 0
+
+Time: 80 Agent: 3 1 Token: 7 8
+Policy: 0.0112537 5.92735e-06 0.000316507 0.988424 
+Value: 1.07159
+Action: 3 Reward: 0
+
+Time: 81 Agent: 2 1 Token: 7 8
+Policy: 0.0895012 1.1211e-05 0.000192569 0.910295 
+Value: 1.03518
+Action: 3 Reward: 0
+
+Time: 82 Agent: 1 1 Token: 7 8
+Policy: 0.999915 9.94366e-06 1.92232e-08 7.45437e-05 
+Value: 1.00915
+Action: 0 Reward: 0
+
+Time: 83 Agent: 1 2 Token: 7 8
+Policy: 0.999912 5.05565e-05 4.10138e-08 3.7594e-05 
+Value: 0.987482
+Action: 0 Reward: 0
+
+Time: 84 Agent: 1 3 Token: 7 8
+Policy: 0.999821 0.000134935 1.81964e-07 4.38386e-05 
+Value: 0.957687
+Action: 0 Reward: 0
+
+Time: 85 Agent: 1 4 Token: 7 8
+Policy: 0.999449 0.000389085 1.50138e-06 0.00016035 
+Value: 0.936902
+Action: 0 Reward: 0
+
+Time: 86 Agent: 1 5 Token: 7 8
+Policy: 0.998273 0.00136601 1.06795e-05 0.000350468 
+Value: 0.917324
+Action: 0 Reward: 0
+
+Time: 87 Agent: 1 6 Token: 7 8
+Policy: 0.997085 0.00244556 1.09168e-05 0.000458516 
+Value: 0.890011
+Action: 0 Reward: 0
+
+Time: 88 Agent: 1 7 Token: 7 8
+Policy: 0.97599 0.0237258 9.03182e-05 0.000193587 
+Value: 0.878734
+Action: 0 Reward: 0
+
+Time: 89 Agent: 1 8 Token: 7 8
+Policy: 0.000239956 0.999433 0.000327116 4.67366e-08 
+Value: 0.872293
+Action: 1 Reward: 0
+
+Time: 90 Agent: 2 8 Token: 7 8
+Policy: 1.71647e-05 0.999964 1.9219e-05 9.71878e-10 
+Value: 0.822705
+Action: 1 Reward: 0
+
+Time: 91 Agent: 3 8 Token: 7 8
+Policy: 0.000161635 0.999694 0.000144292 1.45235e-07 
+Value: 0.667992
+Action: 1 Reward: 0
+
+Time: 92 Agent: 4 8 Token: 7 8
+Policy: 0.000132698 0.9994 0.000467105 4.18501e-07 
+Value: 0.639397
+Action: 1 Reward: 0
+
+Time: 93 Agent: 5 8 Token: 7 8
+Policy: 0.000668897 0.99621 0.00311506 6.12925e-06 
+Value: 0.541361
+Action: 1 Reward: 0
+
+Time: 94 Agent: 6 8 Token: 7 8
+Policy: 0.000532152 0.996696 0.00276983 1.70577e-06 
+Value: 1.18493
+Action: 1 Reward: 1
+
+Time: 95 Agent: 7 8 Token: 2 7
+Policy: 0.00232386 0.94581 0.0509797 0.000886624 
+Value: 0.139565
+Action: 1 Reward: 0
+
+Time: 96 Agent: 8 8 Token: 2 7
+Policy: 7.42065e-05 0.0147333 0.96876 0.0164326 
+Value: -0.00150517
+Action: 2 Reward: 0
+
+Time: 97 Agent: 8 7 Token: 2 7
+Policy: 4.40062e-05 0.00153968 0.972625 0.025791 
+Value: 0.0444154
+Action: 2 Reward: 0
+
+Time: 98 Agent: 8 6 Token: 2 7
+Policy: 0.000435532 0.000775498 0.627671 0.371118 
+Value: 0.00835735
+Action: 2 Reward: 0
+
+Time: 99 Agent: 8 5 Token: 2 7
+Policy: 0.000995065 0.000496966 0.288984 0.709524 
+Value: -0.0339483
+Action: 3 Reward: 0
+
+Time: 0 Agent: 5 5 Token: 9 3
+Policy: 0.000985688 1.02041e-05 0.223232 0.775772 
+Value: 3.37301
+Action: 3 Reward: 0
+
+Time: 1 Agent: 4 5 Token: 9 3
+Policy: 4.86187e-06 8.18475e-06 0.99945 0.000536637 
+Value: 3.39299
+Action: 2 Reward: 0
+
+Time: 2 Agent: 4 4 Token: 9 3
+Policy: 1.58445e-05 0.00085914 0.998168 0.000957041 
+Value: 3.41938
+Action: 2 Reward: 0
+
+Time: 3 Agent: 4 3 Token: 9 3
+Policy: 2.39479e-05 0.000917618 0.995971 0.00308709 
+Value: 3.43522
+Action: 2 Reward: 0
+
+Time: 4 Agent: 4 2 Token: 9 3
+Policy: 3.32412e-05 0.000554454 0.992397 0.00701527 
+Value: 3.43106
+Action: 2 Reward: 0
+
+Time: 5 Agent: 4 1 Token: 9 3
+Policy: 0.00160833 1.58372e-06 0.000623421 0.997767 
+Value: 3.42869
+Action: 3 Reward: 0
+
+Time: 6 Agent: 3 1 Token: 9 3
+Policy: 0.0118901 5.38204e-06 0.000422617 0.987682 
+Value: 3.42282
+Action: 3 Reward: 0
+
+Time: 7 Agent: 2 1 Token: 9 3
+Policy: 0.116882 4.23351e-06 7.5437e-05 0.883039 
+Value: 3.46047
+Action: 3 Reward: 0
+
+Time: 8 Agent: 1 1 Token: 9 3
+Policy: 0.999895 7.40919e-06 1.69788e-08 9.75144e-05 
+Value: 3.44359
+Action: 0 Reward: 0
+
+Time: 9 Agent: 1 2 Token: 9 3
+Policy: 0.999686 8.0827e-05 2.24146e-07 0.000232777 
+Value: 3.42628
+Action: 0 Reward: 0
+
+Time: 10 Agent: 1 3 Token: 9 3
+Policy: 0.999392 0.000208674 7.33125e-07 0.000398896 
+Value: 3.45342
+Action: 0 Reward: 0
+
+Time: 11 Agent: 1 4 Token: 9 3
+Policy: 0.998334 0.000416092 4.43573e-06 0.0012452 
+Value: 3.4648
+Action: 0 Reward: 0
+
+Time: 12 Agent: 1 5 Token: 9 3
+Policy: 0.996729 0.00146397 2.98591e-05 0.00177751 
+Value: 3.46384
+Action: 0 Reward: 0
+
+Time: 13 Agent: 1 6 Token: 9 3
+Policy: 0.997192 0.00171291 1.33694e-05 0.001082 
+Value: 3.47396
+Action: 0 Reward: 0
+
+Time: 14 Agent: 1 7 Token: 9 3
+Policy: 0.980663 0.0189214 0.000108908 0.000307159 
+Value: 3.46194
+Action: 0 Reward: 0
+
+Time: 15 Agent: 1 8 Token: 9 3
+Policy: 8.52762e-05 0.999112 0.000803024 3.52344e-08 
+Value: 3.46443
+Action: 1 Reward: 0
+
+Time: 16 Agent: 2 8 Token: 9 3
+Policy: 6.09827e-06 0.999959 3.51403e-05 3.36043e-10 
+Value: 3.48517
+Action: 1 Reward: 0
+
+Time: 17 Agent: 3 8 Token: 9 3
+Policy: 3.13534e-05 0.999843 0.000125741 8.37438e-09 
+Value: 3.48283
+Action: 1 Reward: 0
+
+Time: 18 Agent: 4 8 Token: 9 3
+Policy: 2.2254e-05 0.999754 0.000223761 1.17427e-08 
+Value: 3.47809
+Action: 1 Reward: 0
+
+Time: 19 Agent: 5 8 Token: 9 3
+Policy: 0.00025921 0.9989 0.000840263 2.00857e-07 
+Value: 3.47337
+Action: 1 Reward: 0
+
+Time: 20 Agent: 6 8 Token: 9 3
+Policy: 0.00023584 0.998742 0.00102219 2.88301e-07 
+Value: 3.45993
+Action: 1 Reward: 0
+
+Time: 21 Agent: 7 8 Token: 9 3
+Policy: 0.000592242 0.995332 0.00407437 1.17039e-06 
+Value: 3.45465
+Action: 1 Reward: 0
+
+Time: 22 Agent: 8 8 Token: 9 3
+Policy: 1.18731e-08 0.000430024 0.999566 4.42336e-06 
+Value: 3.49737
+Action: 2 Reward: 0
+
+Time: 23 Agent: 8 7 Token: 9 3
+Policy: 8.87193e-07 0.000624882 0.999356 1.81334e-05 
+Value: 3.49167
+Action: 2 Reward: 0
+
+Time: 24 Agent: 8 6 Token: 9 3
+Policy: 2.70346e-06 0.000268802 0.999543 0.000185181 
+Value: 3.47847
+Action: 2 Reward: 0
+
+Time: 25 Agent: 8 5 Token: 9 3
+Policy: 9.32797e-06 0.000211073 0.999198 0.000581289 
+Value: 3.49131
+Action: 2 Reward: 0
+
+Time: 26 Agent: 8 4 Token: 9 3
+Policy: 0.000199495 0.922529 0.0772707 1.03463e-06 
+Value: 3.74325
+Action: 1 Reward: 0
+
+Time: 27 Agent: 9 4 Token: 9 3
+Policy: 4.54399e-05 . 0.999685 0.000269991 
+Value: 3.66699
+Action: 2 Reward: 1
+
+Time: 28 Agent: 9 3 Token: 0 1
+Policy: 0.0213894 . 0.00049477 0.978116 
+Value: 2.70659
+Action: 3 Reward: 0
+
+Time: 29 Agent: 8 3 Token: 0 1
+Policy: 0.986352 0.000162335 3.07838e-05 0.0134547 
+Value: 2.686
+Action: 0 Reward: 0
+
+Time: 30 Agent: 8 4 Token: 0 1
+Policy: 0.976547 0.000279911 0.000132306 0.0230409 
+Value: 2.63045
+Action: 0 Reward: 0
+
+Time: 31 Agent: 8 5 Token: 0 1
+Policy: 0.0333898 5.70048e-06 0.00097481 0.96563 
+Value: 2.63527
+Action: 3 Reward: 0
+
+Time: 32 Agent: 7 5 Token: 0 1
+Policy: 0.000328475 4.52816e-08 0.000766342 0.998905 
+Value: 2.65236
+Action: 3 Reward: 0
+
+Time: 33 Agent: 6 5 Token: 0 1
+Policy: 0.000112988 2.30986e-08 0.00243593 0.997451 
+Value: 2.62126
+Action: 3 Reward: 0
+
+Time: 34 Agent: 5 5 Token: 0 1
+Policy: 4.81055e-05 1.72038e-07 0.0366041 0.963348 
+Value: 2.59249
+Action: 3 Reward: 0
+
+Time: 35 Agent: 4 5 Token: 0 1
+Policy: 2.6679e-05 3.52607e-05 0.955062 0.0448759 
+Value: 2.60299
+Action: 2 Reward: 0
+
+Time: 36 Agent: 4 4 Token: 0 1
+Policy: 4.45512e-05 7.60044e-05 0.952602 0.0472774 
+Value: 2.56139
+Action: 2 Reward: 0
+
+Time: 37 Agent: 4 3 Token: 0 1
+Policy: 2.01115e-05 9.84726e-05 0.984699 0.0151828 
+Value: 2.55156
+Action: 2 Reward: 0
+
+Time: 38 Agent: 4 2 Token: 0 1
+Policy: 5.98981e-06 3.17707e-05 0.989726 0.0102359 
+Value: 2.54901
+Action: 2 Reward: 0
+
+Time: 39 Agent: 4 1 Token: 0 1
+Policy: 0.000355484 1.59301e-06 0.00122564 0.998417 
+Value: 2.56607
+Action: 3 Reward: 0
+
+Time: 40 Agent: 3 1 Token: 0 1
+Policy: 0.00540685 1.45571e-06 0.000133051 0.994459 
+Value: 2.53732
+Action: 3 Reward: 0
+
+Time: 41 Agent: 2 1 Token: 0 1
+Policy: 0.0342765 1.12463e-06 5.10749e-05 0.965671 
+Value: 2.52816
+Action: 3 Reward: 0
+
+Time: 42 Agent: 1 1 Token: 0 1
+Policy: 8.08144e-05 4.74495e-08 0.000201785 0.999717 
+Value: 3.19454
+Action: 3 Reward: 1
+
+Time: 43 Agent: 0 1 Token: 8 5
+Policy: 0.000636664 0.999287 7.58602e-05 . 
+Value: 2.14352
+Action: 1 Reward: 0
+
+Time: 44 Agent: 1 1 Token: 8 5
+Policy: 0.996249 0.00374194 5.00976e-07 8.87278e-06 
+Value: 2.14381
+Action: 0 Reward: 0
+
+Time: 45 Agent: 1 2 Token: 8 5
+Policy: 0.996361 0.00351278 3.19651e-06 0.000123341 
+Value: 2.12522
+Action: 0 Reward: 0
+
+Time: 46 Agent: 1 3 Token: 8 5
+Policy: 0.994281 0.00548924 5.75909e-06 0.000223667 
+Value: 2.10327
+Action: 0 Reward: 0
+
+Time: 47 Agent: 1 4 Token: 8 5
+Policy: 0.97816 0.0210019 5.34807e-05 0.000784538 
+Value: 2.08617
+Action: 0 Reward: 0
+
+Time: 48 Agent: 1 5 Token: 8 5
+Policy: 0.821945 0.175539 0.000776929 0.00173967 
+Value: 2.08399
+Action: 0 Reward: 0
+
+Time: 49 Agent: 1 6 Token: 8 5
+Policy: 0.823983 0.173409 0.000449869 0.00215826 
+Value: 2.09132
+Action: 0 Reward: 0
+
+Time: 50 Agent: 1 7 Token: 8 5
+Policy: 0.601004 0.398249 0.000346258 0.000400214 
+Value: 2.10877
+Action: 0 Reward: 0
+
+Time: 51 Agent: 1 8 Token: 8 5
+Policy: 3.20644e-05 0.999787 0.000180947 2.69661e-08 
+Value: 2.11204
+Action: 1 Reward: 0
+
+Time: 52 Agent: 2 8 Token: 8 5
+Policy: 5.65543e-06 0.999963 3.11966e-05 1.94452e-09 
+Value: 2.16304
+Action: 1 Reward: 0
+
+Time: 53 Agent: 3 8 Token: 8 5
+Policy: 3.09602e-05 0.999862 0.000106533 3.85963e-08 
+Value: 2.17019
+Action: 1 Reward: 0
+
+Time: 54 Agent: 4 8 Token: 8 5
+Policy: 2.69697e-05 0.99976 0.00021257 5.95235e-08 
+Value: 2.14568
+Action: 1 Reward: 0
+
+Time: 55 Agent: 5 8 Token: 8 5
+Policy: 0.000237486 0.998458 0.00130295 1.15957e-06 
+Value: 2.15191
+Action: 1 Reward: 0
+
+Time: 56 Agent: 6 8 Token: 8 5
+Policy: 0.000486789 0.998067 0.00144274 3.17902e-06 
+Value: 2.12368
+Action: 1 Reward: 0
+
+Time: 57 Agent: 7 8 Token: 8 5
+Policy: 0.00066303 0.99465 0.00468126 5.98151e-06 
+Value: 2.10781
+Action: 1 Reward: 0
+
+Time: 58 Agent: 8 8 Token: 8 5
+Policy: 1.74951e-08 0.000343041 0.999622 3.45346e-05 
+Value: 2.11367
+Action: 2 Reward: 0
+
+Time: 59 Agent: 8 7 Token: 8 5
+Policy: 1.28311e-06 0.000343047 0.999501 0.000154462 
+Value: 2.12453
+Action: 2 Reward: 0
+
+Time: 60 Agent: 8 6 Token: 8 5
+Policy: 1.89067e-09 6.41992e-05 0.999928 7.45611e-06 
+Value: 2.62365
+Action: 2 Reward: 1
+
+Time: 61 Agent: 8 5 Token: 3 6
+Policy: 0.0386246 0.00019703 0.0240532 0.937125 
+Value: 1.55397
+Action: 3 Reward: 0
+
+Time: 62 Agent: 7 5 Token: 3 6
+Policy: 0.000571007 4.92391e-07 0.00414497 0.995284 
+Value: 1.55121
+Action: 3 Reward: 0
+
+Time: 63 Agent: 6 5 Token: 3 6
+Policy: 0.000233306 1.21262e-07 0.0098827 0.989884 
+Value: 1.56573
+Action: 3 Reward: 0
+
+Time: 64 Agent: 5 5 Token: 3 6
+Policy: 0.000106594 8.42198e-07 0.15244 0.847453 
+Value: 1.51909
+Action: 3 Reward: 0
+
+Time: 65 Agent: 4 5 Token: 3 6
+Policy: 0.00191116 1.49836e-08 5.2034e-05 0.998037 
+Value: 2.30471
+Action: 3 Reward: 0
+
+Time: 66 Agent: 3 5 Token: 3 6
+Policy: 0.999849 0.00012656 1.45273e-07 2.47916e-05 
+Value: 2.3266
+Action: 0 Reward: 1
+
+Time: 67 Agent: 3 6 Token: 0 3
+Policy: 0.849804 0.107408 0.00651107 0.0362772 
+Value: 1.29502
+Action: 0 Reward: 0
+
+Time: 68 Agent: 3 7 Token: 0 3
+Policy: 0.872335 0.125092 0.000453339 0.00211973 
+Value: 1.27626
+Action: 0 Reward: 0
+
+Time: 69 Agent: 3 8 Token: 0 3
+Policy: 0.000768704 0.996028 0.00319024 1.29463e-05 
+Value: 1.3171
+Action: 1 Reward: 0
+
+Time: 70 Agent: 4 8 Token: 0 3
+Policy: 9.38719e-05 0.996819 0.00308549 2.01735e-06 
+Value: 1.24499
+Action: 1 Reward: 0
+
+Time: 71 Agent: 5 8 Token: 0 3
+Policy: 0.000607281 0.977325 0.0220179 4.93049e-05 
+Value: 1.25639
+Action: 1 Reward: 0
+
+Time: 72 Agent: 6 8 Token: 0 3
+Policy: 0.00109228 0.967084 0.0316905 0.000133431 
+Value: 1.23196
+Action: 1 Reward: 0
+
+Time: 73 Agent: 7 8 Token: 0 3
+Policy: 0.000884191 0.914856 0.0840747 0.000185038 
+Value: 1.21156
+Action: 1 Reward: 0
+
+Time: 74 Agent: 8 8 Token: 0 3
+Policy: 1.88729e-07 0.000510285 0.998623 0.000866499 
+Value: 1.18948
+Action: 2 Reward: 0
+
+Time: 75 Agent: 8 7 Token: 0 3
+Policy: 3.11683e-06 0.00025377 0.997229 0.0025145 
+Value: 1.16764
+Action: 2 Reward: 0
+
+Time: 76 Agent: 8 6 Token: 0 3
+Policy: 1.25291e-05 0.000199217 0.981879 0.0179093 
+Value: 1.14815
+Action: 2 Reward: 0
+
+Time: 77 Agent: 8 5 Token: 0 3
+Policy: 8.15649e-06 0.00012445 0.986158 0.0137096 
+Value: 1.1245
+Action: 2 Reward: 0
+
+Time: 78 Agent: 8 4 Token: 0 3
+Policy: 5.74279e-05 0.000534129 0.988012 0.0113962 
+Value: 1.10201
+Action: 2 Reward: 0
+
+Time: 79 Agent: 8 3 Token: 0 3
+Policy: 2.03741e-06 6.4023e-05 0.998357 0.00157721 
+Value: 1.08596
+Action: 2 Reward: 0
+
+Time: 80 Agent: 8 2 Token: 0 3
+Policy: 1.65395e-07 1.82421e-05 0.999509 0.000472447 
+Value: 1.06117
+Action: 2 Reward: 0
+
+Time: 81 Agent: 8 1 Token: 0 3
+Policy: 6.15155e-05 1.47761e-07 0.00111269 0.998826 
+Value: 1.01702
+Action: 3 Reward: 0
+
+Time: 82 Agent: 7 1 Token: 0 3
+Policy: 0.00016847 3.17788e-08 7.37358e-05 0.999758 
+Value: 0.967902
+Action: 3 Reward: 0
+
+Time: 83 Agent: 6 1 Token: 0 3
+Policy: 0.0020967 3.97969e-07 7.78702e-05 0.997825 
+Value: 0.964609
+Action: 3 Reward: 0
+
+Time: 84 Agent: 5 1 Token: 0 3
+Policy: 0.998676 0.00051786 1.87112e-06 0.000804555 
+Value: 0.934298
+Action: 0 Reward: 0
+
+Time: 85 Agent: 5 2 Token: 0 3
+Policy: 0.996681 0.000975316 4.88937e-06 0.0023385 
+Value: 0.900715
+Action: 0 Reward: 0
+
+Time: 86 Agent: 5 3 Token: 0 3
+Policy: 0.997715 0.000550371 4.39676e-06 0.00173004 
+Value: 0.838099
+Action: 0 Reward: 0
+
+Time: 87 Agent: 5 4 Token: 0 3
+Policy: 0.970186 0.000320067 6.34807e-05 0.02943 
+Value: 0.741397
+Action: 0 Reward: 0
+
+Time: 88 Agent: 5 5 Token: 0 3
+Policy: 0.00225412 2.83743e-06 0.00106053 0.996683 
+Value: 0.645255
+Action: 3 Reward: 0
+
+Time: 89 Agent: 4 5 Token: 0 3
+Policy: 0.000286223 6.25723e-06 0.0791721 0.920535 
+Value: 0.672824
+Action: 3 Reward: 0
+
+Time: 90 Agent: 3 5 Token: 0 3
+Policy: 7.80786e-05 9.81106e-06 0.568262 0.43165 
+Value: 0.615064
+Action: 3 Reward: 0
+
+Time: 91 Agent: 2 5 Token: 0 3
+Policy: 3.08294e-05 8.59425e-05 0.993733 0.00615022 
+Value: 0.548732
+Action: 2 Reward: 0
+
+Time: 92 Agent: 2 4 Token: 0 3
+Policy: 5.62179e-06 2.66258e-05 0.996803 0.00316483 
+Value: 0.491987
+Action: 2 Reward: 0
+
+Time: 93 Agent: 2 3 Token: 0 3
+Policy: 8.82112e-06 4.65981e-05 0.99023 0.00971507 
+Value: 0.417591
+Action: 2 Reward: 0
+
+Time: 94 Agent: 2 2 Token: 0 3
+Policy: 5.04408e-05 4.96326e-05 0.950184 0.049716 
+Value: 0.332723
+Action: 2 Reward: 0
+
+Time: 95 Agent: 2 1 Token: 0 3
+Policy: 0.0243633 0.0002131 0.01418 0.961244 
+Value: 0.242509
+Action: 3 Reward: 0
+
+Time: 96 Agent: 1 1 Token: 0 3
+Policy: 0.999571 0.000252606 8.93098e-07 0.000175525 
+Value: 0.266265
+Action: 0 Reward: 0
+
+Time: 97 Agent: 1 2 Token: 0 3
+Policy: 0.53671 5.68132e-05 0.000230078 0.463003 
+Value: 0.719759
+Action: 0 Reward: 0
+
+Time: 98 Agent: 1 3 Token: 0 3
+Policy: 0.0131073 1.11757e-07 1.71569e-05 0.986875 
+Value: 0.821496
+Action: 3 Reward: 1
+
+Time: 99 Agent: 0 3 Token: 4 8
+Policy: 0.00636915 0.985383 0.00824771 . 
+Value: -0.0207264
+Action: 1 Reward: 0
 

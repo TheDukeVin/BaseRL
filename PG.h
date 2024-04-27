@@ -1,12 +1,14 @@
 
 /*
-g++ -O2 -std=c++11 common.cpp token/environment.cpp main.cpp PG_LSTM.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
+g++ -O2 -std=c++11 common.cpp search/environment.cpp main.cpp PG_LSTM.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
+
+g++ -O2 -std=c++11 common.cpp search/environment.cpp main.cpp PG_LSTM.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && sbatch PG.slurm
 
 rsync -r PG_test kevindu@login.rc.fas.harvard.edu:./MultiagentSnake --exclude .git/
 rsync -r PG_test kevindu@login.rc.fas.harvard.edu:./MultiagentSnake/Dup --exclude .git/
 */
 
-#include "token/environment.h"
+#include "search/environment.h"
 #include "network_policy/policy.h"
 
 #ifndef PG_h
@@ -35,6 +37,7 @@ public:
     int action;
     double reward;
     double value;
+    double advantage;
     double policy[numActions];
 };
 
@@ -75,9 +78,10 @@ public:
 
 class PG_LSTM{
 public:
-    const static double constexpr alpha = 0.001;
+    double alpha;
     const static double constexpr regRate = 0;
     const static double constexpr entropyConstant = 0.01;
+    const static double constexpr GAEParam = 1;
 
     double valueNorm = 1;
 
@@ -97,7 +101,7 @@ public:
     double rolloutValue;
     void rollout(bool print=false);
     void accGrad(PGInstance instance, int index);
-    void train(int batchSize, int numIter, int evalPeriod, int savePeriod);
+    void train(int batchSize, int numIter, int evalPeriod, int savePeriod, double alpha_);
 
     void save();
     void load();

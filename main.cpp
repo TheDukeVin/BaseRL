@@ -127,20 +127,50 @@ int main(){
     // structure.policyBranch->addOutput(numActions);
     // structure.valueBranch->addOutput(1);
     // PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
-    // trainer.train(10, 100000, 10000, 10000);
+    // trainer.train(10, 100000, 10000, 10000, 0.001);
 
 
 
     // Token environment
 
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(numFeatures));
+    // structure.commonBranch->addLSTM(8);
+    // structure.initPV();
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addOutput(1);
+    // PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
+    // trainer.train(1, 50000, 1000, 1000, 0.001);
+
+
+    // Snake environment
+
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
+    // structure.commonBranch->addConv(LSTM::Shape(10, 10, 10), 3, 3);
+    // structure.commonBranch->addPool(LSTM::Shape(5, 5, 10));
+    // structure.initPV();
+    // structure.policyBranch->addLSTM(150);
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addLSTM(100);
+    // structure.valueBranch->addOutput(1);
+    // PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
+    // trainer.train(1, 5000, 100, 100, 0.001);
+
+
+    // Search
+
     LSTM::PVUnit structure;
-    structure.commonBranch = new LSTM::Model(LSTM::Shape(numFeatures));
-    structure.commonBranch->addLSTM(8);
+    structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 2));
+    structure.commonBranch->addConv(LSTM::Shape(10, 10, 3), 3, 3);
+    structure.commonBranch->addPool(LSTM::Shape(5, 5, 3));
+    structure.commonBranch->addLSTM(50);
     structure.initPV();
     structure.policyBranch->addOutput(numActions);
     structure.valueBranch->addOutput(1);
     PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
-    trainer.train(1, 50000, 1000, 1000);
+    trainer.train(5, 100000, 2000, 2000, 0.002);
+    // trainer.load();
 
 
 

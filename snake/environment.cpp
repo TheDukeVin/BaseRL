@@ -143,7 +143,7 @@ double Environment::makeAction(int action){
 
     // reward shaping
 
-    reward += discountFactor * potential() - prevPotential;
+    // reward += discountFactor * potential() - prevPotential;
 
     return reward;
 }

@@ -1,4 +1,6 @@
 
+Snake environment
+
 LSTM::Model structure = LSTM::Model(LSTM::Shape(boardx, boardy, 8));
 structure.addConv(LSTM::Shape(6, 6, 7), 3, 3);
 structure.addDense(100);
@@ -22,3 +24,48 @@ structure.addDense(50);
 structure.addOutput(numActions);
 
 Evaluation score: 28.991
+
+
+
+
+
+
+
+Search environment
+
+GAE = 1
+alpha = 0.002
+batchSize = 5
+Evaluation: 5.4 after 500000
+
+GAE = 0.95
+alpha = 0.002
+batchSize = 5
+Evaluation: 3.02 after 50000
+
+GAE = 0.95
+alpha = 0.002
+batchSize = 1
+Evaluation: 4.5 after 50000
+5.3 after 100000
+
+GAE = 0.95
+alpha = 0.001
+batchSize = 1
+Evaluation: 3.6 after 50000, very unstable somehow
+
+
+discountFactor = 0.99
+
+LSTM::PVUnit structure;
+structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 2));
+structure.commonBranch->addConv(LSTM::Shape(10, 10, 3), 3, 3);
+structure.commonBranch->addPool(LSTM::Shape(5, 5, 3));
+structure.commonBranch->addLSTM(50);
+structure.initPV();
+structure.policyBranch->addOutput(numActions);
+structure.valueBranch->addOutput(1);
+PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
+trainer.train(5, 100000, 2000, 2000, 0.002);
+Evaluation score: 5.54859
+

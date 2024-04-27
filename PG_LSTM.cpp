@@ -25,6 +25,9 @@ PG_LSTM::PG_LSTM(LSTM::PVUnit* structure_, string gameFile_, string saveFile_, s
 void PG_LSTM::rollout(bool print){
     Environment env;
     vector<PGInstance> trajectory;
+
+    double networkValues[timeHorizon+1];
+
     for(int t=0; t<timeHorizon; t++){
         vector<int> validActions = env.validActions();
 
@@ -47,6 +50,7 @@ void PG_LSTM::rollout(bool print){
         trajectory.push_back(instance);
 
         trajectory[t].reward = env.makeAction(action);
+        networkValues[t] = net[t]->valueOutput->data[0] * valueNorm;
 
         if(print){
             ofstream gameOut (gameFile, ios::app);
@@ -67,22 +71,26 @@ void PG_LSTM::rollout(bool print){
             gameOut << '\n';
             gameOut << "Value: " << net[t]->valueOutput->data[0] * valueNorm << '\n';
             gameOut << "Action: " << action << " Reward: " << trajectory[t].reward << "\n\n";
+
+            ofstream codeOut("code.out", ios::app);
+            codeOut << trajectory[t].env.toCode();
         }
         if(env.endState) break;
     }
 
-    // For Snake, we use the Value network to estimate the additional value if we continue the game
     double value = 0;
-    // if(env.validActions().size() != 0){
-    //     env.getFeatures(net->envInput->data);
-    //     net->forwardPass();
-    //     value = net->valueOutput->data[0] * valueNorm;
-    // }
+    networkValues[trajectory.size()] = 0;
+    double advantage = 0;
 
     double total_reward = 0;
     for(int t=trajectory.size()-1; t>=0; t--){
+        advantage *= discountFactor*GAEParam;
+        advantage += trajectory[t].reward + (discountFactor * networkValues[t+1]) - networkValues[t];
+        trajectory[t].advantage = advantage;
+
         value *= discountFactor;
         value += trajectory[t].reward;
+
         total_reward += trajectory[t].reward;
         trajectory[t].value = value;
 
@@ -111,7 +119,8 @@ void PG_LSTM::accGrad(PGInstance instance, int index){
     structure->accumulateGradient(net[index]);
 }
 
-void PG_LSTM::train(int batchSize, int numIter, int evalPeriod, int savePeriod){
+void PG_LSTM::train(int batchSize, int numIter, int evalPeriod, int savePeriod, double alpha_){
+    alpha = alpha_;
     unsigned start_time = time(0);
 
     double sum = 0;
@@ -120,7 +129,7 @@ void PG_LSTM::train(int batchSize, int numIter, int evalPeriod, int savePeriod){
     // Load data
     load();
     
-    for(; iterationCount<numIter; iterationCount++){
+    for(; iterationCount<=numIter; iterationCount++){
         for(int i=0; i<batchSize; i++){
             rollout();
             sum += rolloutValue;
