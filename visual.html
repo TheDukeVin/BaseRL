@@ -55,12 +55,14 @@ framesPerMove = 20
 pi = Math.PI;
 
 cAgent = "#00f"
+cAcquire = "#f0f"
 cVision = "#00f2";
 
 space = "#fff"
 cLine = "#000"
 cShade = "#eee"
 cToken = "#f00"
+cTrans = "#f002"
 cText = "#000"
 
 function randint(max){
@@ -187,8 +189,6 @@ function draw(){
     }
     code = split_to_int(lines[currFrame])
     timeIndex = code[0]
-    agentPos = new Pos(code[1], code[2])
-    tokenPos = new Pos(code[3], code[4])
 
     fillRect(space, 0, 0, windx, windy)
     fillRect(cLine, marginx - border, marginy - border, boardx*cellS + 2*border, boardy*cellS + 2*border)
@@ -200,10 +200,36 @@ function draw(){
             }
         }
     }
+    fillText("Time: " + timeIndex.toString(), cText, textSize, windx/2, marginy/2)
+
+    // Radar environment
+    /*
+    agentPos = new Pos(code[1], code[2])
+    tokenPos = new Pos(code[3], code[4])
+    radar = code[5]
+    if(radar == 0){
+        col = cTrans
+    }
+    else{
+        col = cToken
+    }
+    fillCirc(col, marginx + tokenPos.y*cellS + cellS/2, marginy + tokenPos.x*cellS + cellS/2, tokenSize)
+    if(agentPos.x == tokenPos.x && agentPos.y == tokenPos.y){
+        col = cAcquire
+    }
+    else{
+        col = cAgent
+    }
+    fillCirc(col, marginx + agentPos.y*cellS + cellS/2, marginy + agentPos.x*cellS + cellS/2, tokenSize)
+    */
+    // Search environment:
+
+    agentPos = new Pos(code[1], code[2])
+    tokenPos = new Pos(code[3], code[4])
+
     fillCirc(cToken, marginx + tokenPos.y*cellS + cellS/2, marginy + tokenPos.x*cellS + cellS/2, tokenSize)
     fillCirc(cAgent, marginx + agentPos.y*cellS + cellS/2, marginy + agentPos.x*cellS + cellS/2, tokenSize)
     fillRect(cVision, marginx + (agentPos.y-1)*cellS, marginy + (agentPos.x-1)*cellS, cellS*3, cellS*3)
-    fillText("Time: " + timeIndex.toString(), cText, textSize, windx/2, marginy/2)
 }
 
 function update(){

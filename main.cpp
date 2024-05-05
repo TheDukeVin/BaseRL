@@ -1,12 +1,111 @@
 
 
-#include "PG.h"
+// #include "PG.h"
 // #include "DQN.h"
-// #include "PPO.h"
+#include "PPO.h"
+
+#define NUM_THREADS 40
+
+
 
 // ReplayBuffer buffer(100000);
 
-// PPOStore dataset;
+PPOStore dataset[NUM_THREADS];
+
+class Hyperparameter{
+public:
+    int numRollouts, batchSize, numEpochs, numIter, evalPeriod, savePeriod;
+    double alpha, GAEParam;
+
+    Hyperparameter(){}
+
+    Hyperparameter(int numRollouts_, int batchSize_, int numEpochs_, int numIter_, int evalPeriod_, int savePeriod_, double alpha_, double GAEParam_){
+        numRollouts = numRollouts_;
+        batchSize = batchSize_;
+        numEpochs = numEpochs_;
+        numIter = numIter_;
+        evalPeriod = evalPeriod_;
+        savePeriod = savePeriod_;
+        alpha = alpha_;
+        GAEParam = GAEParam_;
+    }
+
+    string toString(){
+        return "numRollouts: " + to_string(numRollouts) + " " +
+               "batchSize: " + to_string(batchSize) + " " +
+               "numEpochs: " + to_string(numEpochs) + " " +
+               "numIter: " + to_string(numIter) + " " +
+               "evalPeriod: " + to_string(evalPeriod) + " " +
+               "savePeriod: " + to_string(savePeriod) + " " +
+               "alpha: " + to_string(alpha) + " " +
+               "GAEParam: " + to_string(GAEParam) + " ";
+    }
+};
+
+Hyperparameter hps[NUM_THREADS];
+
+thread* threads[NUM_THREADS];
+
+double results[NUM_THREADS];
+
+void sweep(){
+    int count = 0;
+    // for(auto n : {1, 2, 4, 8}){
+    //     for(auto b : {64, 128, 256}){
+    //         for(auto l : {0.001, 0.0003, 0.0001}){
+    //             hps[count] = Hyperparameter(n, b, 1, 20000/n, 200/n, 200/n, l);
+    //             count ++;
+    //         }
+    //     }
+    // }
+    // for(auto n : {1, 2, 4, 8}){
+    //     for(auto l : {1e-03, 3e-04}){
+    //         for(auto e : {1, 2, 3}){
+    //             hps[count] = Hyperparameter(n, 256, e, 40000/n, 200/n, 200/n, l);
+    //             count ++;
+    //         }
+    //     }
+    // }
+    for(auto n : {1, 2, 4, 8, 16}){
+        for(auto l : {1e-03, 5e-04}){
+            for(auto b : {256, 512}){
+                for(auto g : {1.0, 0.95}){
+                    hps[count] = Hyperparameter(n, b, 1, 100000/n, 400/n, 400/n, l, g);
+                    count ++;
+                }
+            }
+        }
+    }
+    assert(count == NUM_THREADS);
+}
+
+void runThread(int i){
+    LSTM::PVUnit structure;
+    structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
+    structure.commonBranch->addConv(LSTM::Shape(10, 10, 10), 3, 3);
+    structure.commonBranch->addPool(LSTM::Shape(5, 5, 10));
+    structure.initPV();
+    structure.policyBranch->addDense(150);
+    structure.policyBranch->addOutput(numActions);
+    structure.valueBranch->addDense(100);
+    structure.valueBranch->addOutput(1);
+    string s = "PPOsweep/session" + to_string(i);
+    PPO trainer(&structure, &dataset[i], s + "game.out", s + "save.out", s + "control.out", s + "score.out");
+    results[i] = trainer.train(hps[i].numRollouts, hps[i].batchSize, hps[i].numEpochs, hps[i].numIter, hps[i].evalPeriod, hps[i].savePeriod, hps[i].alpha, hps[i].GAEParam);
+}
+
+void runSweep(){
+    sweep();
+    for(int i=0; i<NUM_THREADS; i++){
+        threads[i] = new thread(runThread, i);
+    }
+    for(int i=0; i<NUM_THREADS; i++){
+        threads[i]->join();
+    }
+    for(int i=0; i<NUM_THREADS; i++){
+        cout << results[i] << " " << hps[i].toString() << '\n';
+    }
+}
 
 int main(){
     unsigned start_time = time(0);
@@ -99,18 +198,7 @@ int main(){
     // PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
     // trainer.train(10, 64, 1, 4000);
 
-    // LSTM::PVUnit structure;
-    // structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
-    // structure.commonBranch->addConv(LSTM::Shape(10, 10, 10), 3, 3);
-    // structure.commonBranch->addPool(LSTM::Shape(5, 5, 10));
-    // structure.initPV();
-    // structure.policyBranch->addDense(150);
-    // structure.policyBranch->addOutput(numActions);
-    // structure.valueBranch->addDense(100);
-    // structure.valueBranch->addOutput(1);
-    // PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
-    // trainer.train(4, 256, 1, 5000, 100, 100);
-
+    runSweep();
 
 
 
@@ -149,33 +237,45 @@ int main(){
     // structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
     // structure.commonBranch->addConv(LSTM::Shape(10, 10, 10), 3, 3);
     // structure.commonBranch->addPool(LSTM::Shape(5, 5, 10));
+    // structure.commonBranch->addLSTM(100);
     // structure.initPV();
-    // structure.policyBranch->addLSTM(150);
     // structure.policyBranch->addOutput(numActions);
-    // structure.valueBranch->addLSTM(100);
     // structure.valueBranch->addOutput(1);
     // PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
-    // trainer.train(1, 5000, 100, 100, 0.001);
+    // trainer.train(5, 5000, 100, 100, 5e-04);
 
 
     // Search
 
-    LSTM::PVUnit structure;
-    structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 2));
-    structure.commonBranch->addConv(LSTM::Shape(10, 10, 3), 3, 3);
-    structure.commonBranch->addPool(LSTM::Shape(5, 5, 3));
-    structure.commonBranch->addLSTM(50);
-    structure.initPV();
-    structure.policyBranch->addOutput(numActions);
-    structure.valueBranch->addOutput(1);
-    PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
-    trainer.train(5, 100000, 2000, 2000, 0.002);
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 2));
+    // structure.commonBranch->addConv(LSTM::Shape(10, 10, 3), 3, 3);
+    // structure.commonBranch->addPool(LSTM::Shape(5, 5, 3));
+    // structure.commonBranch->addLSTM(50);
+    // structure.initPV();
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addOutput(1);
+    // PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
+    // trainer.train(5, 100000, 2000, 2000, 0.002);
     // trainer.load();
 
 
+    // Radar
 
-    for(int i=0; i<5; i++){
-        trainer.rollout(true);
-    }
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 2));
+    // structure.commonBranch->addConv(LSTM::Shape(10, 10, 3), 3, 3);
+    // structure.commonBranch->addPool(LSTM::Shape(5, 5, 3));
+    // structure.commonBranch->addLSTM(50);
+    // structure.initPV();
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addOutput(1);
+    // PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
+    // trainer.train(5, 50000, 2000, 2000, 0.002);
+
+
+    // for(int i=0; i<5; i++){
+    //     trainer.rollout(true);
+    // }
     cout << "Time: " << (time(0) - start_time) << '\n';
 }

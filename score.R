@@ -20,4 +20,4 @@ consec_avg <- function(lst, N){
 }
 
 avg_score = consec_avg(score, NUM_AVG)
-plot(1:length(avg_score), avg_score)
+plot(1:length(avg_score), avg_score, ylim=c(0,100))

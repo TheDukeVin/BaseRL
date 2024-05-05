@@ -155,3 +155,178 @@ Iteration 9800 Time: 9740 Score: 39.9501 Size: 59.865 Loss: 0.53 Win: 0.06 value
 Iteration 9900 Time: 9843 Score: 40.3032 Size: 60.035 Loss: 0.51 Win: 0.065 valueNorm: 5 stepSize: 0.0005 Win Time: 1170.92
 Iteration 10000 Time: 9937 Score: 35.0732 Size: 54.685 Loss: 0.65 Win: 0.025 valueNorm: 5 stepSize: 0.0005 Win Time: 1156.2
 Evaluation score: 36.3633
+
+
+
+
+
+Hyperparameter sweeping
+
+<INACCURATE>
+0: 33.9116 numRollouts: 1 batchSize: 64 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 22.3098 numRollouts: 1 batchSize: 64 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+0: 12.6642 numRollouts: 1 batchSize: 64 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.000100
+0: 44.0942 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 22.6424 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+0: 11.4292 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.000100
+  0: 47.885 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 20.6568 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+0: 9.7956 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 10000 evalPeriod: 200 savePeriod: 200 alpha: 0.000100
+</INACCURATE>
+
+0: 19.816 numRollouts: 2 batchSize: 64 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 18.3936 numRollouts: 2 batchSize: 64 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+0: 13.3478 numRollouts: 2 batchSize: 64 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.000100
+0: 32.9298 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 21.537 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+0: 10.1866 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.000100
+0: 37.9566 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 16.8102 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+0: 8.3702 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 5000 evalPeriod: 100 savePeriod: 100 alpha: 0.000100
+
+0: 20.0008 numRollouts: 4 batchSize: 64 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 19.25 numRollouts: 4 batchSize: 64 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+0: 13.3636 numRollouts: 4 batchSize: 64 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.000100
+0: 25.2858 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 19.4038 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+0: 10.848 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.000100
+0: 33.079 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 17.4186 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+0: 8.5484 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 2500 evalPeriod: 50 savePeriod: 50 alpha: 0.000100
+
+0: 21.5882 numRollouts: 8 batchSize: 64 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 18.1888 numRollouts: 8 batchSize: 64 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: 13.462 numRollouts: 8 batchSize: 64 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.000100
+0: 22.0348 numRollouts: 8 batchSize: 128 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 20.599 numRollouts: 8 batchSize: 128 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: 11.4566 numRollouts: 8 batchSize: 128 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.000100
+0: 38.2916 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 17.5202 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: 9.8718 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 1250 evalPeriod: 25 savePeriod: 25 alpha: 0.000100
+0: Time: 6085
+
+
+
+<INACCURATE>
+0: 38.8369 numRollouts: 1 batchSize: 64 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 45.1021 numRollouts: 1 batchSize: 64 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+0: 21.8104 numRollouts: 1 batchSize: 64 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.000100
+0: 54.0389 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 44.1437 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+0: 17.5028 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.000100
+0: 56.816 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 39.7272 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+0: 16.3216 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 20000 evalPeriod: 200 savePeriod: 200 alpha: 0.000100
+</INACCURATE>
+
+0: 22.5647 numRollouts: 2 batchSize: 64 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 36.9719 numRollouts: 2 batchSize: 64 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+0: 19.0268 numRollouts: 2 batchSize: 64 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.000100
+0: 44.7559 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 42.8555 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+0: 14.6388 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.000100
+0: 51.8685 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 27.0469 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+0: 13.3796 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.000100
+
+0: 29.1717 numRollouts: 4 batchSize: 64 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 26.4642 numRollouts: 4 batchSize: 64 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+0: 19.5439 numRollouts: 4 batchSize: 64 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.000100
+0: 36.7867 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 41.1799 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+0: 16.076 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.000100
+0: 44.9615 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 31.9998 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+0: 12.916 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 5000 evalPeriod: 50 savePeriod: 50 alpha: 0.000100
+
+0: 33.9796 numRollouts: 8 batchSize: 64 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 37.5264 numRollouts: 8 batchSize: 64 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: 23.6393 numRollouts: 8 batchSize: 64 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.000100
+0: 37.9022 numRollouts: 8 batchSize: 128 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 38.7335 numRollouts: 8 batchSize: 128 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: 16.8008 numRollouts: 8 batchSize: 128 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.000100
+0: 49.4712 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 35.2756 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: 14.8376 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 2500 evalPeriod: 25 savePeriod: 25 alpha: 0.000100
+0: Time: 6087
+
+
+
+Wrong normalization-
+0: 0.313697 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 40000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 0.267847 numRollouts: 1 batchSize: 256 numEpochs: 2 numIter: 40000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 0.220561 numRollouts: 1 batchSize: 256 numEpochs: 3 numIter: 40000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000
+0: 0.273365 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 40000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+0: 0.285246 numRollouts: 1 batchSize: 256 numEpochs: 2 numIter: 40000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+0: 0.267871 numRollouts: 1 batchSize: 256 numEpochs: 3 numIter: 40000 evalPeriod: 200 savePeriod: 200 alpha: 0.000300
+
+0: 0.637577 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 20000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 0.51019 numRollouts: 2 batchSize: 256 numEpochs: 2 numIter: 20000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 0.38305 numRollouts: 2 batchSize: 256 numEpochs: 3 numIter: 20000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000
+0: 0.502132 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 20000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+0: 0.542675 numRollouts: 2 batchSize: 256 numEpochs: 2 numIter: 20000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+0: 0.452745 numRollouts: 2 batchSize: 256 numEpochs: 3 numIter: 20000 evalPeriod: 100 savePeriod: 100 alpha: 0.000300
+
+0: 1.05501 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 10000 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 0.744486 numRollouts: 4 batchSize: 256 numEpochs: 2 numIter: 10000 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 0.656635 numRollouts: 4 batchSize: 256 numEpochs: 3 numIter: 10000 evalPeriod: 50 savePeriod: 50 alpha: 0.001000
+0: 1.11714 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 10000 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+0: 1.02015 numRollouts: 4 batchSize: 256 numEpochs: 2 numIter: 10000 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+0: 0.850668 numRollouts: 4 batchSize: 256 numEpochs: 3 numIter: 10000 evalPeriod: 50 savePeriod: 50 alpha: 0.000300
+
+0: 2.08992 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 5000 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 1.93608 numRollouts: 8 batchSize: 256 numEpochs: 2 numIter: 5000 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 1.57082 numRollouts: 8 batchSize: 256 numEpochs: 3 numIter: 5000 evalPeriod: 25 savePeriod: 25 alpha: 0.001000
+0: 1.9517 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 5000 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: 2.11766 numRollouts: 8 batchSize: 256 numEpochs: 2 numIter: 5000 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: 1.55772 numRollouts: 8 batchSize: 256 numEpochs: 3 numIter: 5000 evalPeriod: 25 savePeriod: 25 alpha: 0.000300
+0: Time: 61582
+
+
+
+
+
+0: 79.1929 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 1.000000
+0: 80.6179 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 0.950000
+0: 77.6603 numRollouts: 1 batchSize: 512 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 1.000000
+  0: 83.6336 numRollouts: 1 batchSize: 512 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 0.950000
+0: 71.9637 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 1.000000
+0: 78.8772 numRollouts: 1 batchSize: 256 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 0.950000
+0: 75.1399 numRollouts: 1 batchSize: 512 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 1.000000
+0: 80.6962 numRollouts: 1 batchSize: 512 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 0.950000
+
+0: 79.6516 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 1.000000
+0: 76.8938 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 0.950000
+0: 74.7611 numRollouts: 2 batchSize: 512 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 1.000000
+0: 77.0592 numRollouts: 2 batchSize: 512 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 0.950000
+0: 78.542 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 1.000000
+0: 76.8691 numRollouts: 2 batchSize: 256 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 0.950000
+0: 73.5122 numRollouts: 2 batchSize: 512 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 1.000000
+0: 78.3597 numRollouts: 2 batchSize: 512 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 0.950000
+
+0: 71.9139 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 1.000000
+0: 73.7991 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 0.950000
+0: 77.5288 numRollouts: 4 batchSize: 512 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 1.000000
+0: 79.5686 numRollouts: 4 batchSize: 512 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 0.950000
+0: 72.716 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 1.000000
+0: 78.7883 numRollouts: 4 batchSize: 256 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 0.950000
+0: 69.5414 numRollouts: 4 batchSize: 512 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 1.000000
+0: 77.9077 numRollouts: 4 batchSize: 512 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 0.950000
+
+0: 73.259 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 12500 evalPeriod: 50 savePeriod: 50 alpha: 0.001000 GAEParam: 1.000000
+0: 76.6299 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 12500 evalPeriod: 50 savePeriod: 50 alpha: 0.001000 GAEParam: 0.950000
+0: 71.6971 numRollouts: 8 batchSize: 512 numEpochs: 1 numIter: 12500 evalPeriod: 50 savePeriod: 50 alpha: 0.001000 GAEParam: 1.000000
+0: 80.5942 numRollouts: 8 batchSize: 512 numEpochs: 1 numIter: 12500 evalPeriod: 50 savePeriod: 50 alpha: 0.001000 GAEParam: 0.950000
+0: 80.3282 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 12500 evalPeriod: 50 savePeriod: 50 alpha: 0.000500 GAEParam: 1.000000
+0: 76.0303 numRollouts: 8 batchSize: 256 numEpochs: 1 numIter: 12500 evalPeriod: 50 savePeriod: 50 alpha: 0.000500 GAEParam: 0.950000
+0: 71.1351 numRollouts: 8 batchSize: 512 numEpochs: 1 numIter: 12500 evalPeriod: 50 savePeriod: 50 alpha: 0.000500 GAEParam: 1.000000
+0: 77.4187 numRollouts: 8 batchSize: 512 numEpochs: 1 numIter: 12500 evalPeriod: 50 savePeriod: 50 alpha: 0.000500 GAEParam: 0.950000
+
+0: 74.0099 numRollouts: 16 batchSize: 256 numEpochs: 1 numIter: 6250 evalPeriod: 25 savePeriod: 25 alpha: 0.001000 GAEParam: 1.000000
+0: 77.8566 numRollouts: 16 batchSize: 256 numEpochs: 1 numIter: 6250 evalPeriod: 25 savePeriod: 25 alpha: 0.001000 GAEParam: 0.950000
+0: 71.1042 numRollouts: 16 batchSize: 512 numEpochs: 1 numIter: 6250 evalPeriod: 25 savePeriod: 25 alpha: 0.001000 GAEParam: 1.000000
+0: 80.5444 numRollouts: 16 batchSize: 512 numEpochs: 1 numIter: 6250 evalPeriod: 25 savePeriod: 25 alpha: 0.001000 GAEParam: 0.950000
+0: 75.0546 numRollouts: 16 batchSize: 256 numEpochs: 1 numIter: 6250 evalPeriod: 25 savePeriod: 25 alpha: 0.000500 GAEParam: 1.000000
+0: 78.7844 numRollouts: 16 batchSize: 256 numEpochs: 1 numIter: 6250 evalPeriod: 25 savePeriod: 25 alpha: 0.000500 GAEParam: 0.950000
+0: 68.5041 numRollouts: 16 batchSize: 512 numEpochs: 1 numIter: 6250 evalPeriod: 25 savePeriod: 25 alpha: 0.000500 GAEParam: 1.000000
+0: 73.8105 numRollouts: 16 batchSize: 512 numEpochs: 1 numIter: 6250 evalPeriod: 25 savePeriod: 25 alpha: 0.000500 GAEParam: 0.950000

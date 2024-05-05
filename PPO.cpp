@@ -193,7 +193,9 @@ void PPO::trainEpoch(int batchSize){
     }
 }
 
-void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod){
+double PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod, double alpha_, double GAEParam_){
+    alpha = alpha_;
+    GAEParam = GAEParam_;
     assert(BufferSize >= numRollouts * (timeHorizon + 1));
     load();
 
@@ -204,8 +206,20 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, int 
         fout << 0;
     }
 
+    {
+        ofstream controlOut(controlFile, ios::app);
+        string s = "numRollouts: " + to_string(numRollouts) + " " +
+               "batchSize: " + to_string(batchSize) + " " +
+               "numEpochs: " + to_string(numEpochs) + " " +
+               "numIter: " + to_string(numIter) + " " +
+               "evalPeriod: " + to_string(evalPeriod) + " " +
+               "savePeriod: " + to_string(savePeriod) + " " +
+               "alpha: " + to_string(alpha) + " " +
+               "GAEParam: " + to_string(GAEParam) + " ";
+        controlOut << "Hyperparameters: " << s << '\n';
+    }
+
     for(; iterationCount<=numIter; iterationCount++){
-        alpha = startingAlpha * pow(terminalAlpha/startingAlpha, (double) iterationCount/numIter);
         generateDataset(numRollouts, batchSize);
         for(int j=0; j<numEpochs; j++){
             dataset->shuffleQueue();
@@ -224,7 +238,7 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, int 
             }
             controlOut << '\n';
             if(iterationCount > numIter/2){
-                evalSum += sumScore / numRollouts;
+                evalSum += sumScore / gameCount;
             }
             {
                 ofstream fout(scoreFile, ios::app);
@@ -239,10 +253,14 @@ void PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, int 
         fout << '\n';
     }
 
+    double evalScore = evalSum / (numIter/evalPeriod/2);
+
     {
         ofstream controlOut(controlFile, ios::app);
-        controlOut << "Evaluation score: " << (evalSum / (numIter/2)) << '\n';
+        controlOut << "Evaluation score: " << evalScore << '\n';
     }
+
+    return evalScore;
 }
 
 void PPO::save(){

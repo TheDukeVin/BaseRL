@@ -1,8 +1,8 @@
 
 /*
-g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PPO.cpp symunit.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
+g++ -pthread -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PPO.cpp symunit.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
 
-g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PPO.cpp symunit.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && sbatch PG.slurm
+g++ -pthread -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PPO.cpp symunit.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && sbatch PG.slurm
 
 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all -fsanitize=float-divide-by-zero -fsanitize=float-cast-overflow -fno-sanitize=null -fno-sanitize=alignment
 
@@ -27,7 +27,7 @@ https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgHaradaRussell-sh
 #ifndef PPO_h
 #define PPO_h
 
-#define BufferSize 5000
+#define BufferSize 20000
 
 class PGInstance{
 public:
@@ -71,16 +71,14 @@ public:
 
 class PPO{
 public:
-    //Geometric annealing
-    const static double constexpr startingAlpha = 3e-04;
-    const static double constexpr terminalAlpha = 3e-04;
     double alpha;
+    double GAEParam;
 
     const static double constexpr regRate = 0;
     const static double constexpr entropyConstant = 0.01;
     const static double constexpr clipRange = 0.1;
     const static double constexpr valueNormOverride = 5; // use if you have a good idea for the value norm.
-    const static double constexpr GAEParam = 0.95;
+    // const static double constexpr GAEParam = 1;
 
     const static double constexpr valueUpdateRate = 0.1 / BufferSize;
     const static double constexpr valueNormConstant = 2;
@@ -126,7 +124,9 @@ public:
 
     void accGrad(PGInstance instance);
     void trainEpoch(int batchSize);
-    void train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod);
+
+    // train network. returns evaluation score;
+    double train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod, double alpha_, double GAEParam_);
 
     void save();
     void load();
