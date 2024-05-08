@@ -1,8 +1,8 @@
 
-score <- read.delim("/Users/kevindu/Desktop/Coding/Tests:experiments/PG_test/score.out", sep=',', header = FALSE)
+score <- read.delim("/Users/kevindu/Desktop/Coding/Tests:experiments/PG_test/PPOsweep/session27score.out", sep=',', header = FALSE)
 N = length(score)
 
-NUM_AVG = 1
+NUM_AVG = 10
 
 consec_avg <- function(lst, N){
   avgs <- integer(length(lst) / N)

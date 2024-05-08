@@ -80,6 +80,7 @@ void PPO::rollout(bool print){
             gameOut << "Potential: " << trajectory[t].env.potential() << '\n';
             gameOut << "Action: " << action << " Reward: " << trajectory[t].reward << "\n\n";
         }
+        assert(instance.reward >= 0);
         if(env.endState) break;
     }
 
@@ -185,10 +186,18 @@ void PPO::accGrad(PGInstance instance){
 }
 
 void PPO::trainEpoch(int batchSize){
-    for(int i=0; i<dataset->index; i++){
-        accGrad(dataset->queue[i]);
-        if(i % batchSize == 0 && i > 0){
-            symNet.update(alpha, regRate);
+    if(batchSize == NO_BATCH){
+        for(int i=0; i<dataset->index; i++){
+            accGrad(dataset->queue[i]);
+        }
+        symNet.update(alpha, regRate);
+    }
+    else{
+        for(int i=0; i<dataset->index; i++){
+            accGrad(dataset->queue[i]);
+            if(i % batchSize == 0 && i > 0){
+                symNet.update(alpha, regRate);
+            }
         }
     }
 }

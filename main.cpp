@@ -4,7 +4,7 @@
 // #include "DQN.h"
 #include "PPO.h"
 
-#define NUM_THREADS 40
+#define NUM_THREADS 36
 
 
 
@@ -66,9 +66,19 @@ void sweep(){
     //         }
     //     }
     // }
-    for(auto n : {1, 2, 4, 8, 16}){
+    // for(auto n : {1, 2, 4, 8, 16}){
+    //     for(auto l : {1e-03, 5e-04}){
+    //         for(auto b : {256, 512}){
+    //             for(auto g : {1.0, 0.95}){
+    //                 hps[count] = Hyperparameter(n, b, 1, 100000/n, 400/n, 400/n, l, g);
+    //                 count ++;
+    //             }
+    //         }
+    //     }
+    // }
+    for(auto n : {1, 2, 4}){
         for(auto l : {1e-03, 5e-04}){
-            for(auto b : {256, 512}){
+            for(auto b : {128, 512, NO_BATCH}){
                 for(auto g : {1.0, 0.95}){
                     hps[count] = Hyperparameter(n, b, 1, 100000/n, 400/n, 400/n, l, g);
                     count ++;
@@ -198,7 +208,21 @@ int main(){
     // PPO trainer(&structure, &dataset, "game.out", "save.out", "control.out", "score.out");
     // trainer.train(10, 64, 1, 4000);
 
-    runSweep();
+    // runSweep();
+
+    LSTM::PVUnit structure;
+    structure.commonBranch = new LSTM::Model(LSTM::Shape(boardx, boardy, 7));
+    structure.commonBranch->addConv(LSTM::Shape(10, 10, 10), 3, 3);
+    structure.commonBranch->addPool(LSTM::Shape(5, 5, 10));
+    structure.initPV();
+    structure.policyBranch->addDense(150);
+    structure.policyBranch->addOutput(numActions);
+    structure.valueBranch->addDense(100);
+    structure.valueBranch->addOutput(1);
+    string s = "PPOsweep/session3";
+    PPO trainer(&structure, &dataset[3], "game.out", s + "save.out", s + "control.out", s + "score.out");
+    trainer.load();
+    
 
 
 
@@ -274,8 +298,8 @@ int main(){
     // trainer.train(5, 50000, 2000, 2000, 0.002);
 
 
-    // for(int i=0; i<5; i++){
-    //     trainer.rollout(true);
-    // }
+    for(int i=0; i<5; i++){
+        trainer.rollout(true);
+    }
     cout << "Time: " << (time(0) - start_time) << '\n';
 }

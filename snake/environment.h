@@ -7,7 +7,7 @@
 const int boardx = 10;
 const int boardy = 10;
 const int boardSize = boardx*boardy;
-const double outcomeReward = 5;
+const double outcomeReward = 10;
 
 const int timeHorizon = 1200;
 const double discountFactor = 0.99;

@@ -29,6 +29,8 @@ https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgHaradaRussell-sh
 
 #define BufferSize 20000
 
+#define NO_BATCH 0
+
 class PGInstance{
 public:
     Environment env;
@@ -97,7 +99,7 @@ public:
 
     double valueFirstMoment = 0;
     double valueSecondMoment = 0;
-    double valueNorm = 0;
+    double valueNorm = valueNormOverride;
     long valueUpdateCount = 0;
     long iterationCount = 0;
     long start_time;

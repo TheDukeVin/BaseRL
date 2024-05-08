@@ -216,20 +216,22 @@ void SnakeDFS::DFS(Pos p){
 }
 
 double Environment::potential(){
-    double distToApple = abs(snake.head.x - apple.x) + abs(snake.head.y - apple.y);
-    SnakeDFS dfs(*this);
-    dfs.DFS(snake.head);
-    bool path = false;
-    for(int i=0; i<4; i++){
-        Pos neigh = snake.tail.shift(i);
-        if(dfs.visited.find(neigh) != dfs.visited.end()){
-            path = true;
-        }
-    }
-    if(validActions().size() == 0){
-        path = snake.size == boardSize;
-    }
-    return -(0.5/(boardx + boardy)) * distToApple + path*2;
+    return 0;
+
+    // double distToApple = abs(snake.head.x - apple.x) + abs(snake.head.y - apple.y);
+    // SnakeDFS dfs(*this);
+    // dfs.DFS(snake.head);
+    // bool path = false;
+    // for(int i=0; i<4; i++){
+    //     Pos neigh = snake.tail.shift(i);
+    //     if(dfs.visited.find(neigh) != dfs.visited.end()){
+    //         path = true;
+    //     }
+    // }
+    // if(validActions().size() == 0){
+    //     path = snake.size == boardSize;
+    // }
+    // return -(0.5/(boardx + boardy)) * distToApple + path*2;
     // return -0.05 * distToApple;
     // return path*2;
     // return 0;
