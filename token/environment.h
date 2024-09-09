@@ -7,7 +7,7 @@
 const int size = 10;
 
 const int timeHorizon = 100;
-const double discountFactor = 0.9;
+const double discountFactor = 0.99;
 const int numActions = 4;
 const int numFeatures = 4;
 
@@ -81,6 +81,7 @@ public:
 
     Environment();
     string toString();
+    string toCode();
     vector<int> validActions();
     double makeAction(int action); // returns reward
     void getFeatures(double* features);

@@ -91,3 +91,6 @@ Trained for 1,000,000 iterations.
 0: 0.263573
 0: TIME: 92838
 
+With exploration and iterative actions:
+
+Iteration 36000 Time: 1610 0.265

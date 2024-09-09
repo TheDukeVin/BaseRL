@@ -30,6 +30,50 @@ void computeSoftmaxPolicy(double* logits, int size, vector<int> validActions, do
     }
 }
 
+void sampleMult(double* dist, int N, int* samples, int numSamples){
+    double sum = 0;
+    double parSum[N+1];
+    parSum[0] = 0;
+    for(int i=0; i<N; i++){
+        if(dist[i] >= 0){
+            sum += dist[i];
+        }
+        parSum[i+1] = sum;
+    }
+    if(abs(sum - 1) > 1e-07){
+        string s = "Invalid distribution\n";
+        for(int i=0; i<N; i++){
+            s += to_string(dist[i]) + ' ';
+        }
+        s += '\n';
+        ofstream errOut ("err.out");
+        errOut<<s;
+        errOut.close();
+    }
+    assert(abs(sum - 1) < 1e-07);
+
+    for(int i=0; i<numSamples; i++){
+        double randReal = randUniform();
+        // binary search parSum array for index s where parSum[s] <= randReal < parSum[s+1].
+        int left = 0;
+        int right = N-1;
+        while(left != right){
+            int mid = (left + right)/2;
+            if(parSum[mid] <= randReal && randReal < parSum[mid+1]){
+                left = right = mid;
+                break;
+            }
+            else if(randReal < parSum[mid]){
+                right = mid-1;
+            }
+            else{
+                left = mid+1;
+            }
+        }
+        samples[i] = left;
+    }
+}
+
 int sampleDist(double* dist, int N){
     double sum = 0;
     for(int i=0; i<N; i++){

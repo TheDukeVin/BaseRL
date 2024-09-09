@@ -21,25 +21,16 @@ https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgHaradaRussell-sh
 */
 
 #include "snake/environment.h"
-#include "../common.h"
+#include "common.h"
 #include "lstm.h"
+#include "PG.h"
 
 #ifndef PPO_h
 #define PPO_h
 
-#define BufferSize 20000
+#define BufferSize 6000
 
 #define NO_BATCH 0
-
-class PGInstance{
-public:
-    Environment env;
-    int action;
-    double reward;
-    double value;
-    double advantage;
-    double policy[numActions];
-};
 
 class PPOStore{
 public:
@@ -75,6 +66,7 @@ class PPO{
 public:
     double alpha;
     double GAEParam;
+    double importance_temp;
 
     const static double constexpr regRate = 0;
     const static double constexpr entropyConstant = 0.01;
@@ -125,10 +117,11 @@ public:
     void generateDataset(int numRollouts, int batchSize);
 
     void accGrad(PGInstance instance);
-    void trainEpoch(int batchSize);
+    void trainEpoch(int batchSize, bool pool);
 
     // train network. returns evaluation score;
-    double train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod, double alpha_, double GAEParam_);
+    // pool=true: pool training data in experience pool rather than queue.
+    double train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod, double alpha_, double GAEParam_, double importance_temp_, bool pool = false);
 
     void save();
     void load();

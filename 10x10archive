@@ -407,3 +407,55 @@ Changed outcomeReward from 5 to 10
 0: 56.8262 numRollouts: 4 batchSize: 0 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 1.000000 
 0: 57.8022 numRollouts: 4 batchSize: 0 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 0.950000 
 0: Time: 71967
+
+
+
+
+
+
+
+Trying pooled PPO
+Hyperparameters: numRollouts: 1 batchSize: 512 numEpochs: -1 numIter: 10000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 0.950000 Importance_temp: 0.5
+doesnt work, levels off at score ~6.
+
+
+
+
+Trying single-action optimization
+0: 80.1837 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 1.000000 
+0: 73.834 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 0.950000 
+0: 83.4551 numRollouts: 1 batchSize: 512 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 1.000000 
+0: 80.2765 numRollouts: 1 batchSize: 512 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 0.950000 
+0: 78.912 numRollouts: 1 batchSize: 0 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 1.000000 
+0: 75.6059 numRollouts: 1 batchSize: 0 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.001000 GAEParam: 0.950000 
+0: 71.397 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 1.000000 
+0: 76.8265 numRollouts: 1 batchSize: 128 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 0.950000 
+0: 71.9103 numRollouts: 1 batchSize: 512 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 1.000000 
+0: 84.3196 numRollouts: 1 batchSize: 512 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 0.950000 
+0: 64.7402 numRollouts: 1 batchSize: 0 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 1.000000 
+0: 67.8414 numRollouts: 1 batchSize: 0 numEpochs: 1 numIter: 100000 evalPeriod: 400 savePeriod: 400 alpha: 0.000500 GAEParam: 0.950000 
+0: 78.1932 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 1.000000 
+0: 70.149 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 0.950000 
+0: 82.6846 numRollouts: 2 batchSize: 512 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 1.000000 
+  0: 87.3188 numRollouts: 2 batchSize: 512 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 0.950000 
+0: 75.3085 numRollouts: 2 batchSize: 0 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 1.000000 
+0: 75.4738 numRollouts: 2 batchSize: 0 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.001000 GAEParam: 0.950000 
+0: 83.8619 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 1.000000 
+0: 74.7004 numRollouts: 2 batchSize: 128 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 0.950000 
+0: 75.5828 numRollouts: 2 batchSize: 512 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 1.000000 
+0: 79.4455 numRollouts: 2 batchSize: 512 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 0.950000 
+0: 64.7983 numRollouts: 2 batchSize: 0 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 1.000000 
+0: 61.6166 numRollouts: 2 batchSize: 0 numEpochs: 1 numIter: 50000 evalPeriod: 200 savePeriod: 200 alpha: 0.000500 GAEParam: 0.950000 
+0: 63.3997 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 1.000000 
+0: 66.9089 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 0.950000 
+0: 73.9594 numRollouts: 4 batchSize: 512 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 1.000000 
+0: 82.748 numRollouts: 4 batchSize: 512 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 0.950000 
+0: 71.7456 numRollouts: 4 batchSize: 0 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 1.000000 
+0: 73.1666 numRollouts: 4 batchSize: 0 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.001000 GAEParam: 0.950000 
+0: 82.5069 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 1.000000 
+0: 74.8769 numRollouts: 4 batchSize: 128 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 0.950000 
+0: 75.2166 numRollouts: 4 batchSize: 512 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 1.000000 
+0: 77.3449 numRollouts: 4 batchSize: 512 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 0.950000 
+0: 56.7276 numRollouts: 4 batchSize: 0 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 1.000000 
+0: 59.9909 numRollouts: 4 batchSize: 0 numEpochs: 1 numIter: 25000 evalPeriod: 100 savePeriod: 100 alpha: 0.000500 GAEParam: 0.950000 
+0: Time: 56759

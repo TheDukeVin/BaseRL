@@ -1,8 +1,8 @@
 
-score <- read.delim("/Users/kevindu/Desktop/Coding/Tests:experiments/PG_test/PPOsweep/session27score.out", sep=',', header = FALSE)
+score <- read.delim("/Users/kevindu/Desktop/Coding/Tests:experiments/PG_test/score.out", sep=',', header = FALSE)
 N = length(score)
 
-NUM_AVG = 10
+NUM_AVG = 1
 
 consec_avg <- function(lst, N){
   avgs <- integer(length(lst) / N)
@@ -20,4 +20,5 @@ consec_avg <- function(lst, N){
 }
 
 avg_score = consec_avg(score, NUM_AVG)
-plot(1:length(avg_score), avg_score, ylim=c(0,100))
+# plot(1:length(avg_score), avg_score, ylim=c(0,100))
+plot(1:length(avg_score), avg_score)

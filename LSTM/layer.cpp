@@ -13,6 +13,23 @@ void Layer::forwardPass(){
     resetGradient();
     for(int i=0; i<allNodes.size(); i++){
         allNodes[i]->forwardPass();
+        // cout << "I1 ";
+        // for(int j=0; j<allNodes[i]->i1->size; j++){
+        //     cout << allNodes[i]->i1->data[j] << ' ';
+        // }
+        // cout << '\n';
+        // if(allNodes[i]->i2){
+        //     cout << "I2 ";
+        //     for(int j=0; j<allNodes[i]->i2->size; j++){
+        //         cout << allNodes[i]->i2->data[j] << ' ';
+        //     }
+        //     cout << '\n';
+        // }
+        // cout << "O ";
+        // for(int j=0; j<allNodes[i]->o->size; j++){
+        //     cout << allNodes[i]->o->data[j] << ' ';
+        // }
+        // cout << '\n';
     }
 }
 

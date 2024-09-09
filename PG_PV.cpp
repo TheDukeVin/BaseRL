@@ -202,9 +202,9 @@ void PG_PV::save(int iter){
 int PG_PV::load(){
     ifstream fin (saveFile);
     string firstLine;
-    assert(getline(fin, firstLine));
-    int currIter = stoi(firstLine);
-    if(currIter == 0){
+    int currIter;
+    if(!getline(fin, firstLine)){
+        currIter = 0;
         ofstream controlOut (controlLog);
         controlOut.close();
         ofstream scoreOut (scoreLog);

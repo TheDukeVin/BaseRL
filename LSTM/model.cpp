@@ -21,6 +21,7 @@ Model::Model(Shape inputShape_){
     lastAct = new Data(inputSize);
     lastShape = inputShape;
     activations.push_back(lastAct);
+    outputSize = inputSize;
 }
 
 void Model::addConv(Shape shape, int convHeight, int convWidth){

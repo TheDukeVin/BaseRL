@@ -202,6 +202,18 @@ function draw(){
     }
     fillText("Time: " + timeIndex.toString(), cText, textSize, windx/2, marginy/2)
 
+    // Vanilla token environment
+
+    agentPos = new Pos(code[1], code[2])
+    tokenPos = new Pos(code[3], code[4])
+
+    fillCirc(cToken, marginx + tokenPos.y*cellS + cellS/2, marginy + tokenPos.x*cellS + cellS/2, tokenSize)
+    fillCirc(cAgent, marginx + agentPos.y*cellS + cellS/2, marginy + agentPos.x*cellS + cellS/2, tokenSize)
+
+
+
+    
+
     // Radar environment
     /*
     agentPos = new Pos(code[1], code[2])
@@ -222,14 +234,18 @@ function draw(){
     }
     fillCirc(col, marginx + agentPos.y*cellS + cellS/2, marginy + agentPos.x*cellS + cellS/2, tokenSize)
     */
+
+
+
+
     // Search environment:
 
-    agentPos = new Pos(code[1], code[2])
-    tokenPos = new Pos(code[3], code[4])
+    // agentPos = new Pos(code[1], code[2])
+    // tokenPos = new Pos(code[3], code[4])
 
-    fillCirc(cToken, marginx + tokenPos.y*cellS + cellS/2, marginy + tokenPos.x*cellS + cellS/2, tokenSize)
-    fillCirc(cAgent, marginx + agentPos.y*cellS + cellS/2, marginy + agentPos.x*cellS + cellS/2, tokenSize)
-    fillRect(cVision, marginx + (agentPos.y-1)*cellS, marginy + (agentPos.x-1)*cellS, cellS*3, cellS*3)
+    // fillCirc(cToken, marginx + tokenPos.y*cellS + cellS/2, marginy + tokenPos.x*cellS + cellS/2, tokenSize)
+    // fillCirc(cAgent, marginx + agentPos.y*cellS + cellS/2, marginy + agentPos.x*cellS + cellS/2, tokenSize)
+    // fillRect(cVision, marginx + (agentPos.y-1)*cellS, marginy + (agentPos.x-1)*cellS, cellS*3, cellS*3)
 }
 
 function update(){

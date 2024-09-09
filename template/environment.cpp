@@ -10,6 +10,10 @@ string Environment::toString(){
     return "";
 }
 
+string Environment::toCode(){
+    return "";
+}
+
 vector<int> Environment::validActions(){
     return vector<int>();
 }

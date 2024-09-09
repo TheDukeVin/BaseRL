@@ -59,6 +59,7 @@ void Environment::getFeatures(double* features){
     }
 
     features[agent.index()] = 1;
+
     if(abs(agent.x - token.x) <= proximity && abs(agent.y - token.y) <= proximity){
         features[boardSize + token.index()] = 1;
     }

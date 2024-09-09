@@ -16,6 +16,7 @@ public:
 
     Environment();
     string toString();
+    string toCode();
     vector<int> validActions();
     double makeAction(int action); // returns reward
     void getFeatures(double* features);

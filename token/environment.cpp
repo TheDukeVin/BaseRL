@@ -21,6 +21,10 @@ string Environment::toString(){
                                            + " Token: " + to_string(token.x) + " " + to_string(token.y);
 }
 
+string Environment::toCode(){
+    return to_string(timeIndex) + " " + to_string(agent.x) + " " + to_string(agent.y) + " " + to_string(token.x) + " " + to_string(token.y) + "\n";
+}
+
 vector<int> Environment::validActions(){
     return vector<int>{0, 1, 2, 3};
 }
@@ -36,6 +40,19 @@ double Environment::makeAction(int action){
     else if(agent == token){
         reward = 1;
         randomizeToken();
+
+        // place token close to agent if captured from the right
+        // reward = 1;
+        // int close = 1;
+        // if(action == 2 && randUniform() < 0.8){
+        //     while(true){
+        //         token = Pos(agent.x + randomN(2*close+1)-close, agent.y + randomN(2*close+1)-close);
+        //         if(token.inBounds() && token != agent) break;
+        //     }
+        // }
+        // else{
+        //     randomizeToken();
+        // }
     }
 
     timeIndex ++;

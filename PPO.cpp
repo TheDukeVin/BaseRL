@@ -6,18 +6,16 @@ void PPOStore::empty(){
 }
 
 void PPOStore::enqueue(PGInstance instance){
-    if(index < BufferSize){
-        queue[index] = instance;
-        index ++;
-    }
+    queue[index%BufferSize] = instance;
+    index ++;
 }
 
 void PPOStore::shuffleQueue(){
-    shuffle(queue, queue + index, default_random_engine{dev()});
+    shuffle(queue, queue + getSize(), default_random_engine{dev()});
 }
 
 int PPOStore::getSize(){
-    return index;
+    return min(index, BufferSize);
 }
 
 
@@ -80,7 +78,7 @@ void PPO::rollout(bool print){
             gameOut << "Potential: " << trajectory[t].env.potential() << '\n';
             gameOut << "Action: " << action << " Reward: " << trajectory[t].reward << "\n\n";
         }
-        assert(instance.reward >= 0);
+        // assert(instance.reward >= 0);
         if(env.endState) break;
     }
 
@@ -108,6 +106,7 @@ void PPO::rollout(bool print){
             advantage += discountFactor * networkValues[t+1];
         }
         trajectory[t].advantage = advantage;
+        trajectory[t].importance_weight = pow(1 + abs(advantage), importance_temp);
 
         value *= discountFactor;
         value += trajectory[t].reward;
@@ -115,7 +114,12 @@ void PPO::rollout(bool print){
 
         // assert(abs(advantage - (value - networkValues[t])) < 1e-10);
 
-        dataset->enqueue(trajectory[t]);
+
+        // dataset->enqueue(trajectory[t]);
+        // Single-action optimization
+        if(trajectory[t].env.validActions().size() > 1){
+            dataset->enqueue(trajectory[t]);
+        }
 
         total_reward += trajectory[t].reward;
 
@@ -144,7 +148,6 @@ void PPO::rollout(bool print){
 }
 
 void PPO::generateDataset(int numRollouts, int batchSize){
-    dataset->empty();
     for(int i=0; i<numRollouts || dataset->getSize() < batchSize; i++){
         rollout();
     }
@@ -182,30 +185,58 @@ void PPO::accGrad(PGInstance instance){
     // Add Value gradient
     symNet.valueOutput->gradient[0] = symNet.valueOutput->data[0] - instance.value / valueNorm;
 
+    // Use importance sampling
+
+    for(auto a : validActions){
+        symNet.policyOutput->gradient[a] /= instance.importance_weight;
+    }
+    symNet.valueOutput->gradient[0] /= instance.importance_weight;
+
     symNet.backwardPass();
 }
 
-void PPO::trainEpoch(int batchSize){
-    if(batchSize == NO_BATCH){
-        for(int i=0; i<dataset->index; i++){
-            accGrad(dataset->queue[i]);
+void PPO::trainEpoch(int batchSize, bool pool){
+    if(pool){
+        double importance_dist[dataset->getSize()];
+        int samples[batchSize];
+        double sum = 0;
+        for(int i=0; i<dataset->getSize(); i++){
+            importance_dist[i] = dataset->queue[i].importance_weight;
+            sum += importance_dist[i];
+        }
+        for(int i=0; i<dataset->getSize(); i++){
+            importance_dist[i] /= sum;
+        }
+        sampleMult(importance_dist, dataset->getSize(), samples, batchSize);
+        for(int i=0; i<batchSize; i++){
+            accGrad(dataset->queue[samples[i]]);
         }
         symNet.update(alpha, regRate);
     }
     else{
-        for(int i=0; i<dataset->index; i++){
-            accGrad(dataset->queue[i]);
-            if(i % batchSize == 0 && i > 0){
-                symNet.update(alpha, regRate);
+        if(batchSize == NO_BATCH){
+            for(int i=0; i<dataset->index; i++){
+                accGrad(dataset->queue[i]);
+            }
+            symNet.update(alpha, regRate);
+        }
+        else{
+            for(int i=0; i<dataset->index; i++){
+                accGrad(dataset->queue[i]);
+                if(i % batchSize == 0 && i > 0){
+                    symNet.update(alpha, regRate);
+                }
             }
         }
     }
+    
 }
 
-double PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod, double alpha_, double GAEParam_){
+double PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, int evalPeriod, int savePeriod, double alpha_, double GAEParam_, double importance_temp_, bool pool){
     alpha = alpha_;
     GAEParam = GAEParam_;
-    assert(BufferSize >= numRollouts * (timeHorizon + 1));
+    importance_temp = importance_temp_;
+    if(!pool) assert(BufferSize >= numRollouts * (timeHorizon + 1));
     load();
 
     double evalSum = 0;
@@ -224,16 +255,26 @@ double PPO::train(int numRollouts, int batchSize, int numEpochs, int numIter, in
                "evalPeriod: " + to_string(evalPeriod) + " " +
                "savePeriod: " + to_string(savePeriod) + " " +
                "alpha: " + to_string(alpha) + " " +
-               "GAEParam: " + to_string(GAEParam) + " ";
+               "GAEParam: " + to_string(GAEParam) + " " +
+               "importance_temp: " + to_string(importance_temp) + " ";
         controlOut << "Hyperparameters: " << s << '\n';
     }
 
     for(; iterationCount<=numIter; iterationCount++){
-        generateDataset(numRollouts, batchSize);
-        for(int j=0; j<numEpochs; j++){
-            dataset->shuffleQueue();
-            trainEpoch(batchSize);
+        if(!pool){
+            dataset->empty();
+            generateDataset(numRollouts, batchSize);
+            for(int j=0; j<numEpochs; j++){
+                dataset->shuffleQueue();
+                trainEpoch(batchSize, pool);
+            }
         }
+        else{
+            generateDataset(numRollouts, 0);
+            dataset->shuffleQueue();
+            trainEpoch(batchSize, pool);
+        }
+        
         if(iterationCount > 0 && iterationCount % savePeriod == 0){
             save();
         }

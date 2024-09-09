@@ -1,14 +1,12 @@
 
 /*
-g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PG_LSTM.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
-
-g++ -O2 -std=c++11 common.cpp snake/environment.cpp main.cpp PG_LSTM.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && sbatch PG.slurm
+g++ -O2 -std=c++11 common.cpp right_capture/environment.cpp main.cpp PG_PV.cpp PG_LSTM.cpp network_policy/policy.cpp -I "./LSTM" LSTM/node.cpp LSTM/model.cpp LSTM/PVUnit.cpp LSTM/layer.cpp LSTM/layers/lstmlayer.cpp LSTM/layers/policy.cpp LSTM/layers/conv.cpp LSTM/layers/pool.cpp LSTM/params.cpp && ./a.out
 
 rsync -r PG_test kevindu@login.rc.fas.harvard.edu:./MultiagentSnake --exclude .git/
 rsync -r PG_test kevindu@login.rc.fas.harvard.edu:./MultiagentSnake/Dup --exclude .git/
 */
 
-#include "snake/environment.h"
+#include "right_capture/environment.h"
 #include "network_policy/policy.h"
 
 #ifndef PG_h
@@ -39,13 +37,15 @@ public:
     double value;
     double advantage;
     double policy[numActions];
+
+    double importance_weight = -1;
 };
 
 class PG_PV{
 public:
     const static double constexpr epsilon = 0;
     const static double constexpr alpha = 0.001;
-    const static double constexpr regRate = 0.0001;
+    const static double constexpr regRate = 0;
     const static double constexpr entropyConstant = 0.01;
 
     double valueFirstMoment = 0;
@@ -80,8 +80,8 @@ class PG_LSTM{
 public:
     double alpha;
     const static double constexpr regRate = 0;
-    const static double constexpr entropyConstant = 0.01;
-    const static double constexpr GAEParam = 1;
+    const static double constexpr entropyConstant = 1e-02;
+    const static double constexpr GAEParam = 0.95;
 
     double valueNorm = 1;
 
