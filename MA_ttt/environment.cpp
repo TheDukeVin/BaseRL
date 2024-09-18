@@ -27,7 +27,15 @@ string Environment::toString(){
 }
 
 string Environment::toCode(){
-    return "";
+    string s = "";
+    for(int i=0; i<boardWidth; i++){
+        for(int j=0; j<boardWidth; j++){
+            if(board[i][j] == -1) s += ".";
+            if(board[i][j] == 0) s += "X";
+            if(board[i][j] == 1) s += "O";
+        }
+    }
+    return s;
 }
 
 vector<int> Environment::validActions(int agentID){

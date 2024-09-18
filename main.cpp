@@ -5,7 +5,7 @@
 // #include "PPO.h"
 #include "MAPG.h"
 
-#define NUM_THREADS 36
+// #define NUM_THREADS 36
 
 
 
@@ -347,7 +347,6 @@ int main(){
     // structure.policyBranch->addOutput(numActions);
     // structure.valueBranch->addOutput(1);
     // PG_LSTM trainer(&structure, "game.out", "save.out", "control.out", "score.out");
-    // trainer.load();
     // trainer.train(20, 50000, 500, 500, 2e-03);
 
     // LSTM::PVUnit structure;
@@ -378,7 +377,6 @@ int main(){
     // structure.valueBranch->addOutput(1);
 
     // MAPG trainer(&structure, "game.out", "save.out", "control.out", "score.out", "first.out");
-    // trainer.load();
     // trainer.train(50, 5000, 500, 500, 1e-03);
 
     // MA ttt
@@ -391,10 +389,18 @@ int main(){
     structure.policyBranch->addOutput(numActions);
     structure.valueBranch->addOutput(1);
 
-    MAPG trainer(&structure, "game.out", "save.out", "control.out", "score.out", "first.out");
+    MAPG trainer(&structure, "game.out", "save.out", "control.out", "score.out", "first.out", "hidden.out");
+    // trainer.train(50, 50000, 5000, 5000, 1000, 1e-03, 1e-01, 2);
     trainer.load();
-    trainer.train(50, 50000, 5000, 5000, 1000, 1e-03);
-
+    for(int ag=0; ag<numAgents; ag++){
+        for(int t=0; t<timeHorizon; t++){
+            trainer.net[ag][t]->copyParams(trainer.structure);
+        }
+    }
+    for(int i=0; i<1000; i++){
+        trainer.rollout(false, false, true);
+    }
+    
     // Amazons
 
     // LSTM::PVUnit structure;
@@ -407,13 +413,30 @@ int main(){
     // structure.valueBranch->addOutput(1);
 
     // MAPG trainer(&structure, "game.out", "save.out", "control.out", "score.out", "first.out");
-    // trainer.rollout(true);
-    // trainer.load();
-    // trainer.train(50, 20000, 1000, 1000, 200, 1e-03);
+    // // trainer.train(50, 20000, 1000, 1000, 200, 1e-03, 10);
+    // trainer.train(32, 200000, 10000, 10000, 1000, 1e-03, 16);
+
+    // Liars dice
+
+    // LSTM::PVUnit structure;
+    // structure.commonBranch = new LSTM::Model(numFeatures);
+    // structure.commonBranch->addLSTM(40);
+    // structure.commonBranch->addLSTM(20);
+    // structure.initPV();
+    // structure.policyBranch->addOutput(numActions);
+    // structure.valueBranch->addOutput(1);
+
+    // MAPG trainer(&structure, "game.out", "save.out", "control.out", "score.out", "first.out");
+    // trainer.train(64, 150000, 10000, 10000, 1000, 1e-03, 2);
 
 
     {
         ofstream codeOut("code.out");
+    }
+    for(int ag=0; ag<numAgents; ag++){
+        for(int t=0; t<timeHorizon; t++){
+            trainer.net[ag][t]->copyParams(trainer.structure);
+        }
     }
     for(int i=0; i<5; i++){
         trainer.rollout(true);

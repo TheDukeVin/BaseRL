@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -c 41 # Number of cores requested
+#SBATCH -c 20 # Number of cores requested
 #SBATCH -t 4000 # Runtime in minutes
 #SBATCH -p serial_requeue # Partition to submit to
 #SBATCH --mem=100000 # Memory per node in MB (see also --mem-per-cpu)

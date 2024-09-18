@@ -1,495 +1,3421 @@
 ...
 ...
 ...
-Agent 0 Policy: 0.109913 0.111529 0.103779 0.123259 0.11343 0.111085 0.111247 0.111044 0.104715 
-Value: 0.0118219
-Action: 4 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0359426
-Action: 0 Reward: 0
-
-...
-.X.
-...
-Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.107074
-Action: 0 Reward: 0
-
-Agent 1 Policy: 0.237522 0.00239093 0.213636 0.00514576 . 0.00175222 0.264526 0.00120772 0.273819 
-Value: -0.0110176
-Action: 8 Reward: 0
-
-...
-.X.
-..O
-Agent 0 Policy: 0.112669 0.104497 0.151401 0.0706622 . 0.311174 0.109448 0.140149 . 
-Value: 0.0272748
-Action: 6 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0256798
-Action: 0 Reward: 0
-
-...
-.X.
-X.O
-Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.00534422
-Action: 0 Reward: 0
-
-Agent 1 Policy: 8.27788e-05 0.000290256 0.997149 0.000244286 . 0.00211612 . 0.000117948 . 
-Value: -0.0393164
-Action: 2 Reward: 0
-
-..O
-.X.
-X.O
-Agent 0 Policy: 2.53461e-05 0.000175056 . 0.0039748 . 0.99534 . 0.000484729 . 
-Value: 0.00508455
-Action: 5 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.0156561
-Action: 0 Reward: 0
-
-..O
-.XX
-X.O
-Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.00375735
-Action: 0 Reward: 0
-
-Agent 1 Policy: 0.000747948 0.00195049 . 0.99719 . . . 0.000111154 . 
-Value: -0.00591794
-Action: 3 Reward: 0
-
-..O
-OXX
-X.O
-Agent 0 Policy: 0.256033 0.399863 . . . . . 0.344104 . 
-Value: -0.0284658
-Action: 1 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.0255481
-Action: 0 Reward: 0
-
-.XO
-OXX
-X.O
-Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.0222482
-Action: 0 Reward: 0
-
-Agent 1 Policy: 4.3458e-06 . . . . . . 0.999996 . 
-Value: -0.033353
-Action: 7 Reward: 0
-
-.XO
-OXX
-XOO
-Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.00525026
+Agent 0 Policy: 0.105588 0.107914 0.115003 0.103347 0.106967 0.113371 0.106578 0.125382 0.115849 
+Value: 0.0150356
 Action: 0 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.00752064
+Value: -0.00854508
 Action: 0 Reward: 0
 
-...
-...
-...
-Agent 0 Policy: 0.109913 0.111529 0.103779 0.123259 0.11343 0.111085 0.111247 0.111044 0.104715 
-Value: 0.0118219
-Action: 8 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0359426
-Action: 0 Reward: 0
-
-...
-...
-..X
-Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.163755
-Action: 0 Reward: 0
-
-Agent 1 Policy: 0.0010654 9.16229e-05 6.1663e-06 0.000851759 0.99589 0.0006812 0.000445187 0.000968837 . 
-Value: -0.00376931
-Action: 4 Reward: 0
-
-...
-.O.
-..X
-Agent 0 Policy: 0.144081 0.166165 0.130901 0.14024 . 0.111752 0.166359 0.140504 . 
-Value: -0.00830206
-Action: 3 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.000426443
-Action: 0 Reward: 0
-
-...
-XO.
-..X
-Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.00469358
-Action: 0 Reward: 0
-
-Agent 1 Policy: 0.106781 0.168112 0.00509865 . . 0.00305716 0.292575 0.424376 . 
-Value: 0.0243902
-Action: 7 Reward: 0
-
-...
-XO.
-.OX
-Agent 0 Policy: 0.00143305 0.987077 0.00216902 . . 6.63525e-05 0.00925475 . . 
-Value: -0.00381378
-Action: 1 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0186735
-Action: 0 Reward: 0
-
-.X.
-XO.
-.OX
-Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.0127087
-Action: 0 Reward: 0
-
-Agent 1 Policy: 0.593185 . 0.404994 . . 0.000385764 0.00143525 . . 
-Value: -0.00394125
-Action: 0 Reward: 0
-
-OX.
-XO.
-.OX
-Agent 0 Policy: . . 0.460591 . . 0.00163696 0.537772 . . 
-Value: -0.00747291
-Action: 6 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.015523
-Action: 0 Reward: 0
-
-OX.
-XO.
-XOX
-Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.00095644
-Action: 0 Reward: 0
-
-Agent 1 Policy: . . 0.634924 . . 0.365076 . . . 
-Value: 0.0100183
-Action: 5 Reward: 0
-
-OX.
-XOO
-XOX
-Agent 0 Policy: . . 1 . . . . . . 
-Value: -0.0101929
-Action: 2 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.000254408
-Action: 0 Reward: 0
-
-...
-...
-...
-Agent 0 Policy: 0.109913 0.111529 0.103779 0.123259 0.11343 0.111085 0.111247 0.111044 0.104715 
-Value: 0.0118219
-Action: 3 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0359426
-Action: 0 Reward: 0
-
-...
 X..
 ...
+...
 Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.00954438
+Value: 0.0722393
 Action: 0 Reward: 0
 
-Agent 1 Policy: 0.253492 0.00365422 0.00299358 . 0.269841 0.219055 0.242675 0.00368181 0.00460804 
-Value: -0.00758558
-Action: 5 Reward: 0
+Agent 1 Policy: . 0.0042636 8.78888e-05 0.000393928 0.993779 2.47972e-05 0.000560338 0.000189295 0.000701184 
+Value: -0.0175073
+Action: 4 Reward: 0
 
+X..
+.O.
 ...
-X.O
-...
-Agent 0 Policy: 0.0798464 0.122271 0.160154 . 0.143326 . 0.199027 0.189366 0.106008 
-Value: 0.0046834
+Agent 0 Policy: . 0.147047 0.118898 0.12214 . 0.175036 0.13532 0.138051 0.163509 
+Value: 0.00753914
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0645959
+Action: 0 Reward: 0
+
+X..
+.O.
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0135628
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.322212 0.000605254 0.18343 . 0.235484 0.000645934 0.257623 . 
+Value: -0.00880162
+Action: 1 Reward: 0
+
+XO.
+.O.
+..X
+Agent 0 Policy: . . 5.39638e-05 0.000399319 . 0.00275141 0.000153368 0.996642 . 
+Value: -0.00571905
 Action: 7 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0539942
+Value: 0.0234263
 Action: 0 Reward: 0
 
-...
-X.O
-.X.
-Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.0344528
-Action: 0 Reward: 0
-
-Agent 1 Policy: 0.47009 0.0116246 0.00285273 . 0.0012904 . 0.501614 . 0.012529 
-Value: -0.0355201
-Action: 0 Reward: 0
-
-O..
-X.O
-.X.
-Agent 0 Policy: . 0.45461 0.101609 . 0.0209946 . 0.0227904 . 0.399996 
-Value: -0.0264661
-Action: 8 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0128045
-Action: 0 Reward: 0
-
-O..
-X.O
+XO.
+.O.
 .XX
 Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.0211794
+Value: 0.0121715
 Action: 0 Reward: 0
 
-Agent 1 Policy: . 0.00226328 0.00146945 . 0.000219694 . 0.996048 . . 
-Value: 0.00328769
+Agent 1 Policy: . . 0.00103553 0.0112478 . 0.00786587 0.979851 . . 
+Value: -0.0250486
 Action: 6 Reward: 0
 
-O..
-X.O
+XO.
+.O.
 OXX
-Agent 0 Policy: . 0.542872 0.241116 . 0.216012 . . . . 
-Value: -0.0448063
-Action: 4 Reward: 0
-
-Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.000190477
-Action: 0 Reward: 0
-
-O..
-XXO
-OXX
-Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.0127912
-Action: 0 Reward: 0
-
-Agent 1 Policy: . 0.995552 0.00444784 . . . . . . 
-Value: 2.21611e-05
-Action: 1 Reward: 0
-
-OO.
-XXO
-OXX
-Agent 0 Policy: . . 1 . . . . . . 
-Value: -0.0258452
+Agent 0 Policy: . . 0.992393 0.00117224 . 0.0064347 . . . 
+Value: -0.0296745
 Action: 2 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.0019611
+Value: -0.0242766
 Action: 0 Reward: 0
 
-...
-...
-...
-Agent 0 Policy: 0.109913 0.111529 0.103779 0.123259 0.11343 0.111085 0.111247 0.111044 0.104715 
-Value: 0.0118219
-Action: 2 Reward: 0
+XOX
+.O.
+OXX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0651084
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 0.00165697 . 0.998343 . . . 
+Value: -0.0363902
+Action: 5 Reward: 0
+
+XOX
+.OO
+OXX
+Agent 0 Policy: . . . 1 . . . . . 
+Value: 0.0361203
+Action: 3 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0359426
+Value: -0.0177324
 Action: 0 Reward: 0
 
-..X
+...
+...
+...
+Agent 0 Policy: 0.105588 0.107914 0.115003 0.103347 0.106967 0.113371 0.106578 0.125382 0.115849 
+Value: 0.0150356
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00854508
+Action: 0 Reward: 0
+
+X..
 ...
 ...
 Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.12401
+Value: 0.0722393
 Action: 0 Reward: 0
 
-Agent 1 Policy: 0.000135161 0.00137648 . 0.00047595 0.996122 0.00104193 0.000608838 7.73877e-05 0.00016188 
-Value: -0.00999717
+Agent 1 Policy: . 0.0042636 8.78888e-05 0.000393928 0.993779 2.47972e-05 0.000560338 0.000189295 0.000701184 
+Value: -0.0175073
 Action: 4 Reward: 0
 
-..X
+X..
 .O.
 ...
-Agent 0 Policy: 0.133779 0.151827 . 0.126509 . 0.143769 0.150314 0.141217 0.152585 
-Value: 0.00812622
+Agent 0 Policy: . 0.147047 0.118898 0.12214 . 0.175036 0.13532 0.138051 0.163509 
+Value: 0.00753914
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0645959
+Action: 0 Reward: 0
+
+XX.
+.O.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00250993
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.992225 0.00534058 . 9.819e-05 0.000466292 0.00108603 0.000783797 
+Value: 0.0323597
+Action: 2 Reward: 0
+
+XXO
+.O.
+...
+Agent 0 Policy: . . . 0.000531818 . 0.000164476 0.998825 2.2893e-05 0.000455947 
+Value: -0.0106495
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0477672
+Action: 0 Reward: 0
+
+XXO
+.O.
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0394514
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 0.997099 . 0.00287301 . 1.09548e-06 2.73249e-05 
+Value: 0.00681184
+Action: 3 Reward: 0
+
+XXO
+OO.
+X..
+Agent 0 Policy: . . . . . 0.998466 . 0.000183662 0.00135062 
+Value: -0.027868
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0243985
+Action: 0 Reward: 0
+
+XXO
+OOX
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0603351
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . . . . . 0.492042 0.507958 
+Value: -0.0155323
+Action: 7 Reward: 0
+
+XXO
+OOX
+XO.
+Agent 0 Policy: . . . . . . . . 1 
+Value: -0.0375294
 Action: 8 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.00997626
+Value: -0.0190579
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.105588 0.107914 0.115003 0.103347 0.106967 0.113371 0.106578 0.125382 0.115849 
+Value: 0.0150356
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00854508
+Action: 0 Reward: 0
+
+...
+..X
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0151596
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00191176 0.00380372 0.33507 0.134221 0.268635 . 0.00421872 0.000419901 0.251721 
+Value: -0.00631125
+Action: 4 Reward: 0
+
+...
+.OX
+...
+Agent 0 Policy: 0.0945391 0.216441 0.172698 0.000387709 . . 0.153772 0.190657 0.171507 
+Value: -0.0162743
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00257475
+Action: 0 Reward: 0
+
+.X.
+.OX
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0210067
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.234958 . 0.602813 0.000456045 . . 0.0346399 0.00803193 0.119101 
+Value: -0.0017611
+Action: 2 Reward: 0
+
+.XO
+.OX
+...
+Agent 0 Policy: 0.00156885 . . 1.24971e-05 . . 0.997857 0.000300235 0.00026176 
+Value: -0.0134115
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0416247
+Action: 0 Reward: 0
+
+.XO
+.OX
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0357714
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.183957 . . 0.274936 . . . 0.306239 0.234868 
+Value: -0.00907668
+Action: 8 Reward: 0
+
+.XO
+.OX
+X.O
+Agent 0 Policy: 0.998801 . . 0.00118439 . . . 1.42111e-05 . 
+Value: 0.0269184
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00118445
+Action: 0 Reward: 0
+
+XXO
+.OX
+X.O
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0501944
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 0.999612 . . . 0.000388111 . 
+Value: 0.00457394
+Action: 3 Reward: 0
+
+XXO
+OOX
+X.O
+Agent 0 Policy: . . . . . . . 1 . 
+Value: 0.0225316
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.00226697
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.105588 0.107914 0.115003 0.103347 0.106967 0.113371 0.106578 0.125382 0.115849 
+Value: 0.0150356
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00854508
+Action: 0 Reward: 0
+
+...
+...
+.X.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0210664
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00269502 0.196011 0.00422397 0.0061041 0.273264 0.000540756 0.224602 . 0.29256 
+Value: -0.0349009
+Action: 3 Reward: 0
+
+...
+O..
+.X.
+Agent 0 Policy: 0.0206054 0.0604787 0.001951 . 0.838117 0.00429652 0.0281128 . 0.0464381 
+Value: 0.162128
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0757989
+Action: 0 Reward: 0
+
+...
+OX.
+.X.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.11541
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00306611 0.782492 0.0120945 . . 1.61924e-06 0.162119 . 0.0402273 
+Value: -0.132015
+Action: 1 Reward: 0
+
+.O.
+OX.
+.X.
+Agent 0 Policy: 0.0872406 . 0.072605 . . 0.000421301 0.728567 . 0.111166 
+Value: 0.132495
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.129598
+Action: 0 Reward: 0
+
+.O.
+OX.
+XX.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.374657
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000254824 . 0.993177 . . 1.98733e-07 . . 0.0065683 
+Value: -0.15215
+Action: 2 Reward: 0
+
+.OO
+OX.
+XX.
+Agent 0 Policy: 0.0180746 . . . . 1.85167e-05 . . 0.981907 
+Value: 0.446874
+Action: 8 Reward: 1
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.197841
+Action: 0 Reward: -1
+
+...
+...
+...
+Agent 0 Policy: 0.105588 0.107914 0.115003 0.103347 0.106967 0.113371 0.106578 0.125382 0.115849 
+Value: 0.0150356
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00854508
+Action: 0 Reward: 0
+
+...
+...
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0395724
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000379309 7.02014e-05 3.30084e-05 5.49678e-05 0.996536 0.000918254 0.000283555 0.00172437 . 
+Value: -0.0254699
+Action: 4 Reward: 0
+
+...
+.O.
+..X
+Agent 0 Policy: 0.152956 0.136555 0.117158 0.168822 . 0.151815 0.127695 0.145 . 
+Value: 0.00291095
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0453625
+Action: 0 Reward: 0
+
+...
+.OX
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0107227
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000205201 0.00326982 0.995203 5.14128e-06 . . 3.6383e-05 0.00128005 . 
+Value: -0.0143572
+Action: 2 Reward: 0
+
+..O
+.OX
+..X
+Agent 0 Policy: 6.8629e-05 7.3537e-05 . 2.29531e-05 . . 0.998621 0.00121413 . 
+Value: 0.00958776
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.000261259
+Action: 0 Reward: 0
+
+..O
+.OX
+X.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00669114
+Action: 0 Reward: 0
+
+Agent 1 Policy: 2.51637e-05 0.00255008 . 3.55379e-05 . . . 0.997389 . 
+Value: -0.012702
+Action: 7 Reward: 0
+
+..O
+.OX
+XOX
+Agent 0 Policy: 0.000177381 0.999707 . 0.00011603 . . . . . 
+Value: -0.0129097
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0470303
+Action: 0 Reward: 0
+
+.XO
+.OX
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0542317
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.509423 . . 0.490577 . . . . . 
+Value: 0.00343163
+Action: 3 Reward: 0
+
+.XO
+OOX
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00520918
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00168757
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+..X
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0158781
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00191839 0.00379829 0.32999 0.132406 0.272045 . 0.00426295 0.000417185 0.255163 
+Value: -0.00546637
+Action: 4 Reward: 0
+
+...
+.OX
+...
+Agent 0 Policy: 0.0961534 0.216795 0.17206 0.000390815 . . 0.15255 0.189998 0.172053 
+Value: -0.0156925
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00177145
+Action: 0 Reward: 0
+
+.X.
+.OX
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0203679
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.238405 . 0.598398 0.000454027 . . 0.0348299 0.0080133 0.1199 
+Value: -0.00112456
+Action: 0 Reward: 0
+
+OX.
+.OX
+...
+Agent 0 Policy: . . 0.000481115 8.32864e-07 . . 0.00129121 3.05913e-05 0.998196 
+Value: -0.00324944
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.00743877
+Action: 0 Reward: 0
+
+OX.
+.OX
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0239265
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.986924 2.36194e-05 . . 0.0123573 0.000695352 . 
+Value: 0.00205459
+Action: 2 Reward: 0
+
+OXO
+.OX
+..X
+Agent 0 Policy: . . . 3.03949e-05 . . 0.999839 0.000130298 . 
+Value: 0.00570108
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0203053
+Action: 0 Reward: 0
+
+OXO
+.OX
+X.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0116088
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 1.31493e-06 . . . 0.999999 . 
+Value: 0.0422923
+Action: 7 Reward: 0
+
+OXO
+.OX
+XOX
+Agent 0 Policy: . . . 1 . . . . . 
+Value: -0.0439325
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0246072
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+X..
+...
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0728863
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.00419931 8.54897e-05 0.000380068 0.993868 2.37826e-05 0.00055141 0.000186048 0.000706103 
+Value: -0.0179267
+Action: 4 Reward: 0
+
+X..
+.O.
+...
+Agent 0 Policy: . 0.146188 0.118207 0.121469 . 0.172726 0.135716 0.137811 0.167882 
+Value: 0.00764008
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0657594
+Action: 0 Reward: 0
+
+X..
+.O.
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00552422
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.00157753 1.96893e-06 0.996728 . 0.0013646 . 0.000242318 8.53926e-05 
+Value: 0.0149328
+Action: 3 Reward: 0
+
+X..
+OO.
+X..
+Agent 0 Policy: . 0.00231456 0.00127626 . . 0.995203 . 0.000988498 0.000217551 
+Value: -0.014907
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0602176
+Action: 0 Reward: 0
+
+X..
+OOX
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0607463
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.280343 0.251229 . . . . 0.246766 0.221662 
+Value: -0.0150211
+Action: 1 Reward: 0
+
+XO.
+OOX
+X..
+Agent 0 Policy: . . 0.000320712 . . . . 0.997722 0.0019568 
+Value: -0.00707738
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0285144
+Action: 0 Reward: 0
+
+XO.
+OOX
+XX.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0209805
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.000202361 . . . . . 0.999798 
+Value: 0.027283
+Action: 8 Reward: 0
+
+XO.
+OOX
+XXO
+Agent 0 Policy: . . 1 . . . . . . 
+Value: -0.0522274
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00175965
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+..X
+...
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0581391
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000162112 0.00188098 . 6.81668e-05 0.994829 0.00049566 0.0005555 0.00160911 0.000399357 
+Value: -0.0173416
+Action: 4 Reward: 0
+
+..X
+.O.
+...
+Agent 0 Policy: 0.133522 0.164789 . 0.164039 . 0.148586 0.125674 0.141823 0.121567 
+Value: 0.0131588
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0695422
+Action: 0 Reward: 0
+
+..X
+.OX
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0181247
+Action: 0 Reward: 0
+
+Agent 1 Policy: 2.30603e-05 0.00217164 . 1.11063e-05 . . 3.9233e-05 0.00317775 0.994577 
+Value: -0.0111813
+Action: 8 Reward: 0
+
+..X
+.OX
+..O
+Agent 0 Policy: 0.997706 0.000395181 . 4.1055e-06 . . 0.00155848 0.000335798 . 
+Value: 0.0175363
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00801181
+Action: 0 Reward: 0
+
+X.X
+.OX
+..O
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0462147
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.996176 . 0.000285515 . . 0.000364826 0.0031734 . 
+Value: 0.0203939
+Action: 1 Reward: 0
+
+XOX
+.OX
+..O
+Agent 0 Policy: . . . 8.56278e-05 . . 0.00036383 0.999551 . 
+Value: 0.00945393
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00636384
+Action: 0 Reward: 0
+
+XOX
+.OX
+.XO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0129443
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 0.502982 . . 0.497018 . . 
+Value: 0.000626111
+Action: 3 Reward: 0
+
+XOX
+OOX
+.XO
+Agent 0 Policy: . . . . . . 1 . . 
+Value: -0.0322596
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00945758
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0684681
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000208304 0.000424709 0.000343921 0.00170732 0.994388 0.000194193 . 0.00209692 0.000636976 
+Value: -0.012685
+Action: 4 Reward: 0
+
+...
+.O.
+X..
+Agent 0 Policy: 0.136286 0.152197 0.133441 0.1415 . 0.156464 . 0.131475 0.148635 
+Value: 0.0130462
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.043902
+Action: 0 Reward: 0
+
+...
+.O.
+X.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00585377
+Action: 0 Reward: 0
+
+Agent 1 Policy: 6.64937e-07 0.00163072 9.58559e-07 1.32231e-05 . 1.05388e-05 . 0.998344 . 
+Value: -0.0187431
+Action: 7 Reward: 0
+
+...
+.O.
+XOX
+Agent 0 Policy: 2.2535e-05 0.997127 0.000124908 0.00189598 . 0.000829402 . . . 
+Value: 0.0376741
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0233483
+Action: 0 Reward: 0
+
+.X.
+.O.
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0317061
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.237586 . 0.23143 0.267735 . 0.263249 . . . 
+Value: -0.00618435
+Action: 0 Reward: 0
+
+OX.
+.O.
+XOX
+Agent 0 Policy: . . 0.257484 0.314657 . 0.427859 . . . 
+Value: 0.000680346
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0498684
+Action: 0 Reward: 0
+
+OX.
+XO.
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0528017
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.432147 . . 0.567853 . . . 
+Value: -0.0617925
+Action: 5 Reward: 0
+
+OX.
+XOO
+XOX
+Agent 0 Policy: . . 1 . . . . . . 
+Value: -0.0266038
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0173196
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+..X
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0158781
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00191839 0.00379829 0.32999 0.132406 0.272045 . 0.00426295 0.000417185 0.255163 
+Value: -0.00546637
+Action: 4 Reward: 0
+
+...
+.OX
+...
+Agent 0 Policy: 0.0961534 0.216795 0.17206 0.000390815 . . 0.15255 0.189998 0.172053 
+Value: -0.0156925
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00177145
+Action: 0 Reward: 0
+
+...
+.OX
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0398013
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00147099 0.0879595 0.139922 0.0145107 . . . 0.448764 0.307373 
+Value: 0.00482168
+Action: 2 Reward: 0
+
+..O
+.OX
+X..
+Agent 0 Policy: 0.243768 0.0224563 . 0.00813407 . . . 0.278042 0.447599 
+Value: -0.00640836
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0139555
+Action: 0 Reward: 0
+
+..O
+.OX
+X.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0461295
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1.71727e-05 0.00436945 . 0.000132439 . . . 0.995481 . 
+Value: 0.0124895
+Action: 7 Reward: 0
+
+..O
+.OX
+XOX
+Agent 0 Policy: 0.00188939 0.997637 . 0.000474064 . . . . . 
+Value: 0.0173406
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00314055
+Action: 0 Reward: 0
+
+.XO
+.OX
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0419053
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.504859 . . 0.495141 . . . . . 
+Value: -0.00273822
+Action: 0 Reward: 0
+
+OXO
+.OX
+XOX
+Agent 0 Policy: . . . 1 . . . . . 
+Value: 0.00742301
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0108709
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+.X.
+...
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0450873
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.263927 . 0.243279 0.00514933 0.256181 0.00147712 0.00649298 0.221583 0.00190957 
+Value: -0.0076555
+Action: 4 Reward: 0
+
+.X.
+.O.
+...
+Agent 0 Policy: 0.178238 . 0.198825 0.223783 . 0.0771574 0.102354 0.00916416 0.210478 
+Value: 0.00405913
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0117083
+Action: 0 Reward: 0
+
+.X.
+.O.
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00928103
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.254944 . 0.111301 0.274113 . 0.314567 0.0352545 0.00982064 . 
+Value: -0.0177915
+Action: 5 Reward: 0
+
+.X.
+.OO
+..X
+Agent 0 Policy: 0.000372364 . 0.00737976 0.991673 . . 0.000476617 9.84811e-05 . 
+Value: 0.00347977
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0039411
+Action: 0 Reward: 0
+
+.X.
+XOO
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0278716
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.625952 . 0.00391116 . . . 0.363519 0.00661804 . 
+Value: 0.0224542
+Action: 0 Reward: 0
+
+OX.
+XOO
+..X
+Agent 0 Policy: . . 0.229064 . . . 0.384574 0.386362 . 
+Value: 0.000506418
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0186986
+Action: 0 Reward: 0
+
+OX.
+XOO
+.XX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0443456
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.00321815 . . . 0.996782 . . 
+Value: 0.0385881
+Action: 6 Reward: 0
+
+OX.
+XOO
+OXX
+Agent 0 Policy: . . 1 . . . . . . 
+Value: 0.0114918
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0519232
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+.X.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00258445
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.286524 0.00350957 0.227151 0.000697295 . 0.000648031 0.215019 0.0023002 0.264151 
+Value: -0.0173014
+Action: 0 Reward: 0
+
+O..
+.X.
+...
+Agent 0 Policy: . 0.181216 0.119277 0.191862 . 0.137208 0.120813 0.114774 0.13485 
+Value: -0.0194107
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0692375
+Action: 0 Reward: 0
+
+O..
+.X.
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0468361
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.00501323 0.555423 0.00181686 . 0.00133977 0.431033 0.00537398 . 
+Value: -0.0406484
+Action: 2 Reward: 0
+
+O.O
+.X.
+..X
+Agent 0 Policy: . 0.978955 . 0.000221447 . 0.000268432 0.00377737 0.0167776 . 
+Value: 0.0311292
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00136885
+Action: 0 Reward: 0
+
+OXO
+.X.
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.102522
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 1.52509e-06 . 5.16968e-07 0.000374701 0.999623 . 
+Value: 0.0396349
+Action: 7 Reward: 0
+
+OXO
+.X.
+.OX
+Agent 0 Policy: . . . 0.437983 . 0.201568 0.360449 . . 
+Value: 0.0569615
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0371159
+Action: 0 Reward: 0
+
+OXO
+.X.
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.073935
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 0.492568 . 0.507432 . . . 
+Value: 0.0662529
+Action: 5 Reward: 0
+
+OXO
+.XO
+XOX
+Agent 0 Policy: . . . 1 . . . . . 
+Value: 0.0693177
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0622226
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0395975
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000374872 6.95015e-05 3.21431e-05 5.36483e-05 0.996612 0.000888725 0.000280867 0.00168777 . 
+Value: -0.0257414
+Action: 4 Reward: 0
+
+...
+.O.
+..X
+Agent 0 Policy: 0.155043 0.137103 0.115273 0.169338 . 0.151056 0.127301 0.144885 . 
+Value: 0.00259426
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0455897
+Action: 0 Reward: 0
+
+...
+.O.
+.XX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.000842286
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000840094 0.00576738 0.000665042 0.00136363 . 0.000101207 0.991263 . . 
+Value: -0.0130838
+Action: 6 Reward: 0
+
+...
+.O.
+OXX
+Agent 0 Policy: 0.00269142 8.71714e-05 0.993557 0.00192273 . 0.00174217 . . . 
+Value: 0.00483079
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0361444
 Action: 0 Reward: 0
 
 ..X
 .O.
-..X
+OXX
 Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.00124691
+Value: 0.0935875
 Action: 0 Reward: 0
 
-Agent 1 Policy: 2.02671e-05 0.000301957 . 0.00450922 . 0.995118 2.06794e-06 4.82502e-05 . 
-Value: -0.0144077
+Agent 1 Policy: 0.000214066 0.000365404 . 0.00237391 . 0.997047 . . . 
+Value: -0.0131983
 Action: 5 Reward: 0
 
 ..X
 .OO
-..X
-Agent 0 Policy: 0.000212929 0.000616812 . 0.99799 . . 0.000906296 0.000273801 . 
-Value: -0.0102441
+OXX
+Agent 0 Policy: 0.00284674 0.000911911 . 0.996241 . . . . . 
+Value: 0.0157638
 Action: 3 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0101421
+Value: -0.00396747
 Action: 0 Reward: 0
 
 ..X
 XOO
-..X
+OXX
 Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.0118183
+Value: -0.0196774
 Action: 0 Reward: 0
 
-Agent 1 Policy: 0.225652 0.25721 . . . . 0.229598 0.28754 . 
-Value: -0.0144912
-Action: 6 Reward: 0
+Agent 1 Policy: 0.537703 0.462297 . . . . . . . 
+Value: 0.0153449
+Action: 1 Reward: 0
 
-..X
+.OX
 XOO
-O.X
-Agent 0 Policy: 0.450377 0.464981 . . . . . 0.0846426 . 
-Value: -0.0126971
+OXX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00970965
 Action: 0 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0363624
+Value: 0.0484217
 Action: 0 Reward: 0
 
-X.X
-XOO
-O.X
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+..X
 Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.019536
+Value: 0.0395975
 Action: 0 Reward: 0
 
-Agent 1 Policy: . 0.99215 . . . . . 0.00784966 . 
-Value: -0.0123108
+Agent 1 Policy: 0.000374872 6.95015e-05 3.21431e-05 5.36483e-05 0.996612 0.000888725 0.000280867 0.00168777 . 
+Value: -0.0257414
+Action: 4 Reward: 0
+
+...
+.O.
+..X
+Agent 0 Policy: 0.155043 0.137103 0.115273 0.169338 . 0.151056 0.127301 0.144885 . 
+Value: 0.00259426
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0455897
+Action: 0 Reward: 0
+
+...
+.OX
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0106951
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000209162 0.00336741 0.995072 5.16194e-06 . . 3.73334e-05 0.00130846 . 
+Value: -0.0143512
+Action: 2 Reward: 0
+
+..O
+.OX
+..X
+Agent 0 Policy: 6.96526e-05 7.41176e-05 . 2.31607e-05 . . 0.998615 0.00121796 . 
+Value: 0.0104613
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.000528917
+Action: 0 Reward: 0
+
+..O
+.OX
+X.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00606208
+Action: 0 Reward: 0
+
+Agent 1 Policy: 2.64008e-05 0.00259803 . 3.56725e-05 . . . 0.99734 . 
+Value: -0.0120388
+Action: 7 Reward: 0
+
+..O
+.OX
+XOX
+Agent 0 Policy: 0.000180816 0.999704 . 0.000114843 . . . . . 
+Value: -0.012473
 Action: 1 Reward: 0
 
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.046481
+Action: 0 Reward: 0
+
+.XO
+.OX
 XOX
-XOO
-O.X
-Agent 0 Policy: . . . . . . . 1 . 
-Value: 0.0204057
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0536017
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.514745 . . 0.485255 . . . . . 
+Value: 0.00393965
+Action: 3 Reward: 0
+
+.XO
+OOX
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0045405
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.000867384
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+..X
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0158781
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00191839 0.00379829 0.32999 0.132406 0.272045 . 0.00426295 0.000417185 0.255163 
+Value: -0.00546637
+Action: 4 Reward: 0
+
+...
+.OX
+...
+Agent 0 Policy: 0.0961534 0.216795 0.17206 0.000390815 . . 0.15255 0.189998 0.172053 
+Value: -0.0156925
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00177145
+Action: 0 Reward: 0
+
+X..
+.OX
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0477501
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.471092 0.232281 0.00356504 . . 0.0089628 0.195285 0.0888139 
+Value: -0.0215988
+Action: 1 Reward: 0
+
+XO.
+.OX
+...
+Agent 0 Policy: . . 0.00774839 1.16091e-06 . . 0.000215738 0.99056 0.0014752 
+Value: -0.0171793
 Action: 7 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.00245083
+Value: 0.0262801
+Action: 0 Reward: 0
+
+XO.
+.OX
+.X.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0148518
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.00291082 0.00349666 . . 0.550666 . 0.442926 
+Value: 0.00569167
+Action: 6 Reward: 0
+
+XO.
+.OX
+OX.
+Agent 0 Policy: . . 0.993482 1.17542e-05 . . . . 0.0065062 
+Value: 0.0394464
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0512927
+Action: 0 Reward: 0
+
+XOX
+.OX
+OX.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0608959
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 3.88966e-05 . . . . 0.999961 
+Value: 0.0255905
+Action: 8 Reward: 0
+
+XOX
+.OX
+OXO
+Agent 0 Policy: . . . 1 . . . . . 
+Value: 0.0157771
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0335873
 Action: 0 Reward: 0
 
 ...
 ...
 ...
-Agent 0 Policy: 0.109913 0.111529 0.103779 0.123259 0.11343 0.111085 0.111247 0.111044 0.104715 
-Value: 0.0118219
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
 Action: 3 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0359426
+Value: -0.00809131
 Action: 0 Reward: 0
 
 ...
 X..
 ...
 Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.00954438
+Value: 0.0208101
 Action: 0 Reward: 0
 
-Agent 1 Policy: 0.253492 0.00365422 0.00299358 . 0.269841 0.219055 0.242675 0.00368181 0.00460804 
-Value: -0.00758558
-Action: 5 Reward: 0
-
-...
-X.O
-...
-Agent 0 Policy: 0.0798464 0.122271 0.160154 . 0.143326 . 0.199027 0.189366 0.106008 
-Value: 0.0046834
+Agent 1 Policy: 0.235517 0.00160179 0.00221213 . 0.308116 0.213969 0.236414 0.000232198 0.00193767 
+Value: -0.00216787
 Action: 4 Reward: 0
 
-Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0539942
-Action: 0 Reward: 0
-
 ...
-XXO
+XO.
 ...
-Agent 0 Policy: 1 . . . . . . . . 
-Value: -0.00359578
-Action: 0 Reward: 0
-
-Agent 1 Policy: 0.298855 0.000763366 0.167305 . . . 0.25354 0.00115604 0.27838 
-Value: -0.0471577
+Agent 0 Policy: 0.15436 0.150595 0.157498 . . 0.00526894 0.146228 0.205417 0.180633 
+Value: -0.0126801
 Action: 8 Reward: 0
 
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.000247085
+Action: 0 Reward: 0
+
 ...
-XXO
-..O
-Agent 0 Policy: 0.000141518 0.00941064 0.93878 . . . 0.00158606 0.0500819 . 
-Value: 0.00425436
-Action: 2 Reward: 0
+XO.
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0101116
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.120248 0.0228778 0.00495634 . . 0.0048253 0.3016 0.545492 . 
+Value: -0.0318457
+Action: 7 Reward: 0
+
+...
+XO.
+.OX
+Agent 0 Policy: 0.00062263 0.992204 0.00691043 . . 6.70576e-05 0.000195554 . . 
+Value: 0.0283582
+Action: 1 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0175246
+Value: -0.0145899
 Action: 0 Reward: 0
 
-..X
-XXO
-..O
+.X.
+XO.
+.OX
 Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.0209628
+Value: 0.00453436
 Action: 0 Reward: 0
 
-Agent 1 Policy: 0.000277469 2.9368e-06 . . . . 0.999679 4.0955e-05 . 
-Value: 0.00518338
+Agent 1 Policy: 0.522866 . 0.471983 . . 0.00299078 0.00216092 . . 
+Value: 0.00204643
+Action: 2 Reward: 0
+
+.XO
+XO.
+.OX
+Agent 0 Policy: 0.00311988 . . . . 0.00188713 0.994993 . . 
+Value: 0.0212779
 Action: 6 Reward: 0
 
-..X
-XXO
-O.O
-Agent 0 Policy: 1.32847e-05 0.0085921 . . . . . 0.991395 . 
-Value: 0.0431811
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0305263
+Action: 0 Reward: 0
+
+.XO
+XO.
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0166128
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.999963 . . . . 3.69084e-05 . . . 
+Value: -0.0160723
+Action: 0 Reward: 0
+
+OXO
+XO.
+XOX
+Agent 0 Policy: . . . . . 1 . . . 
+Value: 0.0221203
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00822482
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
 Action: 7 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: -0.0180004
+Value: -0.00809131
 Action: 0 Reward: 0
 
-..X
-XXO
-OXO
+...
+...
+.X.
 Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.0525499
+Value: 0.0218304
 Action: 0 Reward: 0
 
-Agent 1 Policy: 0.00417324 0.995827 . . . . . . . 
-Value: -0.0229722
+Agent 1 Policy: 0.00267676 0.196779 0.00417724 0.00593434 0.274802 0.000527872 0.220342 . 0.29476 
+Value: -0.0340257
 Action: 1 Reward: 0
 
-.OX
-XXO
-OXO
+.O.
+...
+.X.
+Agent 0 Policy: 0.182328 . 0.019098 0.162354 0.212698 0.0075688 0.175058 . 0.240896 
+Value: 0.130487
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0381788
+Action: 0 Reward: 0
+
+.O.
+...
+.XX
 Agent 0 Policy: 1 . . . . . . . . 
-Value: 0.0180524
+Value: 0.0745016
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00209152 . 0.000156933 1.09509e-05 0.00615277 2.08471e-06 0.991586 . . 
+Value: -0.0505129
+Action: 6 Reward: 0
+
+.O.
+...
+OXX
+Agent 0 Policy: 0.3013 . 0.638151 0.0549068 0.00249297 0.00314862 . . . 
+Value: 0.0391831
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0826956
+Action: 0 Reward: 0
+
+.OX
+...
+OXX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.13532
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.716329 . . 0.0304342 0.00402612 0.249211 . . . 
+Value: -0.0217458
+Action: 0 Reward: 0
+
+OOX
+...
+OXX
+Agent 0 Policy: . . . 0.984613 6.55318e-05 0.0153214 . . . 
+Value: 0.138836
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.135492
+Action: 0 Reward: 0
+
+OOX
+X..
+OXX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0393181
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . . 0.00506162 0.994938 . . . 
+Value: -0.0260217
+Action: 5 Reward: 0
+
+OOX
+X.O
+OXX
+Agent 0 Policy: . . . . 1 . . . . 
+Value: -0.0174277
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0353623
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+.X.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0218304
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00267676 0.196779 0.00417724 0.00593434 0.274802 0.000527872 0.220342 . 0.29476 
+Value: -0.0340257
+Action: 8 Reward: 0
+
+...
+...
+.XO
+Agent 0 Policy: 0.220197 0.00350323 0.262844 0.00535065 0.175833 0.217753 0.114519 . . 
+Value: 0.00509993
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0174967
+Action: 0 Reward: 0
+
+...
+..X
+.XO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0238002
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00563013 0.290721 0.00574238 0.183375 0.507793 . 0.00673837 . . 
+Value: 0.00280271
+Action: 1 Reward: 0
+
+.O.
+..X
+.XO
+Agent 0 Policy: 0.55206 . 0.00127174 0.135017 0.299275 . 0.0123763 . . 
+Value: -0.0727536
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00301863
+Action: 0 Reward: 0
+
+.O.
+X.X
+.XO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0460021
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.0217543 . 0.00385087 . 0.933744 . 0.0406505 . . 
+Value: 0.0508671
+Action: 4 Reward: 0
+
+.O.
+XOX
+.XO
+Agent 0 Policy: 0.991139 . 0.000153974 . . . 0.00870728 . . 
+Value: -0.0656443
 Action: 0 Reward: 0
 
 Agent 1 Policy: 1 . . . . . . . . 
-Value: 0.0252709
+Value: 0.0112036
+Action: 0 Reward: 0
+
+XO.
+XOX
+.XO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0241083
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 3.6281e-05 . . . 0.999964 . . 
+Value: 0.0869187
+Action: 6 Reward: 0
+
+XO.
+XOX
+OXO
+Agent 0 Policy: . . 1 . . . . . . 
+Value: -0.0166315
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0671968
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+.X.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0218304
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00267676 0.196779 0.00417724 0.00593434 0.274802 0.000527872 0.220342 . 0.29476 
+Value: -0.0340257
+Action: 1 Reward: 0
+
+.O.
+...
+.X.
+Agent 0 Policy: 0.182328 . 0.019098 0.162354 0.212698 0.0075688 0.175058 . 0.240896 
+Value: 0.130487
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0381788
+Action: 0 Reward: 0
+
+XO.
+...
+.X.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0749469
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.000418251 0.00268601 0.0336603 0.000534946 0.289894 . 0.672806 
+Value: -0.0794439
+Action: 8 Reward: 0
+
+XO.
+...
+.XO
+Agent 0 Policy: . . 0.0179326 0.273846 0.00169469 0.338619 0.367907 . . 
+Value: 0.00114746
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0993878
+Action: 0 Reward: 0
+
+XO.
+X..
+.XO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0500903
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.000757928 . 4.51178e-06 0.000184626 0.999053 . . 
+Value: -0.0534818
+Action: 6 Reward: 0
+
+XO.
+X..
+OXO
+Agent 0 Policy: . . 0.574222 . 0.333602 0.0921761 . . . 
+Value: -0.0482127
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0219463
+Action: 0 Reward: 0
+
+XOX
+X..
+OXO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0790556
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . . 0.975149 0.0248507 . . . 
+Value: -0.104459
+Action: 4 Reward: 0
+
+XOX
+XO.
+OXO
+Agent 0 Policy: . . . . . 1 . . . 
+Value: -0.019802
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00948092
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+.X.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0218304
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00267676 0.196779 0.00417724 0.00593434 0.274802 0.000527872 0.220342 . 0.29476 
+Value: -0.0340257
+Action: 8 Reward: 0
+
+...
+...
+.XO
+Agent 0 Policy: 0.220197 0.00350323 0.262844 0.00535065 0.175833 0.217753 0.114519 . . 
+Value: 0.00509993
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0174967
+Action: 0 Reward: 0
+
+...
+..X
+.XO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0238002
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00563013 0.290721 0.00574238 0.183375 0.507793 . 0.00673837 . . 
+Value: 0.00280271
+Action: 1 Reward: 0
+
+.O.
+..X
+.XO
+Agent 0 Policy: 0.55206 . 0.00127174 0.135017 0.299275 . 0.0123763 . . 
+Value: -0.0727536
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00301863
+Action: 0 Reward: 0
+
+.O.
+.XX
+.XO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.029111
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000946291 . 0.000913396 0.997272 . . 0.000868678 . . 
+Value: -0.007197
+Action: 3 Reward: 0
+
+.O.
+OXX
+.XO
+Agent 0 Policy: 0.364334 . 0.544629 . . . 0.0910378 . . 
+Value: 0.0396991
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0254653
+Action: 0 Reward: 0
+
+XO.
+OXX
+.XO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0196679
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.409662 . . . 0.590338 . . 
+Value: -0.0283452
+Action: 6 Reward: 0
+
+XO.
+OXX
+OXO
+Agent 0 Policy: . . 1 . . . . . . 
+Value: 0.029282
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0462327
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+.X.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00258445
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.286524 0.00350957 0.227151 0.000697295 . 0.000648031 0.215019 0.0023002 0.264151 
+Value: -0.0173014
+Action: 2 Reward: 0
+
+..O
+.X.
+...
+Agent 0 Policy: 0.115349 0.231614 . 0.0195649 . 0.166416 0.157991 0.137045 0.17202 
+Value: 0.0235928
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0425401
+Action: 0 Reward: 0
+
+..O
+.XX
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0472891
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000627188 0.00112834 . 0.998009 . . 0.000158272 6.75997e-05 9.77847e-06 
+Value: 0.0416831
+Action: 3 Reward: 0
+
+..O
+OXX
+...
+Agent 0 Policy: 0.21656 0.316859 . . . . 0.110276 0.352399 0.00390587 
+Value: 0.0264567
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.04719
+Action: 0 Reward: 0
+
+.XO
+OXX
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0260129
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00579792 . . . . . 0.000250829 0.993765 0.000186109 
+Value: 0.0264831
+Action: 7 Reward: 0
+
+.XO
+OXX
+.O.
+Agent 0 Policy: 0.338723 . . . . . 0.397141 . 0.264136 
+Value: -0.000414253
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.020438
+Action: 0 Reward: 0
+
+.XO
+OXX
+XO.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0116208
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.307703 . . . . . . . 0.692297 
+Value: 0.0278277
+Action: 8 Reward: 0
+
+.XO
+OXX
+XOO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 6.15534e-05
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0195889
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+.X.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0218304
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00267676 0.196779 0.00417724 0.00593434 0.274802 0.000527872 0.220342 . 0.29476 
+Value: -0.0340257
+Action: 6 Reward: 0
+
+...
+...
+OX.
+Agent 0 Policy: 0.27387 0.00777642 0.275724 0.250275 0.176506 0.0106896 . . 0.00515877 
+Value: 0.0338079
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0695313
+Action: 0 Reward: 0
+
+..X
+...
+OX.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0828147
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.438588 0.402072 . 0.00502048 0.142939 8.49099e-05 . . 0.0112961 
+Value: -0.032165
+Action: 1 Reward: 0
+
+.OX
+...
+OX.
+Agent 0 Policy: 0.0533832 . . 0.190606 0.0619803 0.144505 . . 0.549526 
+Value: 0.0830282
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0151508
+Action: 0 Reward: 0
+
+.OX
+...
+OXX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.15204
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.242439 . . 0.0268831 0.0945873 0.63609 . . . 
+Value: -0.0857304
+Action: 0 Reward: 0
+
+OOX
+...
+OXX
+Agent 0 Policy: . . . 0.960647 0.00065755 0.0386956 . . . 
+Value: 0.117838
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.152186
+Action: 0 Reward: 0
+
+OOX
+X..
+OXX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.013198
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . . 0.00932749 0.990673 . . . 
+Value: -0.0761757
+Action: 5 Reward: 0
+
+OOX
+X.O
+OXX
+Agent 0 Policy: . . . . 1 . . . . 
+Value: -0.0211709
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0138641
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+X..
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0208101
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.235517 0.00160179 0.00221213 . 0.308116 0.213969 0.236414 0.000232198 0.00193767 
+Value: -0.00216787
+Action: 0 Reward: 0
+
+O..
+X..
+...
+Agent 0 Policy: . 0.250441 0.180711 . 0.266018 0.00490563 0.00379813 0.0100754 0.284051 
+Value: 0.0295512
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0111682
+Action: 0 Reward: 0
+
+O..
+XX.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0354667
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.000443721 0.00300024 . . 0.995745 7.23745e-06 3.1429e-05 0.000772656 
+Value: -0.0183274
+Action: 5 Reward: 0
+
+O..
+XXO
+...
+Agent 0 Policy: . 0.289152 0.267919 . . . 0.00134794 0.254792 0.186789 
+Value: 0.0521492
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0250665
+Action: 0 Reward: 0
+
+O.X
+XXO
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0873581
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.0032345 . . . . 0.995175 0.00151716 7.32589e-05 
+Value: -0.0193649
+Action: 6 Reward: 0
+
+O.X
+XXO
+O..
+Agent 0 Policy: . 0.469246 . . . . . 0.33666 0.194094 
+Value: -0.0123095
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0108333
+Action: 0 Reward: 0
+
+OXX
+XXO
+O..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00827448
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . . . . . 0.998356 0.00164377 
+Value: 0.016003
+Action: 7 Reward: 0
+
+OXX
+XXO
+OO.
+Agent 0 Policy: . . . . . . . . 1 
+Value: 0.00299594
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0901676
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+..X
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0158781
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00191839 0.00379829 0.32999 0.132406 0.272045 . 0.00426295 0.000417185 0.255163 
+Value: -0.00546637
+Action: 2 Reward: 0
+
+..O
+..X
+...
+Agent 0 Policy: 0.224861 0.259289 . 0.00498131 0.253181 . 0.245184 0.00919486 0.00330847 
+Value: 0.0157317
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0513076
+Action: 0 Reward: 0
+
+X.O
+..X
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0372029
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.000178405 . 0.531449 0.466115 . 9.50178e-05 0.00137103 0.000791369 
+Value: -0.0506921
+Action: 3 Reward: 0
+
+X.O
+O.X
+...
+Agent 0 Policy: . 0.134767 . . 0.428025 . 0.235155 0.0214885 0.180564 
+Value: 0.00630319
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0372325
+Action: 0 Reward: 0
+
+X.O
+O.X
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0564055
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.00811814 . . 0.475793 . . 0.0055115 0.510577 
+Value: 0.00196169
+Action: 4 Reward: 0
+
+X.O
+OOX
+X..
+Agent 0 Policy: . 0.192186 . . . . . 0.428454 0.37936 
+Value: -0.0135702
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0290162
+Action: 0 Reward: 0
+
+X.O
+OOX
+X.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00977375
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.00607369 . . . . . 0.993926 . 
+Value: 0.0125671
+Action: 7 Reward: 0
+
+X.O
+OOX
+XOX
+Agent 0 Policy: . 1 . . . . . . . 
+Value: 0.011729
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.00821607
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+..X
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0158781
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00191839 0.00379829 0.32999 0.132406 0.272045 . 0.00426295 0.000417185 0.255163 
+Value: -0.00546637
+Action: 2 Reward: 0
+
+..O
+..X
+...
+Agent 0 Policy: 0.224861 0.259289 . 0.00498131 0.253181 . 0.245184 0.00919486 0.00330847 
+Value: 0.0157317
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0513076
+Action: 0 Reward: 0
+
+..O
+..X
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0146997
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.288773 0.0273342 . 0.29103 0.376862 . . 0.0150993 0.000901632 
+Value: 0.0223991
+Action: 0 Reward: 0
+
+O.O
+..X
+X..
+Agent 0 Policy: . 0.987519 . 7.09133e-05 0.00410422 . . 0.00750202 0.000803788 
+Value: 0.0426542
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.082631
+Action: 0 Reward: 0
+
+OXO
+..X
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0489679
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 0.00077373 0.442048 . . 0.555963 0.00121488 
+Value: 0.0283657
+Action: 4 Reward: 0
+
+OXO
+.OX
+X..
+Agent 0 Policy: . . . 0.000878341 . . . 0.00959966 0.989522 
+Value: 0.0132894
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0295867
+Action: 0 Reward: 0
+
+OXO
+.OX
+X.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0244065
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 4.39549e-05 . . . 0.999956 . 
+Value: 0.0546972
+Action: 7 Reward: 0
+
+OXO
+.OX
+XOX
+Agent 0 Policy: . . . 1 . . . . . 
+Value: -0.0366364
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0165822
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+X..
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0208101
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.235517 0.00160179 0.00221213 . 0.308116 0.213969 0.236414 0.000232198 0.00193767 
+Value: -0.00216787
+Action: 4 Reward: 0
+
+...
+XO.
+...
+Agent 0 Policy: 0.15436 0.150595 0.157498 . . 0.00526894 0.146228 0.205417 0.180633 
+Value: -0.0126801
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.000247085
+Action: 0 Reward: 0
+
+..X
+XO.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.000716514
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.220859 0.224475 . . . 0.00464192 0.172323 0.365348 0.0123542 
+Value: -0.0248569
+Action: 6 Reward: 0
+
+..X
+XO.
+O..
+Agent 0 Policy: 0.193647 0.0434295 . . . 0.0132531 . 0.233953 0.515717 
+Value: -0.0185649
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00805951
+Action: 0 Reward: 0
+
+..X
+XO.
+OX.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0312556
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.203134 0.393038 . . . 0.152764 . . 0.251064 
+Value: -0.00848203
+Action: 8 Reward: 0
+
+..X
+XO.
+OXO
+Agent 0 Policy: 0.999735 0.000259125 . . . 6.24221e-06 . . . 
+Value: -0.0473809
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0104298
+Action: 0 Reward: 0
+
+X.X
+XO.
+OXO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0268008
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.99999 . . . 9.52446e-06 . . . 
+Value: -0.0246868
+Action: 1 Reward: 0
+
+XOX
+XO.
+OXO
+Agent 0 Policy: . . . . . 1 . . . 
+Value: -0.0200721
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00816949
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+.X.
+...
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0450873
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.263927 . 0.243279 0.00514933 0.256181 0.00147712 0.00649298 0.221583 0.00190957 
+Value: -0.0076555
+Action: 7 Reward: 0
+
+.X.
+...
+.O.
+Agent 0 Policy: 0.128555 . 0.0729241 0.184529 0.137128 0.0239851 0.209236 . 0.243642 
+Value: 0.06551
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0494897
+Action: 0 Reward: 0
+
+.X.
+...
+XO.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0803475
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.360778 . 0.617634 0.0118326 0.00677766 0.00289529 . . 8.27323e-05 
+Value: -0.0225109
+Action: 2 Reward: 0
+
+.XO
+...
+XO.
+Agent 0 Policy: 0.229883 . . 0.272374 0.0137137 0.329719 . . 0.15431 
+Value: 0.0508743
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0553166
+Action: 0 Reward: 0
+
+.XO
+..X
+XO.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0875285
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.395976 . . 0.577329 0.0253245 . . . 0.00137087 
+Value: 0.0164735
+Action: 0 Reward: 0
+
+OXO
+..X
+XO.
+Agent 0 Policy: . . . 0.345141 0.619678 . . . 0.0351802 
+Value: 0.0198142
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0443533
+Action: 0 Reward: 0
+
+OXO
+X.X
+XO.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00251739
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . . 0.906047 . . . 0.0939528 
+Value: 0.0997719
+Action: 4 Reward: 0
+
+OXO
+XOX
+XO.
+Agent 0 Policy: . . . . . . . . 1 
+Value: -0.00158859
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0596781
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0395975
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000374872 6.95015e-05 3.21431e-05 5.36483e-05 0.996612 0.000888725 0.000280867 0.00168777 . 
+Value: -0.0257414
+Action: 0 Reward: 0
+
+O..
+...
+..X
+Agent 0 Policy: . 0.00516314 0.0800001 0.00989028 0.0187802 0.00317081 0.86248 0.0205159 . 
+Value: 0.186297
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.114202
+Action: 0 Reward: 0
+
+O..
+...
+X.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.166066
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.000570985 2.76236e-05 8.20751e-08 0.0018671 1.68973e-06 . 0.997533 . 
+Value: -0.154645
+Action: 7 Reward: 0
+
+O..
+...
+XOX
+Agent 0 Policy: . 0.00936113 0.977002 0.000293204 0.0117991 0.00154428 . . . 
+Value: 0.380564
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.16452
+Action: 0 Reward: 0
+
+O.X
+...
+XOX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.533738
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.143379 . 2.11693e-05 0.661008 0.195592 . . . 
+Value: -0.196363
+Action: 5 Reward: 0
+
+O.X
+..O
+XOX
+Agent 0 Policy: . 3.25443e-05 . 0.0107089 0.989259 . . . . 
+Value: 0.50684
+Action: 4 Reward: 1
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.144236
+Action: 0 Reward: -1
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+X..
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0208101
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.235517 0.00160179 0.00221213 . 0.308116 0.213969 0.236414 0.000232198 0.00193767 
+Value: -0.00216787
+Action: 4 Reward: 0
+
+...
+XO.
+...
+Agent 0 Policy: 0.15436 0.150595 0.157498 . . 0.00526894 0.146228 0.205417 0.180633 
+Value: -0.0126801
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.000247085
+Action: 0 Reward: 0
+
+..X
+XO.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.000716514
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.220859 0.224475 . . . 0.00464192 0.172323 0.365348 0.0123542 
+Value: -0.0248569
+Action: 6 Reward: 0
+
+..X
+XO.
+O..
+Agent 0 Policy: 0.193647 0.0434295 . . . 0.0132531 . 0.233953 0.515717 
+Value: -0.0185649
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00805951
+Action: 0 Reward: 0
+
+.XX
+XO.
+O..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0117858
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.997038 . . . . 6.58747e-05 . 0.00232769 0.000568313 
+Value: -0.0106991
+Action: 0 Reward: 0
+
+OXX
+XO.
+O..
+Agent 0 Policy: . . . . . 1.16559e-05 . 3.58823e-05 0.999952 
+Value: 0.000316999
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0200569
+Action: 0 Reward: 0
+
+OXX
+XO.
+O.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0635202
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . . . 0.999759 . 0.000240566 . 
+Value: -0.00915514
+Action: 5 Reward: 0
+
+OXX
+XOO
+O.X
+Agent 0 Policy: . . . . . . . 1 . 
+Value: 0.0141088
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0123604
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+.X.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00258445
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.286524 0.00350957 0.227151 0.000697295 . 0.000648031 0.215019 0.0023002 0.264151 
+Value: -0.0173014
+Action: 0 Reward: 0
+
+O..
+.X.
+...
+Agent 0 Policy: . 0.181216 0.119277 0.191862 . 0.137208 0.120813 0.114774 0.13485 
+Value: -0.0194107
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0692375
+Action: 0 Reward: 0
+
+OX.
+.X.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.021333
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 3.57086e-05 0.000101828 . 4.78546e-05 0.000959036 0.998721 0.000134978 
+Value: 0.0147352
+Action: 7 Reward: 0
+
+OX.
+.X.
+.O.
+Agent 0 Policy: . . 0.0128676 0.389548 . 0.261719 0.177916 . 0.157949 
+Value: 0.00634569
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00472403
+Action: 0 Reward: 0
+
+OX.
+XX.
+.O.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00915255
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 2.80312e-06 . . 0.999995 2.48269e-07 . 1.91251e-06 
+Value: 0.00962225
+Action: 5 Reward: 0
+
+OX.
+XXO
+.O.
+Agent 0 Policy: . . 0.166993 . . . 0.420351 . 0.412656 
+Value: -0.00459883
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0223998
+Action: 0 Reward: 0
+
+OX.
+XXO
+.OX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00773553
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . 0.387182 . . . 0.612818 . . 
+Value: 0.011314
+Action: 6 Reward: 0
+
+OX.
+XXO
+OOX
+Agent 0 Policy: . . 1 . . . . . . 
+Value: -0.0104259
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0417837
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+..X
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0158781
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00191839 0.00379829 0.32999 0.132406 0.272045 . 0.00426295 0.000417185 0.255163 
+Value: -0.00546637
+Action: 2 Reward: 0
+
+..O
+..X
+...
+Agent 0 Policy: 0.224861 0.259289 . 0.00498131 0.253181 . 0.245184 0.00919486 0.00330847 
+Value: 0.0157317
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0513076
+Action: 0 Reward: 0
+
+..O
+.XX
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0435642
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000616775 0.00156542 . 0.997325 . . 1.58024e-05 0.000453902 2.32677e-05 
+Value: -0.0200761
+Action: 3 Reward: 0
+
+..O
+OXX
+...
+Agent 0 Policy: 0.362647 0.326178 . . . . 0.0792659 0.229847 0.00206199 
+Value: 0.0218678
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0146714
+Action: 0 Reward: 0
+
+.XO
+OXX
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0277077
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00585075 . . . . . 0.000332431 0.99359 0.000226555 
+Value: 0.0295578
+Action: 7 Reward: 0
+
+.XO
+OXX
+.O.
+Agent 0 Policy: 0.256902 . . . . . 0.397129 . 0.34597 
+Value: -0.00100062
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0284972
+Action: 0 Reward: 0
+
+.XO
+OXX
+XO.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0157859
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.404942 . . . . . . . 0.595058 
+Value: -0.000860662
+Action: 8 Reward: 0
+
+.XO
+OXX
+XOO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00114629
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0340092
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+.X.
+...
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0450873
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.263927 . 0.243279 0.00514933 0.256181 0.00147712 0.00649298 0.221583 0.00190957 
+Value: -0.0076555
+Action: 2 Reward: 0
+
+.XO
+...
+...
+Agent 0 Policy: 0.0156618 . . 0.0186996 0.267568 0.233697 0.169481 0.00331035 0.291582 
+Value: 0.0117395
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0179735
+Action: 0 Reward: 0
+
+.XO
+...
+..X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0112659
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.0042569 . . 0.000408597 0.473197 0.0003152 0.00498649 0.516836 . 
+Value: 0.0241842
+Action: 7 Reward: 0
+
+.XO
+...
+.OX
+Agent 0 Policy: 0.315803 . . 0.143763 0.378853 0.0135964 0.147984 . . 
+Value: 0.081245
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0323426
+Action: 0 Reward: 0
+
+.XO
+.X.
+.OX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0383867
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.999379 . . 0.000255811 . 0.000174137 0.000191226 . . 
+Value: -0.0535141
+Action: 0 Reward: 0
+
+OXO
+.X.
+.OX
+Agent 0 Policy: . . . 0.322577 . 0.418469 0.258954 . . 
+Value: 0.0067948
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.00543952
+Action: 0 Reward: 0
+
+OXO
+XX.
+.OX
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00354769
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . . . 0.999995 5.3835e-06 . . 
+Value: 0.00411609
+Action: 5 Reward: 0
+
+OXO
+XXO
+.OX
+Agent 0 Policy: . . . . . . 1 . . 
+Value: 0.0320556
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.00342424
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 4 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+.X.
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.00258445
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.286524 0.00350957 0.227151 0.000697295 . 0.000648031 0.215019 0.0023002 0.264151 
+Value: -0.0173014
+Action: 6 Reward: 0
+
+...
+.X.
+O..
+Agent 0 Policy: 0.20447 0.11959 0.0691708 0.202205 . 0.0768058 . 0.192685 0.135074 
+Value: -0.000644158
+Action: 3 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0248609
+Action: 0 Reward: 0
+
+...
+XX.
+O..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0335203
+Action: 0 Reward: 0
+
+Agent 1 Policy: 4.42536e-05 0.000242558 6.47064e-05 . . 0.998485 . 4.80722e-05 0.00111543 
+Value: 0.00408133
+Action: 5 Reward: 0
+
+...
+XXO
+O..
+Agent 0 Policy: 0.0134215 0.240375 0.0315638 . . . . 0.539519 0.17512 
+Value: -0.0221828
+Action: 8 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0044532
+Action: 0 Reward: 0
+
+...
+XXO
+O.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0580002
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.999291 0.000136077 0.000453444 . . . . 0.000119162 . 
+Value: 0.0171788
+Action: 0 Reward: 0
+
+O..
+XXO
+O.X
+Agent 0 Policy: . 0.58852 0.38618 . . . . 0.0252999 . 
+Value: 0.00944288
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0491829
+Action: 0 Reward: 0
+
+O.X
+XXO
+O.X
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.136778
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.407843 . . . . . 0.592157 . 
+Value: 0.0120578
+Action: 7 Reward: 0
+
+O.X
+XXO
+OOX
+Agent 0 Policy: . 1 . . . . . . . 
+Value: 0.143778
+Action: 1 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0563786
+Action: 0 Reward: 0
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+..X
+...
+...
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0581391
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000162112 0.00188098 . 6.81668e-05 0.994829 0.00049566 0.0005555 0.00160911 0.000399357 
+Value: -0.0173416
+Action: 4 Reward: 0
+
+..X
+.O.
+...
+Agent 0 Policy: 0.133522 0.164789 . 0.164039 . 0.148586 0.125674 0.141823 0.121567 
+Value: 0.0131588
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0695422
+Action: 0 Reward: 0
+
+..X
+.O.
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00344438
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.00182216 0.282721 . 0.233357 . 0.189131 . 0.292382 0.000587995 
+Value: 0.0172742
+Action: 1 Reward: 0
+
+.OX
+.O.
+X..
+Agent 0 Policy: 4.50197e-05 . . 0.000868845 . 0.00374574 . 0.995004 0.00033676 
+Value: 0.00972479
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0137189
+Action: 0 Reward: 0
+
+.OX
+.O.
+XX.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.00728289
+Action: 0 Reward: 0
+
+Agent 1 Policy: 6.01108e-05 . . 0.000474304 . 6.18107e-05 . . 0.999404 
+Value: -0.0233736
+Action: 8 Reward: 0
+
+.OX
+.O.
+XXO
+Agent 0 Policy: 0.996369 . . 0.00261946 . 0.00101157 . . . 
+Value: -0.0478389
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.00938214
+Action: 0 Reward: 0
+
+XOX
+.O.
+XXO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.0119414
+Action: 0 Reward: 0
+
+Agent 1 Policy: . . . 0.999479 . 0.000521072 . . . 
+Value: 0.00185518
+Action: 5 Reward: 0
+
+XOX
+.OO
+XXO
+Agent 0 Policy: . . . 1 . . . . . 
+Value: 0.0239638
+Action: 3 Reward: 1
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0214955
+Action: 0 Reward: -1
+
+...
+...
+...
+Agent 0 Policy: 0.106411 0.107893 0.115032 0.103124 0.107303 0.11293 0.106233 0.124931 0.116143 
+Value: 0.0157602
+Action: 6 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.00809131
+Action: 0 Reward: 0
+
+...
+...
+X..
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0684681
+Action: 0 Reward: 0
+
+Agent 1 Policy: 0.000208304 0.000424709 0.000343921 0.00170732 0.994388 0.000194193 . 0.00209692 0.000636976 
+Value: -0.012685
+Action: 4 Reward: 0
+
+...
+.O.
+X..
+Agent 0 Policy: 0.136286 0.152197 0.133441 0.1415 . 0.156464 . 0.131475 0.148635 
+Value: 0.0130462
+Action: 7 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.043902
+Action: 0 Reward: 0
+
+...
+.O.
+XX.
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.047262
+Action: 0 Reward: 0
+
+Agent 1 Policy: 9.43829e-05 0.00348494 0.000448816 0.0017419 . 5.12145e-05 . . 0.994179 
+Value: -0.02921
+Action: 8 Reward: 0
+
+...
+.O.
+XXO
+Agent 0 Policy: 0.998728 3.39807e-05 0.000463289 0.000322094 . 0.000452959 . . . 
+Value: -0.0513183
+Action: 0 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.00564648
+Action: 0 Reward: 0
+
+X..
+.O.
+XXO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: 0.0324443
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 1.40775e-05 0.000188559 0.9978 . 0.00199767 . . . 
+Value: 0.0102347
+Action: 3 Reward: 0
+
+X..
+OO.
+XXO
+Agent 0 Policy: . 0.000807263 0.00108743 . . 0.998105 . . . 
+Value: -0.00779379
+Action: 5 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: -0.0366267
+Action: 0 Reward: 0
+
+X..
+OOX
+XXO
+Agent 0 Policy: 1 . . . . . . . . 
+Value: -0.029217
+Action: 0 Reward: 0
+
+Agent 1 Policy: . 0.494784 0.505216 . . . . . . 
+Value: -0.00473015
+Action: 1 Reward: 0
+
+XO.
+OOX
+XXO
+Agent 0 Policy: . . 1 . . . . . . 
+Value: -0.00946988
+Action: 2 Reward: 0
+
+Agent 1 Policy: 1 . . . . . . . . 
+Value: 0.0312579
 Action: 0 Reward: 0
 
