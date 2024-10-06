@@ -397,7 +397,10 @@ int main(){
             trainer.net[ag][t]->copyParams(trainer.structure);
         }
     }
-    for(int i=0; i<1000; i++){
+    {
+        ofstream fout("hidden.out");
+    }
+    for(int i=0; i<10000; i++){
         trainer.rollout(false, false, true);
     }
     
