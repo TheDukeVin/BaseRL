@@ -28,6 +28,7 @@ void Model::addConv(Shape shape, int convHeight, int convWidth){
     outputSize = shape.depth * shape.height * shape.width;
     Data* newAct = new Data(outputSize);
     layers.push_back(new ConvLayer(lastAct, newAct, lastShape, shape, convHeight, convWidth));
+    activations.push_back(newAct);
     lastAct = newAct;
     lastShape = shape;
 }
@@ -36,6 +37,7 @@ void Model::addPool(Shape shape){
     outputSize = shape.depth * shape.height * shape.width;
     Data* newAct = new Data(outputSize);
     layers.push_back(new PoolLayer(lastAct, newAct, lastShape, shape));
+    activations.push_back(newAct);
     lastAct = newAct;
     lastShape = shape;
 }
@@ -49,10 +51,10 @@ void Model::addLSTM(int outputSize_){
     lastShape = Shape(outputSize_);
 }
 
-void Model::addDense(int outputSize_){
+void Model::addDense(int outputSize_, string operation){
     outputSize = outputSize_;
     Data* newAct = new Data(outputSize_);
-    layers.push_back(new Dense(lastAct, newAct));
+    layers.push_back(new Dense(lastAct, newAct, operation));
     activations.push_back(newAct);
     lastAct = newAct;
     lastShape = Shape(outputSize_);

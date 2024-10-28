@@ -13,18 +13,34 @@ import time
 
 np.random.seed(42)
 
-def displayProjections(projection_mode, color_mode, player=0, displayMode=True):
+def toString(arr):
+    x, y = arr.shape
+    s = ""
+    for i in range(x):
+        for j in range(y):
+            s += str(arr[i, j])
+            s += ' '
+        s += '\n'
+    return s
+
+def generateProjectionDataset(player=0):
     A = read_space_separated_file("hidden.out")
     x, y = A.shape
+    print(x, y)
+    numFeatures = 20
+
+    # Filter first moves
     firstPlayer = A[list(range(player, x, 2)), :]
 
     # Use smaller data set
-    firstPlayer = firstPlayer[:10000, :]
+    # firstPlayer = firstPlayer[:10000, :]
+    # firstPlayer = firstPlayer[firstPlayer[:, numFeatures + 2] == '4', :]
+    # print(str(firstPlayer))
 
     # Filter only X-player moves
     # firstPlayer = firstPlayer[firstPlayer[:, -5] == '0', :]
 
-    firstPlayer_X = firstPlayer[:, :-5].astype(float)
+    firstPlayer_X = firstPlayer[:, :numFeatures].astype(float)
     points = set()
     indices = []
     for i, a in enumerate(firstPlayer_X):
@@ -33,7 +49,43 @@ def displayProjections(projection_mode, color_mode, player=0, displayMode=True):
             points.add(tuple(a))
     
     firstPlayer = firstPlayer[indices, :]
-    firstPlayer_X = firstPlayer[:, :-5].astype(float)
+    firstPlayer_X = firstPlayer[:, :numFeatures].astype(float)
+
+    with open('autoencoder_test/data.out', 'w') as f:
+        f.write(toString(firstPlayer_X))
+
+    return firstPlayer
+
+
+def displayProjections(projection_mode, color_mode, player=0, displayMode=True):
+    ae_output = read_space_separated_file("autoencoder_test/transform.out").astype(float)
+    numFeatures = 20
+    # features = read_space_separated_file("hidden.out")
+    # A = np.concatenate((features, ae_output), axis=1)
+    # x, y = A.shape
+
+    # # Filter first moves
+    # firstPlayer = A[list(range(player, x, 2)), :]
+
+    # # Use smaller data set
+    # firstPlayer = firstPlayer[:10000, :]
+    # firstPlayer = firstPlayer[firstPlayer[:, numFeatures + 2] == '4', :]
+    # # print(str(firstPlayer))
+
+    # # Filter only X-player moves
+    # # firstPlayer = firstPlayer[firstPlayer[:, -5] == '0', :]
+
+    # firstPlayer_X = firstPlayer[:, :numFeatures].astype(float)
+    # points = set()
+    # indices = []
+    # for i, a in enumerate(firstPlayer_X):
+    #     if tuple(a) not in points:
+    #         indices.append(i)
+    #         points.add(tuple(a))
+    
+    firstPlayer = generateProjectionDataset(player)
+    firstPlayer_X = firstPlayer[:, :numFeatures].astype(float)
+
 
     if projection_mode == "TSNE":
         load_mode = "WRITE"
@@ -47,12 +99,19 @@ def displayProjections(projection_mode, color_mode, player=0, displayMode=True):
             embedded = np.loadtxt("tsne.csv")
     elif projection_mode == "PCA":
         embedded = PCA(n_components=2).fit_transform(firstPlayer_X)
+    elif projection_mode == "AE":
+        embedded = ae_output
     
-    # firstPlayer_X = firstPlayer_X[:1000, :]
-    # embedded = embedded[:1000]
-    firstPlayer_state = firstPlayer[:, -4].astype(str)
-    firstPlayer_timer = firstPlayer[:, -3].astype(float)
-    firstPlayer_value = firstPlayer[:, -1].astype(float)
+    # Dataset prefix:
+    prefixsize = 2000
+    firstPlayer = firstPlayer[:prefixsize, :]
+    firstPlayer_X = firstPlayer_X[:prefixsize, :]
+    embedded = embedded[:prefixsize]
+
+    firstPlayer_state = firstPlayer[:, numFeatures+1].astype(str)
+    firstPlayer_timer = firstPlayer[:, numFeatures+2].astype(float)
+    firstPlayer_action = firstPlayer[:, numFeatures+3].astype(float)
+    firstPlayer_value = firstPlayer[:, numFeatures+4].astype(float)
 
     names = firstPlayer_state
 
@@ -134,7 +193,8 @@ if __name__ == '__main__':
     #     for val in ["STATE", "VALUE", "TIMER", "KMEANS"]:
     #         displayProjections(proj, val, displayMode=False)
 
-    displayProjections("TSNE", "STATE", player=0)
+    # generateProjectionDataset(0)
+    displayProjections("AE", "STATE", player=0)
 
 
     # X = np.array([[0, 0, 0], [0, 1, 1], [0, 0, 0], [1, 1, 1]])

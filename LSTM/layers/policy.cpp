@@ -21,8 +21,8 @@ void Dense::setupLayer(Data* input_, Data* output_, string operation){
     allNodes.push_back(new UnitaryNode(add_result, output, operation));
 }
 
-Dense::Dense(Data* input_, Data* output_){
-    setupLayer(input_, output_, "leakyRelu");
+Dense::Dense(Data* input_, Data* output_, string operation){
+    setupLayer(input_, output_, operation);
 }
 
 PolicyOutput::PolicyOutput(Data* input_, Data* output_){

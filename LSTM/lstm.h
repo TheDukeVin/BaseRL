@@ -245,7 +245,7 @@ protected:
 
 public:
     Dense(){}
-    Dense(Data* input_, Data* output_);
+    Dense(Data* input_, Data* output_, string operation="leakyRelu");
 };
 
 class PolicyOutput : public Dense{
@@ -290,7 +290,7 @@ public:
     void addConv(Shape shape, int convHeight, int convWidth);
     void addPool(Shape shape);
     void addLSTM(int outputSize_);
-    void addDense(int outputSize_);
+    void addDense(int outputSize_, string operation="leakyRelu");
     void addOutput(int outputSize_);
 
     // Define an active Model unit from given structure
@@ -305,7 +305,7 @@ public:
 
     void resetGradient();
     void accumulateGradient(Model* m);
-    void updateParams(double scale, double momentum, double regRate);
+    void updateParams(double scale, double momentum=0, double regRate=0);
 
     void save(string fileOut);
     void load(string fileIn);
